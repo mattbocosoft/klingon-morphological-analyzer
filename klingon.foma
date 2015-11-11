@@ -1,0 +1,84 @@
+echo
+echo ##Variables##
+def C [p | t | k | b | d | g | s | z | f | v | l | m | n | ʃ | ʒ | ŋ ];
+def V [a | e | i | o | u];
+def Alpha [C | V];
+def Word [Alpha]+;
+
+def Fricative [s | ʒ | ʃ | z | {sh} | f | v];
+def Velar [k | g | ŋ];
+
+define FrontV [e|i];
+define BackV [o|u];
+
+echo
+echo ##Lex File##
+read lexc kaixo.lexc
+eliminate flags
+def Grammar;
+
+echo
+echo ##Rules##
+def RuleChooseBackVowel E -> o, I -> u || $[BackV] _;
+def RuleChooseFrontVowel E -> e, I -> i;
+def FricativeRule [..] -> a || Fricative _ Fricative;
+def NasalAssimilationRule [n|m] -> ŋ || _ Velar;
+
+def Grammar [Grammar .o. RuleChooseBackVowel .o. RuleChooseFrontVowel .o. FricativeRule .o. NasalAssimilationRule];
+
+echo
+echo ##EXTRA CREDIT: Guesser##
+def GuesserInsertion [..] -> "[GUESS]" || "[GUESSVERB]" ?* _ .#.;
+def Grammar [Grammar.i .o. GuesserInsertion].i;
+regex Grammar;
+substitute defined Word for "[GUESSVERB]"
+def Grammar;
+
+def GuessGr $["[GUESS]"] .o. Grammar;
+def RealGr ~$["[GUESS]"] .o. Grammar;
+def Grammar [RealGr .p. GuessGr];
+
+echo
+echo ##Iterative Rule##
+def IterableWord [(C) (C) (V) (V) V];
+def MarkReduplicator  IterableWord -> %< ... %> || "[IterRep]" _;
+def InsertReduplicand "[IterRep]" -> %< IterableWord %> || _ %<; #Important to include this condition, otherwise 
+def RemoveMarks %< -> 0, %> -> 0;
+def Grammar _eq([Grammar .o. MarkReduplicator .o. InsertReduplicand], %<, %>) .o. RemoveMarks;
+
+echo
+regex Grammar;
+echo
+echo --Guessing 'gata' [INF]
+up gata
+echo
+echo --Guessing 'nagata' [NEG][INF] / [INF]
+up nagata
+echo
+echo --Guessing 'gagata' [NEG][INF][ITERATIVE] / [INF]
+up gagata
+echo
+echo --Guessing 'maagata' [INF][DURATIVE] / [INF]
+up maagata
+echo
+echo --Guessing 'maagatake' [PRES][2P][SG][DURATIVE] / [INF][DURATIVE] / [PRES][2P][SG] / [INF]
+up maagatake
+echo
+echo --Guessing 'blamaagatakebla' [PRES][2P][SG][DURATIVE][HEARSAY] / [INF][HEARSAY] / [INF]
+up blamaagatakebla
+clear stack
+
+echo
+echo ##EXTRA CREDIT: Spell Checker##
+def Insert $[0:Alpha];
+def Delete $[Alpha:0];
+def Replace $[Alpha:Alpha];
+def SpellCheck [Insert | Delete | Replace] .o. [Grammar.u - $["[GUESS]"] .o. Grammar].l;
+regex SpellCheck;
+echo --Checking spelling of 'skatns'
+down skatns
+
+echo
+echo ##Loading Grammar…##
+clear stack
+regex Grammar;
