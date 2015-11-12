@@ -1,10 +1,11 @@
-Multichar_Symbols [NEG] [1P] [2P] [3P] [SG] [PL] [PRES] [GUESSVERB] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL]
+Multichar_Symbols [NEG] [1P] [2P] [3P] [SG] [PL] [PRES] [GUESSVERB] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE]
 
 LEXICON Root
 						Prefix;
 
 LEXICON Prefix
-						IndicativePrefix;
+[INDICATIVE]:0					IndicativePrefix;
+[IMPERATIVE]:0					ImperativePrefix;
 
 
 LEXICON IndicativePrefix
@@ -79,6 +80,20 @@ LEXICON IndicativePrefixUnspecified
 [OBJ-2P][OBJ-PL]:bo				Verb;
 [OBJ-3P][OBJ-PL]:lu				Verb;
 
+
+LEXICON ImperativePrefix
+[2P][SG]:yI					Verb;
+[2P][PL]:pe					Verb;
+[2P][OBJ-1P][OBJ-SG]:HI			Verb;
+[2P][OBJ-3P][OBJ-SG]:yI			Verb;
+[2P][OBJ-1P][OBJ-PL]:gho			Verb;
+[2P][OBJ-3P][OBJ-PL]:tI			Verb;
+
+
 LEXICON Verb
 
-						#;
+						Suffix;
+
+
+LEXICON Suffix
+						#
