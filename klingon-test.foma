@@ -1,113 +1,40 @@
-source kaixo.foma
+source klingon.foma
 
 # TESTS
-
-define TestWords {kata[to-lie]} ["[PRES]"|"[PAST]"] ["[1P]"|"[2P]"|"[3P]"] ["[SG]"|"[PL]"]
-		  | {sape[to-run]} "[PRES]" "[3P]" "[PL]";
-!		  | {lupo[to-drink]} ["[PRES]"|"[PAST]"] ["[1P]"|"[2P]"|"[3P]"] ["[SG]"|"[PL]"]
-!		  | {pele[to-play-soccer]} ["[PRES]"|"[PAST]"] ["[1P]"|"[2P]"|"[3P]"] ["[SG]"|"[PL]"];
-
-# Read in words from file and create automaton
-define CorrectWords @txt"kaixo-correct.txt" ;
-
-# How many predictions are correct:
-def TestNumberCorrect [TestWords .o. Grammar].l & CorrectWords;
-
-# How many are incorrect:
-def TestNumberIncorrect [TestWords .o. Grammar].l - CorrectWords;
 
 echo
 echo ###################
 echo POSITIVE TEST CASES (Success: >1 States)
 echo ###################
 echo
-echo Kata [Table]
-regex {kata[to-lie]}"[INF]" .o. Grammar .o. {kata};
-regex "[NEG]"{kata[to-lie]}"[INF]""[HEARSAY]" .o. Grammar .o. {nablakatabla};
-regex {kata[to-lie]}"[INF]""[HEARSAY]" .o. Grammar .o. {blakatabla};
-regex {kata[to-lie]}"[PRES]""[1P]""[SG]" .o. Grammar .o. {katati};
-regex {kata[to-lie]}"[PRES]""[2P]""[SG]" .o. Grammar .o. {katake};
-regex {kata[to-lie]}"[PRES]""[3P]""[SG]" .o. Grammar .o. {skata};
-regex {kata[to-lie]}"[PRES]""[1P]""[PL]" .o. Grammar .o. {katatis};
-regex {kata[to-lie]}"[PRES]""[2P]""[PL]" .o. Grammar .o. {katakes};
-regex {kata[to-lie]}"[PRES]""[3P]""[PL]" .o. Grammar .o. {skatas};
-regex {kata[to-lie]}"[PAST]""[1P]""[SG]" .o. Grammar .o. {katanti};
-regex {kata[to-lie]}"[PAST]""[2P]""[SG]" .o. Grammar .o. {kataŋke};
-regex {kata[to-lie]}"[PAST]""[3P]""[SG]" .o. Grammar .o. {skatan};
-regex {kata[to-lie]}"[PAST]""[1P]""[PL]" .o. Grammar .o. {katantis};
-regex {kata[to-lie]}"[PAST]""[2P]""[PL]" .o. Grammar .o. {kataŋkes};
-regex {kata[to-lie]}"[PAST]""[3P]""[PL]" .o. Grammar .o. {skatans};
+echo Plurals (from Wikipedia)
+regex {tlhIngan[Klingon][N][PL_Lang]} .o. Grammar .o. {tlhInganpu’};
+regex {jagh[enemy][N][PL_Lang]} .o. Grammar .o. {jaghpu’};
+regex {mIn[eye][N][PL_Body]} .o. Grammar .o. {mInDu’};
+regex {targh[targ][N][PL_Obj]} .o. Grammar .o. {targhmey};
 echo
-echo Lupo [Table]
-regex {lupo[to-drink]}"[INF]" .o. Grammar .o. {lupo};
-regex {lupo[to-drink]}"[PRES]""[1P]""[SG]" .o. Grammar .o. {lupotu};
-regex {lupo[to-drink]}"[PRES]""[2P]""[SG]" .o. Grammar .o. {lupoko};
-regex {lupo[to-drink]}"[PRES]""[3P]""[SG]" .o. Grammar .o. {slupo};
-regex {lupo[to-drink]}"[PRES]""[1P]""[PL]" .o. Grammar .o. {lupotus};
-regex {lupo[to-drink]}"[PRES]""[2P]""[PL]" .o. Grammar .o. {lupokos};
-regex {lupo[to-drink]}"[PRES]""[3P]""[PL]" .o. Grammar .o. {slupos};
-regex {lupo[to-drink]}"[PAST]""[1P]""[SG]" .o. Grammar .o. {lupontu};
-regex {lupo[to-drink]}"[PAST]""[2P]""[SG]" .o. Grammar .o. {lupoŋko};
-regex {lupo[to-drink]}"[PAST]""[3P]""[SG]" .o. Grammar .o. {slupon};
-regex {lupo[to-drink]}"[PAST]""[1P]""[PL]" .o. Grammar .o. {lupontus};
-regex {lupo[to-drink]}"[PAST]""[2P]""[PL]" .o. Grammar .o. {lupoŋkos};
-regex {lupo[to-drink]}"[PAST]""[3P]""[PL]" .o. Grammar .o. {slupons};
+echo Plural Exceptions
+regex {jengva’[plate][N][PL_Obj]} .o. Grammar .o. {ngop};
 echo
-echo Pele [Table]
-regex {pele[to-play-soccer]}"[INF]" .o. Grammar .o. {pele};
-regex {pele[to-play-soccer]}"[PRES]""[1P]""[SG]" .o. Grammar .o. {peleti};
-regex {pele[to-play-soccer]}"[PRES]""[2P]""[SG]" .o. Grammar .o. {peleke};
-regex {pele[to-play-soccer]}"[PRES]""[3P]""[SG]" .o. Grammar .o. {spele};
-regex {pele[to-play-soccer]}"[PRES]""[1P]""[PL]" .o. Grammar .o. {peletis};
-regex {pele[to-play-soccer]}"[PRES]""[2P]""[PL]" .o. Grammar .o. {pelekes};
-regex {pele[to-play-soccer]}"[PRES]""[3P]""[PL]" .o. Grammar .o. {speles};
-regex {pele[to-play-soccer]}"[PAST]""[1P]""[SG]" .o. Grammar .o. {pelenti};
-regex {pele[to-play-soccer]}"[PAST]""[2P]""[SG]" .o. Grammar .o. {peleŋke};
-regex {pele[to-play-soccer]}"[PAST]""[3P]""[SG]" .o. Grammar .o. {spelen};
-regex {pele[to-play-soccer]}"[PAST]""[1P]""[PL]" .o. Grammar .o. {pelentis};
-regex {pele[to-play-soccer]}"[PAST]""[2P]""[PL]" .o. Grammar .o. {peleŋkes};
-regex {pele[to-play-soccer]}"[PAST]""[3P]""[PL]" .o. Grammar .o. {spelens};
-echo
-echo Sape [Table]
-regex {sape[to-run]}"[INF]" .o. Grammar .o. {sape};
-regex {sape[to-run]}"[INF]""[ITERATIVE]" .o. Grammar .o. {sasape};
-regex {sape[to-run]}"[INF]""[DURATIVE]" .o. Grammar .o. {maasape};
-regex {sape[to-run]}"[PRES]""[1P]""[SG]" .o. Grammar .o. {sapeti};
-regex {sape[to-run]}"[PRES]""[2P]""[SG]" .o. Grammar .o. {sapeke};
-regex {sape[to-run]}"[PRES]""[3P]""[SG]" .o. Grammar .o. {sasape};
-regex {sape[to-run]}"[PRES]""[1P]""[PL]" .o. Grammar .o. {sapetis};
-regex {sape[to-run]}"[PRES]""[2P]""[PL]" .o. Grammar .o. {sapekes};
-regex {sape[to-run]}"[PRES]""[3P]""[PL]" .o. Grammar .o. {sasapes};
-regex {sape[to-run]}"[PAST]""[1P]""[SG]" .o. Grammar .o. {sapenti};
-regex {sape[to-run]}"[PAST]""[2P]""[SG]" .o. Grammar .o. {sapeŋke};
-regex {sape[to-run]}"[PAST]""[3P]""[SG]" .o. Grammar .o. {sasapen};
-regex {sape[to-run]}"[PAST]""[1P]""[PL]" .o. Grammar .o. {sapentis};
-regex {sape[to-run]}"[PAST]""[2P]""[PL]" .o. Grammar .o. {sapeŋkes};
-regex {sape[to-run]}"[PAST]""[3P]""[PL]" .o. Grammar .o. {sasapens};
-echo
-echo Evidentials, Aspect, and Negation
-regex {kata[to-lie]}"[PRES]""[3P]""[SG]" .o. Grammar .o. {skata};
-regex {kata[to-lie]}"[PRES]""[3P]""[SG]""[DURATIVE]" .o. Grammar .o. {maaskata};
-regex {kata[to-lie]}"[PAST]""[3P]""[PL]""[HEARSAY]" .o. Grammar .o. {blaskatansbla};
-regex {kata[to-lie]}"[PAST]""[3P]""[PL]" .o. Grammar .o. {skatans};
-regex {kata[to-lie]}"[PAST]""[3P]""[PL]""[ITERATIVE]" .o. Grammar .o. {skaskatans};
-regex {kata[to-lie]}"[INF]" .o. Grammar .o. {kata};
-regex {kata[to-lie]}"[INF]""[ITERATIVE]" .o. Grammar .o. {kakata};
-regex {kata[to-lie]}"[PAST]""[3P]""[PL]""[HEARSAY]""[ITERATIVE]" .o. Grammar .o. {blablaskatansbla};
-regex "[NEG]"{kata[to-lie]}"[PAST]""[3P]""[PL]" .o. Grammar .o. {naskatans};
-regex "[NEG]"{kata[to-lie]}"[PAST]""[3P]""[PL]""[HEARSAY]""[ITERATIVE]" .o. Grammar .o. {nablablaskatansbla};
-regex {sape[to-run]}"[PAST]""[3P]""[SG]""[HEARSAY]""[ITERATIVE]" .o. Grammar .o. {blablasasapenbla};
+echo Other Nouns
+regex {loD[man]}"[N]""[SG]" .o. Grammar .o. {loD};
+regex {be’[woman]}"[N]""[SG]" .o. Grammar .o. {be’};
+regex {puq[child]}"[N]""[SG]" .o. Grammar .o. {puq};
+regex {puqloD[son]}"[N]""[SG]" .o. Grammar .o. {puqloD};
+regex {puqbe’[daughter]}"[N]""[SG]" .o. Grammar .o. {puqbe’};
+regex {Hov}"[N]""[SG]" .o. Grammar .o. {Hov};
+regex {Hov}"[N]""[PL]" .o. Grammar .o. {Hov};
+regex {Hov}"[N]""[PL]" .o. Grammar .o. {Hovmey};
+
+regex {’e’}"N" .o. Grammar .o. {that};
+
+echo Verbs
+regex {yaj[to understand]}"[PRES]""[1P]""[SG]""[NEG]" .o. Grammar .o. {jIyajbe’};
 
 echo
 echo ###################
 echo NEGATIVE TEST CASES (Success: 1 State)
 echo ###################
-regex ~$["[GUESS]"] .o. Grammar .o. [s [k|l|p] ?* [{ti}|{tu}|{ke}|{ko}]]; !1P/2P combining with 3P
-regex ~$["[GUESS]"] .o. Grammar .o. [ $[FrontV] $[BackV] ] | [$[BackV] $[FrontV] ]; !Vowel Disagreement
-regex ~$["[GUESS]"] .o. Grammar .o. $[ Fricative Fricative ]; !Adjacent Fricatives
-regex ~$["[GUESS]"] .o. Grammar .o. $[ [n|m] Velar ]; !Unassimilated nasals
-regex ~$["[GUESS]"] .o. Grammar .o. {na} {na} ?*; ! Double negative
-regex Grammar .o. $[ "[GUESSVERB]" ]; !Make sure guesser is turned on
 
 echo
 echo -------------------
