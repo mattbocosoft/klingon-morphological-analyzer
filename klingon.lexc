@@ -1,4 +1,4 @@
-Multichar_Symbols [NEG] [1P] [2P] [3P] [SG] [PL] [PRES] [GUESSVERB] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE]
+Multichar_Symbols [NEG] [1P] [2P] [3P] [SG] [PL] [PRES] [GUESSVERB] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE]
 
 LEXICON Root
 						Prefix;
@@ -91,8 +91,30 @@ LEXICON ImperativePrefix
 
 
 LEXICON Verb
+						Type1Suffix;
 
-						Suffix;
+
+LEXICON Type1Suffix # 2 Count = reflexive/reciprocal
+[REFLEXIVE]:’egh				Type2Suffix;
+[RECIPROCAL]:chuq				Type2Suffix;
+						Type2Suffix;
+
+LEXICON Type2Suffix # 5 Count = volition/necessity
+[REQUIRED]:nIS					Type3Suffix;
+[WILLING]:qang					Type3Suffix;
+[PREPARED]:rup					Type3Suffix;
+[SET-UP]:beH					Type3Suffix;
+[AFRAID]:vIp					Type3Suffix;
+						Type3Suffix;
+
+LEXICON Type3Suffix # 2 Count = inceptive/inchoative
+[STATECHANGE]:choH				Type4Suffix;
+[RESUME]:qa’					Type4Suffix;
+						Type4Suffix;
+
+LEXICON Type4Suffix # 1 Count = causative
+[CAUSATIVE]:moH					Type5Suffix;
+						Type5Suffix;
 
 
 LEXICON Suffix
