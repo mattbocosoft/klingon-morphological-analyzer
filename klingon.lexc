@@ -1,88 +1,84 @@
-Multichar_Symbols [NEG] [1P] [2P] [3P] [SG] [PL] [ITERATIVE] [IterRep] [DURATIVE] [PAST] [PRES] [HEARSAY] [INF] [GUESSVERB] @U.3P.ON@ @U.3P.OFF@ @U.HEARSAY.ON@ @U.HEARSAY.OFF@ @U.ITERATIVE.ON@ @U.ITERATIVE.OFF@ @U.INF.ON@ @U.INF.OFF@ @U.DURATIVE.ON@ @U.DURATIVE.OFF@
+Multichar_Symbols [NEG] [1P] [2P] [3P] [SG] [PL] [PRES] [GUESSVERB] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL]
 
 LEXICON Root
 						Prefix;
 
 LEXICON Prefix
-						Negation;
+						IndicativePrefix;
 
 
-LEXICON Negation
+LEXICON IndicativePrefix
+[1P][SG]:0					IndicativePrefix1PSG;
+[2P][SG]:0					IndicativePrefix2PSG;
+[3P][SG]:0					IndicativePrefix3PSG;
+[1P][PL]:0					IndicativePrefix1PPL;
+[2P][PL]:0					IndicativePrefix2PPL;
+[3P][PL]:0					IndicativePrefix3PPL;
+[UNSPEC]:0					IndicativePrefixUnspecified;
 
-[NEG]:na					IterativePrefix;
-						IterativePrefix;
+LEXICON IndicativePrefix1PSG
+0:jI						Verb; # No Object
+#[OBJ-1P][OBJ-SG]:0				Verb;
+[OBJ-2P][OBJ-SG]:qa				Verb;
+[OBJ-3P][OBJ-SG]:vI				Verb;
+#[OBJ-1P][OBJ-PL]:0				Verb;
+[OBJ-2P][OBJ-PL]:Sa				Verb;
+[OBJ-3P][OBJ-PL]:vI				Verb;
 
+LEXICON IndicativePrefix2PSG
+0:bI						Verb; # No Object
+[OBJ-1P][OBJ-SG]:cho				Verb;
+#[OBJ-2P][OBJ-SG]:0				Verb;
+[OBJ-3P][OBJ-SG]:Da				Verb;
+[OBJ-1P][OBJ-PL]:ju				Verb;
+#[OBJ-2P][OBJ-PL]:0				Verb;
+[OBJ-3P][OBJ-PL]:Da				Verb;
 
-LEXICON IterativePrefix
+LEXICON IndicativePrefix3PSG
+						Verb; # No Object
+[OBJ-1P][OBJ-SG]:mu				Verb;
+[OBJ-2P][OBJ-SG]:Du				Verb;
+[OBJ-3P][OBJ-SG]:0				Verb;
+[OBJ-1P][OBJ-PL]:nu				Verb;
+[OBJ-2P][OBJ-PL]:lI				Verb;
+[OBJ-3P][OBJ-PL]:0				Verb;
 
-@U.ITERATIVE.ON@:@U.ITERATIVE.ON@[IterRep]	Durative;
-@U.ITERATIVE.OFF@				Durative;
+LEXICON IndicativePrefix1PPL
+0:ma						Verb; # No Object
+#[OBJ-1P][OBJ-SG]:0				Verb;
+[OBJ-2P][OBJ-SG]:pI				Verb;
+[OBJ-3P][OBJ-SG]:wI				Verb;
+#[OBJ-1P][OBJ-PL]:0				Verb;
+[OBJ-2P][OBJ-PL]:re				Verb;
+[OBJ-3P][OBJ-PL]:DI				Verb;
 
+LEXICON IndicativePrefix2PPL
+0:Su						Verb; # No Object
+[OBJ-1P][OBJ-SG]:tu				Verb;
+#[OBJ-2P][OBJ-SG]:0				Verb;
+[OBJ-3P][OBJ-SG]:bo				Verb;
+[OBJ-1P][OBJ-PL]:che				Verb;
+#[OBJ-2P][OBJ-PL]:0				Verb;
+[OBJ-3P][OBJ-PL]:bo				Verb;
 
-LEXICON Durative
+LEXICON IndicativePrefix3PPL
+						Verb; # No Object
+[OBJ-1P][OBJ-SG]:mu				Verb;
+[OBJ-2P][OBJ-SG]:nI				Verb;
+[OBJ-3P][OBJ-SG]:lu				Verb;
+[OBJ-1P][OBJ-PL]:nu				Verb;
+[OBJ-2P][OBJ-PL]:lI				Verb;
+[OBJ-3P][OBJ-PL]:0				Verb;
 
-@U.DURATIVE.ON@:@U.DURATIVE.ON@maa		Hearsay;
-@U.DURATIVE.OFF@				Hearsay;
-
-
-LEXICON Hearsay
-
-@U.HEARSAY.ON@:@U.HEARSAY.ON@bla		Verb;
-@U.HEARSAY.OFF@					Verb;
-
+LEXICON IndicativePrefixUnspecified
+						Verb; # No Object
+[OBJ-1P][OBJ-SG]:vI				Verb;
+[OBJ-2P][OBJ-SG]:Da				Verb;
+[OBJ-3P][OBJ-SG]:0				Verb;
+[OBJ-1P][OBJ-PL]:wI				Verb;
+[OBJ-2P][OBJ-PL]:bo				Verb;
+[OBJ-3P][OBJ-PL]:lu				Verb;
 
 LEXICON Verb
 
-@U.3P.ON@@U.INF.OFF@:@U.3P.ON@@U.INF.OFF@s	VerbStem;
-@U.3P.OFF@					VerbStem;
-
-LEXICON VerbStem
-
-#EXTRA CREDIT: Verb Stem Glosses
-kata%[to-lie%]:kata 				Tense;
-lupo%[to-drink%]:lupo 				Tense;
-pele%[to-play-soccer%]:pele 			Tense;
-sape%[to-run%]:sape 				Tense;
-[GUESSVERB]					Tense;
-
-
-LEXICON Tense
-
-@U.INF.OFF@[PRES]:@U.INF.OFF@			VInfl;
-@U.INF.OFF@[PAST]:@U.INF.OFF@n			VInfl;
-@U.INF.ON@[INF]:@U.INF.ON@			Suffix;
-
-
-LEXICON VInfl
-
-@U.3P.OFF@[1P]:@U.3P.OFF@tI			Number;
-@U.3P.OFF@[2P]:@U.3P.OFF@kE			Number;
-@U.3P.ON@[3P]:@U.3P.ON@			Number;
-
-
-LEXICON Number
-
-@U.INF.OFF@[SG]:@U.INF.OFF@			Suffix;
-@U.INF.OFF@[PL]:@U.INF.OFF@s			Suffix;
-@U.INF.ON@					Suffix;
-
-
-LEXICON Suffix
-
-						HearsaySuffix;
-
-LEXICON HearsaySuffix
-
-@U.HEARSAY.ON@[HEARSAY]:@U.HEARSAY.ON@bla	IterativeTag;
-@U.HEARSAY.OFF@					IterativeTag;
-
-
-LEXICON IterativeTag
-
-@U.ITERATIVE.ON@[ITERATIVE]:@U.ITERATIVE.ON@	DurativeTag;
-@U.ITERATIVE.OFF@ 				DurativeTag;
-
-LEXICON DurativeTag
-
-@U.DURATIVE.ON@[DURATIVE]:@U.DURATIVE.ON@	#;
-@U.DURATIVE.OFF@				#;
+						#;
