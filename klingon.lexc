@@ -1,4 +1,8 @@
-Multichar_Symbols [NEG] [1P] [2P] [3P] [SG] [PL] [PRES] [GUESSVERB] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE]
+! REFERENCES
+! https://en.wikipedia.org/wiki/Klingon_grammar
+! https://www.youtube.com/watch?v=e5Did-eVQDc
+
+Multichar_Symbols [NEG] [1P] [2P] [3P] [SG] [PL] [PRES] [GUESSVERB] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DEVERBNOUN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE]
 
 LEXICON Root
 						Prefix;
@@ -19,20 +23,20 @@ LEXICON IndicativePrefix
 
 LEXICON IndicativePrefix1PSG
 0:jI						Verb; # No Object
-#[OBJ-1P][OBJ-SG]:0				Verb;
+![OBJ-1P][OBJ-SG]:0				Verb;
 [OBJ-2P][OBJ-SG]:qa				Verb;
 [OBJ-3P][OBJ-SG]:vI				Verb;
-#[OBJ-1P][OBJ-PL]:0				Verb;
+![OBJ-1P][OBJ-PL]:0				Verb;
 [OBJ-2P][OBJ-PL]:Sa				Verb;
 [OBJ-3P][OBJ-PL]:vI				Verb;
 
 LEXICON IndicativePrefix2PSG
 0:bI						Verb; # No Object
 [OBJ-1P][OBJ-SG]:cho				Verb;
-#[OBJ-2P][OBJ-SG]:0				Verb;
+![OBJ-2P][OBJ-SG]:0				Verb;
 [OBJ-3P][OBJ-SG]:Da				Verb;
 [OBJ-1P][OBJ-PL]:ju				Verb;
-#[OBJ-2P][OBJ-PL]:0				Verb;
+![OBJ-2P][OBJ-PL]:0				Verb;
 [OBJ-3P][OBJ-PL]:Da				Verb;
 
 LEXICON IndicativePrefix3PSG
@@ -46,20 +50,20 @@ LEXICON IndicativePrefix3PSG
 
 LEXICON IndicativePrefix1PPL
 0:ma						Verb; # No Object
-#[OBJ-1P][OBJ-SG]:0				Verb;
+![OBJ-1P][OBJ-SG]:0				Verb;
 [OBJ-2P][OBJ-SG]:pI				Verb;
 [OBJ-3P][OBJ-SG]:wI				Verb;
-#[OBJ-1P][OBJ-PL]:0				Verb;
+![OBJ-1P][OBJ-PL]:0				Verb;
 [OBJ-2P][OBJ-PL]:re				Verb;
 [OBJ-3P][OBJ-PL]:DI				Verb;
 
 LEXICON IndicativePrefix2PPL
 0:Su						Verb; # No Object
 [OBJ-1P][OBJ-SG]:tu				Verb;
-#[OBJ-2P][OBJ-SG]:0				Verb;
+![OBJ-2P][OBJ-SG]:0				Verb;
 [OBJ-3P][OBJ-SG]:bo				Verb;
 [OBJ-1P][OBJ-PL]:che				Verb;
-#[OBJ-2P][OBJ-PL]:0				Verb;
+![OBJ-2P][OBJ-PL]:0				Verb;
 [OBJ-3P][OBJ-PL]:bo				Verb;
 
 LEXICON IndicativePrefix3PPL
@@ -116,6 +120,47 @@ LEXICON Type4Suffix # 1 Count = causative
 [CAUSATIVE]:moH					Type5Suffix;
 						Type5Suffix;
 
+LEXICON Type5Suffix # 2 Count = undefined subject; capability
+[UNDEFINED]:lu’					Type6Suffix;
+[CAPABLE]:laH					Type6Suffix;
+						Type6Suffix;
+
+
+LEXICON Type6Suffix # 4 Count = perfection; uncertainty
+[BEST]:chu’					Type7Suffix;
+[CERTAIN]:bej					Type7Suffix;
+[UNCERTAIN]:law’				Type7Suffix;
+[OBVIOUS]:ba’					Type7Suffix;
+						Type7Suffix;
+
+
+LEXICON Type7Suffix # 4 Count = aspect
+[PERFECT]:pu’					Type8Suffix;
+[PERFECTPURPOSE]:ta’				Type8Suffix;
+[CONTINUOUS]:taH				Type8Suffix;
+[CONTINUOUSEND]:lI’				Type8Suffix;
+						Type8Suffix;
+
+
+LEXICON Type8Suffix # 1 Count = honorific
+[HONOR]:neS					Type9Suffix;
+						Type9Suffix;
+
+
+LEXICON Type9Suffix # 11 Count = syntactic
+[PERSON]:wI’					Type9Suffix; ! Nominalizer
+[DEVERBNOUN]:ghach				Type9Suffix; ! Nominalizer
+[INTEROGATIVE]:’a’				Type9Suffix; ! Modal
+[OPTATIVE]:jaj					Type9Suffix; ! Modal
+[BEFORE]:pa’					Type9Suffix; ! Subordinator
+[SIMULTANEOUS]:vIS				Type9Suffix; ! Subordinator - It is always used in conjunction with the type-7 suffix continuous suffix -taH.
+[AFTER]:DI’					Type9Suffix; ! Subordinator
+[CONDITIONAL]:chugh				Type9Suffix; ! Cause and effect
+[CAUSE]:mo’					Type9Suffix; ! Cause and effect
+[RELATIVE]:bogh					Type9Suffix; ! Relative and purpose clause
+[PURPOSE]:meH					Type9Suffix; ! Relative and purpose clause
+						Type9Suffix;
+
 
 LEXICON Suffix
-						#
+						#;
