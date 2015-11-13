@@ -8,8 +8,8 @@ LEXICON Root
 						Prefix;
 
 LEXICON Prefix
-[INDICATIVE]@U.MOOD.INDICATIVE@:0					IndicativePrefix;
-[IMPERATIVE]@U.MOOD.IMPERATIVE@:0					ImperativePrefix;
+@U.MOOD.INDICATIVE@				IndicativePrefix;
+@U.MOOD.IMPERATIVE@				ImperativePrefix;
 
 
 LEXICON IndicativePrefix
@@ -105,6 +105,9 @@ LEXICON RoversSuffix
 [REFUSE]@U.MOOD.INDICATIVE@:Qo’		AllTypeSuffixes;
 [EMPHASIS]:qu’					AllTypeSuffixes;
 [REVERSE]:Ha’					AllTypeSuffixes;
+						AllTypeSuffixes;
+[INDICATIVE]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@		#;
+[IMPERATIVE]@U.MOOD.IMPERATIVE@:@U.MOOD.IMPERATIVE@		#;
 
 
 LEXICON AllTypeSuffixes
@@ -212,7 +215,3 @@ LEXICON Type9Suffix # 11 Count = syntactic
 [RELATIVE]:bogh					RoversSuffix; ! Relative and purpose clause
 [PURPOSE]:meH					RoversSuffix; ! Relative and purpose clause
 						RoversSuffix;
-
-
-LEXICON Suffix
-						#;
