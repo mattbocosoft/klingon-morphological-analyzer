@@ -8,8 +8,8 @@ LEXICON Root
 						Prefix;
 
 LEXICON Prefix
-[INDICATIVE]:0					IndicativePrefix;
-[IMPERATIVE]:0					ImperativePrefix;
+[INDICATIVE]@U.MOOD.INDICATIVE@:0					IndicativePrefix;
+[IMPERATIVE]@U.MOOD.IMPERATIVE@:0					ImperativePrefix;
 
 
 LEXICON IndicativePrefix
@@ -192,6 +192,25 @@ LEXICON Type9Suffix # 11 Count = syntactic
 [PURPOSE]:meH					Type9Suffix; ! Relative and purpose clause
 						Type9Suffix;
 
+
+LEXICON AllTypeSuffixes
+						Type1Suffix;
+						Type2Suffix;
+						Type3Suffix;
+						Type4Suffix;
+						Type5Suffix;
+						Type6Suffix;
+						Type7Suffix;
+						Type8Suffix;
+						Type9Suffix;
+
+LEXICON RoversSuffix
+! "These suffixes have no defined position, and can go after the verb stem or after any suffix – even another rover – except after a type-9 suffix or where the result would be meaningless. They modify whatever directly precedes them."
+[NEG]@U.MOOD.INDICATIVE@:be’			AllTypeSuffixes;
+[NEG]@U.MOOD.IMPERATIVE@:Qo’			AllTypeSuffixes;
+[REFUSE]@U.MOOD.INDICATIVE@:Qo’		AllTypeSuffixes;
+[EMPHASIS]:qu’					AllTypeSuffixes;
+[REVERSE]:Ha’					AllTypeSuffixes;
 
 LEXICON Suffix
 						#;
