@@ -95,13 +95,20 @@ LEXICON ImperativePrefix
 
 
 LEXICON Verb
-						Type1Suffix;
+						Type1Gate;
 
+
+LEXICON Type1Gate
+@U.TYPE1.ON@					Type1Suffix;
 
 LEXICON Type1Suffix # 2 Count = reflexive/reciprocal
 [REFLEXIVE]:’egh				Type2Suffix;
 [RECIPROCAL]:chuq				Type2Suffix;
 						Type2Suffix;
+
+
+LEXICON Type2Gate
+@U.TYPE1.OFF@@U.TYPE2.ON@			Type2Suffix;
 
 LEXICON Type2Suffix # 5 Count = volition/necessity
 [REQUIRED]:nIS					Type3Suffix;
@@ -111,20 +118,35 @@ LEXICON Type2Suffix # 5 Count = volition/necessity
 [AFRAID]:vIp					Type3Suffix;
 						Type3Suffix;
 
+
+LEXICON Type3Gate
+@U.TYPE2.OFF@@U.TYPE3.ON@			Type3Suffix;
+
 LEXICON Type3Suffix # 2 Count = inceptive/inchoative
 [STATECHANGE]:choH				Type4Suffix;
 [RESUME]:qa’					Type4Suffix;
 						Type4Suffix;
 
+
+LEXICON Type4Gate
+@U.TYPE3.OFF@@U.TYPE4.ON@			Type4Suffix;
+
 LEXICON Type4Suffix # 1 Count = causative
 [CAUSATIVE]:moH					Type5Suffix;
 						Type5Suffix;
+
+
+LEXICON Type5Gate
+@U.TYPE4.OFF@@U.TYPE5.ON@			Type5Suffix;
 
 LEXICON Type5Suffix # 2 Count = undefined subject; capability
 [UNDEFINED]:lu’					Type6Suffix;
 [CAPABLE]:laH					Type6Suffix;
 						Type6Suffix;
 
+
+LEXICON Type6Gate
+@U.TYPE5.OFF@@U.TYPE6.ON@			Type6Suffix;
 
 LEXICON Type6Suffix # 4 Count = perfection; uncertainty
 [BEST]:chu’					Type7Suffix;
@@ -134,6 +156,9 @@ LEXICON Type6Suffix # 4 Count = perfection; uncertainty
 						Type7Suffix;
 
 
+LEXICON Type7Gate
+@U.TYPE6.OFF@@U.TYPE7.ON@			Type7Suffix;
+
 LEXICON Type7Suffix # 4 Count = aspect
 [PERFECT]:pu’					Type8Suffix;
 [PERFECTPURPOSE]:ta’				Type8Suffix;
@@ -142,10 +167,16 @@ LEXICON Type7Suffix # 4 Count = aspect
 						Type8Suffix;
 
 
+LEXICON Type8Gate
+@U.TYPE7.OFF@@U.TYPE8.ON@			Type8Suffix;
+
 LEXICON Type8Suffix # 1 Count = honorific
 [HONOR]:neS					Type9Suffix;
 						Type9Suffix;
 
+
+LEXICON Type9Gate
+@U.TYPE8.OFF@@U.TYPE9.ON@			Type9Suffix;
 
 LEXICON Type9Suffix # 11 Count = syntactic
 [PERSON]:wI’					Type9Suffix; ! Nominalizer
