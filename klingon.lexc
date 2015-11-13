@@ -95,102 +95,16 @@ LEXICON ImperativePrefix
 
 
 LEXICON Verb
-						Type1Gate;
+						RoversSuffix;
 
 
-LEXICON Type1Gate
-@U.TYPE1.ON@					Type1Suffix;
-
-LEXICON Type1Suffix # 2 Count = reflexive/reciprocal
-[REFLEXIVE]:’egh				Type2Suffix;
-[RECIPROCAL]:chuq				Type2Suffix;
-						Type2Suffix;
-
-
-LEXICON Type2Gate
-@U.TYPE1.OFF@@U.TYPE2.ON@			Type2Suffix;
-
-LEXICON Type2Suffix # 5 Count = volition/necessity
-[REQUIRED]:nIS					Type3Suffix;
-[WILLING]:qang					Type3Suffix;
-[PREPARED]:rup					Type3Suffix;
-[SET-UP]:beH					Type3Suffix;
-[AFRAID]:vIp					Type3Suffix;
-						Type3Suffix;
-
-
-LEXICON Type3Gate
-@U.TYPE2.OFF@@U.TYPE3.ON@			Type3Suffix;
-
-LEXICON Type3Suffix # 2 Count = inceptive/inchoative
-[STATECHANGE]:choH				Type4Suffix;
-[RESUME]:qa’					Type4Suffix;
-						Type4Suffix;
-
-
-LEXICON Type4Gate
-@U.TYPE3.OFF@@U.TYPE4.ON@			Type4Suffix;
-
-LEXICON Type4Suffix # 1 Count = causative
-[CAUSATIVE]:moH					Type5Suffix;
-						Type5Suffix;
-
-
-LEXICON Type5Gate
-@U.TYPE4.OFF@@U.TYPE5.ON@			Type5Suffix;
-
-LEXICON Type5Suffix # 2 Count = undefined subject; capability
-[UNDEFINED]:lu’					Type6Suffix;
-[CAPABLE]:laH					Type6Suffix;
-						Type6Suffix;
-
-
-LEXICON Type6Gate
-@U.TYPE5.OFF@@U.TYPE6.ON@			Type6Suffix;
-
-LEXICON Type6Suffix # 4 Count = perfection; uncertainty
-[BEST]:chu’					Type7Suffix;
-[CERTAIN]:bej					Type7Suffix;
-[UNCERTAIN]:law’				Type7Suffix;
-[OBVIOUS]:ba’					Type7Suffix;
-						Type7Suffix;
-
-
-LEXICON Type7Gate
-@U.TYPE6.OFF@@U.TYPE7.ON@			Type7Suffix;
-
-LEXICON Type7Suffix # 4 Count = aspect
-[PERFECT]:pu’					Type8Suffix;
-[PERFECTPURPOSE]:ta’				Type8Suffix;
-[CONTINUOUS]:taH				Type8Suffix;
-[CONTINUOUSEND]:lI’				Type8Suffix;
-						Type8Suffix;
-
-
-LEXICON Type8Gate
-@U.TYPE7.OFF@@U.TYPE8.ON@			Type8Suffix;
-
-LEXICON Type8Suffix # 1 Count = honorific
-[HONOR]:neS					Type9Suffix;
-						Type9Suffix;
-
-
-LEXICON Type9Gate
-@U.TYPE8.OFF@@U.TYPE9.ON@			Type9Suffix;
-
-LEXICON Type9Suffix # 11 Count = syntactic
-[PERSON]:wI’					Type9Suffix; ! Nominalizer
-[DEVERBNOUN]:ghach				Type9Suffix; ! Nominalizer
-[INTEROGATIVE]:’a’				Type9Suffix; ! Modal
-[OPTATIVE]:jaj					Type9Suffix; ! Modal
-[BEFORE]:pa’					Type9Suffix; ! Subordinator
-[SIMULTANEOUS]:vIS				Type9Suffix; ! Subordinator - It is always used in conjunction with the type-7 suffix continuous suffix -taH.
-[AFTER]:DI’					Type9Suffix; ! Subordinator
-[CONDITIONAL]:chugh				Type9Suffix; ! Cause and effect
-[CAUSE]:mo’					Type9Suffix; ! Cause and effect
-[RELATIVE]:bogh					Type9Suffix; ! Relative and purpose clause
-[PURPOSE]:meH					Type9Suffix; ! Relative and purpose clause
-						Type9Suffix;
+LEXICON RoversSuffix
+! "These suffixes have no defined position, and can go after the verb stem or after any suffix – even another rover – except after a type-9 suffix or where the result would be meaningless. They modify whatever directly precedes them."
+[NEG]@U.MOOD.INDICATIVE@:be’			AllTypeSuffixes;
+[NEG]@U.MOOD.IMPERATIVE@:Qo’			AllTypeSuffixes;
+[REFUSE]@U.MOOD.INDICATIVE@:Qo’		AllTypeSuffixes;
+[EMPHASIS]:qu’					AllTypeSuffixes;
+[REVERSE]:Ha’					AllTypeSuffixes;
 
 
 LEXICON AllTypeSuffixes
@@ -204,13 +118,101 @@ LEXICON AllTypeSuffixes
 						Type8Suffix;
 						Type9Suffix;
 
-LEXICON RoversSuffix
-! "These suffixes have no defined position, and can go after the verb stem or after any suffix – even another rover – except after a type-9 suffix or where the result would be meaningless. They modify whatever directly precedes them."
-[NEG]@U.MOOD.INDICATIVE@:be’			AllTypeSuffixes;
-[NEG]@U.MOOD.IMPERATIVE@:Qo’			AllTypeSuffixes;
-[REFUSE]@U.MOOD.INDICATIVE@:Qo’		AllTypeSuffixes;
-[EMPHASIS]:qu’					AllTypeSuffixes;
-[REVERSE]:Ha’					AllTypeSuffixes;
+
+LEXICON Type1Gate
+@U.TYPE1.ON@					Type1Suffix;
+
+LEXICON Type1Suffix # 2 Count = reflexive/reciprocal
+[REFLEXIVE]:’egh				RoversSuffix;
+[RECIPROCAL]:chuq				RoversSuffix;
+						RoversSuffix;
+
+
+LEXICON Type2Gate
+@U.TYPE1.OFF@@U.TYPE2.ON@			Type2Suffix;
+
+LEXICON Type2Suffix # 5 Count = volition/necessity
+[REQUIRED]:nIS					RoversSuffix;
+[WILLING]:qang					RoversSuffix;
+[PREPARED]:rup					RoversSuffix;
+[SET-UP]:beH					RoversSuffix;
+[AFRAID]:vIp					RoversSuffix;
+						RoversSuffix;
+
+
+LEXICON Type3Gate
+@U.TYPE2.OFF@@U.TYPE3.ON@			Type3Suffix;
+
+LEXICON Type3Suffix # 2 Count = inceptive/inchoative
+[STATECHANGE]:choH				RoversSuffix;
+[RESUME]:qa’					RoversSuffix;
+						RoversSuffix;
+
+
+LEXICON Type4Gate
+@U.TYPE3.OFF@@U.TYPE4.ON@			Type4Suffix;
+
+LEXICON Type4Suffix # 1 Count = causative
+[CAUSATIVE]:moH					RoversSuffix;
+						RoversSuffix;
+
+
+LEXICON Type5Gate
+@U.TYPE4.OFF@@U.TYPE5.ON@			Type5Suffix;
+
+LEXICON Type5Suffix # 2 Count = undefined subject; capability
+[UNDEFINED]:lu’					RoversSuffix;
+[CAPABLE]:laH					RoversSuffix;
+						RoversSuffix;
+
+
+LEXICON Type6Gate
+@U.TYPE5.OFF@@U.TYPE6.ON@			Type6Suffix;
+
+LEXICON Type6Suffix # 4 Count = perfection; uncertainty
+[BEST]:chu’					RoversSuffix;
+[CERTAIN]:bej					RoversSuffix;
+[UNCERTAIN]:law’				RoversSuffix;
+[OBVIOUS]:ba’					RoversSuffix;
+						RoversSuffix;
+
+
+LEXICON Type7Gate
+@U.TYPE6.OFF@@U.TYPE7.ON@			Type7Suffix;
+
+LEXICON Type7Suffix # 4 Count = aspect
+[PERFECT]:pu’					RoversSuffix;
+[PERFECTPURPOSE]:ta’				RoversSuffix;
+[CONTINUOUS]:taH				RoversSuffix;
+[CONTINUOUSEND]:lI’				RoversSuffix;
+						RoversSuffix;
+
+
+LEXICON Type8Gate
+@U.TYPE7.OFF@@U.TYPE8.ON@			Type8Suffix;
+
+LEXICON Type8Suffix # 1 Count = honorific
+[HONOR]:neS					RoversSuffix;
+						RoversSuffix;
+
+
+LEXICON Type9Gate
+@U.TYPE8.OFF@@U.TYPE9.ON@			Type9Suffix;
+
+LEXICON Type9Suffix # 11 Count = syntactic
+[PERSON]:wI’					RoversSuffix; ! Nominalizer
+[DEVERBNOUN]:ghach				RoversSuffix; ! Nominalizer
+[INTEROGATIVE]:’a’				RoversSuffix; ! Modal
+[OPTATIVE]:jaj					RoversSuffix; ! Modal
+[BEFORE]:pa’					RoversSuffix; ! Subordinator
+[SIMULTANEOUS]:vIS				RoversSuffix; ! Subordinator - It is always used in conjunction with the type-7 suffix continuous suffix -taH.
+[AFTER]:DI’					RoversSuffix; ! Subordinator
+[CONDITIONAL]:chugh				RoversSuffix; ! Cause and effect
+[CAUSE]:mo’					RoversSuffix; ! Cause and effect
+[RELATIVE]:bogh					RoversSuffix; ! Relative and purpose clause
+[PURPOSE]:meH					RoversSuffix; ! Relative and purpose clause
+						RoversSuffix;
+
 
 LEXICON Suffix
 						#;
