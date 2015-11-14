@@ -5,11 +5,6 @@ def Vowel [a|e|i|o|u|A|E|I|O|U];
 def Alpha [Consonant | Vowel];
 def Word [Alpha]+;
 
-def Fricative [s | ʒ | ʃ | z | {sh} | f | v];
-def Velar [k | g | ŋ];
-
-define FrontV [e|i];
-define BackV [o|u];
 
 echo
 echo ##Lex File##
@@ -19,12 +14,8 @@ def Grammar;
 
 echo
 echo ##Rules##
-def RuleChooseBackVowel E -> o, I -> u || $[BackV] _;
-def RuleChooseFrontVowel E -> e, I -> i;
-def FricativeRule [..] -> a || Fricative _ Fricative;
-def NasalAssimilationRule [n|m] -> ŋ || _ Velar;
 
-def Grammar [Grammar .o. RuleChooseBackVowel .o. RuleChooseFrontVowel .o. FricativeRule .o. NasalAssimilationRule];
+def Grammar [Grammar];
 
 echo
 echo ##EXTRA CREDIT: Guesser##
@@ -37,14 +28,6 @@ def Grammar;
 def GuessGr $["[GUESS]"] .o. Grammar;
 def RealGr ~$["[GUESS]"] .o. Grammar;
 def Grammar [RealGr .p. GuessGr];
-
-echo
-echo ##Iterative Rule##
-def IterableWord [(C) (C) (V) (V) V];
-def MarkReduplicator  IterableWord -> %< ... %> || "[IterRep]" _;
-def InsertReduplicand "[IterRep]" -> %< IterableWord %> || _ %<; #Important to include this condition, otherwise 
-def RemoveMarks %< -> 0, %> -> 0;
-def Grammar _eq([Grammar .o. MarkReduplicator .o. InsertReduplicand], %<, %>) .o. RemoveMarks;
 
 echo
 regex Grammar;
