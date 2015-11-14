@@ -4,6 +4,7 @@ def Consonant [b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z|B|C|D|F|G|H|J|K|L|M|N|P
 def Vowel [a|e|i|o|u|A|E|I|O|U];
 def Alpha [Consonant | Vowel];
 def Word [Alpha]+;
+def GlottalStop [’ | '];
 
 
 echo
@@ -21,9 +22,10 @@ def NounGrammar;
 echo
 echo ##Rules##
 
-def Grammar [VerbGrammar | NounGrammar];
+# If the noun to which the endearment suffix is added ends with a vowel, a glottal stop is inserted between them
+def EndearmentGlottalStop [..] -> GlottalStop || Vowel _ {oy};
 
-# If the noun to which the endearment suffix is added ends with a vowel, a glottal stop is inserted between them:[9]
+def Grammar [VerbGrammar | NounGrammar] .o. EndearmentGlottalStop;
 
 
 echo
