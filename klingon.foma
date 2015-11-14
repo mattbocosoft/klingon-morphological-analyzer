@@ -7,15 +7,24 @@ def Word [Alpha]+;
 
 
 echo
-echo ##Lex File##
-read lexc klingon.lexc
+echo ##Verb Lex File##
+read lexc klingon-verb.lexc
 eliminate flags
-def Grammar;
+def VerbGrammar;
+
+echo
+echo ##Noun Lex File##
+read lexc klingon-noun.lexc
+eliminate flags
+def NounGrammar;
 
 echo
 echo ##Rules##
 
-def Grammar [Grammar];
+def Grammar [VerbGrammar | NounGrammar];
+
+# If the noun to which the endearment suffix is added ends with a vowel, a glottal stop is inserted between them:[9]
+
 
 echo
 echo ##EXTRA CREDIT: Guesser##
