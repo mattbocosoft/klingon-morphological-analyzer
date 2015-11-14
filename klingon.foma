@@ -1,8 +1,8 @@
 echo
 echo ##Variables##
-def C [p | t | k | b | d | g | s | z | f | v | l | m | n | ʃ | ʒ | ŋ ];
-def V [a | e | i | o | u];
-def Alpha [C | V];
+def Consonant [b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z|B|C|D|F|G|H|J|K|L|M|N|P|Q|R|S|T|V|W|X|Y|Z];
+def Vowel [a|e|i|o|u|A|E|I|O|U];
+def Alpha [Consonant | Vowel];
 def Word [Alpha]+;
 
 def Fricative [s | ʒ | ʃ | z | {sh} | f | v];
