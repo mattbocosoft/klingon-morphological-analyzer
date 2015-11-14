@@ -13,7 +13,7 @@ define BackV [o|u];
 
 echo
 echo ##Lex File##
-read lexc kaixo.lexc
+read lexc klingon.lexc
 eliminate flags
 def Grammar;
 
