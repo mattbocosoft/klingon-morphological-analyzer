@@ -2,10 +2,11 @@
 ! https://en.wikipedia.org/wiki/Klingon_grammar
 ! https://www.youtube.com/watch?v=e5Did-eVQDc
 
-Multichar_Symbols [NEG] [1P] [2P] [3P] [SG] [PL] [PRES] [GUESSVERB] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DEVERBNOUN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE] [REFUSE] [EMPHASIS] [REVERSE] @U.MOOD.INDICATIVE@ @U.MOOD.IMPERATIVE@ @U.TYPE1.ON@ @U.TYPE1.OFF@ @U.TYPE2.ON@ @U.TYPE2.OFF@ @U.TYPE4.ON@ @U.TYPE4.OFF@ @U.TYPE4.ON@ @U.TYPE4.OFF@ @U.TYPE5.ON@ @U.TYPE5.OFF@ @U.TYPE6.ON@ @U.TYPE6.OFF@ @U.TYPE7.ON@ @U.TYPE7.OFF@ @U.TYPE8.ON@ @U.TYPE8.OFF@ @U.TYPE9.ON@ @U.TYPE9.OFF@
+Multichar_Symbols [NEG] [1P] [2P] [3P] [SG] [PL] [PRES] [GUESSVERB] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DEVERBNOUN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE] [REFUSE] [EMPHASIS] [REVERSE] @U.MOOD.INDICATIVE@ @U.MOOD.IMPERATIVE@ @D.TYPE1.ON@ @P.TYPE1.ON@ @D.TYPE2.ON@ @P.TYPE2.ON@ @D.TYPE3.ON@ @P.TYPE3.ON@ @D.TYPE4.ON@ @P.TYPE4.ON@ @D.TYPE5.ON@ @P.TYPE5.ON@ @D.TYPE6.ON@ @P.TYPE6.ON@ @D.TYPE7.ON@ @P.TYPE7.ON@ @D.TYPE8.ON@ @P.TYPE8.ON@ @D.TYPE9.ON@ @P.TYPE9.ON@
 
 LEXICON Root
 						Prefix;
+
 
 LEXICON Prefix
 @U.MOOD.INDICATIVE@				IndicativePrefix;
@@ -22,7 +23,7 @@ LEXICON IndicativePrefix
 [UNSPEC]:0					IndicativePrefixUnspecified;
 
 LEXICON IndicativePrefix1PSG
-0:jI						Verb; # No Object
+0:jI						Verb; ! No Object
 ![OBJ-1P][OBJ-SG]:0				Verb;
 [OBJ-2P][OBJ-SG]:qa				Verb;
 [OBJ-3P][OBJ-SG]:vI				Verb;
@@ -31,7 +32,7 @@ LEXICON IndicativePrefix1PSG
 [OBJ-3P][OBJ-PL]:vI				Verb;
 
 LEXICON IndicativePrefix2PSG
-0:bI						Verb; # No Object
+0:bI						Verb; ! No Object
 [OBJ-1P][OBJ-SG]:cho				Verb;
 ![OBJ-2P][OBJ-SG]:0				Verb;
 [OBJ-3P][OBJ-SG]:Da				Verb;
@@ -40,7 +41,7 @@ LEXICON IndicativePrefix2PSG
 [OBJ-3P][OBJ-PL]:Da				Verb;
 
 LEXICON IndicativePrefix3PSG
-						Verb; # No Object
+						Verb; ! No Object
 [OBJ-1P][OBJ-SG]:mu				Verb;
 [OBJ-2P][OBJ-SG]:Du				Verb;
 [OBJ-3P][OBJ-SG]:0				Verb;
@@ -49,7 +50,7 @@ LEXICON IndicativePrefix3PSG
 [OBJ-3P][OBJ-PL]:0				Verb;
 
 LEXICON IndicativePrefix1PPL
-0:ma						Verb; # No Object
+0:ma						Verb; ! No Object
 ![OBJ-1P][OBJ-SG]:0				Verb;
 [OBJ-2P][OBJ-SG]:pI				Verb;
 [OBJ-3P][OBJ-SG]:wI				Verb;
@@ -58,7 +59,7 @@ LEXICON IndicativePrefix1PPL
 [OBJ-3P][OBJ-PL]:DI				Verb;
 
 LEXICON IndicativePrefix2PPL
-0:Su						Verb; # No Object
+0:Su						Verb; ! No Object
 [OBJ-1P][OBJ-SG]:tu				Verb;
 ![OBJ-2P][OBJ-SG]:0				Verb;
 [OBJ-3P][OBJ-SG]:bo				Verb;
@@ -67,7 +68,7 @@ LEXICON IndicativePrefix2PPL
 [OBJ-3P][OBJ-PL]:bo				Verb;
 
 LEXICON IndicativePrefix3PPL
-						Verb; # No Object
+						Verb; ! No Object
 [OBJ-1P][OBJ-SG]:mu				Verb;
 [OBJ-2P][OBJ-SG]:nI				Verb;
 [OBJ-3P][OBJ-SG]:lu				Verb;
@@ -76,7 +77,7 @@ LEXICON IndicativePrefix3PPL
 [OBJ-3P][OBJ-PL]:0				Verb;
 
 LEXICON IndicativePrefixUnspecified
-						Verb; # No Object
+						Verb; ! No Object
 [OBJ-1P][OBJ-SG]:vI				Verb;
 [OBJ-2P][OBJ-SG]:Da				Verb;
 [OBJ-3P][OBJ-SG]:0				Verb;
@@ -95,123 +96,114 @@ LEXICON ImperativePrefix
 
 
 LEXICON Verb
-						RoversSuffix;
+hello						RoversSuffix;
 
 
 LEXICON RoversSuffix
 ! "These suffixes have no defined position, and can go after the verb stem or after any suffix – even another rover – except after a type-9 suffix or where the result would be meaningless. They modify whatever directly precedes them."
-[NEG]@U.MOOD.INDICATIVE@:be’			AllTypeSuffixes;
-[NEG]@U.MOOD.IMPERATIVE@:Qo’			AllTypeSuffixes;
-[REFUSE]@U.MOOD.INDICATIVE@:Qo’		AllTypeSuffixes;
-[EMPHASIS]:qu’					AllTypeSuffixes;
-[REVERSE]:Ha’					AllTypeSuffixes;
-						AllTypeSuffixes;
-[INDICATIVE]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@		#;
-[IMPERATIVE]@U.MOOD.IMPERATIVE@:@U.MOOD.IMPERATIVE@		#;
+[NEG]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@be’			RoversSuffix;
+[NEG]@U.MOOD.IMPERATIVE@:@U.MOOD.IMPERATIVE@Qo’			RoversSuffix;
+[REFUSE]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@Qo’			RoversSuffix;
+[EMPHASIS]:qu’								RoversSuffix;
+[REVERSE]:Ha’								RoversSuffix;
+[INDICATIVE]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@			#;
+[IMPERATIVE]@U.MOOD.IMPERATIVE@:@U.MOOD.IMPERATIVE@			#;
+									AllTypeSuffixes;
 
 
 LEXICON AllTypeSuffixes
-						Type1Suffix;
-						Type2Suffix;
-						Type3Suffix;
-						Type4Suffix;
-						Type5Suffix;
-						Type6Suffix;
-						Type7Suffix;
-						Type8Suffix;
-						Type9Suffix;
+			Type1Gate;
+@P.TYPE1.ON@			Type2Gate;
+@P.TYPE1.ON@@P.TYPE2.ON@		Type3Gate;
+@P.TYPE1.ON@@P.TYPE2.ON@@P.TYPE3.ON@		Type4Gate;
+@P.TYPE1.ON@@P.TYPE2.ON@@P.TYPE3.ON@@P.TYPE4.ON@		Type5Gate;
+@P.TYPE1.ON@@P.TYPE2.ON@@P.TYPE3.ON@@P.TYPE4.ON@@P.TYPE5.ON@		Type6Gate;
+@P.TYPE1.ON@@P.TYPE2.ON@@P.TYPE3.ON@@P.TYPE4.ON@@P.TYPE5.ON@@P.TYPE6.ON@		Type7Gate;
+@P.TYPE1.ON@@P.TYPE2.ON@@P.TYPE3.ON@@P.TYPE4.ON@@P.TYPE5.ON@@P.TYPE6.ON@@P.TYPE7.ON@		Type8Gate;
+@P.TYPE1.ON@@P.TYPE2.ON@@P.TYPE3.ON@@P.TYPE4.ON@@P.TYPE5.ON@@P.TYPE6.ON@@P.TYPE7.ON@@P.TYPE8.ON@		Type9Gate;
 
 
 LEXICON Type1Gate
-@U.TYPE1.ON@					Type1Suffix;
+@D.TYPE1.ON@@P.TYPE1.ON@			Type1Suffix;
 
-LEXICON Type1Suffix # 2 Count = reflexive/reciprocal
+LEXICON Type1Suffix ! 2 Count = reflexive/reciprocal
 [REFLEXIVE]:’egh				RoversSuffix;
 [RECIPROCAL]:chuq				RoversSuffix;
-						RoversSuffix;
 
 
 LEXICON Type2Gate
-@U.TYPE1.OFF@@U.TYPE2.ON@			Type2Suffix;
+@D.TYPE2.ON@@P.TYPE2.ON@			Type2Suffix;
 
-LEXICON Type2Suffix # 5 Count = volition/necessity
+LEXICON Type2Suffix ! 5 Count = volition/necessity
 [REQUIRED]:nIS					RoversSuffix;
 [WILLING]:qang					RoversSuffix;
 [PREPARED]:rup					RoversSuffix;
 [SET-UP]:beH					RoversSuffix;
 [AFRAID]:vIp					RoversSuffix;
-						RoversSuffix;
 
 
 LEXICON Type3Gate
-@U.TYPE2.OFF@@U.TYPE3.ON@			Type3Suffix;
+@D.TYPE3.ON@@P.TYPE3.ON@			Type3Suffix;
 
-LEXICON Type3Suffix # 2 Count = inceptive/inchoative
+LEXICON Type3Suffix ! 2 Count = inceptive/inchoative
 [STATECHANGE]:choH				RoversSuffix;
 [RESUME]:qa’					RoversSuffix;
-						RoversSuffix;
 
 
 LEXICON Type4Gate
-@U.TYPE3.OFF@@U.TYPE4.ON@			Type4Suffix;
+@D.TYPE4.ON@@P.TYPE4.ON@			Type4Suffix;
 
-LEXICON Type4Suffix # 1 Count = causative
+LEXICON Type4Suffix ! 1 Count = causative
 [CAUSATIVE]:moH					RoversSuffix;
-						RoversSuffix;
 
 
 LEXICON Type5Gate
-@U.TYPE4.OFF@@U.TYPE5.ON@			Type5Suffix;
+@D.TYPE5.ON@@P.TYPE5.ON@			Type5Suffix;
 
-LEXICON Type5Suffix # 2 Count = undefined subject; capability
+LEXICON Type5Suffix ! 2 Count = undefined subject; capability
 [UNDEFINED]:lu’					RoversSuffix;
 [CAPABLE]:laH					RoversSuffix;
-						RoversSuffix;
 
 
 LEXICON Type6Gate
-@U.TYPE5.OFF@@U.TYPE6.ON@			Type6Suffix;
+@D.TYPE6.ON@@P.TYPE6.ON@			Type6Suffix;
 
-LEXICON Type6Suffix # 4 Count = perfection; uncertainty
+LEXICON Type6Suffix ! 4 Count = perfection; uncertainty
 [BEST]:chu’					RoversSuffix;
 [CERTAIN]:bej					RoversSuffix;
 [UNCERTAIN]:law’				RoversSuffix;
 [OBVIOUS]:ba’					RoversSuffix;
-						RoversSuffix;
 
 
 LEXICON Type7Gate
-@U.TYPE6.OFF@@U.TYPE7.ON@			Type7Suffix;
+@D.TYPE7.ON@@P.TYPE7.ON@			Type7Suffix;
 
-LEXICON Type7Suffix # 4 Count = aspect
+LEXICON Type7Suffix ! 4 Count = aspect
 [PERFECT]:pu’					RoversSuffix;
 [PERFECTPURPOSE]:ta’				RoversSuffix;
 [CONTINUOUS]:taH				RoversSuffix;
 [CONTINUOUSEND]:lI’				RoversSuffix;
-						RoversSuffix;
 
 
 LEXICON Type8Gate
-@U.TYPE7.OFF@@U.TYPE8.ON@			Type8Suffix;
+@D.TYPE8.ON@@P.TYPE8.ON@			Type8Suffix;
 
-LEXICON Type8Suffix # 1 Count = honorific
+LEXICON Type8Suffix ! 1 Count = honorific
 [HONOR]:neS					RoversSuffix;
-						RoversSuffix;
 
 
 LEXICON Type9Gate
-@U.TYPE8.OFF@@U.TYPE9.ON@			Type9Suffix;
+@D.TYPE9.ON@@P.TYPE9.ON@			Type9Suffix;
 
-LEXICON Type9Suffix # 11 Count = syntactic
-[PERSON]:wI’					RoversSuffix; ! Nominalizer
-[DEVERBNOUN]:ghach				RoversSuffix; ! Nominalizer
-[INTEROGATIVE]:’a’				RoversSuffix; ! Modal
-[OPTATIVE]:jaj					RoversSuffix; ! Modal
-[BEFORE]:pa’					RoversSuffix; ! Subordinator
-[SIMULTANEOUS]:vIS				RoversSuffix; ! Subordinator - It is always used in conjunction with the type-7 suffix continuous suffix -taH.
-[AFTER]:DI’					RoversSuffix; ! Subordinator
-[CONDITIONAL]:chugh				RoversSuffix; ! Cause and effect
-[CAUSE]:mo’					RoversSuffix; ! Cause and effect
-[RELATIVE]:bogh					RoversSuffix; ! Relative and purpose clause
-[PURPOSE]:meH					RoversSuffix; ! Relative and purpose clause
-						RoversSuffix;
+LEXICON Type9Suffix ! 11 Count = syntactic
+[PERSON]:wI’					#; ! Nominalizer
+[DEVERBNOUN]:ghach				#; ! Nominalizer
+[INTEROGATIVE]:’a’				#; ! Modal
+[OPTATIVE]:jaj					#; ! Modal
+[BEFORE]:pa’					#; ! Subordinator
+[SIMULTANEOUS]:vIS				#; ! Subordinator - It is always used in conjunction with the type-7 suffix continuous suffix -taH.
+[AFTER]:DI’					#; ! Subordinator
+[CONDITIONAL]:chugh				#; ! Cause and effect
+[CAUSE]:mo’					#; ! Cause and effect
+[RELATIVE]:bogh					#; ! Relative and purpose clause
+[PURPOSE]:meH					#; ! Relative and purpose clause
