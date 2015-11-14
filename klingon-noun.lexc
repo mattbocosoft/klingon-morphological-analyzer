@@ -1,0 +1,90 @@
+! REFERENCES
+! https://en.wikipedia.org/wiki/Klingon_grammar
+! https://www.youtube.com/watch?v=e5Did-eVQDc
+
+Multichar_Symbols [1P] [2P] [3P] [SG] [PL] [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [PL-LANGUSER] [PL-BODYPART] [PL-OTHERNOUN] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] @D.TYPE1.ON@ @P.TYPE1.ON@ @D.TYPE2.ON@ @P.TYPE2.ON@ @D.TYPE3.ON@ @P.TYPE3.ON@ @D.TYPE4.ON@ @P.TYPE4.ON@ @D.TYPE5.ON@ @P.TYPE5.ON@
+
+LEXICON Root
+						Noun;
+
+LEXICON Noun
+juH[home]:juH					TypeSuffix;
+qoj[cliff]:qoj					TypeSuffix;
+ghu’[situation]:ghu’				TypeSuffix;
+jup[friend]:jup					TypeSuffix;
+choH[change]:choH				TypeSuffix;
+QaH[help]:QaH					TypeSuffix;
+ghot[person]:ghot				TypeSuffix;
+ghop[hand]:ghop					TypeSuffix;
+qetwI’[runner]:qetwI’				TypeSuffix;
+vav[father]:vav					TypeSuffix;
+yuQ[planet]:yuQ					TypeSuffix;
+ghom[group]:ghom				TypeSuffix;
+veng[city]:veng					TypeSuffix;
+cha[torpedo]:cha				TypeSuffix;
+
+
+LEXICON TypeSuffix
+			Type1Gate;
+@P.TYPE1.ON@			Type2Gate;
+@P.TYPE1.ON@@P.TYPE2.ON@		Type3Gate;
+@P.TYPE1.ON@@P.TYPE2.ON@@P.TYPE3.ON@		Type4Gate;
+@P.TYPE1.ON@@P.TYPE2.ON@@P.TYPE3.ON@@P.TYPE4.ON@		Type5Gate;
+						#;
+
+
+LEXICON Type1Gate
+@D.TYPE1.ON@@P.TYPE1.ON@			Type1Suffix;
+
+LEXICON Type1Suffix ! size, affection
+[AUGMENTATIVE]:’a’				TypeSuffix;
+[DIMINUTIVE]:Hom				TypeSuffix;
+[ENDEARMENT]:oy					TypeSuffix;
+
+
+LEXICON Type2Gate
+@D.TYPE2.ON@@P.TYPE2.ON@			Type2Suffix;
+
+! A noun does not require a plural suffix if a pronoun or pronominal prefix serves to indicate that it is plural,[10] or if it is being used in conjunction with a number.
+LEXICON Type2Suffix ! plurals
+[PL-LANGUSER]:pu’				TypeSuffix;
+[PL-BODYPART]:Du’				TypeSuffix;
+[PL-OTHERNOUN]:mey				TypeSuffix;
+
+
+LEXICON Type3Gate
+@D.TYPE3.ON@@P.TYPE3.ON@			Type3Suffix;
+
+LEXICON Type3Suffix ! accuracy
+[SOCALLED]:qoq					TypeSuffix;
+[DUBITATIVE]:Hey				TypeSuffix;
+[ACCURATE]:na’					TypeSuffix;
+
+
+LEXICON Type4Gate
+@D.TYPE4.ON@@P.TYPE4.ON@			Type4Suffix;
+
+LEXICON Type4Suffix ! possession, determiners
+[1P][SG]:wIj					TypeSuffix;
+[1P][SG][LANGUSER]:wI’				TypeSuffix;
+[2P][SG]:lIj					TypeSuffix;
+[2P][SG][LANGUSER]:lI’				TypeSuffix;
+[3P][SG]:Daj					TypeSuffix;
+[1P][PL]:maj					TypeSuffix;
+[1P][PL][LANGUSER]:ma’				TypeSuffix;
+[2P][PL]:raj					TypeSuffix;
+[2P][PL][LANGUSER]:ra’				TypeSuffix;
+[3P][PL]:chaj					TypeSuffix;
+[THIS]:vam					TypeSuffix;
+[THAT]:vetlh					TypeSuffix;
+
+
+LEXICON Type5Gate
+@D.TYPE5.ON@@P.TYPE5.ON@			Type5Suffix;
+
+LEXICON Type5Suffix ! syntactic role
+[LOCATIVE]:Daq					#;
+[ABLATIVE]:vo’					#;
+[CAUSAL]:mo’					#;
+[DATIVE]:vaD					#;
+[TOPIC]:’e’					#;
