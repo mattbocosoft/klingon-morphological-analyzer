@@ -2,7 +2,7 @@
 ! https://en.wikipedia.org/wiki/Klingon_grammar
 ! https://www.youtube.com/watch?v=e5Did-eVQDc
 
-Multichar_Symbols [NEG] [1P] [2P] [3P] [SG] [PL] [PRES] [GUESSVERB] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DEVERBNOUN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE] [REFUSE] [EMPHASIS] [REVERSE] @U.MOOD.INDICATIVE@ @U.MOOD.IMPERATIVE@ @D.TYPE1.ON@ @P.TYPE1.ON@ @D.TYPE2.ON@ @P.TYPE2.ON@ @D.TYPE3.ON@ @P.TYPE3.ON@ @D.TYPE4.ON@ @P.TYPE4.ON@ @D.TYPE5.ON@ @P.TYPE5.ON@ @D.TYPE6.ON@ @P.TYPE6.ON@ @D.TYPE7.ON@ @P.TYPE7.ON@ @D.TYPE8.ON@ @P.TYPE8.ON@ @D.TYPE9.ON@ @P.TYPE9.ON@
+Multichar_Symbols [NEG] [1P] [2P] [3P] [SG] [PL] [GUESSVERB] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED-SUBJ] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DEVERBNOUN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE] [REFUSE] [EMPHASIS] [REVERSE] @U.MOOD.INDICATIVE@ @U.MOOD.IMPERATIVE@ @D.TYPE1.ON@ @P.TYPE1.ON@ @D.TYPE2.ON@ @P.TYPE2.ON@ @D.TYPE3.ON@ @P.TYPE3.ON@ @D.TYPE4.ON@ @P.TYPE4.ON@ @D.TYPE5.ON@ @P.TYPE5.ON@ @D.TYPE6.ON@ @P.TYPE6.ON@ @D.TYPE7.ON@ @P.TYPE7.ON@ @D.TYPE8.ON@ @P.TYPE8.ON@ @D.TYPE9.ON@ @P.TYPE9.ON@ @P.INDICATIVE.UNSPECIFIED@ @R.INDICATIVE.UNSPECIFIED@ @C.INDICATIVE@ @D.INDICATIVE.UNSPECIFIED@
 
 LEXICON Root
 						Prefix;
@@ -20,7 +20,7 @@ LEXICON IndicativePrefix
 [1P][PL]:0					IndicativePrefix1PPL;
 [2P][PL]:0					IndicativePrefix2PPL;
 [3P][PL]:0					IndicativePrefix3PPL;
-[UNSPEC]:0					IndicativePrefixUnspecified;
+@P.INDICATIVE.UNSPECIFIED@			IndicativePrefixUnspecified;
 
 LEXICON IndicativePrefix1PSG
 0:jI						Verb; ! No Object
@@ -96,7 +96,11 @@ LEXICON ImperativePrefix
 
 
 LEXICON Verb
-hello						RoversSuffix;
+’ang%[to-reveal%]:’ang				RoversSuffix;
+yaj%[to-understand%]:yaj			RoversSuffix;
+bom%[to-sing%]:bom				RoversSuffix;
+tlha’%[to-chase%]:tlha’			RoversSuffix;
+bej%[to-watch%]:bej				RoversSuffix;
 
 
 LEXICON RoversSuffix
@@ -106,8 +110,6 @@ LEXICON RoversSuffix
 [REFUSE]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@Qo’			RoversSuffix;
 [EMPHASIS]:qu’								RoversSuffix;
 [REVERSE]:Ha’								RoversSuffix;
-[INDICATIVE]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@			#;
-[IMPERATIVE]@U.MOOD.IMPERATIVE@:@U.MOOD.IMPERATIVE@			#;
 									AllTypeSuffixes;
 
 
@@ -121,7 +123,12 @@ LEXICON AllTypeSuffixes
 @P.TYPE1.ON@@P.TYPE2.ON@@P.TYPE3.ON@@P.TYPE4.ON@@P.TYPE5.ON@@P.TYPE6.ON@		Type7Gate;
 @P.TYPE1.ON@@P.TYPE2.ON@@P.TYPE3.ON@@P.TYPE4.ON@@P.TYPE5.ON@@P.TYPE6.ON@@P.TYPE7.ON@		Type8Gate;
 @P.TYPE1.ON@@P.TYPE2.ON@@P.TYPE3.ON@@P.TYPE4.ON@@P.TYPE5.ON@@P.TYPE6.ON@@P.TYPE7.ON@@P.TYPE8.ON@		Type9Gate;
-									#;
+									MoodTag;
+
+
+LEXICON MoodTag
+[INDICATIVE]@U.MOOD.INDICATIVE@@D.INDICATIVE.UNSPECIFIED@:@U.MOOD.INDICATIVE@@D.INDICATIVE.UNSPECIFIED@			#;
+[IMPERATIVE]@U.MOOD.IMPERATIVE@:@U.MOOD.IMPERATIVE@			#;
 
 
 LEXICON Type1Gate
@@ -162,7 +169,7 @@ LEXICON Type5Gate
 @D.TYPE5.ON@@P.TYPE5.ON@			Type5Suffix;
 
 LEXICON Type5Suffix ! 2 Count = undefined subject; capability
-[UNDEFINED]:lu’					RoversSuffix;
+[UNDEFINED-SUBJ]@R.INDICATIVE.UNSPECIFIED@@C.INDICATIVE@:@R.INDICATIVE.UNSPECIFIED@@C.INDICATIVE@lu				RoversSuffix;
 [CAPABLE]:laH					RoversSuffix;
 
 
@@ -182,7 +189,7 @@ LEXICON Type7Gate
 LEXICON Type7Suffix ! 4 Count = aspect
 [PERFECT]:pu’					RoversSuffix;
 [PERFECTPURPOSE]:ta’				RoversSuffix;
-[CONTINUOUS]:taH				RoversSuffix;
+[CONTINUOUS]@U.TYPE7.CONTINUOUS@:taH		RoversSuffix;
 [CONTINUOUSEND]:lI’				RoversSuffix;
 
 
@@ -197,14 +204,14 @@ LEXICON Type9Gate
 @D.TYPE9.ON@@P.TYPE9.ON@			Type9Suffix;
 
 LEXICON Type9Suffix ! 11 Count = syntactic
-[PERSON]:wI’					#; ! Nominalizer
-[DEVERBNOUN]:ghach				#; ! Nominalizer
-[INTEROGATIVE]:’a’				#; ! Modal
-[OPTATIVE]:jaj					#; ! Modal
-[BEFORE]:pa’					#; ! Subordinator
-[SIMULTANEOUS]:vIS				#; ! Subordinator - It is always used in conjunction with the type-7 suffix continuous suffix -taH.
-[AFTER]:DI’					#; ! Subordinator
-[CONDITIONAL]:chugh				#; ! Cause and effect
-[CAUSE]:mo’					#; ! Cause and effect
-[RELATIVE]:bogh					#; ! Relative and purpose clause
-[PURPOSE]:meH					#; ! Relative and purpose clause
+[PERSON]:wI’					MoodTag; ! Nominalizer
+[DEVERBNOUN]:ghach				MoodTag; ! Nominalizer
+[INTEROGATIVE]:’a’				MoodTag; ! Modal
+[OPTATIVE]:jaj					MoodTag; ! Modal
+[BEFORE]:pa’					MoodTag; ! Subordinator
+[SIMULTANEOUS]:vIS				MoodTag; ! Subordinator - It is always used in conjunction with the type-7 suffix continuous suffix -taH.
+[AFTER]:DI’					MoodTag; ! Subordinator
+[CONDITIONAL]:chugh				MoodTag; ! Cause and effect
+[CAUSE]:mo’					MoodTag; ! Cause and effect
+[RELATIVE]:bogh					MoodTag; ! Relative and purpose clause
+[PURPOSE]:meH					MoodTag; ! Relative and purpose clause
