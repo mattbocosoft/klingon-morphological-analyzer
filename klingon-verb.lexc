@@ -112,6 +112,12 @@ legh%[to-see%]:legh				RoversSuffix;
 Sop%[to-eat%]:Sop				RoversSuffix;
 tul%[to-hope%]:tul				RoversSuffix;
 Qap%[to-succeed%]:Qap				RoversSuffix;
+ba'%[to-sit%]:ba'				RoversSuffix;
+qIp%[to-hit%]:qIp				RoversSuffix;
+HoH%[to-kill%]:HoH				RoversSuffix;
+tu'%[to-find%]:tu'				RoversSuffix;
+Say'%[to-be-clean%]:Say'			RoversSuffix;
+Quch%[to-be-happy%]:Quch			RoversSuffix;
 
 
 LEXICON RoversSuffix
