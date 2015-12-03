@@ -7,14 +7,17 @@ echo ###################
 echo POSITIVE TEST CASES (Success: >1 States)
 echo ###################
 echo
+echo --NOUNS
+regex {veng[city]}"[DIMINUTIVE]""[PL-OTHERNOUN]""[SOCALLED]""[3P]""[PL]""[LOCATIVE]" .o. Grammar .o. {vengHommeyqoqchajDaq};
+
 echo Plurals (from Wikipedia)
-regex {tlhIngan[Klingon][N][PL_Lang]} .o. Grammar .o. {tlhInganpu’};
-regex {jagh[enemy][N][PL_Lang]} .o. Grammar .o. {jaghpu’};
-regex {mIn[eye][N][PL_Body]} .o. Grammar .o. {mInDu’};
-regex {targh[targ][N][PL_Obj]} .o. Grammar .o. {targhmey};
+regex {tlhIngan[Klingon]}"[N]""[PL_Lang]" .o. Grammar .o. {tlhInganpu’};
+regex {jagh[enemy]}"[N]""[PL_Lang]" .o. Grammar .o. {jaghpu’};
+regex {mIn[eye]}"[N]""[PL_Body]" .o. Grammar .o. {mInDu’};
+regex {targh[targ]}"[N]""[PL_Obj]" .o. Grammar .o. {targhmey};
 echo
 echo Plural Exceptions
-regex {jengva’[plate][N][PL_Obj]} .o. Grammar .o. {ngop};
+regex {jengva’[plate]}"[N]""[PL_Obj]" .o. Grammar .o. {ngop};
 echo
 echo Other Nouns
 regex {loD[man]}"[N]""[SG]" .o. Grammar .o. {loD};
@@ -25,16 +28,43 @@ regex {puqbe’[daughter]}"[N]""[SG]" .o. Grammar .o. {puqbe’};
 regex {Hov}"[N]""[SG]" .o. Grammar .o. {Hov};
 regex {Hov}"[N]""[PL]" .o. Grammar .o. {Hov};
 regex {Hov}"[N]""[PL]" .o. Grammar .o. {Hovmey};
-
 regex {’e’}"N" .o. Grammar .o. {that};
 
-echo Verbs
-regex {yaj[to understand]}"[PRES]""[1P]""[SG]""[NEG]" .o. Grammar .o. {jIyajbe’};
+echo
+echo --VERBS
+echo
+echo Type 1 Suffix
+regex "[1P]""[PL]"{’ang[to-reveal]}"[REFLEXIVE]""[INDICATIVE]" .o. Grammar .o. {ma’ang’egh};
+regex "[1P]""[SG]"{yaj[to-understand]}"[NEG]""[INDICATIVE]" .o. Grammar .o. {jIyajbe’}; ! Present
+regex "[1P]""[SG]"{bom[to-sing]}"[INDICATIVE]" .o. Grammar .o. {vIbom}; ! Present
+
 
 echo
 echo ###################
 echo NEGATIVE TEST CASES (Success: 1 State)
 echo ###################
+echo
+def NounType1 [{’a’} | {Hom} | {oy}];
+def NounType2 [{pu’} | {Du’} | {mey}];
+def NounType3 [{qoq} | {Hey} | {na’}];
+def NounType4 [{wIj} | {wI’} | {lIj} | {lI’} | {Daj} | {maj} | {ma’} | {raj} | {ra’} | {chaj} | {vam} | {vetlh}];
+def NounType5 [{Daq} | {vo’} | {mo’} | {vaD} | {’e’}];
+echo Nouns
+regex ~$["[GUESS]"] .o. Grammar .o. $[NounType5 NounType1]; ! Type 1 before Type 5
+regex ~$["[GUESS]"] .o. Grammar .o. $[NounType5 NounType2]; ! Type 2 before Type 5
+regex ~$["[GUESS]"] .o. Grammar .o. $[NounType5 NounType3]; ! Type 3 before Type 5
+regex ~$["[GUESS]"] .o. Grammar .o. $[NounType5 NounType4]; ! Type 4 before Type 5
+regex ~$["[GUESS]"] .o. Grammar .o. $[NounType5 NounType5]; ! Multiple Type 5
+regex ~$["[GUESS]"] .o. Grammar .o. $[NounType4 NounType1]; ! Type 1 before Type 4
+regex ~$["[GUESS]"] .o. Grammar .o. $[NounType4 NounType2]; ! Type 2 before Type 4
+regex ~$["[GUESS]"] .o. Grammar .o. $[NounType4 NounType3]; ! Type 3 before Type 4
+regex ~$["[GUESS]"] .o. Grammar .o. $[NounType4 NounType4]; ! Multiple Type 4
+regex ~$["[GUESS]"] .o. Grammar .o. $[NounType3 NounType1]; ! Type 1 before Type 3
+regex ~$["[GUESS]"] .o. Grammar .o. $[NounType3 NounType2]; ! Type 2 before Type 3
+regex ~$["[GUESS]"] .o. Grammar .o. $[NounType3 NounType3]; ! Multiple Type 3
+regex ~$["[GUESS]"] .o. Grammar .o. $[NounType2 NounType1]; ! Type 1 before Type 2
+regex ~$["[GUESS]"] .o. Grammar .o. $[NounType2 NounType2]; ! Multiple Type 2
+regex ~$["[GUESS]"] .o. Grammar .o. $[NounType1 NounType1]; ! Multiple Type 1
 
 echo
 echo -------------------
