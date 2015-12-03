@@ -88,11 +88,15 @@ LEXICON IndicativePrefixUnspecified
 
 LEXICON ImperativePrefix
 [2P][SG]:yI					Verb;
+[2P][SG][OBJ-1P][OBJ-SG]:HI			Verb;
+[2P][SG][OBJ-3P][OBJ-SG]:yI			Verb;
+[2P][SG][OBJ-1P][OBJ-PL]:gho			Verb;
+[2P][SG][OBJ-3P][OBJ-PL]:tI			Verb;
 [2P][PL]:pe					Verb;
-[2P][OBJ-1P][OBJ-SG]:HI			Verb;
-[2P][OBJ-3P][OBJ-SG]:yI			Verb;
-[2P][OBJ-1P][OBJ-PL]:gho			Verb;
-[2P][OBJ-3P][OBJ-PL]:tI			Verb;
+[2P][PL][OBJ-1P][OBJ-SG]:HI			Verb;
+[2P][PL][OBJ-3P][OBJ-SG]:yI			Verb;
+[2P][PL][OBJ-1P][OBJ-PL]:gho			Verb;
+[2P][PL][OBJ-3P][OBJ-PL]:tI			Verb;
 
 
 LEXICON Verb
