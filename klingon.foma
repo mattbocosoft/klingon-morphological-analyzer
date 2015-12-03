@@ -42,7 +42,7 @@ def Grammar [AdverbGrammar | VerbGrammar | AdjectiveGrammar | NounGrammar] .o. E
 
 
 echo
-echo ##EXTRA CREDIT: Guesser##
+echo Guesser
 def GuesserInsertion [..] -> "[GUESS]" || "[GUESSVERB]" ?* _ .#.;
 def Grammar [Grammar.i .o. GuesserInsertion].i;
 regex Grammar;
@@ -76,7 +76,7 @@ up blamaagatakebla
 clear stack
 
 echo
-echo ##EXTRA CREDIT: Spell Checker##
+echo Spell Checker
 def Insert $[0:Alpha];
 def Delete $[Alpha:0];
 def Replace $[Alpha:Alpha];
