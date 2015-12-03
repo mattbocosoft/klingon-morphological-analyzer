@@ -6,12 +6,23 @@ def Alpha [Consonant | Vowel];
 def Word [Alpha]+;
 def GlottalStop [’ | '];
 
+echo
+echo ##Adverb Lex File##
+read lexc klingon-adverb.lexc
+eliminate flags
+def AdverbGrammar;
 
 echo
 echo ##Verb Lex File##
 read lexc klingon-verb.lexc
 eliminate flags
 def VerbGrammar;
+
+echo
+echo ##Adjective Lex File##
+read lexc klingon-noun.lexc
+eliminate flags
+def AdjectiveGrammar;
 
 echo
 echo ##Noun Lex File##
@@ -25,7 +36,9 @@ echo ##Rules##
 # If the noun to which the endearment suffix is added ends with a vowel, a glottal stop is inserted between them
 def EndearmentGlottalStop [..] -> GlottalStop || Vowel _ {oy};
 
-def Grammar [VerbGrammar | NounGrammar] .o. EndearmentGlottalStop;
+def AccentOptions GlottalStop (->) ';
+
+def Grammar [AdverbGrammar | VerbGrammar | AdjectiveGrammar | NounGrammar] .o. EndearmentGlottalStop .o. AccentOptions;
 
 
 echo
