@@ -2,25 +2,41 @@
 ! https://en.wikipedia.org/wiki/Klingon_grammar
 ! https://www.youtube.com/watch?v=e5Did-eVQDc
 
-Multichar_Symbols [1P] [2P] [3P] [SG] [PL] [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [PL-LANGUSER] [PL-BODYPART] [PL-OTHERNOUN] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] @D.TYPE1.ON@ @P.TYPE1.ON@ @D.TYPE2.ON@ @P.TYPE2.ON@ @D.TYPE3.ON@ @P.TYPE3.ON@ @D.TYPE4.ON@ @P.TYPE4.ON@ @D.TYPE5.ON@ @P.TYPE5.ON@
+Multichar_Symbols [1P] [2P] [3P] [SG] [PL] [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [PL-LANGUSER] [PL-BODYPART] [PL-OTHERNOUN] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] @D.TYPE1.ON@ @P.TYPE1.ON@ @D.TYPE2.ON@ @P.TYPE2.ON@ @D.TYPE3.ON@ @P.TYPE3.ON@ @D.TYPE4.ON@ @P.TYPE4.ON@ @D.TYPE5.ON@ @P.TYPE5.ON@ @U.NOUNTYPE.BODYPART@ @U.NOUNTYPE.CAPABLELANGUAGE@ @U.NOUNTYPE.OTHER@
 
 LEXICON Root
-						Noun;
+@U.NOUNTYPE.BODYPART@				NounBodyPart;
+@U.NOUNTYPE.CAPABLELANGUAGE@			NounCapableOfLanguage;
+@U.NOUNTYPE.OTHER@				NounOther;
 
-LEXICON Noun
-juH[home]:juH					TypeSuffix;
-qoj[cliff]:qoj					TypeSuffix;
-ghu’[situation]:ghu’				TypeSuffix;
-jup[friend]:jup					TypeSuffix;
-choH[change]:choH				TypeSuffix;
-QaH[help]:QaH					TypeSuffix;
-ghot[person]:ghot				TypeSuffix;
+
+LEXICON NounBodyPart
+mIn[eye]:mIn					TypeSuffix;
 ghop[hand]:ghop					TypeSuffix;
-qetwI’[runner]:qetwI’				TypeSuffix;
+
+
+LEXICON NounCapableOfLanguage
+puq[child]:puq					TypeSuffix;
 vav[father]:vav					TypeSuffix;
-yuQ[planet]:yuQ					TypeSuffix;
-ghom[group]:ghom				TypeSuffix;
+jup[friend]:jup					TypeSuffix;
+loD[man]:loD					TypeSuffix;
+ghot[person]:ghot				TypeSuffix;
+qetwI’[runner]:qetwI’				TypeSuffix;
+be’[woman]:be’					TypeSuffix;
+
+
+LEXICON NounOther
+choH[change]:choH				TypeSuffix;
 veng[city]:veng					TypeSuffix;
+qoj[cliff]:qoj					TypeSuffix;
+ghom[group]:ghom				TypeSuffix;
+ghop[hand]:ghop					TypeSuffix;
+QaH[help]:QaH					TypeSuffix;
+juH[home]:juH					TypeSuffix;
+yuQ[planet]:yuQ					TypeSuffix;
+ghu’[situation]:ghu’				TypeSuffix;
+Hov[star]:Hov					TypeSuffix;
+targh[targ]:targh				TypeSuffix; ! A "targ" is a Klingon animal somewhat resembling a boar
 cha[torpedo]:cha				TypeSuffix;
 
 
@@ -47,10 +63,10 @@ LEXICON Type2Gate
 
 ! A noun does not require a plural suffix if a pronoun or pronominal prefix serves to indicate that it is plural,[10] or if it is being used in conjunction with a number.
 LEXICON Type2Suffix ! plurals
-[PL-LANGUSER]:pu’				TypeSuffix;
-[PL-BODYPART]:Du’				TypeSuffix;
-[PL-OTHERNOUN]:mey				TypeSuffix;
-
+[PL]@U.NOUNTYPE.CAPABLELANGUAGE@:pu’@U.NOUNTYPE.CAPABLELANGUAGE@		TypeSuffix;
+[PL]@U.NOUNTYPE.BODYPART@:Du’@U.NOUNTYPE.BODYPART@				TypeSuffix;
+[PL]@U.NOUNTYPE.OTHER@:@U.NOUNTYPE.OTHER@mey					TypeSuffix;
+[PL]						TypeSuffix; ! A plural suffix is never obligatory
 
 LEXICON Type3Gate
 @D.TYPE3.ON@@P.TYPE3.ON@			Type3Suffix;
@@ -66,14 +82,14 @@ LEXICON Type4Gate
 
 LEXICON Type4Suffix ! possession, determiners
 [1P][SG]:wIj					TypeSuffix;
-[1P][SG][LANGUSER]:wI’				TypeSuffix;
+[1P][SG]@U.NOUNTYPE.CAPABLELANGUAGE@:wI’@U.NOUNTYPE.CAPABLELANGUAGE@				TypeSuffix;
 [2P][SG]:lIj					TypeSuffix;
-[2P][SG][LANGUSER]:lI’				TypeSuffix;
+[2P][SG]@U.NOUNTYPE.CAPABLELANGUAGE@:lI’@U.NOUNTYPE.CAPABLELANGUAGE@				TypeSuffix;
 [3P][SG]:Daj					TypeSuffix;
 [1P][PL]:maj					TypeSuffix;
-[1P][PL][LANGUSER]:ma’				TypeSuffix;
+[1P][PL]@U.NOUNTYPE.CAPABLELANGUAGE@:ma’@U.NOUNTYPE.CAPABLELANGUAGE@				TypeSuffix;
 [2P][PL]:raj					TypeSuffix;
-[2P][PL][LANGUSER]:ra’				TypeSuffix;
+[2P][PL]@U.NOUNTYPE.CAPABLELANGUAGE@:ra’@U.NOUNTYPE.CAPABLELANGUAGE@				TypeSuffix;
 [3P][PL]:chaj					TypeSuffix;
 [THIS]:vam					TypeSuffix;
 [THAT]:vetlh					TypeSuffix;
