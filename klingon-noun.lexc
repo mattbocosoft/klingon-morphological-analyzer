@@ -5,39 +5,54 @@
 Multichar_Symbols [1P] [2P] [3P] [SG] [PL] [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [PL-LANGUSER] [PL-BODYPART] [PL-OTHERNOUN] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] @D.TYPE1.ON@ @P.TYPE1.ON@ @D.TYPE2.ON@ @P.TYPE2.ON@ @D.TYPE3.ON@ @P.TYPE3.ON@ @D.TYPE4.ON@ @P.TYPE4.ON@ @D.TYPE5.ON@ @P.TYPE5.ON@ @U.NOUNTYPE.BODYPART@ @U.NOUNTYPE.CAPABLELANGUAGE@ @U.NOUNTYPE.OTHER@
 
 LEXICON Root
+						Pronoun;
 @U.NOUNTYPE.BODYPART@				NounBodyPart;
 @U.NOUNTYPE.CAPABLELANGUAGE@			NounCapableOfLanguage;
 @U.NOUNTYPE.OTHER@				NounOther;
 
 
+LEXICON Pronoun
+bIH%[they,them%]@U.NOUNTYPE.OTHER@:bIH@U.NOUNTYPE.OTHER@				TypeSuffix;
+chaH%[they,them%]@U.NOUNTYPE.CAPABLELANGUAGE@:chaH@U.NOUNTYPE.CAPABLELANGUAGE@	TypeSuffix;
+'e'%[that%]:'e'					TypeSuffix; ! Referring to previous part of sentence
+ghaH%[he,she,him,her%]:ghaH			TypeSuffix;
+jIH%[I,me%]:jIH					TypeSuffix;
+maH%[we,us%]:maH					TypeSuffix;
+net%[that,also%]:net				TypeSuffix; ! Similar to 'e'
+'oH%[it%]:'oH					TypeSuffix;
+SoH%[you-SG%]:SoH					TypeSuffix;
+tlhIH%[you-PL%]:tlhIH				TypeSuffix;
+
+
 LEXICON NounBodyPart
-mIn[eye]:mIn					TypeSuffix;
-ghop[hand]:ghop					TypeSuffix;
+mIn%[eye%]:mIn					TypeSuffix;
+ghop%[hand%]:ghop					TypeSuffix;
 
 
 LEXICON NounCapableOfLanguage
-puq[child]:puq					TypeSuffix;
-vav[father]:vav					TypeSuffix;
-jup[friend]:jup					TypeSuffix;
-loD[man]:loD					TypeSuffix;
-ghot[person]:ghot				TypeSuffix;
-qetwI’[runner]:qetwI’				TypeSuffix;
-be’[woman]:be’					TypeSuffix;
+puq%[child%]:puq					TypeSuffix;
+vav%[father%]:vav					TypeSuffix;
+jup%[friend%]:jup					TypeSuffix;
+loD%[man%]:loD					TypeSuffix;
+ghot%[person]:ghot				TypeSuffix;
+qetwI’%[runner%]:qetwI’				TypeSuffix;
+be’%[woman%]:be’					TypeSuffix;
 
 
 LEXICON NounOther
-choH[change]:choH				TypeSuffix;
-veng[city]:veng					TypeSuffix;
-qoj[cliff]:qoj					TypeSuffix;
-ghom[group]:ghom				TypeSuffix;
-ghop[hand]:ghop					TypeSuffix;
-QaH[help]:QaH					TypeSuffix;
-juH[home]:juH					TypeSuffix;
-yuQ[planet]:yuQ					TypeSuffix;
-ghu’[situation]:ghu’				TypeSuffix;
-Hov[star]:Hov					TypeSuffix;
-targh[targ]:targh				TypeSuffix; ! A "targ" is a Klingon animal somewhat resembling a boar
-cha[torpedo]:cha				TypeSuffix;
+choH%[change%]:choH				TypeSuffix;
+veng%[city%]:veng					TypeSuffix;
+qoj%[cliff%]:qoj					TypeSuffix;
+ghom%[group%]:ghom				TypeSuffix;
+ghop%[hand%]:ghop					TypeSuffix;
+QaH%[help%]:QaH					TypeSuffix;
+juH%[home%]:juH					TypeSuffix;
+yuQ%[planet%]:yuQ					TypeSuffix;
+ghu’%[situation%]:ghu’				TypeSuffix;
+Hov%[star%]:Hov					TypeSuffix;
+Duj%[ship%]:Duj					TypeSuffix;
+targh%[targ%]:targh				TypeSuffix; ! A "targ" is a Klingon animal somewhat resembling a boar
+cha%[torpedo%]:cha				TypeSuffix;
 
 
 LEXICON TypeSuffix
