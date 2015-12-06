@@ -43,10 +43,13 @@ LEXICON NounOther
 choH%[change%]:choH				TypeSuffix;
 veng%[city%]:veng				TypeSuffix;
 qoj%[cliff%]:qoj				TypeSuffix;
+wep%[coat%]:wep					TypeSuffix;
 ghom%[group%]:ghom				TypeSuffix;
 ghop%[hand%]:ghop				TypeSuffix;
 QaH%[help%]:QaH					TypeSuffix;
 juH%[house%]:juH				TypeSuffix;
+qach%[idea%]:qach				TypeSuffix;
+Saj%[pet%]:Saj					TypeSuffix;
 yuQ%[planet%]:yuQ				TypeSuffix;
 pa'%[room%]:pa'					TypeSuffix;
 ghu'%[situation%]:ghu'				TypeSuffix;
