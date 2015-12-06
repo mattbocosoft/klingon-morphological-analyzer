@@ -1,0 +1,456 @@
+! REFERENCES
+! https://en.wikipedia.org/wiki/Klingon_grammar
+! https://www.youtube.com/watch?v=e5Did-eVQDc
+
+Multichar_Symbols [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [PL-LANGUSER] [PL-BODYPART] [PL-OTHERNOUN] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] [ALL-OVER-THE-PLACE] @D.NOUNTYPE1.ON@ @P.NOUNTYPE1.ON@ @D.NOUNTYPE2.ON@ @P.NOUNTYPE2.ON@ @D.NOUNTYPE3.ON@ @P.NOUNTYPE3.ON@ @D.NOUNTYPE4.ON@ @P.NOUNTYPE4.ON@ @D.NOUNTYPE5.ON@ @P.NOUNTYPE5.ON@ @U.NOUNTYPE.BODYPART@ @U.NOUNTYPE.CAPABLELANGUAGE@ @U.NOUNTYPE.OTHER@ [NEG] [1P] [2P] [3P] [SG] [PL] [GUESSVERB] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED-SUBJ] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DEVERBNOUN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE] [REFUSE] [EMPHASIS] [REVERSE] @U.MOOD.INDICATIVE@ @U.MOOD.IMPERATIVE@ @D.VERBTYPE1.ON@ @P.VERBTYPE1.ON@ @D.VERBTYPE2.ON@ @P.VERBTYPE2.ON@ @D.VERBTYPE3.ON@ @P.VERBTYPE3.ON@ @D.VERBTYPE4.ON@ @P.VERBTYPE4.ON@ @D.VERBTYPE5.ON@ @P.VERBTYPE5.ON@ @D.VERBTYPE6.ON@ @P.VERBTYPE6.ON@ @D.VERBTYPE7.ON@ @P.VERBTYPE7.ON@ @D.VERBTYPE8.ON@ @P.VERBTYPE8.ON@ @D.VERBTYPE9.ON@ @P.VERBTYPE9.ON@ @P.INDICATIVE.UNSPECIFIED@ @R.INDICATIVE.UNSPECIFIED@ @C.INDICATIVE@ @D.INDICATIVE.UNSPECIFIED@ @P.VERBSUFFIX.CONTINUOUS@ @R.VERBSUFFIX.CONTINUOUS@ [ORDINAL] [REPEATCOUNT]
+
+LEXICON Root
+						VerbPrefix;
+!						Noun;
+!						OtherWordForms;
+
+! ##########################
+! ########## VERB ##########
+! ##########################
+
+LEXICON VerbPrefix
+@U.MOOD.INDICATIVE@				VerbIndicativePrefix;
+@U.MOOD.IMPERATIVE@				VerbImperativePrefix;
+
+
+LEXICON VerbIndicativePrefix
+[1P][SG]:0					VerbIndicativePrefix1PSG;
+[2P][SG]:0					VerbIndicativePrefix2PSG;
+[3P][SG]:0					VerbIndicativePrefix3PSG;
+[1P][PL]:0					VerbIndicativePrefix1PPL;
+[2P][PL]:0					VerbIndicativePrefix2PPL;
+[3P][PL]:0					VerbIndicativePrefix3PPL;
+@P.INDICATIVE.UNSPECIFIED@			VerbIndicativePrefixUnspecified;
+
+LEXICON VerbIndicativePrefix1PSG
+0:jI						Verb; ! No Object
+![OBJ-1P][OBJ-SG]:0				Verb;
+[OBJ-2P][OBJ-SG]:qa				Verb;
+[OBJ-3P][OBJ-SG]:vI				Verb;
+![OBJ-1P][OBJ-PL]:0				Verb;
+[OBJ-2P][OBJ-PL]:Sa				Verb;
+[OBJ-3P][OBJ-PL]:vI				Verb;
+
+LEXICON VerbIndicativePrefix2PSG
+0:bI						Verb; ! No Object
+[OBJ-1P][OBJ-SG]:cho				Verb;
+![OBJ-2P][OBJ-SG]:0				Verb;
+[OBJ-3P][OBJ-SG]:Da				Verb;
+[OBJ-1P][OBJ-PL]:ju				Verb;
+![OBJ-2P][OBJ-PL]:0				Verb;
+[OBJ-3P][OBJ-PL]:Da				Verb;
+
+LEXICON VerbIndicativePrefix3PSG
+						Verb; ! No Object
+[OBJ-1P][OBJ-SG]:mu				Verb;
+[OBJ-2P][OBJ-SG]:Du				Verb;
+[OBJ-3P][OBJ-SG]:0				Verb;
+[OBJ-1P][OBJ-PL]:nu				Verb;
+[OBJ-2P][OBJ-PL]:lI				Verb;
+[OBJ-3P][OBJ-PL]:0				Verb;
+
+LEXICON VerbIndicativePrefix1PPL
+0:ma						Verb; ! No Object
+![OBJ-1P][OBJ-SG]:0				Verb;
+[OBJ-2P][OBJ-SG]:pI				Verb;
+[OBJ-3P][OBJ-SG]:wI				Verb;
+![OBJ-1P][OBJ-PL]:0				Verb;
+[OBJ-2P][OBJ-PL]:re				Verb;
+[OBJ-3P][OBJ-PL]:DI				Verb;
+
+LEXICON VerbIndicativePrefix2PPL
+0:Su						Verb; ! No Object
+[OBJ-1P][OBJ-SG]:tu				Verb;
+![OBJ-2P][OBJ-SG]:0				Verb;
+[OBJ-3P][OBJ-SG]:bo				Verb;
+[OBJ-1P][OBJ-PL]:che				Verb;
+![OBJ-2P][OBJ-PL]:0				Verb;
+[OBJ-3P][OBJ-PL]:bo				Verb;
+
+LEXICON VerbIndicativePrefix3PPL
+						Verb; ! No Object
+[OBJ-1P][OBJ-SG]:mu				Verb;
+[OBJ-2P][OBJ-SG]:nI				Verb;
+[OBJ-3P][OBJ-SG]:lu				Verb;
+[OBJ-1P][OBJ-PL]:nu				Verb;
+[OBJ-2P][OBJ-PL]:lI				Verb;
+[OBJ-3P][OBJ-PL]:0				Verb;
+
+LEXICON VerbIndicativePrefixUnspecified
+						Verb; ! No Object
+[OBJ-1P][OBJ-SG]:vI				Verb;
+[OBJ-2P][OBJ-SG]:Da				Verb;
+[OBJ-3P][OBJ-SG]:0				Verb;
+[OBJ-1P][OBJ-PL]:wI				Verb;
+[OBJ-2P][OBJ-PL]:bo				Verb;
+[OBJ-3P][OBJ-PL]:lu				Verb;
+
+
+LEXICON VerbImperativePrefix
+[2P][SG]:yI					Verb;
+[2P][SG][OBJ-1P][OBJ-SG]:HI			Verb;
+[2P][SG][OBJ-3P][OBJ-SG]:yI			Verb;
+[2P][SG][OBJ-1P][OBJ-PL]:gho			Verb;
+[2P][SG][OBJ-3P][OBJ-PL]:tI			Verb;
+[2P][PL]:pe					Verb;
+[2P][PL][OBJ-1P][OBJ-SG]:HI			Verb;
+[2P][PL][OBJ-3P][OBJ-SG]:yI			Verb;
+[2P][PL][OBJ-1P][OBJ-PL]:gho			Verb;
+[2P][PL][OBJ-3P][OBJ-PL]:tI			Verb;
+
+
+LEXICON Verb
+@U.VERBTYPE.STATIVE@				StativeVerb;
+@U.VERBTYPE.ACTION@				ActionVerb;
+
+LEXICON StativeVerb
+tIn%[to-be-big%]:tIn				VerbSuffix;
+Say'%[to-be-clean%]:Say'			VerbSuffix;
+mIS%[to-be-confused%]:mIS			VerbSuffix;
+puS%[to-be-few%]:puS				VerbSuffix;
+QaQ%[to-be-good%]:QaQ				VerbSuffix;
+Quch%[to-be-happy%]:Quch			VerbSuffix;
+law'%[to-be-many%]:law'			VerbSuffix;
+chuS%[to-be-noisy%]:chuS			VerbSuffix;
+rur%[to-be-like%]:rur				VerbSuffix;
+woch%[to-be-tall%]:woch			VerbSuffix;
+rap%[to-be-the-same%]:rap			VerbSuffix;
+yIQ%[to-be-wet%]:yIQ				VerbSuffix;
+
+
+LEXICON ActionVerb
+qeS%[to-advise%]:qeS				VerbSuffix;
+poj%[to-analyze%]:poj				VerbSuffix;
+tlha'%[to-chase%]:tlha'			VerbSuffix;
+Sop%[to-eat%]:Sop				VerbSuffix;
+tu'%[to-find%]:tu'				VerbSuffix;
+nob%[to-give%]:nob				VerbSuffix;
+qIp%[to-hit%]:qIp				VerbSuffix;
+tul%[to-hope%]:tul				VerbSuffix;
+Dub%[to-improve%]:Dub				VerbSuffix;
+HoH%[to-kill%]:HoH				VerbSuffix;
+laD%[to-read%]:laD				VerbSuffix;
+'ang%[to-reveal%]:'ang				VerbSuffix;
+legh%[to-see%]:legh				VerbSuffix;
+ngev%[to-sell%]:ngev				VerbSuffix;
+bom%[to-sing%]:bom				VerbSuffix;
+ba'%[to-sit%]:ba'				VerbSuffix;
+Qong%[to-sleep%]:Qong				VerbSuffix;
+Qap%[to-succeed%]:Qap				VerbSuffix;
+toj%[to-trick%]:toj				VerbSuffix;
+yaj%[to-understand%]:yaj			VerbSuffix;
+bej%[to-watch%]:bej				VerbSuffix;
+
+
+LEXICON VerbSuffix
+@U.VERBTYPE.STATIVE@				NounType5Suffix; ! Type-5 noun suffixes that would normally be attached to the noun are instead attached to the adjectival verb
+						VerbRoversSuffix;
+
+
+LEXICON VerbRoversSuffix
+! "These suffixes have no defined position, and can go after the verb stem or after any suffix – even another rover – except after a type-9 suffix or where the result would be meaningless. They modify whatever directly precedes them."
+[NEG]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@be'			VerbRoversSuffix;
+[NEG]@U.MOOD.IMPERATIVE@:@U.MOOD.IMPERATIVE@Qo'			VerbRoversSuffix;
+[REFUSE]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@Qo'			VerbRoversSuffix;
+[EMPHASIS]:qu'								VerbRoversSuffix;
+[REVERSE]:Ha'								VerbRoversSuffix;
+									AllVerbTypeSuffixes;
+
+
+LEXICON AllVerbTypeSuffixes
+			VerbType1Gate;
+@P.VERBTYPE1.ON@			VerbType2Gate;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@		VerbType3Gate;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@		VerbType4Gate;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@		VerbType5Gate;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@		VerbType6Gate;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@P.VERBTYPE6.ON@		VerbType7Gate;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@P.VERBTYPE6.ON@@P.VERBTYPE7.ON@		VerbType8Gate;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@P.VERBTYPE6.ON@@P.VERBTYPE7.ON@@P.VERBTYPE8.ON@		VerbType9Gate;
+									VerbMoodTag;
+
+
+LEXICON VerbMoodTag
+[INDICATIVE]@U.MOOD.INDICATIVE@@D.INDICATIVE.UNSPECIFIED@:@U.MOOD.INDICATIVE@@D.INDICATIVE.UNSPECIFIED@			#;
+[IMPERATIVE]@U.MOOD.IMPERATIVE@:@U.MOOD.IMPERATIVE@			#;
+
+
+LEXICON VerbType1Gate
+@D.VERBTYPE1.ON@@P.VERBTYPE1.ON@		VerbType1Suffix;
+
+LEXICON VerbType1Suffix ! 2 Count = reflexive/reciprocal
+[REFLEXIVE]:'egh				VerbRoversSuffix;
+[RECIPROCAL]:chuq				VerbRoversSuffix;
+
+
+LEXICON VerbType2Gate
+@D.VERBTYPE2.ON@@P.VERBTYPE2.ON@		VerbType2Suffix;
+
+LEXICON VerbType2Suffix ! 5 Count = volition/necessity
+[REQUIRED]:nIS					VerbRoversSuffix;
+[WILLING]:qang					VerbRoversSuffix;
+[PREPARED]:rup					VerbRoversSuffix;
+[SET-UP]:beH					VerbRoversSuffix;
+[AFRAID]:vIp					VerbRoversSuffix;
+
+
+LEXICON VerbType3Gate
+@D.VERBTYPE3.ON@@P.VERBTYPE3.ON@		VerbType3Suffix;
+
+LEXICON VerbType3Suffix ! 2 Count = inceptive/inchoative
+[STATECHANGE]:choH				VerbRoversSuffix;
+[RESUME]:qa'					VerbRoversSuffix;
+
+
+LEXICON VerbType4Gate
+@D.VERBTYPE4.ON@@P.VERBTYPE4.ON@		VerbType4Suffix;
+
+LEXICON VerbType4Suffix ! 1 Count = causative
+[CAUSATIVE]:moH					VerbRoversSuffix;
+
+
+LEXICON VerbType5Gate
+@D.VERBTYPE5.ON@@P.VERBTYPE5.ON@		VerbType5Suffix;
+
+LEXICON VerbType5Suffix ! 2 Count = undefined subject; capability
+[UNDEFINED-SUBJ]@R.INDICATIVE.UNSPECIFIED@@C.INDICATIVE@:@R.INDICATIVE.UNSPECIFIED@@C.INDICATIVE@lu				VerbRoversSuffix;
+[CAPABLE]:laH					VerbRoversSuffix;
+
+
+LEXICON VerbType6Gate
+@D.VERBTYPE6.ON@@P.VERBTYPE6.ON@		VerbType6Suffix;
+
+LEXICON VerbType6Suffix ! 4 Count = perfection; uncertainty
+[BEST]:chu'					VerbRoversSuffix;
+[CERTAIN]:bej					VerbRoversSuffix;
+[UNCERTAIN]:law'				VerbRoversSuffix;
+[OBVIOUS]:ba'					VerbRoversSuffix;
+
+
+LEXICON VerbType7Gate
+@D.VERBTYPE7.ON@@P.VERBTYPE7.ON@		VerbType7Suffix;
+
+LEXICON VerbType7Suffix ! 4 Count = aspect
+[PERFECT]:pu'					VerbRoversSuffix;
+[PERFECTPURPOSE]:ta'				VerbRoversSuffix;
+[CONTINUOUS]@P.VERBSUFFIX.CONTINUOUS@:@P.VERBSUFFIX.CONTINUOUS@taH		VerbRoversSuffix;
+[CONTINUOUSEND]:lI'				VerbRoversSuffix;
+
+
+LEXICON VerbType8Gate
+@D.VERBTYPE8.ON@@P.VERBTYPE8.ON@		VerbType8Suffix;
+
+LEXICON VerbType8Suffix ! 1 Count = honorific
+[HONOR]:neS					VerbRoversSuffix;
+
+
+LEXICON VerbType9Gate
+@D.VERBTYPE9.ON@@P.VERBTYPE9.ON@		VerbType9Suffix;
+
+LEXICON VerbType9Suffix ! 11 Count = syntactic
+[PERSON]:wI'					AllNounTypeSuffixes; ! Nominalizer. Verbs can take the Type 9 suffix -wI' one/thing which does, and the resulting word is a noun which can take all noun suffixes. Other verb suffixes can be added before -wI', provided no other Type 9 suffix is used.
+[DEVERBNOUN]:ghach				VerbMoodTag; ! Nominalizer, '-ness'
+[INTEROGATIVE]:'a'				VerbMoodTag; ! Modal
+[OPTATIVE]:jaj					VerbMoodTag; ! Modal
+[BEFORE]:pa'					VerbMoodTag; ! Subordinator
+[SIMULTANEOUS]@R.VERBSUFFIX.CONTINUOUS@:vIS@R.VERBSUFFIX.CONTINUOUS@				VerbMoodTag; ! Subordinator - It is always used in conjunction with the type-7 suffix continuous suffix -taH.
+[AFTER]:DI'					VerbMoodTag; ! Subordinator
+[CONDITIONAL]:chugh				VerbMoodTag; ! Cause and effect
+[CAUSE]:mo'					VerbMoodTag; ! Cause and effect
+[RELATIVE]:bogh					VerbMoodTag; ! Relative and purpose clause
+[PURPOSE]:meH					VerbMoodTag; ! Relative and purpose clause
+
+
+ 
+! ##########################
+! ########## NOUN ##########
+! ##########################
+
+
+LEXICON Noun
+						Pronoun; ! Noun
+@U.NOUNTYPE.BODYPART@				NounBodyPart;
+@U.NOUNTYPE.CAPABLELANGUAGE@			NounCapableOfLanguage;
+@U.NOUNTYPE.OTHER@				NounOther;
+
+LEXICON Pronoun
+bIH%[they,them%]@U.NOUNTYPE.OTHER@:bIH@U.NOUNTYPE.OTHER@				AllNounTypeSuffixes;
+chaH%[they,them%]@U.NOUNTYPE.CAPABLELANGUAGE@:chaH@U.NOUNTYPE.CAPABLELANGUAGE@	AllNounTypeSuffixes;
+'e'%[that%]:'e'					AllNounTypeSuffixes; ! Referring to previous part of sentence
+ghaH%[he,she,him,her%]:ghaH			AllNounTypeSuffixes;
+jIH%[I,me%]:jIH					AllNounTypeSuffixes;
+maH%[we,us%]:maH				AllNounTypeSuffixes;
+net%[that,also%]:net				AllNounTypeSuffixes; ! Similar to 'e'
+'oH%[it%]:'oH					AllNounTypeSuffixes;
+SoH%[you-SG%]:SoH				AllNounTypeSuffixes;
+tlhIH%[you-PL%]:tlhIH				AllNounTypeSuffixes;
+
+
+LEXICON NounBodyPart
+mIn%[eye%]:mIn					AllNounTypeSuffixes;
+ghop%[hand%]:ghop				AllNounTypeSuffixes;
+
+
+LEXICON NounCapableOfLanguage
+je'wI'%[buyer%]:je'wI'				AllNounTypeSuffixes;
+puq%[child%]:puq				AllNounTypeSuffixes;
+vav%[father%]:vav				AllNounTypeSuffixes;
+jup%[friend%]:jup				AllNounTypeSuffixes;
+loD%[man%]:loD					AllNounTypeSuffixes;
+ghot%[person]:ghot				AllNounTypeSuffixes;
+qetwI'%[runner%]:qetwI'			AllNounTypeSuffixes;
+be'%[woman%]:be'				AllNounTypeSuffixes;
+
+
+LEXICON NounOther
+quS%[chair%]:quS				AllNounTypeSuffixes;
+choH%[change%]:choH				AllNounTypeSuffixes;
+veng%[city%]:veng				AllNounTypeSuffixes;
+qoj%[cliff%]:qoj				AllNounTypeSuffixes;
+wep%[coat%]:wep					AllNounTypeSuffixes;
+Soj%[food%]:Soj					AllNounTypeSuffixes;
+ghom%[group%]:ghom				AllNounTypeSuffixes;
+QaH%[help%]:QaH					AllNounTypeSuffixes;
+juH%[house%]:juH				AllNounTypeSuffixes;
+qach%[idea%]:qach				AllNounTypeSuffixes;
+nav%[paper%]:nav				AllNounTypeSuffixes;
+Saj%[pet%]:Saj					AllNounTypeSuffixes;
+yuQ%[planet%]:yuQ				AllNounTypeSuffixes;
+pa'%[room%]:pa'					AllNounTypeSuffixes;
+ghu'%[situation%]:ghu'				AllNounTypeSuffixes;
+Hov%[star%]:Hov					AllNounTypeSuffixes;
+Duj%[ship%]:Duj					AllNounTypeSuffixes;
+targh%[targ%]:targh				AllNounTypeSuffixes; ! A "targ" is a Klingon animal somewhat resembling a boar
+cha%[torpedo%]:cha				AllNounTypeSuffixes;
+
+
+LEXICON AllNounTypeSuffixes
+			NounType1Gate;
+@P.NOUNTYPE1.ON@			NounType2Gate;
+@P.NOUNTYPE1.ON@@P.NOUNTYPE2.ON@		NounType3Gate;
+@P.NOUNTYPE1.ON@@P.NOUNTYPE2.ON@@P.NOUNTYPE3.ON@		NounType4Gate;
+@P.NOUNTYPE1.ON@@P.NOUNTYPE2.ON@@P.NOUNTYPE3.ON@@P.NOUNTYPE4.ON@		NounType5Gate;
+						#;
+
+
+LEXICON NounType1Gate
+@D.NOUNTYPE1.ON@@P.NOUNTYPE1.ON@		NounType1Suffix;
+
+LEXICON NounType1Suffix ! size, affection
+[AUGMENTATIVE]:'a'				AllNounTypeSuffixes;
+[DIMINUTIVE]:Hom				AllNounTypeSuffixes;
+[ENDEARMENT]:oy					AllNounTypeSuffixes;
+
+
+LEXICON NounType2Gate
+@D.NOUNTYPE2.ON@@P.NOUNTYPE2.ON@		NounType2Suffix;
+
+! A noun does not require a plural suffix if a pronoun or pronominal prefix serves to indicate that it is plural,[10] or if it is being used in conjunction with a number.
+LEXICON NounType2Suffix ! plurals
+[PL]@U.NOUNTYPE.CAPABLELANGUAGE@:pu'@U.NOUNTYPE.CAPABLELANGUAGE@		AllNounTypeSuffixes;
+[PL]@U.NOUNTYPE.BODYPART@:Du'@U.NOUNTYPE.BODYPART@				AllNounTypeSuffixes;
+[PL]@U.NOUNTYPE.OTHER@:@U.NOUNTYPE.OTHER@mey					AllNounTypeSuffixes;
+[ALL-OVER-THE-PLACE]@U.NOUNTYPE.CAPABLELANGUAGE@:@U.NOUNTYPE.CAPABLELANGUAGE@mey	AllNounTypeSuffixes; ! When -mey is used for nouns that would normally take -pu’ or -Du’, it carries the connotation of being all over the place.
+[ALL-OVER-THE-PLACE]@U.NOUNTYPE.BODYPART@:@U.NOUNTYPE.BODYPART@mey			AllNounTypeSuffixes; ! When -mey is used for nouns that would normally take -pu’ or -Du’, it carries the connotation of being all over the place.
+[PL]						AllNounTypeSuffixes; ! A plural suffix is never obligatory
+
+LEXICON NounType3Gate
+@D.NOUNTYPE3.ON@@P.NOUNTYPE3.ON@		NounType3Suffix;
+
+LEXICON NounType3Suffix ! accuracy
+[SOCALLED]:qoq					AllNounTypeSuffixes;
+[DUBITATIVE]:Hey				AllNounTypeSuffixes;
+[ACCURATE]:na'					AllNounTypeSuffixes;
+
+
+LEXICON NounType4Gate
+@D.NOUNTYPE4.ON@@P.NOUNTYPE4.ON@		NounType4Suffix;
+
+LEXICON NounType4Suffix ! possession, determiners
+[1P][SG]:wIj					AllNounTypeSuffixes;
+[1P][SG]@U.NOUNTYPE.CAPABLELANGUAGE@:wI'@U.NOUNTYPE.CAPABLELANGUAGE@				AllNounTypeSuffixes;
+[2P][SG]:lIj					AllNounTypeSuffixes;
+[2P][SG]@U.NOUNTYPE.CAPABLELANGUAGE@:lI'@U.NOUNTYPE.CAPABLELANGUAGE@				AllNounTypeSuffixes;
+[3P][SG]:Daj					AllNounTypeSuffixes;
+[1P][PL]:maj					AllNounTypeSuffixes;
+[1P][PL]@U.NOUNTYPE.CAPABLELANGUAGE@:ma'@U.NOUNTYPE.CAPABLELANGUAGE@				AllNounTypeSuffixes;
+[2P][PL]:raj					AllNounTypeSuffixes;
+[2P][PL]@U.NOUNTYPE.CAPABLELANGUAGE@:ra'@U.NOUNTYPE.CAPABLELANGUAGE@				AllNounTypeSuffixes;
+[3P][PL]:chaj					AllNounTypeSuffixes;
+[THIS]:vam					AllNounTypeSuffixes;
+[THAT]:vetlh					AllNounTypeSuffixes;
+
+
+LEXICON NounType5Gate
+@D.NOUNTYPE5.ON@@P.NOUNTYPE5.ON@		NounType5Suffix;
+
+LEXICON NounType5Suffix ! syntactic role
+[LOCATIVE]:Daq					#;
+[ABLATIVE]:vo'					#;
+[CAUSAL]:mo'					#;
+[DATIVE]:vaD					#;
+[TOPIC]:'e'					#;
+
+
+
+! ######################################
+! ########## OTHER WORD FORMS ##########
+! ######################################
+
+LEXICON OtherWordForms
+						Number;
+						Logic;
+						Conjunction;
+
+LEXICON Conjunction
+je[word-and]:je					#;
+joq[word-or]:joq				#;
+ghap[word-xor]:ghap				#;
+'ej[sentence-and]:'ej				#;
+qoj[sentence-or]:qoj				#;
+pagh[sentence-xor]:pagh			#;
+'ach[sentence-contrast]:'ach			#;
+'a[sentence-contrast]:'a			#;
+
+LEXICON Logic
+HISlaH%[yes%]:HISlaH				#;
+HIja'%[yes%]:HIja'				#;
+ghobe'[no]:ghobe'				#;
+
+
+LEXICON Number
+pagh[zero]:pagh					NumberIntermediateSuffix;
+wa'[one]:wa'					NumberIntermediateSuffix;
+cha'[two]:cha'					NumberIntermediateSuffix;
+wej[three]:wej					NumberIntermediateSuffix;
+loS[four]:loS					NumberIntermediateSuffix;
+vagh[five]:vagh					NumberIntermediateSuffix;
+jav[six]:jav					NumberIntermediateSuffix;
+Soch[seven]:Soch				NumberIntermediateSuffix;
+chorgh[eight]:chorgh				NumberIntermediateSuffix;
+Hut[nine]:Hut					NumberIntermediateSuffix;
+
+
+LEXICON NumberIntermediateSuffix
+						NumberMultipleSuffix;
+						NumberFinalSuffix;
+
+LEXICON NumberMultipleSuffix
+maH[x10]:maH					NumberFinalSuffix;
+vatlh[x100]:vatlh				NumberFinalSuffix;
+SaD[x1,000]:SaD					NumberFinalSuffix;
+SanID[x1,000]:SanID				NumberFinalSuffix;
+netlh[x10,000]:netlh				NumberFinalSuffix;
+bIp[x100,000]:bIp				NumberFinalSuffix;
+'uy'[x1,000,000]:'uy'				NumberFinalSuffix;
+
+LEXICON NumberFinalSuffix
+						Number; ! Potentially repeat
+[ORDINAL]:DIch					#;
+[REPEATCOUNT]:logh				#;
+						#;

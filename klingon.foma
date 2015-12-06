@@ -7,34 +7,10 @@ def Word [Alpha]+;
 def GlottalStop [’ | '];
 
 echo
-echo ##Adverb Lex File##
-read lexc klingon-adverb.lexc
+echo ##Main Lex File##
+read lexc klingon.lexc
 eliminate flags
-def AdverbGrammar;
-
-echo
-echo ##Verb Lex File##
-read lexc klingon-verb.lexc
-eliminate flags
-def VerbGrammar;
-
-echo
-echo ##Adjective Lex File##
-read lexc klingon-noun.lexc
-eliminate flags
-def AdjectiveGrammar;
-
-echo
-echo ##Noun Lex File##
-read lexc klingon-noun.lexc
-eliminate flags
-def NounGrammar;
-
-echo
-echo ##Other Words Lex File##
-read lexc klingon-Other.lexc
-eliminate flags
-def OtherWordsGrammar;
+def Grammar;
 
 echo
 echo ##Rules##
@@ -44,7 +20,7 @@ def EndearmentGlottalStop [..] -> GlottalStop || Vowel _ {oy};
 
 def AccentOptions GlottalStop (->) ';
 
-def Grammar [AdverbGrammar | VerbGrammar | AdjectiveGrammar | NounGrammar | OtherWordsGrammar] .o. EndearmentGlottalStop .o. AccentOptions;
+def Grammar [Grammar] .o. EndearmentGlottalStop .o. AccentOptions;
 
 
 echo
