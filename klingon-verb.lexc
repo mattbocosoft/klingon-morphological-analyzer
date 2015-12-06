@@ -100,8 +100,16 @@ LEXICON ImperativePrefix
 
 
 LEXICON Verb
+						StativeVerb;
+						ActionVerb;
+
+LEXICON StativeVerb
+tIn%[to-be-big%]:tIn				RoversSuffix;
 Say'%[to-be-clean%]:Say'			RoversSuffix;
 Quch%[to-be-happy%]:Quch			RoversSuffix;
+
+
+LEXICON ActionVerb
 tlha’%[to-chase%]:tlha’			RoversSuffix;
 Sop%[to-eat%]:Sop				RoversSuffix;
 tu'%[to-find%]:tu'				RoversSuffix;
