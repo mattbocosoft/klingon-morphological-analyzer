@@ -9,7 +9,7 @@ def GlottalStop [’ | '];
 echo
 echo ##Main Lex File##
 read lexc klingon.lexc
-eliminate flags
+# eliminate flags
 def Grammar;
 
 echo
