@@ -100,32 +100,56 @@ LEXICON ImperativePrefix
 
 
 LEXICON Verb
-						StativeVerb;
-						ActionVerb;
+@U.VERBTYPE.STATIVE@				StativeVerb;
+@U.VERBTYPE.ACTION@				ActionVerb;
 
 LEXICON StativeVerb
-tIn%[to-be-big%]:tIn				RoversSuffix;
-Say'%[to-be-clean%]:Say'			RoversSuffix;
-Quch%[to-be-happy%]:Quch			RoversSuffix;
+tIn%[to-be-big%]:tIn				Suffix;
+Say'%[to-be-clean%]:Say'			Suffix;
+mIS%[to-be-confused%]:mIS			Suffix;
+puS%[to-be-few%]:puS				Suffix;
+QaQ%[to-be-good%]:QaQ				Suffix;
+Quch%[to-be-happy%]:Quch			Suffix;
+law'%[to-be-many%]:law'			Suffix;
+chuS%[to-be-noisy%]:chuS			Suffix;
+rur%[to-be-like%]:rur				Suffix;
+rap%[to-be-the-same%]:rap			Suffix;
+yIQ%[to-be-wet%]:yIQ				Suffix;
 
 
 LEXICON ActionVerb
-tlha'%[to-chase%]:tlha'			RoversSuffix;
-Sop%[to-eat%]:Sop				RoversSuffix;
-tu'%[to-find%]:tu'				RoversSuffix;
-nob%[to-give%]:nob				RoversSuffix;
-qIp%[to-hit%]:qIp				RoversSuffix;
-tul%[to-hope%]:tul				RoversSuffix;
-HoH%[to-kill%]:HoH				RoversSuffix;
-laD%[to-read%]:laD				RoversSuffix;
-'ang%[to-reveal%]:'ang				RoversSuffix;
-legh%[to-see%]:legh				RoversSuffix;
-bom%[to-sing%]:bom				RoversSuffix;
-ba'%[to-sit%]:ba'				RoversSuffix;
-Qong%[to-sleep%]:Qong				RoversSuffix;
-Qap%[to-succeed%]:Qap				RoversSuffix;
-yaj%[to-understand%]:yaj			RoversSuffix;
-bej%[to-watch%]:bej				RoversSuffix;
+tlha'%[to-chase%]:tlha'			Suffix;
+Sop%[to-eat%]:Sop				Suffix;
+tu'%[to-find%]:tu'				Suffix;
+nob%[to-give%]:nob				Suffix;
+qIp%[to-hit%]:qIp				Suffix;
+tul%[to-hope%]:tul				Suffix;
+Dub%[to-improve%]:Dub				Suffix;
+HoH%[to-kill%]:HoH				Suffix;
+laD%[to-read%]:laD				Suffix;
+'ang%[to-reveal%]:'ang				Suffix;
+legh%[to-see%]:legh				Suffix;
+ngev%[to-sell%]:ngev				Suffix;
+bom%[to-sing%]:bom				Suffix;
+ba'%[to-sit%]:ba'				Suffix;
+Qong%[to-sleep%]:Qong				Suffix;
+Qap%[to-succeed%]:Qap				Suffix;
+toj%[to-trick%]:toj				Suffix;
+yaj%[to-understand%]:yaj			Suffix;
+bej%[to-watch%]:bej				Suffix;
+
+
+LEXICON Suffix
+@U.VERBTYPE.STATIVE@				Type5NounSuffix;
+						RoversSuffix;
+
+
+LEXICON Type5NounSuffix ! Type-5 noun suffixes that would normally be attached to the noun are instead attached to the adjectival verb
+[LOCATIVE]:Daq					#;
+[ABLATIVE]:vo'					#;
+[CAUSAL]:mo'					#;
+[DATIVE]:vaD					#;
+[TOPIC]:'e'					#;
 
 
 LEXICON RoversSuffix
