@@ -2,12 +2,12 @@
 ! https://en.wikipedia.org/wiki/Klingon_grammar
 ! https://www.youtube.com/watch?v=e5Did-eVQDc
 
-Multichar_Symbols [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [PL-LANGUSER] [PL-BODYPART] [PL-OTHERNOUN] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] [ALL-OVER-THE-PLACE] @D.NOUNTYPE1.ON@ @P.NOUNTYPE1.ON@ @D.NOUNTYPE2.ON@ @P.NOUNTYPE2.ON@ @D.NOUNTYPE3.ON@ @P.NOUNTYPE3.ON@ @D.NOUNTYPE4.ON@ @P.NOUNTYPE4.ON@ @D.NOUNTYPE5.ON@ @P.NOUNTYPE5.ON@ @U.NOUNTYPE.BODYPART@ @U.NOUNTYPE.CAPABLELANGUAGE@ @U.NOUNTYPE.OTHER@ [NEG] [1P] [2P] [3P] [SG] [PL] [GUESSVERB] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED-SUBJ] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DEVERBNOUN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE] [REFUSE] [EMPHASIS] [REVERSE] @U.MOOD.INDICATIVE@ @U.MOOD.IMPERATIVE@ @D.VERBTYPE1.ON@ @P.VERBTYPE1.ON@ @D.VERBTYPE2.ON@ @P.VERBTYPE2.ON@ @D.VERBTYPE3.ON@ @P.VERBTYPE3.ON@ @D.VERBTYPE4.ON@ @P.VERBTYPE4.ON@ @D.VERBTYPE5.ON@ @P.VERBTYPE5.ON@ @D.VERBTYPE6.ON@ @P.VERBTYPE6.ON@ @D.VERBTYPE7.ON@ @P.VERBTYPE7.ON@ @D.VERBTYPE8.ON@ @P.VERBTYPE8.ON@ @D.VERBTYPE9.ON@ @P.VERBTYPE9.ON@ @P.INDICATIVE.UNSPECIFIED@ @R.INDICATIVE.UNSPECIFIED@ @C.INDICATIVE@ @D.INDICATIVE.UNSPECIFIED@ @P.VERBSUFFIX.CONTINUOUS@ @R.VERBSUFFIX.CONTINUOUS@ [ORDINAL] [REPEATCOUNT]
+Multichar_Symbols [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [PL-LANGUSER] [PL-BODYPART] [PL-OTHERNOUN] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] [ALL-OVER-THE-PLACE] @D.NOUNTYPE1.ON@ @P.NOUNTYPE1.ON@ @D.NOUNTYPE2.ON@ @P.NOUNTYPE2.ON@ @D.NOUNTYPE3.ON@ @P.NOUNTYPE3.ON@ @D.NOUNTYPE4.ON@ @P.NOUNTYPE4.ON@ @D.NOUNTYPE5.ON@ @P.NOUNTYPE5.ON@ @U.NOUNTYPE.BODYPART@ @U.NOUNTYPE.CAPABLELANGUAGE@ @U.NOUNTYPE.OTHER@ [NEG] [1P] [2P] [3P] [SG] [PL] [GUESSVERB] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED-SUBJ] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DEVERBNOUN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE] [REFUSE] [EMPHASIS] [REVERSE] @U.MOOD.INDICATIVE@ @U.MOOD.IMPERATIVE@ @D.VERBTYPE1.ON@ @P.VERBTYPE1.ON@ @D.VERBTYPE2.ON@ @P.VERBTYPE2.ON@ @D.VERBTYPE3.ON@ @P.VERBTYPE3.ON@ @D.VERBTYPE4.ON@ @P.VERBTYPE4.ON@ @D.VERBTYPE5.ON@ @P.VERBTYPE5.ON@ @D.VERBTYPE6.ON@ @P.VERBTYPE6.ON@ @D.VERBTYPE7.ON@ @P.VERBTYPE7.ON@ @D.VERBTYPE8.ON@ @P.VERBTYPE8.ON@ @D.VERBTYPE9.ON@ @P.VERBTYPE9.ON@ @P.INDICATIVE.UNSPECIFIED@ @R.INDICATIVE.UNSPECIFIED@ @C.INDICATIVE@ @D.INDICATIVE.UNSPECIFIED@ @P.VERBSUFFIX.CONTINUOUS@ @R.VERBSUFFIX.CONTINUOUS@ @U.VERBTYPE.STATIVE@ @U.VERBTYPE.ACTION@ [ORDINAL] [REPEATCOUNT]
 
 LEXICON Root
 						VerbPrefix;
-!						Noun;
-!						OtherWordForms;
+						Noun;
+						OtherWordForms;
 
 ! ##########################
 ! ########## VERB ##########
@@ -109,42 +109,42 @@ LEXICON Verb
 @U.VERBTYPE.ACTION@				ActionVerb;
 
 LEXICON StativeVerb
-tIn%[to-be-big%]:tIn				VerbSuffix;
-Say'%[to-be-clean%]:Say'			VerbSuffix;
-mIS%[to-be-confused%]:mIS			VerbSuffix;
-puS%[to-be-few%]:puS				VerbSuffix;
-QaQ%[to-be-good%]:QaQ				VerbSuffix;
-Quch%[to-be-happy%]:Quch			VerbSuffix;
-law'%[to-be-many%]:law'			VerbSuffix;
-chuS%[to-be-noisy%]:chuS			VerbSuffix;
-rur%[to-be-like%]:rur				VerbSuffix;
-woch%[to-be-tall%]:woch			VerbSuffix;
-rap%[to-be-the-same%]:rap			VerbSuffix;
-yIQ%[to-be-wet%]:yIQ				VerbSuffix;
+tIn[to-be-big]:tIn				VerbSuffix;
+Say'[to-be-clean]:Say'				VerbSuffix;
+mIS[to-be-confused]:mIS			VerbSuffix;
+puS[to-be-few]:puS				VerbSuffix;
+QaQ[to-be-good]:QaQ				VerbSuffix;
+Quch[to-be-happy]:Quch				VerbSuffix;
+law'[to-be-many]:law'				VerbSuffix;
+chuS[to-be-noisy]:chuS				VerbSuffix;
+rur[to-be-like]:rur				VerbSuffix;
+woch[to-be-tall]:woch				VerbSuffix;
+rap[to-be-the-same]:rap			VerbSuffix;
+yIQ[to-be-wet]:yIQ				VerbSuffix;
 
 
 LEXICON ActionVerb
-qeS%[to-advise%]:qeS				VerbSuffix;
-poj%[to-analyze%]:poj				VerbSuffix;
-tlha'%[to-chase%]:tlha'			VerbSuffix;
-Sop%[to-eat%]:Sop				VerbSuffix;
-tu'%[to-find%]:tu'				VerbSuffix;
-nob%[to-give%]:nob				VerbSuffix;
-qIp%[to-hit%]:qIp				VerbSuffix;
-tul%[to-hope%]:tul				VerbSuffix;
-Dub%[to-improve%]:Dub				VerbSuffix;
-HoH%[to-kill%]:HoH				VerbSuffix;
-laD%[to-read%]:laD				VerbSuffix;
-'ang%[to-reveal%]:'ang				VerbSuffix;
-legh%[to-see%]:legh				VerbSuffix;
-ngev%[to-sell%]:ngev				VerbSuffix;
-bom%[to-sing%]:bom				VerbSuffix;
-ba'%[to-sit%]:ba'				VerbSuffix;
-Qong%[to-sleep%]:Qong				VerbSuffix;
-Qap%[to-succeed%]:Qap				VerbSuffix;
-toj%[to-trick%]:toj				VerbSuffix;
-yaj%[to-understand%]:yaj			VerbSuffix;
-bej%[to-watch%]:bej				VerbSuffix;
+qeS[to-advise]:qeS				VerbSuffix;
+poj[to-analyze]:poj				VerbSuffix;
+tlha'[to-chase]:tlha'				VerbSuffix;
+Sop[to-eat]:Sop					VerbSuffix;
+tu'[to-find]:tu'				VerbSuffix;
+nob[to-give]:nob				VerbSuffix;
+qIp[to-hit]:qIp					VerbSuffix;
+tul[to-hope]:tul				VerbSuffix;
+Dub[to-improve]:Dub				VerbSuffix;
+HoH[to-kill]:HoH				VerbSuffix;
+laD[to-read]:laD				VerbSuffix;
+'ang[to-reveal]:'ang				VerbSuffix;
+legh[to-see]:legh				VerbSuffix;
+ngev[to-sell]:ngev				VerbSuffix;
+bom[to-sing]:bom				VerbSuffix;
+ba'[to-sit]:ba'					VerbSuffix;
+Qong[to-sleep]:Qong				VerbSuffix;
+Qap[to-succeed]:Qap				VerbSuffix;
+toj[to-trick]:toj				VerbSuffix;
+yaj[to-understand]:yaj				VerbSuffix;
+bej[to-watch]:bej				VerbSuffix;
 
 
 LEXICON VerbSuffix
@@ -279,54 +279,54 @@ LEXICON Noun
 @U.NOUNTYPE.OTHER@				NounOther;
 
 LEXICON Pronoun
-bIH%[they,them%]@U.NOUNTYPE.OTHER@:bIH@U.NOUNTYPE.OTHER@				AllNounTypeSuffixes;
-chaH%[they,them%]@U.NOUNTYPE.CAPABLELANGUAGE@:chaH@U.NOUNTYPE.CAPABLELANGUAGE@	AllNounTypeSuffixes;
-'e'%[that%]:'e'					AllNounTypeSuffixes; ! Referring to previous part of sentence
-ghaH%[he,she,him,her%]:ghaH			AllNounTypeSuffixes;
-jIH%[I,me%]:jIH					AllNounTypeSuffixes;
-maH%[we,us%]:maH				AllNounTypeSuffixes;
-net%[that,also%]:net				AllNounTypeSuffixes; ! Similar to 'e'
-'oH%[it%]:'oH					AllNounTypeSuffixes;
-SoH%[you-SG%]:SoH				AllNounTypeSuffixes;
-tlhIH%[you-PL%]:tlhIH				AllNounTypeSuffixes;
+bIH[they,them]@U.NOUNTYPE.OTHER@:bIH@U.NOUNTYPE.OTHER@				AllNounTypeSuffixes;
+chaH[they,them]@U.NOUNTYPE.CAPABLELANGUAGE@:chaH@U.NOUNTYPE.CAPABLELANGUAGE@	AllNounTypeSuffixes;
+'e'[that]:'e'					AllNounTypeSuffixes; ! Referring to previous part of sentence
+ghaH[he,she,him,her]:ghaH			AllNounTypeSuffixes;
+jIH[I,me]:jIH					AllNounTypeSuffixes;
+maH[we,us]:maH					AllNounTypeSuffixes;
+net[that,also]:net				AllNounTypeSuffixes; ! Similar to 'e'
+'oH[it]:'oH					AllNounTypeSuffixes;
+SoH[you-SG]:SoH					AllNounTypeSuffixes;
+tlhIH[you-PL]:tlhIH				AllNounTypeSuffixes;
 
 
 LEXICON NounBodyPart
-mIn%[eye%]:mIn					AllNounTypeSuffixes;
-ghop%[hand%]:ghop				AllNounTypeSuffixes;
+mIn[eye]:mIn					AllNounTypeSuffixes;
+ghop[hand]:ghop					AllNounTypeSuffixes;
 
 
 LEXICON NounCapableOfLanguage
-je'wI'%[buyer%]:je'wI'				AllNounTypeSuffixes;
-puq%[child%]:puq				AllNounTypeSuffixes;
-vav%[father%]:vav				AllNounTypeSuffixes;
-jup%[friend%]:jup				AllNounTypeSuffixes;
-loD%[man%]:loD					AllNounTypeSuffixes;
-ghot%[person]:ghot				AllNounTypeSuffixes;
-qetwI'%[runner%]:qetwI'			AllNounTypeSuffixes;
-be'%[woman%]:be'				AllNounTypeSuffixes;
+je'wI'[buyer]:je'wI'				AllNounTypeSuffixes;
+puq[child]:puq					AllNounTypeSuffixes;
+vav[father]:vav					AllNounTypeSuffixes;
+jup[friend]:jup					AllNounTypeSuffixes;
+loD[man]:loD					AllNounTypeSuffixes;
+ghot[person]:ghot				AllNounTypeSuffixes;
+qetwI'[runner]:qetwI'				AllNounTypeSuffixes;
+be'[woman]:be'					AllNounTypeSuffixes;
 
 
 LEXICON NounOther
-quS%[chair%]:quS				AllNounTypeSuffixes;
-choH%[change%]:choH				AllNounTypeSuffixes;
-veng%[city%]:veng				AllNounTypeSuffixes;
-qoj%[cliff%]:qoj				AllNounTypeSuffixes;
-wep%[coat%]:wep					AllNounTypeSuffixes;
-Soj%[food%]:Soj					AllNounTypeSuffixes;
-ghom%[group%]:ghom				AllNounTypeSuffixes;
-QaH%[help%]:QaH					AllNounTypeSuffixes;
-juH%[house%]:juH				AllNounTypeSuffixes;
-qach%[idea%]:qach				AllNounTypeSuffixes;
-nav%[paper%]:nav				AllNounTypeSuffixes;
-Saj%[pet%]:Saj					AllNounTypeSuffixes;
-yuQ%[planet%]:yuQ				AllNounTypeSuffixes;
-pa'%[room%]:pa'					AllNounTypeSuffixes;
-ghu'%[situation%]:ghu'				AllNounTypeSuffixes;
-Hov%[star%]:Hov					AllNounTypeSuffixes;
-Duj%[ship%]:Duj					AllNounTypeSuffixes;
-targh%[targ%]:targh				AllNounTypeSuffixes; ! A "targ" is a Klingon animal somewhat resembling a boar
-cha%[torpedo%]:cha				AllNounTypeSuffixes;
+quS[chair]:quS					AllNounTypeSuffixes;
+choH[change]:choH				AllNounTypeSuffixes;
+veng[city]:veng					AllNounTypeSuffixes;
+qoj[cliff]:qoj					AllNounTypeSuffixes;
+wep[coat]:wep					AllNounTypeSuffixes;
+Soj[food]:Soj					AllNounTypeSuffixes;
+ghom[group]:ghom				AllNounTypeSuffixes;
+QaH[help]:QaH					AllNounTypeSuffixes;
+juH[house]:juH					AllNounTypeSuffixes;
+qach[idea]:qach					AllNounTypeSuffixes;
+nav[paper]:nav					AllNounTypeSuffixes;
+Saj[pet]:Saj					AllNounTypeSuffixes;
+yuQ[planet]:yuQ					AllNounTypeSuffixes;
+pa'[room]:pa'					AllNounTypeSuffixes;
+ghu'[situation]:ghu'				AllNounTypeSuffixes;
+Hov[star]:Hov					AllNounTypeSuffixes;
+Duj[ship]:Duj					AllNounTypeSuffixes;
+targh[targ]:targh				AllNounTypeSuffixes; ! A "targ" is a Klingon animal somewhat resembling a boar
+cha[torpedo]:cha				AllNounTypeSuffixes;
 
 
 LEXICON AllNounTypeSuffixes
@@ -418,8 +418,8 @@ pagh[sentence-xor]:pagh			#;
 'a[sentence-contrast]:'a			#;
 
 LEXICON Logic
-HISlaH%[yes%]:HISlaH				#;
-HIja'%[yes%]:HIja'				#;
+HISlaH[yes]:HISlaH				#;
+HIja'[yes]:HIja'				#;
 ghobe'[no]:ghobe'				#;
 
 
