@@ -2,27 +2,27 @@
 ! https://en.wikipedia.org/wiki/Klingon_grammar
 ! https://www.youtube.com/watch?v=e5Did-eVQDc
 
-Multichar_Symbols [NEG] [1P] [2P] [3P] [SG] [PL] [GUESSVERB] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED-SUBJ] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DEVERBNOUN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE] [REFUSE] [EMPHASIS] [REVERSE] @U.MOOD.INDICATIVE@ @U.MOOD.IMPERATIVE@ @D.TYPE1.ON@ @P.TYPE1.ON@ @D.TYPE2.ON@ @P.TYPE2.ON@ @D.TYPE3.ON@ @P.TYPE3.ON@ @D.TYPE4.ON@ @P.TYPE4.ON@ @D.TYPE5.ON@ @P.TYPE5.ON@ @D.TYPE6.ON@ @P.TYPE6.ON@ @D.TYPE7.ON@ @P.TYPE7.ON@ @D.TYPE8.ON@ @P.TYPE8.ON@ @D.TYPE9.ON@ @P.TYPE9.ON@ @P.INDICATIVE.UNSPECIFIED@ @R.INDICATIVE.UNSPECIFIED@ @C.INDICATIVE@ @D.INDICATIVE.UNSPECIFIED@ @P.SUFFIX.CONTINUOUS@ @R.SUFFIX.CONTINUOUS@
+Multichar_Symbols [NEG] [1P] [2P] [3P] [SG] [PL] [GUESSVERB] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED-SUBJ] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DEVERBNOUN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE] [REFUSE] [EMPHASIS] [REVERSE] @U.MOOD.INDICATIVE@ @U.MOOD.IMPERATIVE@ @D.VERBTYPE1.ON@ @P.VERBTYPE1.ON@ @D.VERBTYPE2.ON@ @P.VERBTYPE2.ON@ @D.VERBTYPE3.ON@ @P.VERBTYPE3.ON@ @D.VERBTYPE4.ON@ @P.VERBTYPE4.ON@ @D.VERBTYPE5.ON@ @P.VERBTYPE5.ON@ @D.VERBTYPE6.ON@ @P.VERBTYPE6.ON@ @D.VERBTYPE7.ON@ @P.VERBTYPE7.ON@ @D.VERBTYPE8.ON@ @P.VERBTYPE8.ON@ @D.VERBTYPE9.ON@ @P.VERBTYPE9.ON@ @P.INDICATIVE.UNSPECIFIED@ @R.INDICATIVE.UNSPECIFIED@ @C.INDICATIVE@ @D.INDICATIVE.UNSPECIFIED@ @P.VERBSUFFIX.CONTINUOUS@ @R.VERBSUFFIX.CONTINUOUS@
 
 LEXICON Root
-						Prefix;
+						VerbPrefix;
 
 
-LEXICON Prefix
-@U.MOOD.INDICATIVE@				IndicativePrefix;
-@U.MOOD.IMPERATIVE@				ImperativePrefix;
+LEXICON VerbPrefix
+@U.MOOD.INDICATIVE@				VerbIndicativePrefix;
+@U.MOOD.IMPERATIVE@				VerbImperativePrefix;
 
 
-LEXICON IndicativePrefix
-[1P][SG]:0					IndicativePrefix1PSG;
-[2P][SG]:0					IndicativePrefix2PSG;
-[3P][SG]:0					IndicativePrefix3PSG;
-[1P][PL]:0					IndicativePrefix1PPL;
-[2P][PL]:0					IndicativePrefix2PPL;
-[3P][PL]:0					IndicativePrefix3PPL;
-@P.INDICATIVE.UNSPECIFIED@			IndicativePrefixUnspecified;
+LEXICON VerbIndicativePrefix
+[1P][SG]:0					VerbIndicativePrefix1PSG;
+[2P][SG]:0					VerbIndicativePrefix2PSG;
+[3P][SG]:0					VerbIndicativePrefix3PSG;
+[1P][PL]:0					VerbIndicativePrefix1PPL;
+[2P][PL]:0					VerbIndicativePrefix2PPL;
+[3P][PL]:0					VerbIndicativePrefix3PPL;
+@P.INDICATIVE.UNSPECIFIED@			vIndicativePrefixUnspecified;
 
-LEXICON IndicativePrefix1PSG
+LEXICON VerbIndicativePrefix1PSG
 0:jI						Verb; ! No Object
 ![OBJ-1P][OBJ-SG]:0				Verb;
 [OBJ-2P][OBJ-SG]:qa				Verb;
@@ -31,7 +31,7 @@ LEXICON IndicativePrefix1PSG
 [OBJ-2P][OBJ-PL]:Sa				Verb;
 [OBJ-3P][OBJ-PL]:vI				Verb;
 
-LEXICON IndicativePrefix2PSG
+LEXICON VerbIndicativePrefix2PSG
 0:bI						Verb; ! No Object
 [OBJ-1P][OBJ-SG]:cho				Verb;
 ![OBJ-2P][OBJ-SG]:0				Verb;
@@ -40,7 +40,7 @@ LEXICON IndicativePrefix2PSG
 ![OBJ-2P][OBJ-PL]:0				Verb;
 [OBJ-3P][OBJ-PL]:Da				Verb;
 
-LEXICON IndicativePrefix3PSG
+LEXICON VerbIndicativePrefix3PSG
 						Verb; ! No Object
 [OBJ-1P][OBJ-SG]:mu				Verb;
 [OBJ-2P][OBJ-SG]:Du				Verb;
@@ -49,7 +49,7 @@ LEXICON IndicativePrefix3PSG
 [OBJ-2P][OBJ-PL]:lI				Verb;
 [OBJ-3P][OBJ-PL]:0				Verb;
 
-LEXICON IndicativePrefix1PPL
+LEXICON VerbIndicativePrefix1PPL
 0:ma						Verb; ! No Object
 ![OBJ-1P][OBJ-SG]:0				Verb;
 [OBJ-2P][OBJ-SG]:pI				Verb;
@@ -58,7 +58,7 @@ LEXICON IndicativePrefix1PPL
 [OBJ-2P][OBJ-PL]:re				Verb;
 [OBJ-3P][OBJ-PL]:DI				Verb;
 
-LEXICON IndicativePrefix2PPL
+LEXICON VerbIndicativePrefix2PPL
 0:Su						Verb; ! No Object
 [OBJ-1P][OBJ-SG]:tu				Verb;
 ![OBJ-2P][OBJ-SG]:0				Verb;
@@ -67,7 +67,7 @@ LEXICON IndicativePrefix2PPL
 ![OBJ-2P][OBJ-PL]:0				Verb;
 [OBJ-3P][OBJ-PL]:bo				Verb;
 
-LEXICON IndicativePrefix3PPL
+LEXICON VerbIndicativePrefix3PPL
 						Verb; ! No Object
 [OBJ-1P][OBJ-SG]:mu				Verb;
 [OBJ-2P][OBJ-SG]:nI				Verb;
@@ -76,7 +76,7 @@ LEXICON IndicativePrefix3PPL
 [OBJ-2P][OBJ-PL]:lI				Verb;
 [OBJ-3P][OBJ-PL]:0				Verb;
 
-LEXICON IndicativePrefixUnspecified
+LEXICON VerbIndicativePrefixUnspecified
 						Verb; ! No Object
 [OBJ-1P][OBJ-SG]:vI				Verb;
 [OBJ-2P][OBJ-SG]:Da				Verb;
@@ -86,7 +86,7 @@ LEXICON IndicativePrefixUnspecified
 [OBJ-3P][OBJ-PL]:lu				Verb;
 
 
-LEXICON ImperativePrefix
+LEXICON VerbImperativePrefix
 [2P][SG]:yI					Verb;
 [2P][SG][OBJ-1P][OBJ-SG]:HI			Verb;
 [2P][SG][OBJ-3P][OBJ-SG]:yI			Verb;
@@ -104,164 +104,156 @@ LEXICON Verb
 @U.VERBTYPE.ACTION@				ActionVerb;
 
 LEXICON StativeVerb
-tIn%[to-be-big%]:tIn				Suffix;
-Say'%[to-be-clean%]:Say'			Suffix;
-mIS%[to-be-confused%]:mIS			Suffix;
-puS%[to-be-few%]:puS				Suffix;
-QaQ%[to-be-good%]:QaQ				Suffix;
-Quch%[to-be-happy%]:Quch			Suffix;
-law'%[to-be-many%]:law'			Suffix;
-chuS%[to-be-noisy%]:chuS			Suffix;
-rur%[to-be-like%]:rur				Suffix;
-rap%[to-be-the-same%]:rap			Suffix;
-yIQ%[to-be-wet%]:yIQ				Suffix;
+tIn%[to-be-big%]:tIn				VerbSuffix;
+Say'%[to-be-clean%]:Say'			VerbSuffix;
+mIS%[to-be-confused%]:mIS			VerbSuffix;
+puS%[to-be-few%]:puS				VerbSuffix;
+QaQ%[to-be-good%]:QaQ				VerbSuffix;
+Quch%[to-be-happy%]:Quch			VerbSuffix;
+law'%[to-be-many%]:law'			VerbSuffix;
+chuS%[to-be-noisy%]:chuS			VerbSuffix;
+rur%[to-be-like%]:rur				VerbSuffix;
+rap%[to-be-the-same%]:rap			VerbSuffix;
+yIQ%[to-be-wet%]:yIQ				VerbSuffix;
 
 
 LEXICON ActionVerb
-poj%[to-analyze%]:poj				Suffix;
-tlha'%[to-chase%]:tlha'			Suffix;
-Sop%[to-eat%]:Sop				Suffix;
-tu'%[to-find%]:tu'				Suffix;
-nob%[to-give%]:nob				Suffix;
-qIp%[to-hit%]:qIp				Suffix;
-tul%[to-hope%]:tul				Suffix;
-Dub%[to-improve%]:Dub				Suffix;
-HoH%[to-kill%]:HoH				Suffix;
-laD%[to-read%]:laD				Suffix;
-'ang%[to-reveal%]:'ang				Suffix;
-legh%[to-see%]:legh				Suffix;
-ngev%[to-sell%]:ngev				Suffix;
-bom%[to-sing%]:bom				Suffix;
-ba'%[to-sit%]:ba'				Suffix;
-Qong%[to-sleep%]:Qong				Suffix;
-Qap%[to-succeed%]:Qap				Suffix;
-toj%[to-trick%]:toj				Suffix;
-yaj%[to-understand%]:yaj			Suffix;
-bej%[to-watch%]:bej				Suffix;
+poj%[to-analyze%]:poj				VerbSuffix;
+tlha'%[to-chase%]:tlha'			VerbSuffix;
+Sop%[to-eat%]:Sop				VerbSuffix;
+tu'%[to-find%]:tu'				VerbSuffix;
+nob%[to-give%]:nob				VerbSuffix;
+qIp%[to-hit%]:qIp				VerbSuffix;
+tul%[to-hope%]:tul				VerbSuffix;
+Dub%[to-improve%]:Dub				VerbSuffix;
+HoH%[to-kill%]:HoH				VerbSuffix;
+laD%[to-read%]:laD				VerbSuffix;
+'ang%[to-reveal%]:'ang				VerbSuffix;
+legh%[to-see%]:legh				VerbSuffix;
+ngev%[to-sell%]:ngev				VerbSuffix;
+bom%[to-sing%]:bom				VerbSuffix;
+ba'%[to-sit%]:ba'				VerbSuffix;
+Qong%[to-sleep%]:Qong				VerbSuffix;
+Qap%[to-succeed%]:Qap				VerbSuffix;
+toj%[to-trick%]:toj				VerbSuffix;
+yaj%[to-understand%]:yaj			VerbSuffix;
+bej%[to-watch%]:bej				VerbSuffix;
 
 
-LEXICON Suffix
-@U.VERBTYPE.STATIVE@				Type5NounSuffix;
-						RoversSuffix;
+LEXICON VerbSuffix
+@U.VERBTYPE.STATIVE@				NounType5Suffix; ! Type-5 noun suffixes that would normally be attached to the noun are instead attached to the adjectival verb
+						VerbRoversSuffix;
 
 
-LEXICON Type5NounSuffix ! Type-5 noun suffixes that would normally be attached to the noun are instead attached to the adjectival verb
-[LOCATIVE]:Daq					#;
-[ABLATIVE]:vo'					#;
-[CAUSAL]:mo'					#;
-[DATIVE]:vaD					#;
-[TOPIC]:'e'					#;
-
-
-LEXICON RoversSuffix
+LEXICON VerbRoversSuffix
 ! "These suffixes have no defined position, and can go after the verb stem or after any suffix – even another rover – except after a type-9 suffix or where the result would be meaningless. They modify whatever directly precedes them."
-[NEG]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@be'			RoversSuffix;
-[NEG]@U.MOOD.IMPERATIVE@:@U.MOOD.IMPERATIVE@Qo'			RoversSuffix;
-[REFUSE]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@Qo'			RoversSuffix;
-[EMPHASIS]:qu'								RoversSuffix;
-[REVERSE]:Ha'								RoversSuffix;
-									AllTypeSuffixes;
+[NEG]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@be'			VerbRoversSuffix;
+[NEG]@U.MOOD.IMPERATIVE@:@U.MOOD.IMPERATIVE@Qo'			VerbRoversSuffix;
+[REFUSE]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@Qo'			VerbRoversSuffix;
+[EMPHASIS]:qu'								VerbRoversSuffix;
+[REVERSE]:Ha'								VerbRoversSuffix;
+									AllVerbTypeSuffixes;
 
 
-LEXICON AllTypeSuffixes
-			Type1Gate;
-@P.TYPE1.ON@			Type2Gate;
-@P.TYPE1.ON@@P.TYPE2.ON@		Type3Gate;
-@P.TYPE1.ON@@P.TYPE2.ON@@P.TYPE3.ON@		Type4Gate;
-@P.TYPE1.ON@@P.TYPE2.ON@@P.TYPE3.ON@@P.TYPE4.ON@		Type5Gate;
-@P.TYPE1.ON@@P.TYPE2.ON@@P.TYPE3.ON@@P.TYPE4.ON@@P.TYPE5.ON@		Type6Gate;
-@P.TYPE1.ON@@P.TYPE2.ON@@P.TYPE3.ON@@P.TYPE4.ON@@P.TYPE5.ON@@P.TYPE6.ON@		Type7Gate;
-@P.TYPE1.ON@@P.TYPE2.ON@@P.TYPE3.ON@@P.TYPE4.ON@@P.TYPE5.ON@@P.TYPE6.ON@@P.TYPE7.ON@		Type8Gate;
-@P.TYPE1.ON@@P.TYPE2.ON@@P.TYPE3.ON@@P.TYPE4.ON@@P.TYPE5.ON@@P.TYPE6.ON@@P.TYPE7.ON@@P.TYPE8.ON@		Type9Gate;
-									MoodTag;
+LEXICON AllVerbTypeSuffixes
+			VerbType1Gate;
+@P.VERBTYPE1.ON@			VerbType2Gate;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@		VerbType3Gate;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@		VerbType4Gate;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@		VerbType5Gate;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@		VerbType6Gate;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@P.VERBTYPE6.ON@		VerbType7Gate;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@P.VERBTYPE6.ON@@P.VERBTYPE7.ON@		VerbType8Gate;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@P.VERBTYPE6.ON@@P.VERBTYPE7.ON@@P.VERBTYPE8.ON@		VerbType9Gate;
+									VerbMoodTag;
 
 
-LEXICON MoodTag
+LEXICON VerbMoodTag
 [INDICATIVE]@U.MOOD.INDICATIVE@@D.INDICATIVE.UNSPECIFIED@:@U.MOOD.INDICATIVE@@D.INDICATIVE.UNSPECIFIED@			#;
 [IMPERATIVE]@U.MOOD.IMPERATIVE@:@U.MOOD.IMPERATIVE@			#;
 
 
-LEXICON Type1Gate
-@D.TYPE1.ON@@P.TYPE1.ON@			Type1Suffix;
+LEXICON VerbType1Gate
+@D.VERBTYPE1.ON@@P.VERBTYPE1.ON@			VerbType1Suffix;
 
-LEXICON Type1Suffix ! 2 Count = reflexive/reciprocal
-[REFLEXIVE]:'egh				RoversSuffix;
-[RECIPROCAL]:chuq				RoversSuffix;
-
-
-LEXICON Type2Gate
-@D.TYPE2.ON@@P.TYPE2.ON@			Type2Suffix;
-
-LEXICON Type2Suffix ! 5 Count = volition/necessity
-[REQUIRED]:nIS					RoversSuffix;
-[WILLING]:qang					RoversSuffix;
-[PREPARED]:rup					RoversSuffix;
-[SET-UP]:beH					RoversSuffix;
-[AFRAID]:vIp					RoversSuffix;
+LEXICON VerbType1Suffix ! 2 Count = reflexive/reciprocal
+[REFLEXIVE]:'egh				VerbRoversSuffix;
+[RECIPROCAL]:chuq				VerbRoversSuffix;
 
 
-LEXICON Type3Gate
-@D.TYPE3.ON@@P.TYPE3.ON@			Type3Suffix;
+LEXICON VerbType2Gate
+@D.VERBTYPE2.ON@@P.VERBTYPE2.ON@			VerbType2Suffix;
 
-LEXICON Type3Suffix ! 2 Count = inceptive/inchoative
-[STATECHANGE]:choH				RoversSuffix;
-[RESUME]:qa'					RoversSuffix;
-
-
-LEXICON Type4Gate
-@D.TYPE4.ON@@P.TYPE4.ON@			Type4Suffix;
-
-LEXICON Type4Suffix ! 1 Count = causative
-[CAUSATIVE]:moH					RoversSuffix;
+LEXICON VerbType2Suffix ! 5 Count = volition/necessity
+[REQUIRED]:nIS					VerbRoversSuffix;
+[WILLING]:qang					VerbRoversSuffix;
+[PREPARED]:rup					VerbRoversSuffix;
+[SET-UP]:beH					VerbRoversSuffix;
+[AFRAID]:vIp					VerbRoversSuffix;
 
 
-LEXICON Type5Gate
-@D.TYPE5.ON@@P.TYPE5.ON@			Type5Suffix;
+LEXICON VerbType3Gate
+@D.VERBTYPE3.ON@@P.VERBTYPE3.ON@			VerbType3Suffix;
 
-LEXICON Type5Suffix ! 2 Count = undefined subject; capability
-[UNDEFINED-SUBJ]@R.INDICATIVE.UNSPECIFIED@@C.INDICATIVE@:@R.INDICATIVE.UNSPECIFIED@@C.INDICATIVE@lu				RoversSuffix;
-[CAPABLE]:laH					RoversSuffix;
-
-
-LEXICON Type6Gate
-@D.TYPE6.ON@@P.TYPE6.ON@			Type6Suffix;
-
-LEXICON Type6Suffix ! 4 Count = perfection; uncertainty
-[BEST]:chu'					RoversSuffix;
-[CERTAIN]:bej					RoversSuffix;
-[UNCERTAIN]:law'				RoversSuffix;
-[OBVIOUS]:ba'					RoversSuffix;
+LEXICON VerbType3Suffix ! 2 Count = inceptive/inchoative
+[STATECHANGE]:choH				VerbRoversSuffix;
+[RESUME]:qa'					VerbRoversSuffix;
 
 
-LEXICON Type7Gate
-@D.TYPE7.ON@@P.TYPE7.ON@			Type7Suffix;
+LEXICON VerbType4Gate
+@D.VERBTYPE4.ON@@P.VERBTYPE4.ON@			VerbType4Suffix;
 
-LEXICON Type7Suffix ! 4 Count = aspect
-[PERFECT]:pu'					RoversSuffix;
-[PERFECTPURPOSE]:ta'				RoversSuffix;
-[CONTINUOUS]@P.SUFFIX.CONTINUOUS@:@P.SUFFIX.CONTINUOUS@taH		RoversSuffix;
-[CONTINUOUSEND]:lI'				RoversSuffix;
+LEXICON VerbType4Suffix ! 1 Count = causative
+[CAUSATIVE]:moH					VerbRoversSuffix;
 
 
-LEXICON Type8Gate
-@D.TYPE8.ON@@P.TYPE8.ON@			Type8Suffix;
+LEXICON VerbType5Gate
+@D.VERBTYPE5.ON@@P.VERBTYPE5.ON@			VerbType5Suffix;
 
-LEXICON Type8Suffix ! 1 Count = honorific
-[HONOR]:neS					RoversSuffix;
+LEXICON VerbType5Suffix ! 2 Count = undefined subject; capability
+[UNDEFINED-SUBJ]@R.INDICATIVE.UNSPECIFIED@@C.INDICATIVE@:@R.INDICATIVE.UNSPECIFIED@@C.INDICATIVE@lu				VerbRoversSuffix;
+[CAPABLE]:laH					VerbRoversSuffix;
 
 
-LEXICON Type9Gate
-@D.TYPE9.ON@@P.TYPE9.ON@			Type9Suffix;
+LEXICON VerbType6Gate
+@D.VERBTYPE6.ON@@P.VERBTYPE6.ON@			VerbType6Suffix;
 
-LEXICON Type9Suffix ! 11 Count = syntactic
-[PERSON]:wI'					MoodTag; ! Nominalizer
-[DEVERBNOUN]:ghach				MoodTag; ! Nominalizer
-[INTEROGATIVE]:'a'				MoodTag; ! Modal
-[OPTATIVE]:jaj					MoodTag; ! Modal
-[BEFORE]:pa'					MoodTag; ! Subordinator
-[SIMULTANEOUS]@R.SUFFIX.CONTINUOUS@:vIS@R.SUFFIX.CONTINUOUS@				MoodTag; ! Subordinator - It is always used in conjunction with the type-7 suffix continuous suffix -taH.
-[AFTER]:DI'					MoodTag; ! Subordinator
-[CONDITIONAL]:chugh				MoodTag; ! Cause and effect
-[CAUSE]:mo'					MoodTag; ! Cause and effect
-[RELATIVE]:bogh					MoodTag; ! Relative and purpose clause
-[PURPOSE]:meH					MoodTag; ! Relative and purpose clause
+LEXICON VerbType6Suffix ! 4 Count = perfection; uncertainty
+[BEST]:chu'					VerbRoversSuffix;
+[CERTAIN]:bej					VerbRoversSuffix;
+[UNCERTAIN]:law'				VerbRoversSuffix;
+[OBVIOUS]:ba'					VerbRoversSuffix;
+
+
+LEXICON VerbType7Gate
+@D.VERBTYPE7.ON@@P.VERBTYPE7.ON@			VerbType7Suffix;
+
+LEXICON VerbType7Suffix ! 4 Count = aspect
+[PERFECT]:pu'					VerbRoversSuffix;
+[PERFECTPURPOSE]:ta'				VerbRoversSuffix;
+[CONTINUOUS]@P.VERBSUFFIX.CONTINUOUS@:@P.VERBSUFFIX.CONTINUOUS@taH		VerbRoversSuffix;
+[CONTINUOUSEND]:lI'				VerbRoversSuffix;
+
+
+LEXICON VerbType8Gate
+@D.VERBTYPE8.ON@@P.VERBTYPE8.ON@			VerbType8Suffix;
+
+LEXICON VerbType8Suffix ! 1 Count = honorific
+[HONOR]:neS					VerbRoversSuffix;
+
+
+LEXICON VerbType9Gate
+@D.VERBTYPE9.ON@@P.VERBTYPE9.ON@			VerbType9Suffix;
+
+LEXICON VerbType9Suffix ! 11 Count = syntactic
+[PERSON]:wI'					VerbMoodTag; ! Nominalizer
+[DEVERBNOUN]:ghach				VerbMoodTag; ! Nominalizer
+[INTEROGATIVE]:'a'				VerbMoodTag; ! Modal
+[OPTATIVE]:jaj					VerbMoodTag; ! Modal
+[BEFORE]:pa'					VerbMoodTag; ! Subordinator
+[SIMULTANEOUS]@R.VERBSUFFIX.CONTINUOUS@:vIS@R.VERBSUFFIX.CONTINUOUS@				VerbMoodTag; ! Subordinator - It is always used in conjunction with the type-7 suffix continuous suffix -taH.
+[AFTER]:DI'					VerbMoodTag; ! Subordinator
+[CONDITIONAL]:chugh				VerbMoodTag; ! Cause and effect
+[CAUSE]:mo'					VerbMoodTag; ! Cause and effect
+[RELATIVE]:bogh					VerbMoodTag; ! Relative and purpose clause
+[PURPOSE]:meH					VerbMoodTag; ! Relative and purpose clause

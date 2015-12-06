@@ -2,7 +2,7 @@
 ! https://en.wikipedia.org/wiki/Klingon_grammar
 ! https://www.youtube.com/watch?v=e5Did-eVQDc
 
-Multichar_Symbols [1P] [2P] [3P] [SG] [PL] [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [PL-LANGUSER] [PL-BODYPART] [PL-OTHERNOUN] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] [ALL-OVER-THE-PLACE] @D.TYPE1.ON@ @P.TYPE1.ON@ @D.TYPE2.ON@ @P.TYPE2.ON@ @D.TYPE3.ON@ @P.TYPE3.ON@ @D.TYPE4.ON@ @P.TYPE4.ON@ @D.TYPE5.ON@ @P.TYPE5.ON@ @U.NOUNTYPE.BODYPART@ @U.NOUNTYPE.CAPABLELANGUAGE@ @U.NOUNTYPE.OTHER@
+Multichar_Symbols [1P] [2P] [3P] [SG] [PL] [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [PL-LANGUSER] [PL-BODYPART] [PL-OTHERNOUN] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] [ALL-OVER-THE-PLACE] @D.NOUNTYPE1.ON@ @P.NOUNTYPE1.ON@ @D.NOUNTYPE2.ON@ @P.NOUNTYPE2.ON@ @D.NOUNTYPE3.ON@ @P.NOUNTYPE3.ON@ @D.NOUNTYPE4.ON@ @P.NOUNTYPE4.ON@ @D.NOUNTYPE5.ON@ @P.NOUNTYPE5.ON@ @U.NOUNTYPE.BODYPART@ @U.NOUNTYPE.CAPABLELANGUAGE@ @U.NOUNTYPE.OTHER@
 
 LEXICON Root
 						Pronoun;
@@ -12,118 +12,118 @@ LEXICON Root
 
 
 LEXICON Pronoun
-bIH%[they,them%]@U.NOUNTYPE.OTHER@:bIH@U.NOUNTYPE.OTHER@				TypeSuffix;
-chaH%[they,them%]@U.NOUNTYPE.CAPABLELANGUAGE@:chaH@U.NOUNTYPE.CAPABLELANGUAGE@	TypeSuffix;
-'e'%[that%]:'e'					TypeSuffix; ! Referring to previous part of sentence
-ghaH%[he,she,him,her%]:ghaH			TypeSuffix;
-jIH%[I,me%]:jIH					TypeSuffix;
-maH%[we,us%]:maH				TypeSuffix;
-net%[that,also%]:net				TypeSuffix; ! Similar to 'e'
-'oH%[it%]:'oH					TypeSuffix;
-SoH%[you-SG%]:SoH				TypeSuffix;
-tlhIH%[you-PL%]:tlhIH				TypeSuffix;
+bIH%[they,them%]@U.NOUNTYPE.OTHER@:bIH@U.NOUNTYPE.OTHER@				AllNounTypeSuffixes;
+chaH%[they,them%]@U.NOUNTYPE.CAPABLELANGUAGE@:chaH@U.NOUNTYPE.CAPABLELANGUAGE@	AllNounTypeSuffixes;
+'e'%[that%]:'e'					AllNounTypeSuffixes; ! Referring to previous part of sentence
+ghaH%[he,she,him,her%]:ghaH			AllNounTypeSuffixes;
+jIH%[I,me%]:jIH					AllNounTypeSuffixes;
+maH%[we,us%]:maH				AllNounTypeSuffixes;
+net%[that,also%]:net				AllNounTypeSuffixes; ! Similar to 'e'
+'oH%[it%]:'oH					AllNounTypeSuffixes;
+SoH%[you-SG%]:SoH				AllNounTypeSuffixes;
+tlhIH%[you-PL%]:tlhIH				AllNounTypeSuffixes;
 
 
 LEXICON NounBodyPart
-mIn%[eye%]:mIn					TypeSuffix;
-ghop%[hand%]:ghop				TypeSuffix;
+mIn%[eye%]:mIn					AllNounTypeSuffixes;
+ghop%[hand%]:ghop				AllNounTypeSuffixes;
 
 
 LEXICON NounCapableOfLanguage
-qeSwI'pu'%[advisor%]:qeSwI'pu'			TypeSuffix;
-je'wI'%[buyer%]:je'wI'				TypeSuffix;
-puq%[child%]:puq				TypeSuffix;
-vav%[father%]:vav				TypeSuffix;
-jup%[friend%]:jup				TypeSuffix;
-loD%[man%]:loD					TypeSuffix;
-ghot%[person]:ghot				TypeSuffix;
-qetwI'%[runner%]:qetwI'			TypeSuffix;
-be'%[woman%]:be'				TypeSuffix;
+qeSwI'pu'%[advisor%]:qeSwI'pu'			AllNounTypeSuffixes;
+je'wI'%[buyer%]:je'wI'				AllNounTypeSuffixes;
+puq%[child%]:puq				AllNounTypeSuffixes;
+vav%[father%]:vav				AllNounTypeSuffixes;
+jup%[friend%]:jup				AllNounTypeSuffixes;
+loD%[man%]:loD					AllNounTypeSuffixes;
+ghot%[person]:ghot				AllNounTypeSuffixes;
+qetwI'%[runner%]:qetwI'			AllNounTypeSuffixes;
+be'%[woman%]:be'				AllNounTypeSuffixes;
 
 
 LEXICON NounOther
-quS%[chair%]:quS				TypeSuffix;
-choH%[change%]:choH				TypeSuffix;
-veng%[city%]:veng				TypeSuffix;
-qoj%[cliff%]:qoj				TypeSuffix;
-wep%[coat%]:wep					TypeSuffix;
-Soj%[food%]:Soj					TypeSuffix;
-ghom%[group%]:ghom				TypeSuffix;
-QaH%[help%]:QaH					TypeSuffix;
-juH%[house%]:juH				TypeSuffix;
-qach%[idea%]:qach				TypeSuffix;
-nav%[paper%]:nav				TypeSuffix;
-Saj%[pet%]:Saj					TypeSuffix;
-yuQ%[planet%]:yuQ				TypeSuffix;
-pa'%[room%]:pa'					TypeSuffix;
-ghu'%[situation%]:ghu'				TypeSuffix;
-Hov%[star%]:Hov					TypeSuffix;
-Duj%[ship%]:Duj					TypeSuffix;
-targh%[targ%]:targh				TypeSuffix; ! A "targ" is a Klingon animal somewhat resembling a boar
-cha%[torpedo%]:cha				TypeSuffix;
+quS%[chair%]:quS				AllNounTypeSuffixes;
+choH%[change%]:choH				AllNounTypeSuffixes;
+veng%[city%]:veng				AllNounTypeSuffixes;
+qoj%[cliff%]:qoj				AllNounTypeSuffixes;
+wep%[coat%]:wep					AllNounTypeSuffixes;
+Soj%[food%]:Soj					AllNounTypeSuffixes;
+ghom%[group%]:ghom				AllNounTypeSuffixes;
+QaH%[help%]:QaH					AllNounTypeSuffixes;
+juH%[house%]:juH				AllNounTypeSuffixes;
+qach%[idea%]:qach				AllNounTypeSuffixes;
+nav%[paper%]:nav				AllNounTypeSuffixes;
+Saj%[pet%]:Saj					AllNounTypeSuffixes;
+yuQ%[planet%]:yuQ				AllNounTypeSuffixes;
+pa'%[room%]:pa'					AllNounTypeSuffixes;
+ghu'%[situation%]:ghu'				AllNounTypeSuffixes;
+Hov%[star%]:Hov					AllNounTypeSuffixes;
+Duj%[ship%]:Duj					AllNounTypeSuffixes;
+targh%[targ%]:targh				AllNounTypeSuffixes; ! A "targ" is a Klingon animal somewhat resembling a boar
+cha%[torpedo%]:cha				AllNounTypeSuffixes;
 
 
-LEXICON TypeSuffix
-			Type1Gate;
-@P.TYPE1.ON@			Type2Gate;
-@P.TYPE1.ON@@P.TYPE2.ON@		Type3Gate;
-@P.TYPE1.ON@@P.TYPE2.ON@@P.TYPE3.ON@		Type4Gate;
-@P.TYPE1.ON@@P.TYPE2.ON@@P.TYPE3.ON@@P.TYPE4.ON@		Type5Gate;
+LEXICON AllNounTypeSuffixes
+			NounType1Gate;
+@P.NOUNTYPE1.ON@			NounType2Gate;
+@P.NOUNTYPE1.ON@@P.NOUNTYPE2.ON@		NounType3Gate;
+@P.NOUNTYPE1.ON@@P.NOUNTYPE2.ON@@P.NOUNTYPE3.ON@		NounType4Gate;
+@P.NOUNTYPE1.ON@@P.NOUNTYPE2.ON@@P.NOUNTYPE3.ON@@P.NOUNTYPE4.ON@		NounType5Gate;
 						#;
 
 
-LEXICON Type1Gate
-@D.TYPE1.ON@@P.TYPE1.ON@			Type1Suffix;
+LEXICON NounType1Gate
+@D.NOUNTYPE1.ON@@P.NOUNTYPE1.ON@		NounType1Suffix;
 
-LEXICON Type1Suffix ! size, affection
-[AUGMENTATIVE]:'a'				TypeSuffix;
-[DIMINUTIVE]:Hom				TypeSuffix;
-[ENDEARMENT]:oy					TypeSuffix;
+LEXICON NounType1Suffix ! size, affection
+[AUGMENTATIVE]:'a'				NounTypeSuffix;
+[DIMINUTIVE]:Hom				NounTypeSuffix;
+[ENDEARMENT]:oy					NounTypeSuffix;
 
 
-LEXICON Type2Gate
-@D.TYPE2.ON@@P.TYPE2.ON@			Type2Suffix;
+LEXICON NounType2Gate
+@D.NOUNTYPE2.ON@@P.NOUNTYPE2.ON@		NounType2Suffix;
 
 ! A noun does not require a plural suffix if a pronoun or pronominal prefix serves to indicate that it is plural,[10] or if it is being used in conjunction with a number.
-LEXICON Type2Suffix ! plurals
-[PL]@U.NOUNTYPE.CAPABLELANGUAGE@:pu'@U.NOUNTYPE.CAPABLELANGUAGE@		TypeSuffix;
-[PL]@U.NOUNTYPE.BODYPART@:Du'@U.NOUNTYPE.BODYPART@				TypeSuffix;
-[PL]@U.NOUNTYPE.OTHER@:@U.NOUNTYPE.OTHER@mey					TypeSuffix;
-[ALL-OVER-THE-PLACE]@U.NOUNTYPE.CAPABLELANGUAGE@:@U.NOUNTYPE.CAPABLELANGUAGE@mey	TypeSuffix; ! When -mey is used for nouns that would normally take -pu’ or -Du’, it carries the connotation of being all over the place.
-[ALL-OVER-THE-PLACE]@U.NOUNTYPE.BODYPART@:@U.NOUNTYPE.BODYPART@mey			TypeSuffix; ! When -mey is used for nouns that would normally take -pu’ or -Du’, it carries the connotation of being all over the place.
-[PL]						TypeSuffix; ! A plural suffix is never obligatory
+LEXICON NounType2Suffix ! plurals
+[PL]@U.NOUNTYPE.CAPABLELANGUAGE@:pu'@U.NOUNTYPE.CAPABLELANGUAGE@		NounTypeSuffix;
+[PL]@U.NOUNTYPE.BODYPART@:Du'@U.NOUNTYPE.BODYPART@				NounTypeSuffix;
+[PL]@U.NOUNTYPE.OTHER@:@U.NOUNTYPE.OTHER@mey					NounTypeSuffix;
+[ALL-OVER-THE-PLACE]@U.NOUNTYPE.CAPABLELANGUAGE@:@U.NOUNTYPE.CAPABLELANGUAGE@mey	NounTypeSuffix; ! When -mey is used for nouns that would normally take -pu’ or -Du’, it carries the connotation of being all over the place.
+[ALL-OVER-THE-PLACE]@U.NOUNTYPE.BODYPART@:@U.NOUNTYPE.BODYPART@mey			NounTypeSuffix; ! When -mey is used for nouns that would normally take -pu’ or -Du’, it carries the connotation of being all over the place.
+[PL]						NounTypeSuffix; ! A plural suffix is never obligatory
 
-LEXICON Type3Gate
-@D.TYPE3.ON@@P.TYPE3.ON@			Type3Suffix;
+LEXICON NounType3Gate
+@D.NOUNTYPE3.ON@@P.NOUNTYPE3.ON@		NounType3Suffix;
 
-LEXICON Type3Suffix ! accuracy
-[SOCALLED]:qoq					TypeSuffix;
-[DUBITATIVE]:Hey				TypeSuffix;
-[ACCURATE]:na'					TypeSuffix;
-
-
-LEXICON Type4Gate
-@D.TYPE4.ON@@P.TYPE4.ON@			Type4Suffix;
-
-LEXICON Type4Suffix ! possession, determiners
-[1P][SG]:wIj					TypeSuffix;
-[1P][SG]@U.NOUNTYPE.CAPABLELANGUAGE@:wI'@U.NOUNTYPE.CAPABLELANGUAGE@				TypeSuffix;
-[2P][SG]:lIj					TypeSuffix;
-[2P][SG]@U.NOUNTYPE.CAPABLELANGUAGE@:lI'@U.NOUNTYPE.CAPABLELANGUAGE@				TypeSuffix;
-[3P][SG]:Daj					TypeSuffix;
-[1P][PL]:maj					TypeSuffix;
-[1P][PL]@U.NOUNTYPE.CAPABLELANGUAGE@:ma'@U.NOUNTYPE.CAPABLELANGUAGE@				TypeSuffix;
-[2P][PL]:raj					TypeSuffix;
-[2P][PL]@U.NOUNTYPE.CAPABLELANGUAGE@:ra'@U.NOUNTYPE.CAPABLELANGUAGE@				TypeSuffix;
-[3P][PL]:chaj					TypeSuffix;
-[THIS]:vam					TypeSuffix;
-[THAT]:vetlh					TypeSuffix;
+LEXICON NounType3Suffix ! accuracy
+[SOCALLED]:qoq					NounTypeSuffix;
+[DUBITATIVE]:Hey				NounTypeSuffix;
+[ACCURATE]:na'					NounTypeSuffix;
 
 
-LEXICON Type5Gate
-@D.TYPE5.ON@@P.TYPE5.ON@			Type5Suffix;
+LEXICON NounType4Gate
+@D.NOUNTYPE4.ON@@P.NOUNTYPE4.ON@		NounType4Suffix;
 
-LEXICON Type5Suffix ! syntactic role
+LEXICON NounType4Suffix ! possession, determiners
+[1P][SG]:wIj					NounTypeSuffix;
+[1P][SG]@U.NOUNTYPE.CAPABLELANGUAGE@:wI'@U.NOUNTYPE.CAPABLELANGUAGE@				NounTypeSuffix;
+[2P][SG]:lIj					NounTypeSuffix;
+[2P][SG]@U.NOUNTYPE.CAPABLELANGUAGE@:lI'@U.NOUNTYPE.CAPABLELANGUAGE@				NounTypeSuffix;
+[3P][SG]:Daj					NounTypeSuffix;
+[1P][PL]:maj					NounTypeSuffix;
+[1P][PL]@U.NOUNTYPE.CAPABLELANGUAGE@:ma'@U.NOUNTYPE.CAPABLELANGUAGE@				NounTypeSuffix;
+[2P][PL]:raj					NounTypeSuffix;
+[2P][PL]@U.NOUNTYPE.CAPABLELANGUAGE@:ra'@U.NOUNTYPE.CAPABLELANGUAGE@				NounTypeSuffix;
+[3P][PL]:chaj					NounTypeSuffix;
+[THIS]:vam					NounTypeSuffix;
+[THAT]:vetlh					NounTypeSuffix;
+
+
+LEXICON NounType5Gate
+@D.NOUNTYPE5.ON@@P.NOUNTYPE5.ON@		NounType5Suffix;
+
+LEXICON NounType5Suffix ! syntactic role
 [LOCATIVE]:Daq					#;
 [ABLATIVE]:vo'					#;
 [CAUSAL]:mo'					#;
