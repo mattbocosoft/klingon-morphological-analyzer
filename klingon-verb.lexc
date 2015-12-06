@@ -110,7 +110,7 @@ Quch%[to-be-happy%]:Quch			RoversSuffix;
 
 
 LEXICON ActionVerb
-tlha’%[to-chase%]:tlha’			RoversSuffix;
+tlha'%[to-chase%]:tlha'			RoversSuffix;
 Sop%[to-eat%]:Sop				RoversSuffix;
 tu'%[to-find%]:tu'				RoversSuffix;
 nob%[to-give%]:nob				RoversSuffix;
@@ -118,7 +118,7 @@ qIp%[to-hit%]:qIp				RoversSuffix;
 tul%[to-hope%]:tul				RoversSuffix;
 HoH%[to-kill%]:HoH				RoversSuffix;
 laD%[to-read%]:laD				RoversSuffix;
-’ang%[to-reveal%]:’ang				RoversSuffix;
+'ang%[to-reveal%]:'ang				RoversSuffix;
 legh%[to-see%]:legh				RoversSuffix;
 bom%[to-sing%]:bom				RoversSuffix;
 ba'%[to-sit%]:ba'				RoversSuffix;
@@ -130,11 +130,11 @@ bej%[to-watch%]:bej				RoversSuffix;
 
 LEXICON RoversSuffix
 ! "These suffixes have no defined position, and can go after the verb stem or after any suffix – even another rover – except after a type-9 suffix or where the result would be meaningless. They modify whatever directly precedes them."
-[NEG]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@be’			RoversSuffix;
-[NEG]@U.MOOD.IMPERATIVE@:@U.MOOD.IMPERATIVE@Qo’			RoversSuffix;
-[REFUSE]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@Qo’			RoversSuffix;
-[EMPHASIS]:qu’								RoversSuffix;
-[REVERSE]:Ha’								RoversSuffix;
+[NEG]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@be'			RoversSuffix;
+[NEG]@U.MOOD.IMPERATIVE@:@U.MOOD.IMPERATIVE@Qo'			RoversSuffix;
+[REFUSE]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@Qo'			RoversSuffix;
+[EMPHASIS]:qu'								RoversSuffix;
+[REVERSE]:Ha'								RoversSuffix;
 									AllTypeSuffixes;
 
 
@@ -160,7 +160,7 @@ LEXICON Type1Gate
 @D.TYPE1.ON@@P.TYPE1.ON@			Type1Suffix;
 
 LEXICON Type1Suffix ! 2 Count = reflexive/reciprocal
-[REFLEXIVE]:’egh				RoversSuffix;
+[REFLEXIVE]:'egh				RoversSuffix;
 [RECIPROCAL]:chuq				RoversSuffix;
 
 
@@ -180,7 +180,7 @@ LEXICON Type3Gate
 
 LEXICON Type3Suffix ! 2 Count = inceptive/inchoative
 [STATECHANGE]:choH				RoversSuffix;
-[RESUME]:qa’					RoversSuffix;
+[RESUME]:qa'					RoversSuffix;
 
 
 LEXICON Type4Gate
@@ -202,20 +202,20 @@ LEXICON Type6Gate
 @D.TYPE6.ON@@P.TYPE6.ON@			Type6Suffix;
 
 LEXICON Type6Suffix ! 4 Count = perfection; uncertainty
-[BEST]:chu’					RoversSuffix;
+[BEST]:chu'					RoversSuffix;
 [CERTAIN]:bej					RoversSuffix;
-[UNCERTAIN]:law’				RoversSuffix;
-[OBVIOUS]:ba’					RoversSuffix;
+[UNCERTAIN]:law'				RoversSuffix;
+[OBVIOUS]:ba'					RoversSuffix;
 
 
 LEXICON Type7Gate
 @D.TYPE7.ON@@P.TYPE7.ON@			Type7Suffix;
 
 LEXICON Type7Suffix ! 4 Count = aspect
-[PERFECT]:pu’					RoversSuffix;
-[PERFECTPURPOSE]:ta’				RoversSuffix;
+[PERFECT]:pu'					RoversSuffix;
+[PERFECTPURPOSE]:ta'				RoversSuffix;
 [CONTINUOUS]@P.SUFFIX.CONTINUOUS@:@P.SUFFIX.CONTINUOUS@taH		RoversSuffix;
-[CONTINUOUSEND]:lI’				RoversSuffix;
+[CONTINUOUSEND]:lI'				RoversSuffix;
 
 
 LEXICON Type8Gate
@@ -229,14 +229,14 @@ LEXICON Type9Gate
 @D.TYPE9.ON@@P.TYPE9.ON@			Type9Suffix;
 
 LEXICON Type9Suffix ! 11 Count = syntactic
-[PERSON]:wI’					MoodTag; ! Nominalizer
+[PERSON]:wI'					MoodTag; ! Nominalizer
 [DEVERBNOUN]:ghach				MoodTag; ! Nominalizer
-[INTEROGATIVE]:’a’				MoodTag; ! Modal
+[INTEROGATIVE]:'a'				MoodTag; ! Modal
 [OPTATIVE]:jaj					MoodTag; ! Modal
-[BEFORE]:pa’					MoodTag; ! Subordinator
+[BEFORE]:pa'					MoodTag; ! Subordinator
 [SIMULTANEOUS]@R.SUFFIX.CONTINUOUS@:vIS@R.SUFFIX.CONTINUOUS@				MoodTag; ! Subordinator - It is always used in conjunction with the type-7 suffix continuous suffix -taH.
-[AFTER]:DI’					MoodTag; ! Subordinator
+[AFTER]:DI'					MoodTag; ! Subordinator
 [CONDITIONAL]:chugh				MoodTag; ! Cause and effect
-[CAUSE]:mo’					MoodTag; ! Cause and effect
+[CAUSE]:mo'					MoodTag; ! Cause and effect
 [RELATIVE]:bogh					MoodTag; ! Relative and purpose clause
 [PURPOSE]:meH					MoodTag; ! Relative and purpose clause

@@ -35,8 +35,8 @@ vav%[father%]:vav				TypeSuffix;
 jup%[friend%]:jup				TypeSuffix;
 loD%[man%]:loD					TypeSuffix;
 ghot%[person]:ghot				TypeSuffix;
-qetwI’%[runner%]:qetwI’			TypeSuffix;
-be’%[woman%]:be’				TypeSuffix;
+qetwI'%[runner%]:qetwI'			TypeSuffix;
+be'%[woman%]:be'				TypeSuffix;
 
 
 LEXICON NounOther
@@ -48,8 +48,8 @@ ghop%[hand%]:ghop				TypeSuffix;
 QaH%[help%]:QaH					TypeSuffix;
 juH%[house%]:juH				TypeSuffix;
 yuQ%[planet%]:yuQ				TypeSuffix;
-pa’%[room%]:pa’					TypeSuffix;
-ghu’%[situation%]:ghu’				TypeSuffix;
+pa'%[room%]:pa'					TypeSuffix;
+ghu'%[situation%]:ghu'				TypeSuffix;
 Hov%[star%]:Hov					TypeSuffix;
 Duj%[ship%]:Duj					TypeSuffix;
 targh%[targ%]:targh				TypeSuffix; ! A "targ" is a Klingon animal somewhat resembling a boar
@@ -69,7 +69,7 @@ LEXICON Type1Gate
 @D.TYPE1.ON@@P.TYPE1.ON@			Type1Suffix;
 
 LEXICON Type1Suffix ! size, affection
-[AUGMENTATIVE]:’a’				TypeSuffix;
+[AUGMENTATIVE]:'a'				TypeSuffix;
 [DIMINUTIVE]:Hom				TypeSuffix;
 [ENDEARMENT]:oy					TypeSuffix;
 
@@ -79,8 +79,8 @@ LEXICON Type2Gate
 
 ! A noun does not require a plural suffix if a pronoun or pronominal prefix serves to indicate that it is plural,[10] or if it is being used in conjunction with a number.
 LEXICON Type2Suffix ! plurals
-[PL]@U.NOUNTYPE.CAPABLELANGUAGE@:pu’@U.NOUNTYPE.CAPABLELANGUAGE@		TypeSuffix;
-[PL]@U.NOUNTYPE.BODYPART@:Du’@U.NOUNTYPE.BODYPART@				TypeSuffix;
+[PL]@U.NOUNTYPE.CAPABLELANGUAGE@:pu'@U.NOUNTYPE.CAPABLELANGUAGE@		TypeSuffix;
+[PL]@U.NOUNTYPE.BODYPART@:Du'@U.NOUNTYPE.BODYPART@				TypeSuffix;
 [PL]@U.NOUNTYPE.OTHER@:@U.NOUNTYPE.OTHER@mey					TypeSuffix;
 [PL]						TypeSuffix; ! A plural suffix is never obligatory
 
@@ -90,7 +90,7 @@ LEXICON Type3Gate
 LEXICON Type3Suffix ! accuracy
 [SOCALLED]:qoq					TypeSuffix;
 [DUBITATIVE]:Hey				TypeSuffix;
-[ACCURATE]:na’					TypeSuffix;
+[ACCURATE]:na'					TypeSuffix;
 
 
 LEXICON Type4Gate
@@ -98,14 +98,14 @@ LEXICON Type4Gate
 
 LEXICON Type4Suffix ! possession, determiners
 [1P][SG]:wIj					TypeSuffix;
-[1P][SG]@U.NOUNTYPE.CAPABLELANGUAGE@:wI’@U.NOUNTYPE.CAPABLELANGUAGE@				TypeSuffix;
+[1P][SG]@U.NOUNTYPE.CAPABLELANGUAGE@:wI'@U.NOUNTYPE.CAPABLELANGUAGE@				TypeSuffix;
 [2P][SG]:lIj					TypeSuffix;
-[2P][SG]@U.NOUNTYPE.CAPABLELANGUAGE@:lI’@U.NOUNTYPE.CAPABLELANGUAGE@				TypeSuffix;
+[2P][SG]@U.NOUNTYPE.CAPABLELANGUAGE@:lI'@U.NOUNTYPE.CAPABLELANGUAGE@				TypeSuffix;
 [3P][SG]:Daj					TypeSuffix;
 [1P][PL]:maj					TypeSuffix;
-[1P][PL]@U.NOUNTYPE.CAPABLELANGUAGE@:ma’@U.NOUNTYPE.CAPABLELANGUAGE@				TypeSuffix;
+[1P][PL]@U.NOUNTYPE.CAPABLELANGUAGE@:ma'@U.NOUNTYPE.CAPABLELANGUAGE@				TypeSuffix;
 [2P][PL]:raj					TypeSuffix;
-[2P][PL]@U.NOUNTYPE.CAPABLELANGUAGE@:ra’@U.NOUNTYPE.CAPABLELANGUAGE@				TypeSuffix;
+[2P][PL]@U.NOUNTYPE.CAPABLELANGUAGE@:ra'@U.NOUNTYPE.CAPABLELANGUAGE@				TypeSuffix;
 [3P][PL]:chaj					TypeSuffix;
 [THIS]:vam					TypeSuffix;
 [THAT]:vetlh					TypeSuffix;
@@ -116,7 +116,7 @@ LEXICON Type5Gate
 
 LEXICON Type5Suffix ! syntactic role
 [LOCATIVE]:Daq					#;
-[ABLATIVE]:vo’					#;
-[CAUSAL]:mo’					#;
+[ABLATIVE]:vo'					#;
+[CAUSAL]:mo'					#;
 [DATIVE]:vaD					#;
-[TOPIC]:’e’					#;
+[TOPIC]:'e'					#;
