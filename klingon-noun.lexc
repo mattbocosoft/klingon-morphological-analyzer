@@ -30,6 +30,8 @@ ghop%[hand%]:ghop				TypeSuffix;
 
 
 LEXICON NounCapableOfLanguage
+qeSwI'pu'%[advisor%]:qeSwI'pu'			TypeSuffix;
+je'wI'%[buyer%]:je'wI'				TypeSuffix;
 puq%[child%]:puq				TypeSuffix;
 vav%[father%]:vav				TypeSuffix;
 jup%[friend%]:jup				TypeSuffix;
@@ -40,15 +42,17 @@ be'%[woman%]:be'				TypeSuffix;
 
 
 LEXICON NounOther
+quS%[chair%]:quS				TypeSuffix;
 choH%[change%]:choH				TypeSuffix;
 veng%[city%]:veng				TypeSuffix;
 qoj%[cliff%]:qoj				TypeSuffix;
 wep%[coat%]:wep					TypeSuffix;
+Soj%[food%]:Soj					TypeSuffix;
 ghom%[group%]:ghom				TypeSuffix;
-ghop%[hand%]:ghop				TypeSuffix;
 QaH%[help%]:QaH					TypeSuffix;
 juH%[house%]:juH				TypeSuffix;
 qach%[idea%]:qach				TypeSuffix;
+nav%[paper%]:nav				TypeSuffix;
 Saj%[pet%]:Saj					TypeSuffix;
 yuQ%[planet%]:yuQ				TypeSuffix;
 pa'%[room%]:pa'					TypeSuffix;
