@@ -2,7 +2,7 @@
 ! https://en.wikipedia.org/wiki/Klingon_grammar
 ! https://www.youtube.com/watch?v=e5Did-eVQDc
 
-Multichar_Symbols [1P] [2P] [3P] [SG] [PL] [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [PL-LANGUSER] [PL-BODYPART] [PL-OTHERNOUN] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] @D.TYPE1.ON@ @P.TYPE1.ON@ @D.TYPE2.ON@ @P.TYPE2.ON@ @D.TYPE3.ON@ @P.TYPE3.ON@ @D.TYPE4.ON@ @P.TYPE4.ON@ @D.TYPE5.ON@ @P.TYPE5.ON@ @U.NOUNTYPE.BODYPART@ @U.NOUNTYPE.CAPABLELANGUAGE@ @U.NOUNTYPE.OTHER@
+Multichar_Symbols [1P] [2P] [3P] [SG] [PL] [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [PL-LANGUSER] [PL-BODYPART] [PL-OTHERNOUN] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] [ALL-OVER-THE-PLACE] @D.TYPE1.ON@ @P.TYPE1.ON@ @D.TYPE2.ON@ @P.TYPE2.ON@ @D.TYPE3.ON@ @P.TYPE3.ON@ @D.TYPE4.ON@ @P.TYPE4.ON@ @D.TYPE5.ON@ @P.TYPE5.ON@ @U.NOUNTYPE.BODYPART@ @U.NOUNTYPE.CAPABLELANGUAGE@ @U.NOUNTYPE.OTHER@
 
 LEXICON Root
 						Pronoun;
@@ -85,6 +85,8 @@ LEXICON Type2Suffix ! plurals
 [PL]@U.NOUNTYPE.CAPABLELANGUAGE@:pu'@U.NOUNTYPE.CAPABLELANGUAGE@		TypeSuffix;
 [PL]@U.NOUNTYPE.BODYPART@:Du'@U.NOUNTYPE.BODYPART@				TypeSuffix;
 [PL]@U.NOUNTYPE.OTHER@:@U.NOUNTYPE.OTHER@mey					TypeSuffix;
+[ALL-OVER-THE-PLACE]@U.NOUNTYPE.CAPABLELANGUAGE@:@U.NOUNTYPE.CAPABLELANGUAGE@mey	TypeSuffix; ! When -mey is used for nouns that would normally take -pu’ or -Du’, it carries the connotation of being all over the place.
+[ALL-OVER-THE-PLACE]@U.NOUNTYPE.BODYPART@:@U.NOUNTYPE.BODYPART@mey			TypeSuffix; ! When -mey is used for nouns that would normally take -pu’ or -Du’, it carries the connotation of being all over the place.
 [PL]						TypeSuffix; ! A plural suffix is never obligatory
 
 LEXICON Type3Gate
