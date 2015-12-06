@@ -17,37 +17,38 @@ chaH%[they,them%]@U.NOUNTYPE.CAPABLELANGUAGE@:chaH@U.NOUNTYPE.CAPABLELANGUAGE@	T
 'e'%[that%]:'e'					TypeSuffix; ! Referring to previous part of sentence
 ghaH%[he,she,him,her%]:ghaH			TypeSuffix;
 jIH%[I,me%]:jIH					TypeSuffix;
-maH%[we,us%]:maH					TypeSuffix;
+maH%[we,us%]:maH				TypeSuffix;
 net%[that,also%]:net				TypeSuffix; ! Similar to 'e'
 'oH%[it%]:'oH					TypeSuffix;
-SoH%[you-SG%]:SoH					TypeSuffix;
+SoH%[you-SG%]:SoH				TypeSuffix;
 tlhIH%[you-PL%]:tlhIH				TypeSuffix;
 
 
 LEXICON NounBodyPart
 mIn%[eye%]:mIn					TypeSuffix;
-ghop%[hand%]:ghop					TypeSuffix;
+ghop%[hand%]:ghop				TypeSuffix;
 
 
 LEXICON NounCapableOfLanguage
-puq%[child%]:puq					TypeSuffix;
-vav%[father%]:vav					TypeSuffix;
-jup%[friend%]:jup					TypeSuffix;
+puq%[child%]:puq				TypeSuffix;
+vav%[father%]:vav				TypeSuffix;
+jup%[friend%]:jup				TypeSuffix;
 loD%[man%]:loD					TypeSuffix;
 ghot%[person]:ghot				TypeSuffix;
-qetwI’%[runner%]:qetwI’				TypeSuffix;
-be’%[woman%]:be’					TypeSuffix;
+qetwI’%[runner%]:qetwI’			TypeSuffix;
+be’%[woman%]:be’				TypeSuffix;
 
 
 LEXICON NounOther
 choH%[change%]:choH				TypeSuffix;
-veng%[city%]:veng					TypeSuffix;
-qoj%[cliff%]:qoj					TypeSuffix;
+veng%[city%]:veng				TypeSuffix;
+qoj%[cliff%]:qoj				TypeSuffix;
 ghom%[group%]:ghom				TypeSuffix;
-ghop%[hand%]:ghop					TypeSuffix;
+ghop%[hand%]:ghop				TypeSuffix;
 QaH%[help%]:QaH					TypeSuffix;
-juH%[home%]:juH					TypeSuffix;
-yuQ%[planet%]:yuQ					TypeSuffix;
+juH%[house%]:juH				TypeSuffix;
+yuQ%[planet%]:yuQ				TypeSuffix;
+pa’%[room%]:pa’					TypeSuffix;
 ghu’%[situation%]:ghu’				TypeSuffix;
 Hov%[star%]:Hov					TypeSuffix;
 Duj%[ship%]:Duj					TypeSuffix;
