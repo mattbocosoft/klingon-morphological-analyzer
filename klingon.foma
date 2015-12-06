@@ -31,6 +31,12 @@ eliminate flags
 def NounGrammar;
 
 echo
+echo ##Other Words Lex File##
+read lexc klingon-Other.lexc
+eliminate flags
+def OtherWordsGrammar;
+
+echo
 echo ##Rules##
 
 # If the noun to which the endearment suffix is added ends with a vowel, a glottal stop is inserted between them
@@ -38,7 +44,7 @@ def EndearmentGlottalStop [..] -> GlottalStop || Vowel _ {oy};
 
 def AccentOptions GlottalStop (->) ';
 
-def Grammar [AdverbGrammar | VerbGrammar | AdjectiveGrammar | NounGrammar] .o. EndearmentGlottalStop .o. AccentOptions;
+def Grammar [AdverbGrammar | VerbGrammar | AdjectiveGrammar | NounGrammar | OtherWordsGrammar] .o. EndearmentGlottalStop .o. AccentOptions;
 
 
 echo
