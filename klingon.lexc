@@ -2,11 +2,12 @@
 ! https://en.wikipedia.org/wiki/Klingon_grammar
 ! https://www.youtube.com/watch?v=e5Did-eVQDc
 
-Multichar_Symbols [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [PL-LANGUSER] [PL-BODYPART] [PL-OTHERNOUN] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] [ALL-OVER-THE-PLACE] @D.NOUNTYPE1.ON@ @P.NOUNTYPE1.ON@ @D.NOUNTYPE2.ON@ @P.NOUNTYPE2.ON@ @D.NOUNTYPE3.ON@ @P.NOUNTYPE3.ON@ @D.NOUNTYPE4.ON@ @P.NOUNTYPE4.ON@ @D.NOUNTYPE5.ON@ @P.NOUNTYPE5.ON@ @U.NOUNTYPE.BODYPART@ @U.NOUNTYPE.CAPABLELANGUAGE@ @U.NOUNTYPE.OTHER@ [NEG] [1P] [2P] [3P] [SG] [PL] [GUESSVERB] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED-SUBJ] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DEVERBNOUN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE] [REFUSE] [EMPHASIS] [REVERSE] @U.MOOD.INDICATIVE@ @U.MOOD.IMPERATIVE@ @D.VERBTYPE1.ON@ @P.VERBTYPE1.ON@ @D.VERBTYPE2.ON@ @P.VERBTYPE2.ON@ @D.VERBTYPE3.ON@ @P.VERBTYPE3.ON@ @D.VERBTYPE4.ON@ @P.VERBTYPE4.ON@ @D.VERBTYPE5.ON@ @P.VERBTYPE5.ON@ @D.VERBTYPE6.ON@ @P.VERBTYPE6.ON@ @D.VERBTYPE7.ON@ @P.VERBTYPE7.ON@ @D.VERBTYPE8.ON@ @P.VERBTYPE8.ON@ @D.VERBTYPE9.ON@ @P.VERBTYPE9.ON@ @P.INDICATIVE.UNSPECIFIED@ @R.INDICATIVE.UNSPECIFIED@ @C.INDICATIVE@ @D.INDICATIVE.UNSPECIFIED@ @P.VERBSUFFIX.CONTINUOUS@ @R.VERBSUFFIX.CONTINUOUS@ @U.VERBTYPE.STATIVE@ @U.VERBTYPE.ACTION@ [ORDINAL] [REPEATCOUNT]
+Multichar_Symbols [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [PL-LANGUSER] [PL-BODYPART] [PL-OTHERNOUN] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] [ALL-OVER-THE-PLACE] @D.NOUNTYPE1.ON@ @P.NOUNTYPE1.ON@ @D.NOUNTYPE2.ON@ @P.NOUNTYPE2.ON@ @D.NOUNTYPE3.ON@ @P.NOUNTYPE3.ON@ @D.NOUNTYPE4.ON@ @P.NOUNTYPE4.ON@ @D.NOUNTYPE5.ON@ @P.NOUNTYPE5.ON@ @U.NOUNTYPE.BODYPART@ @U.NOUNTYPE.CAPABLELANGUAGE@ @U.NOUNTYPE.OTHER@ [NEG] [1P] [2P] [3P] [SG] [PL] [GUESSVERB] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED-SUBJ] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DEVERBNOUN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE] [REFUSE] [EMPHASIS] [REVERSE] @U.MOOD.INDICATIVE@ @U.MOOD.IMPERATIVE@ @D.VERBTYPE1.ON@ @P.VERBTYPE1.ON@ @D.VERBTYPE2.ON@ @P.VERBTYPE2.ON@ @D.VERBTYPE3.ON@ @P.VERBTYPE3.ON@ @D.VERBTYPE4.ON@ @P.VERBTYPE4.ON@ @D.VERBTYPE5.ON@ @P.VERBTYPE5.ON@ @D.VERBTYPE6.ON@ @P.VERBTYPE6.ON@ @D.VERBTYPE7.ON@ @P.VERBTYPE7.ON@ @D.VERBTYPE8.ON@ @P.VERBTYPE8.ON@ @D.VERBTYPE9.ON@ @P.VERBTYPE9.ON@ @P.INDICATIVE.UNSPECIFIED@ @R.INDICATIVE.UNSPECIFIED@ @C.INDICATIVE@ @D.INDICATIVE.UNSPECIFIED@ @P.VERBSUFFIX.CONTINUOUS@ @R.VERBSUFFIX.CONTINUOUS@ @U.VERBTYPE.STATIVE@ @U.VERBTYPE.ACTION@ [ORDINAL] [REPEATCOUNT] @P.POS.ADVERB@ @D.POS.ADVERB@
 
 LEXICON Root
-						VerbPrefix;
+						VerbPrefix; ! Includes Adjective part-of-speech via adjectival verbs
 						Noun;
+						Adverb;
 						OtherWordForms;
 
 ! ##########################
@@ -148,7 +149,7 @@ bej[to-watch]:bej				VerbSuffix;
 
 
 LEXICON VerbSuffix
-@U.VERBTYPE.STATIVE@				NounType5Suffix; ! Type-5 noun suffixes that would normally be attached to the noun are instead attached to the adjectival verb
+@U.VERBTYPE.STATIVE@				NounType5Suffix; ! Type-5 noun suffixes that would normally be attached to the noun are instead attached to the ADJECTIVAL (stative) verb
 						VerbRoversSuffix;
 
 
@@ -399,6 +400,61 @@ LEXICON NounType5Suffix ! syntactic role
 
 
 ! ######################################
+! ########## ADVERBS ##########
+! ######################################
+
+LEXICON Adverb
+						BasicAdverbs;
+						TimeStampAdverbs;
+[ADV]@P.POS.ADVERB@:@P.POS.ADVERB@		Number;
+
+LEXICON BasicAdverbs
+batlh[honorably]:batlh				AdverbSuffix;
+bong[accidentally]:bong			AdverbSuffix;
+chaq[perhaps]:chaq				AdverbSuffix;
+chIch[purposely]:chIch				AdverbSuffix;
+DaH[now]:DaH					AdverbSuffix;
+Do'[luckily]:Do'				AdverbSuffix;
+ghaytan[likely]:ghaytan			AdverbSuffix;
+ghIq[subsequently]:ghIq			AdverbSuffix;
+jaS[differently]:jaS				AdverbSuffix;
+jay'[intensely]:jay'				AdverbSuffix;
+loQ[slightly]:loQ				AdverbSuffix;
+motlh[typically]:motlh				AdverbSuffix;
+neH[merely]:neH					AdverbSuffix;
+nIteb[alone]:nIteb				AdverbSuffix;
+nom[quickly]:nom				AdverbSuffix;
+not[never]:not					AdverbSuffix;
+ngugh[then]:ngugh				AdverbSuffix;
+pay'[suddenly]:pay'				AdverbSuffix;
+pe'vIl[forcefully]:pe'vIl			AdverbSuffix;
+pIj[frequently]:pIj				AdverbSuffix;
+qen[recently]:qen				AdverbSuffix;
+QIt[slowly]:QIt					AdverbSuffix;
+reH[always]:reH					AdverbSuffix;
+roD[habitually]:roD				AdverbSuffix;
+rut[sometimes]:rut				AdverbSuffix;
+SIbI'[immediately]:SIbI'			AdverbSuffix;
+tugh[soon]:tugh					AdverbSuffix;
+tlhoS[almost]:tlhoS				AdverbSuffix;
+tlhoy[excessively]:tlhoy			AdverbSuffix;
+vabDot[including]:vabDot			AdverbSuffix;
+vaj[accordingly]:vaj				AdverbSuffix;
+wej[not-yet]:wej				AdverbSuffix;
+
+LEXICON TimeStampAdverbs
+DaHjaj[today]:DaHjaj				AdverbSuffix;
+wa'Hu'[yesterday]:wa'Hu'			AdverbSuffix;
+wa'leS[tomorrow]:wa'leS			AdverbSuffix;
+DaHjaj [tomorrow]:wa'leS			AdverbSuffix;
+
+
+LEXICON AdverbSuffix
+[REVERSE]:Ha'					#;
+						#; ! No suffix
+
+
+! ######################################
 ! ########## OTHER WORD FORMS ##########
 ! ######################################
 
@@ -451,6 +507,6 @@ bIp[x100,000]:bIp				NumberFinalSuffix;
 
 LEXICON NumberFinalSuffix
 						Number; ! Potentially repeat
-[ORDINAL]:DIch					#;
+[ORDINAL]@D.POS.ADVERB@:@D.POS.ADVERB@DIch	#; ! If the current part-of-speech is an adverb, then the '-logh' suffix is required
 [REPEATCOUNT]:logh				#;
-						#;
+@D.POS.ADVERB@					#; ! If the current part-of-speech is an adverb, then the '-logh' suffix is required
