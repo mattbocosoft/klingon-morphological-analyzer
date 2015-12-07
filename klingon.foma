@@ -85,3 +85,4 @@ regex Grammar;
 # 6. Compound Nouns?
 # 7. More test cases
 # 8. How to include spaces in a word? ("DaHjaj po"	this morning)
+# 9. Handle plural exceptions
