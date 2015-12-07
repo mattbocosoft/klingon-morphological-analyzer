@@ -434,7 +434,10 @@ LEXICON TimeStampAdverbs
 DaHjaj[today]:DaHjaj				AdverbSuffix;
 wa'Hu'[yesterday]:wa'Hu'			AdverbSuffix;
 wa'leS[tomorrow]:wa'leS			AdverbSuffix;
-DaHjaj [tomorrow]:wa'leS			AdverbSuffix;
+DaHjaj% po[this-morning]:DaHjaj% po		AdverbSuffix;
+DaHjaj% po[this-morning]:DaHjaj% po		AdverbSuffix;
+wa'Hu'% ram[last-night]:wa'Hu'% ram		AdverbSuffix;
+wa'leS% po[tomorrow-morning]:wa'leS% po	AdverbSuffix;
 
 
 LEXICON AdverbSuffix
