@@ -25,10 +25,10 @@ def Grammar [Grammar] .o. EndearmentGlottalStop .o. AccentOptions;
 
 echo
 echo Guesser
-def GuesserInsertion [..] -> "[GUESS]" || "[GUESSVERB]" ?* _ .#.;
+def GuesserInsertion [..] -> "[GUESS]" || "[GUESSWORD]" ?* _ .#.;
 def Grammar [Grammar.i .o. GuesserInsertion].i;
 regex Grammar;
-substitute defined Word for "[GUESSVERB]"
+substitute defined Word for "[GUESSWORD]"
 def Grammar;
 
 def GuessGr $["[GUESS]"] .o. Grammar;
