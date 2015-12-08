@@ -130,6 +130,7 @@ LEXICON ActionVerb
 qeS[to-advise]:qeS				VerbSuffix;
 poj[to-analyze]:poj				VerbSuffix;
 tlha'[to-chase]:tlha'				VerbSuffix;
+baghHa'[to-decrypt]:baghHa'			VerbSuffix;
 Sop[to-eat]:Sop					VerbSuffix;
 tu'[to-find]:tu'				VerbSuffix;
 nob[to-give]:nob				VerbSuffix;
@@ -298,6 +299,7 @@ be'[woman]:be'					AllNounTypeSuffixes;
 
 
 LEXICON NounOther
+'alnIl[belt,buckle]:'alnIl			AllNounTypeSuffixes;
 quS[chair]:quS					AllNounTypeSuffixes;
 choH[change]:choH				AllNounTypeSuffixes;
 veng[city]:veng					AllNounTypeSuffixes;
@@ -308,15 +310,22 @@ ghom[group]:ghom				AllNounTypeSuffixes;
 QaH[help]:QaH					AllNounTypeSuffixes;
 juH[house]:juH					AllNounTypeSuffixes;
 qach[idea]:qach					AllNounTypeSuffixes;
+Qagh[mistake]:Qagh				AllNounTypeSuffixes;
 nav[paper]:nav					AllNounTypeSuffixes;
+roj[peace]:roj					AllNounTypeSuffixes;
 Saj[pet]:Saj					AllNounTypeSuffixes;
 yuQ[planet]:yuQ					AllNounTypeSuffixes;
+woQ[power]:woQ					AllNounTypeSuffixes;
 pa'[room]:pa'					AllNounTypeSuffixes;
 ghu'[situation]:ghu'				AllNounTypeSuffixes;
 Hov[star]:Hov					AllNounTypeSuffixes;
+'ejyo'[starfleet]:'ejyo'			AllNounTypeSuffixes;
+'ejDo'[starship]:'ejDo'			AllNounTypeSuffixes;
 Duj[ship]:Duj					AllNounTypeSuffixes;
+baghneQ[spoon]:baghneQ				AllNounTypeSuffixes;
 targh[targ]:targh				AllNounTypeSuffixes; ! A "targ" is a Klingon animal somewhat resembling a boar
 cha[torpedo]:cha				AllNounTypeSuffixes;
+SuS[wind,breeze]:SuS				AllNounTypeSuffixes;
 
 
 LEXICON AllNounTypeSuffixes
