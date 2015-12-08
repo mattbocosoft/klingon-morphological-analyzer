@@ -357,7 +357,6 @@ LEXICON NounType2Suffix ! plurals
 [PL]@U.NOUNTYPE.BODYPART@:Du'@U.NOUNTYPE.BODYPART@				AllNounTypeSuffixes;
 [PL]@U.NOUNTYPE.OTHER@:@U.NOUNTYPE.OTHER@mey					AllNounTypeSuffixes;
 [PL][ALL-OVER-THE-PLACE]@U.NOUNTYPE.CAPABLELANGUAGE@:@U.NOUNTYPE.CAPABLELANGUAGE@mey	AllNounTypeSuffixes; ! When -mey is used for nouns that would normally take -pu’ or -Du’, it carries the connotation of being all over the place.
-[PL][ALL-OVER-THE-PLACE]@U.NOUNTYPE.BODYPART@:@U.NOUNTYPE.BODYPART@mey			AllNounTypeSuffixes; ! When -mey is used for nouns that would normally take -pu’ or -Du’, it carries the connotation of being all over the place.
 [PL]						AllNounTypeSuffixes; ! A plural suffix is never obligatory
 
 LEXICON NounType3Gate
