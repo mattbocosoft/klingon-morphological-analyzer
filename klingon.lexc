@@ -2,7 +2,7 @@
 ! https://en.wikipedia.org/wiki/Klingon_grammar
 ! https://www.youtube.com/watch?v=e5Did-eVQDc
 
-Multichar_Symbols [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [PL-LANGUSER] [PL-BODYPART] [PL-OTHERNOUN] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] [ALL-OVER-THE-PLACE] @D.NOUNTYPE1.ON@ @P.NOUNTYPE1.ON@ @D.NOUNTYPE2.ON@ @P.NOUNTYPE2.ON@ @D.NOUNTYPE3.ON@ @P.NOUNTYPE3.ON@ @D.NOUNTYPE4.ON@ @P.NOUNTYPE4.ON@ @D.NOUNTYPE5.ON@ @P.NOUNTYPE5.ON@ @U.NOUNTYPE.BODYPART@ @U.NOUNTYPE.CAPABLELANGUAGE@ @U.NOUNTYPE.OTHER@ [NEG] [1P] [2P] [3P] [SG] [PL] [GUESSVERB] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED-SUBJ] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DEVERBNOUN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE] [REFUSE] [EMPHASIS] [REVERSE] @U.MOOD.INDICATIVE@ @U.MOOD.IMPERATIVE@ @D.VERBTYPE1.ON@ @P.VERBTYPE1.ON@ @D.VERBTYPE2.ON@ @P.VERBTYPE2.ON@ @D.VERBTYPE3.ON@ @P.VERBTYPE3.ON@ @D.VERBTYPE4.ON@ @P.VERBTYPE4.ON@ @D.VERBTYPE5.ON@ @P.VERBTYPE5.ON@ @D.VERBTYPE6.ON@ @P.VERBTYPE6.ON@ @D.VERBTYPE7.ON@ @P.VERBTYPE7.ON@ @D.VERBTYPE8.ON@ @P.VERBTYPE8.ON@ @D.VERBTYPE9.ON@ @P.VERBTYPE9.ON@ @P.INDICATIVE.UNSPECIFIED@ @R.INDICATIVE.UNSPECIFIED@ @C.INDICATIVE@ @D.INDICATIVE.UNSPECIFIED@ @P.VERBSUFFIX.CONTINUOUS@ @R.VERBSUFFIX.CONTINUOUS@ @U.VERBTYPE.STATIVE@ @U.VERBTYPE.ACTION@ [ORDINAL] [REPEATCOUNT] @P.POS.ADVERB@ @D.POS.ADVERB@ @R.POS.ADVERB@ [ADV] [NUMBER] @P.MULTIPLE1234567.ON@ @D.MULTIPLE1234567.ON@ @P.MULTIPLE123456.ON@ @D.MULTIPLE123456.ON@ @P.MULTIPLE12345.ON@ @D.MULTIPLE12345.ON@ @P.MULTIPLE1234.ON@ @D.MULTIPLE1234.ON@ @P.MULTIPLE123.ON@ @D.MULTIPLE123.ON@ @P.MULTIPLE12.ON@ @D.MULTIPLE12.ON@ [POSSESSIVE-1P-SG] [POSSESSIVE-2P-SG] [POSSESSIVE-3P-SG] [POSSESSIVE-1P-PL] [POSSESSIVE-2P-PL] [POSSESSIVE-3P-PL]
+Multichar_Symbols [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [PL-LANGUSER] [PL-BODYPART] [PL-OTHERNOUN] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] [ALL-OVER-THE-PLACE] @D.NOUNTYPE1.ON@ @P.NOUNTYPE1.ON@ @D.NOUNTYPE2.ON@ @P.NOUNTYPE2.ON@ @D.NOUNTYPE3.ON@ @P.NOUNTYPE3.ON@ @D.NOUNTYPE4.ON@ @P.NOUNTYPE4.ON@ @D.NOUNTYPE5.ON@ @P.NOUNTYPE5.ON@ @U.NOUNTYPE.BODYPART@ @U.NOUNTYPE.CAPABLELANGUAGE@ @U.NOUNTYPE.OTHER@ [NEG] [1P] [2P] [3P] [SG] [PL] [GUESSWORD] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED-SUBJ] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DVN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE] [REFUSE] [EMPHASIS] [REVERSE] @U.MOOD.INDICATIVE@ @U.MOOD.IMPERATIVE@ @U.MOOD.INFINITIVE@ @D.VERBTYPE1.ON@ @P.VERBTYPE1.ON@ @D.VERBTYPE2.ON@ @P.VERBTYPE2.ON@ @D.VERBTYPE3.ON@ @P.VERBTYPE3.ON@ @D.VERBTYPE4.ON@ @P.VERBTYPE4.ON@ @D.VERBTYPE5.ON@ @P.VERBTYPE5.ON@ @D.VERBTYPE6.ON@ @P.VERBTYPE6.ON@ @D.VERBTYPE7.ON@ @P.VERBTYPE7.ON@ @D.VERBTYPE8.ON@ @P.VERBTYPE8.ON@ @D.VERBTYPE9.ON@ @P.VERBTYPE9.ON@ @P.INDICATIVE.UNSPECIFIED@ @R.INDICATIVE.UNSPECIFIED@ @C.INDICATIVE@ @D.INDICATIVE.UNSPECIFIED@ @P.VERBSUFFIX.CONTINUOUS@ @R.VERBSUFFIX.CONTINUOUS@ @U.VERBTYPE.STATIVE@ @D.VERBTYPE.STATIVE@ @R.VERBTYPE.STATIVE@ @U.VERBTYPE.ACTION@ [ORDINAL] [REPEATCOUNT] @P.POS.ADVERB@ @D.POS.ADVERB@ @R.POS.ADVERB@ [ADV] [NUMBER] @P.MULTIPLE1234567.ON@ @D.MULTIPLE1234567.ON@ @P.MULTIPLE123456.ON@ @D.MULTIPLE123456.ON@ @P.MULTIPLE12345.ON@ @D.MULTIPLE12345.ON@ @P.MULTIPLE1234.ON@ @D.MULTIPLE1234.ON@ @P.MULTIPLE123.ON@ @D.MULTIPLE123.ON@ @P.MULTIPLE12.ON@ @D.MULTIPLE12.ON@ [POSSESSIVE-1P-SG] [POSSESSIVE-2P-SG] [POSSESSIVE-3P-SG] [POSSESSIVE-1P-PL] [POSSESSIVE-2P-PL] [POSSESSIVE-3P-PL] [PRONOUN] [CONJ] [N] [V] [ADV] [ADJ] @D.MOOD@ @R.MOOD@
 
 LEXICON Root
 						VerbPrefix; ! Includes Adjective part-of-speech via adjectival verbs
@@ -18,6 +18,7 @@ LEXICON Root
 LEXICON VerbPrefix
 @U.MOOD.INDICATIVE@				VerbIndicativePrefix;
 @U.MOOD.IMPERATIVE@				VerbImperativePrefix;
+@U.MOOD.INFINITIVE@				Verb;
 
 
 LEXICON VerbIndicativePrefix
@@ -150,7 +151,7 @@ bej[to-watch]:bej				VerbSuffix;
 
 
 LEXICON VerbSuffix
-@U.VERBTYPE.STATIVE@				NounType5Suffix; ! Type-5 noun suffixes that would normally be attached to the noun are instead attached to the ADJECTIVAL (stative) verb
+@U.MOOD.INFINITIVE@@U.VERBTYPE.STATIVE@	NounType5Gate; ! Type-5 noun suffixes that would normally be attached to the noun are instead attached to the ADJECTIVAL (stative) verb
 						VerbRoversSuffix;
 
 
@@ -174,7 +175,7 @@ LEXICON AllVerbTypeSuffixes
 @P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@P.VERBTYPE6.ON@		VerbType7Gate;
 @P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@P.VERBTYPE6.ON@@P.VERBTYPE7.ON@		VerbType8Gate;
 @P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@P.VERBTYPE6.ON@@P.VERBTYPE7.ON@@P.VERBTYPE8.ON@		VerbType9Gate;
-									VerbMoodTag;
+[V]:0						VerbMoodTag;
 
 
 LEXICON VerbMoodTag
@@ -255,17 +256,17 @@ LEXICON VerbType9Gate
 @D.VERBTYPE9.ON@@P.VERBTYPE9.ON@		VerbType9Suffix;
 
 LEXICON VerbType9Suffix ! 11 Count = syntactic
-[PERSON]:wI'					AllNounTypeSuffixes; ! Nominalizer. Verbs can take the Type 9 suffix -wI' one/thing which does, and the resulting word is a noun which can take all noun suffixes. Other verb suffixes can be added before -wI', provided no other Type 9 suffix is used.
-[DEVERBNOUN]:ghach				VerbMoodTag; ! Nominalizer, '-ness'
-[INTEROGATIVE]:'a'				VerbMoodTag; ! Modal
-[OPTATIVE]:jaj					VerbMoodTag; ! Modal
-[BEFORE]:pa'					VerbMoodTag; ! Subordinator
+@U.MOOD.INFINITIVE@[PERSON]:@U.MOOD.INFINITIVE@wI'					AllNounTypeSuffixes; ! Nominalizer. Verbs can take the Type 9 suffix -wI' one/thing which does, and the resulting word is a noun which can take all noun suffixes. Other verb suffixes can be added before -wI', provided no other Type 9 suffix is used.
+[DVN]:ghach					AllVerbTypeSuffixes; ! Nominalizer, '-ness' "Turns a verb (which must have at least one other suffix attached) into a noun. The use of this suffix often makes for bad Klingon, and it is strongly suggested that you refrain from using any word with -ghach, unless it is found in the dictionary." -http://klingonska.org/dict/suffix.html
+[INTEROGATIVE]:'a'				AllVerbTypeSuffixes; ! Modal
+[OPTATIVE]:jaj					AllVerbTypeSuffixes; ! Modal
+[BEFORE]:pa'					AllVerbTypeSuffixes; ! Subordinator
 [SIMULTANEOUS]@R.VERBSUFFIX.CONTINUOUS@:vIS@R.VERBSUFFIX.CONTINUOUS@				VerbMoodTag; ! Subordinator - It is always used in conjunction with the type-7 suffix continuous suffix -taH.
-[AFTER]:DI'					VerbMoodTag; ! Subordinator
-[CONDITIONAL]:chugh				VerbMoodTag; ! Cause and effect
-[CAUSE]:mo'					VerbMoodTag; ! Cause and effect
-[RELATIVE]:bogh					VerbMoodTag; ! Relative and purpose clause
-[PURPOSE]:meH					VerbMoodTag; ! Relative and purpose clause
+[AFTER]:DI'					AllVerbTypeSuffixes; ! Subordinator
+[CONDITIONAL]:chugh				AllVerbTypeSuffixes; ! Cause and effect
+[CAUSE]:mo'					AllVerbTypeSuffixes; ! Cause and effect
+[RELATIVE]:bogh					AllVerbTypeSuffixes; ! Relative and purpose clause
+[PURPOSE]:meH					AllVerbTypeSuffixes; ! Relative and purpose clause
 
 
  
@@ -319,12 +320,14 @@ cha[torpedo]:cha				AllNounTypeSuffixes;
 
 
 LEXICON AllNounTypeSuffixes
-			NounType1Gate;
-@P.NOUNTYPE1.ON@			NounType2Gate;
-@P.NOUNTYPE1.ON@@P.NOUNTYPE2.ON@		NounType3Gate;
-@P.NOUNTYPE1.ON@@P.NOUNTYPE2.ON@@P.NOUNTYPE3.ON@		NounType4Gate;
-@P.NOUNTYPE1.ON@@P.NOUNTYPE2.ON@@P.NOUNTYPE3.ON@@P.NOUNTYPE4.ON@		NounType5Gate;
-						#;
+						NounType1Gate;
+						NounType2Gate;
+						NounType3Gate;
+						NounType4Gate;
+						NounType5Gate;
+@R.VERBTYPE.STATIVE@[ADJ]:@R.VERBTYPE.STATIVE@			#;
+@D.MOOD@[N]:@D.MOOD@							#;
+@R.MOOD@[DVN]:@R.MOOD@							#;
 
 
 LEXICON NounType1Gate
@@ -337,7 +340,7 @@ LEXICON NounType1Suffix ! size, affection
 
 
 LEXICON NounType2Gate
-@D.NOUNTYPE2.ON@@P.NOUNTYPE2.ON@		NounType2Suffix;
+@P.NOUNTYPE1.ON@@D.NOUNTYPE2.ON@@P.NOUNTYPE2.ON@		NounType2Suffix;
 
 ! A noun does not require a plural suffix if a pronoun or pronominal prefix serves to indicate that it is plural,[10] or if it is being used in conjunction with a number.
 LEXICON NounType2Suffix ! plurals
@@ -349,7 +352,7 @@ LEXICON NounType2Suffix ! plurals
 [PL]						AllNounTypeSuffixes; ! A plural suffix is never obligatory
 
 LEXICON NounType3Gate
-@D.NOUNTYPE3.ON@@P.NOUNTYPE3.ON@		NounType3Suffix;
+@P.NOUNTYPE1.ON@@P.NOUNTYPE2.ON@@D.NOUNTYPE3.ON@@P.NOUNTYPE3.ON@		NounType3Suffix;
 
 LEXICON NounType3Suffix ! accuracy
 [SOCALLED]:qoq					AllNounTypeSuffixes;
@@ -358,7 +361,7 @@ LEXICON NounType3Suffix ! accuracy
 
 
 LEXICON NounType4Gate
-@D.NOUNTYPE4.ON@@P.NOUNTYPE4.ON@		NounType4Suffix;
+@P.NOUNTYPE1.ON@@P.NOUNTYPE2.ON@@P.NOUNTYPE3.ON@@D.NOUNTYPE4.ON@@P.NOUNTYPE4.ON@		NounType4Suffix;
 
 LEXICON NounType4Suffix ! possession, determiners
 [POSSESSIVE-1P-SG]:wIj					AllNounTypeSuffixes;
@@ -376,14 +379,14 @@ LEXICON NounType4Suffix ! possession, determiners
 
 
 LEXICON NounType5Gate
-@D.NOUNTYPE5.ON@@P.NOUNTYPE5.ON@		NounType5Suffix;
+@P.NOUNTYPE1.ON@@P.NOUNTYPE2.ON@@P.NOUNTYPE3.ON@@P.NOUNTYPE4.ON@@D.NOUNTYPE5.ON@@P.NOUNTYPE5.ON@	NounType5Suffix;
 
 LEXICON NounType5Suffix ! syntactic role
-[LOCATIVE]:Daq					#;
-[ABLATIVE]:vo'					#;
-[CAUSAL]:mo'					#;
-[DATIVE]:vaD					#;
-[TOPIC]:'e'					#;
+[LOCATIVE]:Daq					AllNounTypeSuffixes;
+[ABLATIVE]:vo'					AllNounTypeSuffixes;
+[CAUSAL]:mo'					AllNounTypeSuffixes;
+[DATIVE]:vaD					AllNounTypeSuffixes;
+[TOPIC]:'e'					AllNounTypeSuffixes;
 
 
 
@@ -441,8 +444,8 @@ wa'leS% po[tomorrow-morning]:wa'leS% po	AdverbSuffix;
 
 
 LEXICON AdverbSuffix
-[REVERSE]:Ha'					#;
-						#; ! No suffix
+[REVERSE][ADV]:Ha'				#;
+[ADV]:0						#; ! No suffix
 
 
 
@@ -452,17 +455,19 @@ LEXICON AdverbSuffix
 
 
 LEXICON Pronoun
-bIH[they,them]@U.NOUNTYPE.OTHER@:bIH@U.NOUNTYPE.OTHER@				#;
-chaH[they,them]@U.NOUNTYPE.CAPABLELANGUAGE@:chaH@U.NOUNTYPE.CAPABLELANGUAGE@	#;
-'e'[that]:'e'					#; ! Referring to previous part of sentence
-ghaH[he,she,him,her]:ghaH			#;
-jIH[I,me]:jIH					#;
-maH[we,us]:maH					#;
-net[that,also]:net				#; ! Similar to 'e'
-'oH[it]:'oH					#;
-SoH[you-SG]:SoH					#;
-tlhIH[you-PL]:tlhIH				#;
+bIH[they,them]@U.NOUNTYPE.OTHER@:bIH@U.NOUNTYPE.OTHER@				PronounTag;
+chaH[they,them]@U.NOUNTYPE.CAPABLELANGUAGE@:chaH@U.NOUNTYPE.CAPABLELANGUAGE@	PronounTag;
+'e'[that]:'e'					PronounTag; ! Referring to previous part of sentence
+ghaH[he,she,him,her]:ghaH			PronounTag;
+jIH[I,me]:jIH					PronounTag;
+maH[we,us]:maH					PronounTag;
+net[that,also]:net				PronounTag; ! Similar to 'e'
+'oH[it]:'oH					PronounTag;
+SoH[you-SG]:SoH					PronounTag;
+tlhIH[you-PL]:tlhIH				PronounTag;
 
+LEXICON PronounTag
+[PRONOUN]:0					#;
 
 ! ######################################
 ! ########## OTHER WORD FORMS ##########
@@ -475,14 +480,17 @@ LEXICON OtherWordForms
 
 
 LEXICON Conjunction
-je[word-and]:je					#;
-joq[word-or]:joq				#;
-ghap[word-xor]:ghap				#;
-'ej[sentence-and]:'ej				#;
-qoj[sentence-or]:qoj				#;
-pagh[sentence-xor]:pagh			#;
-'ach[sentence-contrast]:'ach			#;
-'a[sentence-contrast]:'a			#;
+je[word-and]:je					ConjunctionTag;
+joq[word-or]:joq				ConjunctionTag;
+ghap[word-xor]:ghap				ConjunctionTag;
+'ej[sentence-and]:'ej				ConjunctionTag;
+qoj[sentence-or]:qoj				ConjunctionTag;
+pagh[sentence-xor]:pagh			ConjunctionTag;
+'ach[sentence-contrast]:'ach			ConjunctionTag;
+'a[sentence-contrast]:'a			ConjunctionTag;
+
+LEXICON ConjunctionTag
+[CONJ]:0					#;
 
 LEXICON Logic
 HISlaH[yes]:HISlaH				#;
