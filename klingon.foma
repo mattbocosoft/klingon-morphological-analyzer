@@ -83,3 +83,5 @@ regex Grammar;
 # 6. Compound Nouns?
 # 7. More test cases
 # 9. Handle plural exceptions
+# 10. Make sure flags are on both upper and lower.
+# 11. Can the ghach deverbal noun suffix take noun suffixes?
