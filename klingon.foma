@@ -76,11 +76,6 @@ regex Grammar;
 # 1. The perfective aspect can also be indicated by the use of the verb form rIntaH after the main verb. This carries the connotation of irreversibility.[28]
 
 # TODO
-# 1. Add [N] to nouns and [V] to verbs, and [ADJ] to adjectival verbs, and [ADV] to ?adverbs?
-#	What about the 'other' words.
-# 3. Replace all instances of ' with ’
-# 4. Reflexive verbs whose object is not the same as the subject?
-# 6. Compound Nouns?
 # 7. More test cases
 # 9. Handle plural exceptions
 # 10. Make sure flags are on both upper and lower.
