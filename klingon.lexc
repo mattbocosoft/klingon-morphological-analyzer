@@ -2,7 +2,7 @@
 ! https://en.wikipedia.org/wiki/Klingon_grammar
 ! https://www.youtube.com/watch?v=e5Did-eVQDc
 
-Multichar_Symbols [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [PL-LANGUSER] [PL-BODYPART] [PL-OTHERNOUN] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] [ALL-OVER-THE-PLACE] @D.NOUNTYPE1.ON@ @P.NOUNTYPE1.ON@ @D.NOUNTYPE2.ON@ @P.NOUNTYPE2.ON@ @D.NOUNTYPE3.ON@ @P.NOUNTYPE3.ON@ @D.NOUNTYPE4.ON@ @P.NOUNTYPE4.ON@ @D.NOUNTYPE5.ON@ @P.NOUNTYPE5.ON@ @U.NOUNTYPE.BODYPART@ @U.NOUNTYPE.CAPABLELANGUAGE@ @U.NOUNTYPE.OTHER@ [NEG] [1P] [2P] [3P] [SG] [PL] [GUESSWORD] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED-SUBJ] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DVN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE] [REFUSE] [EMPHASIS] [REVERSE] @U.MOOD.INDICATIVE@ @U.MOOD.IMPERATIVE@ @U.MOOD.INFINITIVE@ @D.MOOD@ @R.MOOD@ @D.VERBTYPE1.ON@ @P.VERBTYPE1.ON@ @D.VERBTYPE2.ON@ @P.VERBTYPE2.ON@ @D.VERBTYPE3.ON@ @P.VERBTYPE3.ON@ @D.VERBTYPE4.ON@ @P.VERBTYPE4.ON@ @D.VERBTYPE5.ON@ @P.VERBTYPE5.ON@ @D.VERBTYPE6.ON@ @P.VERBTYPE6.ON@ @D.VERBTYPE7.ON@ @P.VERBTYPE7.ON@ @D.VERBTYPE8.ON@ @P.VERBTYPE8.ON@ @D.VERBTYPE9.ON@ @P.VERBTYPE9.ON@ @P.INDICATIVE.UNSPECIFIED@ @R.INDICATIVE.UNSPECIFIED@ @C.INDICATIVE@ @D.INDICATIVE.UNSPECIFIED@ @P.VERBSUFFIX.CONTINUOUS@ @R.VERBSUFFIX.CONTINUOUS@ @U.VERBTYPE.STATIVE@ @D.VERBTYPE.STATIVE@ @R.VERBTYPE.STATIVE@ @U.VERBTYPE.ACTION@ [ORDINAL] [REPEATCOUNT] @P.POS.ADVERB@ @D.POS.ADVERB@ @R.POS.ADVERB@ [ADV] [NUMBER] @P.MULTIPLE1234567.ON@ @D.MULTIPLE1234567.ON@ @P.MULTIPLE123456.ON@ @D.MULTIPLE123456.ON@ @P.MULTIPLE12345.ON@ @D.MULTIPLE12345.ON@ @P.MULTIPLE1234.ON@ @D.MULTIPLE1234.ON@ @P.MULTIPLE123.ON@ @D.MULTIPLE123.ON@ @P.MULTIPLE12.ON@ @D.MULTIPLE12.ON@ [POSSESSIVE-1P-SG] [POSSESSIVE-2P-SG] [POSSESSIVE-3P-SG] [POSSESSIVE-1P-PL] [POSSESSIVE-2P-PL] [POSSESSIVE-3P-PL] [PRONOUN] [CONJ] [N] [V] [ADV] [ADJ] [LOGIC]
+Multichar_Symbols [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [PL-LANGUSER] [PL-BODYPART] [PL-OTHERNOUN] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] [ALL-OVER-THE-PLACE] @D.NOUNTYPE1.ON@ @P.NOUNTYPE1.ON@ @D.NOUNTYPE2.ON@ @P.NOUNTYPE2.ON@ @D.NOUNTYPE3.ON@ @P.NOUNTYPE3.ON@ @D.NOUNTYPE4.ON@ @P.NOUNTYPE4.ON@ @D.NOUNTYPE5.ON@ @P.NOUNTYPE5.ON@ @U.NOUNTYPE.BODYPART@ @U.NOUNTYPE.CAPABLELANGUAGE@ @U.NOUNTYPE.OTHER@ [NEG] [1P] [2P] [3P] [SG] [PL] [GUESSWORD] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED-SUBJ] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DVN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE] [REFUSE] [EMPHASIS] [REVERSE] @U.MOOD.INDICATIVE@ @U.MOOD.IMPERATIVE@ @U.MOOD.INFINITIVE@ @D.MOOD@ @R.MOOD@ @D.VERBTYPE1.ON@ @P.VERBTYPE1.ON@ @D.VERBTYPE2.ON@ @P.VERBTYPE2.ON@ @D.VERBTYPE3.ON@ @P.VERBTYPE3.ON@ @D.VERBTYPE4.ON@ @P.VERBTYPE4.ON@ @D.VERBTYPE5.ON@ @P.VERBTYPE5.ON@ @D.VERBTYPE6.ON@ @P.VERBTYPE6.ON@ @D.VERBTYPE7.ON@ @P.VERBTYPE7.ON@ @D.VERBTYPE8.ON@ @P.VERBTYPE8.ON@ @D.VERBTYPE9.ON@ @P.VERBTYPE9.ON@ @P.INDICATIVE.UNSPECIFIED@ @R.INDICATIVE.UNSPECIFIED@ @C.INDICATIVE@ @D.INDICATIVE.UNSPECIFIED@ @P.VERBSUFFIX.CONTINUOUS@ @R.VERBSUFFIX.CONTINUOUS@ @U.VERBTYPE.STATIVE@ @D.VERBTYPE.STATIVE@ @R.VERBTYPE.STATIVE@ @U.VERBTYPE.ACTION@ [ORDINAL] [REPEATCOUNT] @P.POS.ADVERB@ @D.POS.ADVERB@ @R.POS.ADVERB@ [ADV] [NUMBER] @P.MULTIPLE1234567.ON@ @D.MULTIPLE1234567.ON@ @P.MULTIPLE123456.ON@ @D.MULTIPLE123456.ON@ @P.MULTIPLE12345.ON@ @D.MULTIPLE12345.ON@ @P.MULTIPLE1234.ON@ @D.MULTIPLE1234.ON@ @P.MULTIPLE123.ON@ @D.MULTIPLE123.ON@ @P.MULTIPLE12.ON@ @D.MULTIPLE12.ON@ [POSSESSIVE-1P-SG] [POSSESSIVE-2P-SG] [POSSESSIVE-3P-SG] [POSSESSIVE-1P-PL] [POSSESSIVE-2P-PL] [POSSESSIVE-3P-PL] [PRONOUN] [CONJ] [N] [V] [ADV] [ADJ] [EXCLAMATION]
 
 LEXICON Root
 						VerbPrefix; ! Includes Adjective part-of-speech via adjectival verbs
@@ -112,43 +112,132 @@ LEXICON Verb
 @U.VERBTYPE.ACTION@				ActionVerb;
 
 LEXICON StativeVerb
+Dach[to-be-absent]:Dach			VerbSuffix;
+loj[to-be-all-gone]:loj			VerbSuffix;
 tIn[to-be-big]:tIn				VerbSuffix;
+Dal[to-be-boring]:Dal				VerbSuffix;
+jot[to-be-calm]:jot				VerbSuffix;
 Say'[to-be-clean]:Say'				VerbSuffix;
+bIr[to-be-cold]:bIr				VerbSuffix;
 mIS[to-be-confused]:mIS			VerbSuffix;
+lam[to-be-dirty]:lam				VerbSuffix;
+chech[to-be-drunk]:chech			VerbSuffix;
 puS[to-be-few]:puS				VerbSuffix;
+Do'[to-be-fortunate]:Do'			VerbSuffix;
 QaQ[to-be-good]:QaQ				VerbSuffix;
+let[to-be-hard-like-a-rock]:let		VerbSuffix;
 Quch[to-be-happy]:Quch				VerbSuffix;
-law'[to-be-many]:law'				VerbSuffix;
-chuS[to-be-noisy]:chuS				VerbSuffix;
+ghung[to-be-hungry]:ghung			VerbSuffix;
+Doj[to-be-impressive]:Doj			VerbSuffix;
+Daj[to-be-interesting]:Daj			VerbSuffix;
+buD[to-be-lazy]:buD				VerbSuffix;
 rur[to-be-like]:rur				VerbSuffix;
+tIq[to-be-long]:tIq				VerbSuffix;
+law'[to-be-many]:law'				VerbSuffix;
+ghIH[to-be-messy,to-be-sloppy]:ghIH		VerbSuffix;
+Sum[to-be-near]:Sum				VerbSuffix;
+bIt[to-be-nervous]:bIt				VerbSuffix;
+chu'[to-be-new]:chu'				VerbSuffix;
+chuS[to-be-noisy]:chuS				VerbSuffix;
+Doq[to-be-orange,to-be-red]:Doq		VerbSuffix;
+bel[to-be-pleased]:bel				VerbSuffix;
+Hem[to-be-proud]:Hem				VerbSuffix;
+Hev[to-receive]:Hev				VerbSuffix;
+Hop[to-be-remote,to-be-far]:Hop		VerbSuffix;
+lugh[to-be-right,to-be-correct]:lugh		VerbSuffix;
+ghegh[to-be-rough]:ghegh			VerbSuffix;
+mach[to-be-small]:mach				VerbSuffix;
+jej[to-be-sharp]:jej				VerbSuffix;
+run[to-be-short]:run				VerbSuffix;
+Hab[to-be-smooth]:Hab				VerbSuffix;
+le'[to-be-special,to-be-exceptional]:le'	VerbSuffix;
+HoS[to-be-strong]:HoS				VerbSuffix;
 woch[to-be-tall]:woch				VerbSuffix;
 rap[to-be-the-same]:rap			VerbSuffix;
+Doy'[to-be-tired]:Doy'				VerbSuffix;
+yoy[to-be-upside-down]:yoy			VerbSuffix;
+lI'[to-be-useful]:lI'				VerbSuffix;
 yIQ[to-be-wet]:yIQ				VerbSuffix;
+chIS[to-be-white]:chIS				VerbSuffix;
+
 
 
 LEXICON ActionVerb
+laj[to-accept]:laj				VerbSuffix;
+chav[to-achieve]:chav				VerbSuffix;
+chel[to-add]:chel				VerbSuffix;
+chID[to-admit]:chID				VerbSuffix;
 qeS[to-advise]:qeS				VerbSuffix;
+chaw'[to-allow]:chaw'				VerbSuffix;
+choH[to-alter]:choH				VerbSuffix;
 poj[to-analyze]:poj				VerbSuffix;
+jang[to-answer,to-reply]:jang			VerbSuffix;
+HIv[to-attack]:HIv				VerbSuffix;
+jol[to-beam-aboard]:jol			VerbSuffix;
+Har[to-believe]:Har				VerbSuffix;
+chop[to-bite]:chop				VerbSuffix;
+ghor[to-break]:ghor				VerbSuffix;
+je'[to-buy,to-purchase]:je'			VerbSuffix;
 tlha'[to-chase]:tlha'				VerbSuffix;
+chol[to-close-in,to-get-closer]:chol		VerbSuffix;
+buS[to-concentrate-on]:buS			VerbSuffix;
+chargh[to-conquer]:chargh			VerbSuffix;
+ngaS[to-contain]:ngaS				VerbSuffix;
 baghHa'[to-decrypt]:baghHa'			VerbSuffix;
+Del[to-describe]:Del				VerbSuffix;
+Hegh[to-die]:Hegh				VerbSuffix;
+Hon[to-doubt]:Hon				VerbSuffix;
+chagh[to-drop]:chagh				VerbSuffix;
 Sop[to-eat]:Sop					VerbSuffix;
+cher[to-establish]:cher			VerbSuffix;
+je'[to-feed]:je'				VerbSuffix;
 tu'[to-find]:tu'				VerbSuffix;
+baH[to-fire]:baH				VerbSuffix;
+lIj[to-forget]:lIj				VerbSuffix;
 nob[to-give]:nob				VerbSuffix;
+jaH[to-go,to-travel]:jaH			VerbSuffix;
+ghoS[to-go-onward,to-approach]:ghoS		VerbSuffix;
+ghaj[to-have,to-possess]:ghaj			VerbSuffix;
 qIp[to-hit]:qIp					VerbSuffix;
 tul[to-hope]:tul				VerbSuffix;
 Dub[to-improve]:Dub				VerbSuffix;
+Hech[to-intend]:Hech				VerbSuffix;
 HoH[to-kill]:HoH				VerbSuffix;
+Hagh[to-laugh]:Hagh				VerbSuffix;
+Dev[to-lead,to-guide]:Dev			VerbSuffix;
+ghoj[to-learn]:ghoj				VerbSuffix;
+ghom[to-meet]:ghom				VerbSuffix;
+chIj[to-navigate]:chIj				VerbSuffix;
+DIl[to-pay]:DIl					VerbSuffix;
+bot[to-prevent]:bot				VerbSuffix;
+chep[to-prosper]:chep				VerbSuffix;
 laD[to-read]:laD				VerbSuffix;
+ghov[to-recognize]:ghov			VerbSuffix;
+chup[to-recommend,to-suggest]:chup		VerbSuffix;
+leS[to-rest,to-relax]:leS			VerbSuffix;
+chegh[to-return-to]:chegh			VerbSuffix;
 'ang[to-reveal]:'ang				VerbSuffix;
+leng[to-roam,to-travel]:leng			VerbSuffix;
+jatlh[to-say,to-tell]:jatlh			VerbSuffix;
+ghIj[to-scare]:ghIj				VerbSuffix;
+jach[to-scream]:jach				VerbSuffix;
 legh[to-see]:legh				VerbSuffix;
 ngev[to-sell]:ngev				VerbSuffix;
+bach[to-shoot]:bach				VerbSuffix;
 bom[to-sing]:bom				VerbSuffix;
 ba'[to-sit]:ba'					VerbSuffix;
 Qong[to-sleep]:Qong				VerbSuffix;
+HaD[to-study]:HaD				VerbSuffix;
+ghoD[to-stuff]:ghoD				VerbSuffix;
 Qap[to-succeed]:Qap				VerbSuffix;
+jegh[to-surrender,to-give-up]:jegh		VerbSuffix;
+ja'[to-tell,to-report]:ja'			VerbSuffix;
 toj[to-trick]:toj				VerbSuffix;
 yaj[to-understand]:yaj				VerbSuffix;
+lo'[to-use]:lo'					VerbSuffix;
+loS[to-wait]:loS				VerbSuffix;
 bej[to-watch]:bej				VerbSuffix;
+ghItlh[to-write]:ghItlh			VerbSuffix;
 
 
 LEXICON VerbSuffix
@@ -281,51 +370,114 @@ LEXICON Noun
 @U.NOUNTYPE.CAPABLELANGUAGE@			NounCapableOfLanguage;
 @U.NOUNTYPE.OTHER@				NounOther;
 
+LEXICON NounName
+be'etor[B'Etor]:be'etor			AllNounTypeSuffixes;
 
 LEXICON NounBodyPart
+DeS[arm]:DeS					AllNounTypeSuffixes;
 mIn[eye]:mIn					AllNounTypeSuffixes;
 ghop[hand]:ghop					AllNounTypeSuffixes;
+ghIch[nose]:ghIch				AllNounTypeSuffixes;
+DIr[skin]:DIr					AllNounTypeSuffixes;
 
 
 LEXICON NounCapableOfLanguage
+loDHom[boy]:loDHom				AllNounTypeSuffixes;
+loDnI'[brother]:loDnI'				AllNounTypeSuffixes;
 je'wI'[buyer]:je'wI'				AllNounTypeSuffixes;
+HoD[captain]:HoD				AllNounTypeSuffixes;
 puq[child]:puq					AllNounTypeSuffixes;
 vav[father]:vav					AllNounTypeSuffixes;
 jup[friend]:jup					AllNounTypeSuffixes;
-loD[man]:loD					AllNounTypeSuffixes;
+be'Hom[girl]:be'Hom				AllNounTypeSuffixes;
+baHwI'[gunner]:baHwI'				AllNounTypeSuffixes;
+DeghwI'[helmsman]:DeghwI'			AllNounTypeSuffixes;
+loDnal[husband]:loDnal				AllNounTypeSuffixes;
+loD[male,man]:loD				AllNounTypeSuffixes;
 ghot[person]:ghot				AllNounTypeSuffixes;
 qetwI'[runner]:qetwI'				AllNounTypeSuffixes;
+bu'[sergeant]:bu'				AllNounTypeSuffixes;
+be'nI'[sister]:be'nI'				AllNounTypeSuffixes;
+be'nal[wife]:be'nal				AllNounTypeSuffixes;
 be'[woman]:be'					AllNounTypeSuffixes;
 
 
 LEXICON NounOther
+laH[ability]:laH				AllNounTypeSuffixes;
+latlh[additional-one]:latlh			AllNounTypeSuffixes;
+Hoch[all,everything]:Hoch			AllNounTypeSuffixes;
+Ha'DIbaH[animal,meat]:Ha'DIbaH			AllNounTypeSuffixes;
+chav[achievement]:chav				AllNounTypeSuffixes;
+ngup[authority]:ngup				AllNounTypeSuffixes;
 'alnIl[belt,buckle]:'alnIl			AllNounTypeSuffixes;
+DaS[boot]:DaS					AllNounTypeSuffixes;
+jaj[day]:jaj					AllNounTypeSuffixes;
 quS[chair]:quS					AllNounTypeSuffixes;
 choH[change]:choH				AllNounTypeSuffixes;
 veng[city]:veng					AllNounTypeSuffixes;
 qoj[cliff]:qoj					AllNounTypeSuffixes;
 wep[coat]:wep					AllNounTypeSuffixes;
+De'wI'[computer]:De'wI'			AllNounTypeSuffixes;
+Hatlh[country]:Hatlh				AllNounTypeSuffixes;
+De'[data,information]:De'			AllNounTypeSuffixes;
+lojmIt[door,gate]:lojmIt			AllNounTypeSuffixes;
+jagh[enemy]:jagh				AllNounTypeSuffixes;
 Soj[food]:Soj					AllNounTypeSuffixes;
+jup[friend]:jup					AllNounTypeSuffixes;
+HIvje'[glass,tumble]:HIvje'			AllNounTypeSuffixes;
 ghom[group]:ghom				AllNounTypeSuffixes;
 QaH[help]:QaH					AllNounTypeSuffixes;
-juH[house]:juH					AllNounTypeSuffixes;
+Degh[helm]:Degh					AllNounTypeSuffixes;
+juH[home,house]:juH				AllNounTypeSuffixes;
 qach[idea]:qach					AllNounTypeSuffixes;
+Hol[language]:Hol				AllNounTypeSuffixes;
+bang[love]:bang					AllNounTypeSuffixes;
+ghItlh[manuscript]:ghItlh			AllNounTypeSuffixes;
 Qagh[mistake]:Qagh				AllNounTypeSuffixes;
+jar[month]:jar					AllNounTypeSuffixes;
+Dap[nonsense]:Dap				AllNounTypeSuffixes;
 nav[paper]:nav					AllNounTypeSuffixes;
 roj[peace]:roj					AllNounTypeSuffixes;
 Saj[pet]:Saj					AllNounTypeSuffixes;
 yuQ[planet]:yuQ					AllNounTypeSuffixes;
+bel[pleasure]:bel				AllNounTypeSuffixes;
 woQ[power]:woQ					AllNounTypeSuffixes;
+bortaS[revenge]:bortaS				AllNounTypeSuffixes;
 pa'[room]:pa'					AllNounTypeSuffixes;
+bach[shot]:bach					AllNounTypeSuffixes;
+Duj[ship,vessel]:Duj				AllNounTypeSuffixes;
 ghu'[situation]:ghu'				AllNounTypeSuffixes;
+chal[sky]:chal					AllNounTypeSuffixes;
+Hal[source]:Hal					AllNounTypeSuffixes;
 Hov[star]:Hov					AllNounTypeSuffixes;
 'ejyo'[starfleet]:'ejyo'			AllNounTypeSuffixes;
 'ejDo'[starship]:'ejDo'			AllNounTypeSuffixes;
+lut[story]:lut					AllNounTypeSuffixes;
 Duj[ship]:Duj					AllNounTypeSuffixes;
 baghneQ[spoon]:baghneQ				AllNounTypeSuffixes;
 targh[targ]:targh				AllNounTypeSuffixes; ! A "targ" is a Klingon animal somewhat resembling a boar
+Doch[thing]:Doch				AllNounTypeSuffixes;
+DaHjaj[today]:DaHjaj				AllNounTypeSuffixes;
 cha[torpedo]:cha				AllNounTypeSuffixes;
+ghogh[voice]:ghogh				AllNounTypeSuffixes;
+bIQ[water]:bIQ					AllNounTypeSuffixes;
+Hogh[week]:Hogh					AllNounTypeSuffixes;
 SuS[wind,breeze]:SuS				AllNounTypeSuffixes;
+DIS[year]:DIS					AllNounTypeSuffixes;
+						NounOtherLocation;
+
+LEXICON NounOtherLocation
+vogh[somewhere]:vogh				AllNounTypeSuffixes;
+nIH[right-side]:nIH				AllNounTypeSuffixes;
+poS[left-side]:poS				AllNounTypeSuffixes;
+tlhop[area-in-front]:tlhop			AllNounTypeSuffixes;
+'em[area-in-back]:'em				AllNounTypeSuffixes;
+Dung[area-above]:Dung				AllNounTypeSuffixes;
+bIng[area-below]:bIng				AllNounTypeSuffixes;
+retlh[area-beside]:retlh			AllNounTypeSuffixes;
+joj[area-between]:joj				AllNounTypeSuffixes;
+qoD[inside]:qoD					AllNounTypeSuffixes;
+Hur[outside]:Hur				AllNounTypeSuffixes;
 
 
 LEXICON AllNounTypeSuffixes
@@ -483,7 +635,7 @@ LEXICON PronounTag
 
 LEXICON OtherWordForms
 						Number;
-						Logic;
+						Exclamation;
 						Conjunction;
 
 
@@ -500,13 +652,14 @@ pagh[sentence-xor]:pagh			ConjunctionTag;
 LEXICON ConjunctionTag
 [CONJ]:0					#;
 
-LEXICON Logic
-HISlaH[yes]:HISlaH				LogicSuffix;
-HIja'[yes]:HIja'				LogicSuffix;
-ghobe'[no]:ghobe'				LogicSuffix;
+LEXICON Exclamation
+HISlaH[yes]:HISlaH				ExclamationSuffix;
+HIja'[yes]:HIja'				ExclamationSuffix;
+ghobe'[no]:ghobe'				ExclamationSuffix;
+Ha'[let's-go]:Ha'				ExclamationSuffix;
 
-LEXICON LogicSuffix
-[LOGIC]:0					#;
+LEXICON ExclamationSuffix
+[EXCLAMATION]:0					#;
 
 LEXICON Number
 [NUMBER]:0					NumberEntries;
