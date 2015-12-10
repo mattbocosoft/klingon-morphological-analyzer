@@ -498,7 +498,7 @@ LEXICON NounType1Gate
 LEXICON NounType1Suffix ! size, affection
 [AUGMENTATIVE]:'a'				AllNounTypeSuffixes;
 [DIMINUTIVE]:Hom				AllNounTypeSuffixes;
-[ENDEARMENT]:oy					AllNounTypeSuffixes;
+[ENDEARMENT]:-oy				AllNounTypeSuffixes;
 
 
 LEXICON NounType2Gate
