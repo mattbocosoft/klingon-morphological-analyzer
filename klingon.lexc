@@ -5,20 +5,21 @@
 Multichar_Symbols [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] [ALL-OVER-THE-PLACE] @U.NOUNTYPE.BODYPART@ @U.NOUNTYPE.CAPABLELANGUAGE@ @U.NOUNTYPE.OTHER@ [NEG] [1P] [2P] [3P] [SG] [PL] [PL-IRREGULAR] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED-SUBJ] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DVN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE] [REFUSE] [EMPHASIS] [REVERSE] @U.MOOD.INDICATIVE@ @U.MOOD.IMPERATIVE@ @U.MOOD.INFINITIVE@ @D.MOOD@ @R.MOOD@ @D.VERBTYPE1.ON@ @P.VERBTYPE1.ON@ @D.VERBTYPE2.ON@ @P.VERBTYPE2.ON@ @D.VERBTYPE3.ON@ @P.VERBTYPE3.ON@ @D.VERBTYPE4.ON@ @P.VERBTYPE4.ON@ @D.VERBTYPE5.ON@ @P.VERBTYPE5.ON@ @D.VERBTYPE6.ON@ @P.VERBTYPE6.ON@ @D.VERBTYPE7.ON@ @P.VERBTYPE7.ON@ @D.VERBTYPE8.ON@ @P.VERBTYPE8.ON@ @D.VERBTYPE9.ON@ @P.VERBTYPE9.ON@ @P.INDICATIVE.UNSPECIFIED@ @R.INDICATIVE.UNSPECIFIED@ @C.INDICATIVE@ @D.INDICATIVE.UNSPECIFIED@ @P.VERBSUFFIX.CONTINUOUS@ @R.VERBSUFFIX.CONTINUOUS@ @U.VERBTYPE.STATIVE@ @D.VERBTYPE.STATIVE@ @R.VERBTYPE.STATIVE@ @U.VERBTYPE.ACTION@ [ORDINAL] [REPEATCOUNT] @P.POS.ADVERB@ @D.POS.ADVERB@ @R.POS.ADVERB@ [ADV] [NUMBER] @P.MULTIPLE1234567.ON@ @D.MULTIPLE1234567.ON@ @P.MULTIPLE123456.ON@ @D.MULTIPLE123456.ON@ @P.MULTIPLE12345.ON@ @D.MULTIPLE12345.ON@ @P.MULTIPLE1234.ON@ @D.MULTIPLE1234.ON@ @P.MULTIPLE123.ON@ @D.MULTIPLE123.ON@ @P.MULTIPLE12.ON@ @D.MULTIPLE12.ON@ @P.PLURAL.IRREGULAR@ @D.PLURAL.IRREGULAR@ @P.SINGULAR.IRREGULAR@ @D.SINGULAR.IRREGULAR@ @R.SINGULAR.IRREGULAR@ [POSSESSIVE-1P-SG] [POSSESSIVE-2P-SG] [POSSESSIVE-3P-SG] [POSSESSIVE-1P-PL] [POSSESSIVE-2P-PL] [POSSESSIVE-3P-PL] [PRONOUN] [CONJ] [N] [V] [ADV] [ADJ] [EXCLAMATION]
 
 LEXICON Root
-						VerbPrefix; ! Includes Adjective part-of-speech via adjectival verbs
+						Verb; ! Includes Adjective part-of-speech via adjectival verbs
 						Noun;
-						Adverb;
-						Pronoun;
-						OtherWordForms;
+						LeftOverWordForms;
 
 ! ##########################
 ! ########## VERB ##########
 ! ##########################
 
+LEXICON Verb
+						VerbPrefix;
+
 LEXICON VerbPrefix
 @U.MOOD.INDICATIVE@				VerbIndicativePrefix;
 @U.MOOD.IMPERATIVE@				VerbImperativePrefix;
-@U.MOOD.INFINITIVE@				Verb;
+@U.MOOD.INFINITIVE@				VerbStem;
 
 
 LEXICON VerbIndicativePrefix
@@ -31,83 +32,83 @@ LEXICON VerbIndicativePrefix
 @P.INDICATIVE.UNSPECIFIED@			VerbIndicativePrefixUnspecified;
 
 LEXICON VerbIndicativePrefix1PSG
-0:jI						Verb; ! No Object
-![OBJ-1P][OBJ-SG]:0				Verb;
-[OBJ-2P][OBJ-SG]:qa				Verb;
-[OBJ-3P][OBJ-SG]:vI				Verb;
-![OBJ-1P][OBJ-PL]:0				Verb;
-[OBJ-2P][OBJ-PL]:Sa				Verb;
-[OBJ-3P][OBJ-PL]:vI				Verb;
+0:jI						VerbStem; ! No Object
+![OBJ-1P][OBJ-SG]:0				VerbStem;
+[OBJ-2P][OBJ-SG]:qa				VerbStem;
+[OBJ-3P][OBJ-SG]:vI				VerbStem;
+![OBJ-1P][OBJ-PL]:0				VerbStem;
+[OBJ-2P][OBJ-PL]:Sa				VerbStem;
+[OBJ-3P][OBJ-PL]:vI				VerbStem;
 
 LEXICON VerbIndicativePrefix2PSG
-0:bI						Verb; ! No Object
-[OBJ-1P][OBJ-SG]:cho				Verb;
-![OBJ-2P][OBJ-SG]:0				Verb;
-[OBJ-3P][OBJ-SG]:Da				Verb;
-[OBJ-1P][OBJ-PL]:ju				Verb;
-![OBJ-2P][OBJ-PL]:0				Verb;
-[OBJ-3P][OBJ-PL]:Da				Verb;
+0:bI						VerbStem; ! No Object
+[OBJ-1P][OBJ-SG]:cho				VerbStem;
+![OBJ-2P][OBJ-SG]:0				VerbStem;
+[OBJ-3P][OBJ-SG]:Da				VerbStem;
+[OBJ-1P][OBJ-PL]:ju				VerbStem;
+![OBJ-2P][OBJ-PL]:0				VerbStem;
+[OBJ-3P][OBJ-PL]:Da				VerbStem;
 
 LEXICON VerbIndicativePrefix3PSG
-						Verb; ! No Object
-[OBJ-1P][OBJ-SG]:mu				Verb;
-[OBJ-2P][OBJ-SG]:Du				Verb;
-[OBJ-3P][OBJ-SG]:0				Verb;
-[OBJ-1P][OBJ-PL]:nu				Verb;
-[OBJ-2P][OBJ-PL]:lI				Verb;
-[OBJ-3P][OBJ-PL]:0				Verb;
+						VerbStem; ! No Object
+[OBJ-1P][OBJ-SG]:mu				VerbStem;
+[OBJ-2P][OBJ-SG]:Du				VerbStem;
+[OBJ-3P][OBJ-SG]:0				VerbStem;
+[OBJ-1P][OBJ-PL]:nu				VerbStem;
+[OBJ-2P][OBJ-PL]:lI				VerbStem;
+[OBJ-3P][OBJ-PL]:0				VerbStem;
 
 LEXICON VerbIndicativePrefix1PPL
-0:ma						Verb; ! No Object
-![OBJ-1P][OBJ-SG]:0				Verb;
-[OBJ-2P][OBJ-SG]:pI				Verb;
-[OBJ-3P][OBJ-SG]:wI				Verb;
-![OBJ-1P][OBJ-PL]:0				Verb;
-[OBJ-2P][OBJ-PL]:re				Verb;
-[OBJ-3P][OBJ-PL]:DI				Verb;
+0:ma						VerbStem; ! No Object
+![OBJ-1P][OBJ-SG]:0				VerbStem;
+[OBJ-2P][OBJ-SG]:pI				VerbStem;
+[OBJ-3P][OBJ-SG]:wI				VerbStem;
+![OBJ-1P][OBJ-PL]:0				VerbStem;
+[OBJ-2P][OBJ-PL]:re				VerbStem;
+[OBJ-3P][OBJ-PL]:DI				VerbStem;
 
 LEXICON VerbIndicativePrefix2PPL
-0:Su						Verb; ! No Object
-[OBJ-1P][OBJ-SG]:tu				Verb;
-![OBJ-2P][OBJ-SG]:0				Verb;
-[OBJ-3P][OBJ-SG]:bo				Verb;
-[OBJ-1P][OBJ-PL]:che				Verb;
-![OBJ-2P][OBJ-PL]:0				Verb;
-[OBJ-3P][OBJ-PL]:bo				Verb;
+0:Su						VerbStem; ! No Object
+[OBJ-1P][OBJ-SG]:tu				VerbStem;
+![OBJ-2P][OBJ-SG]:0				VerbStem;
+[OBJ-3P][OBJ-SG]:bo				VerbStem;
+[OBJ-1P][OBJ-PL]:che				VerbStem;
+![OBJ-2P][OBJ-PL]:0				VerbStem;
+[OBJ-3P][OBJ-PL]:bo				VerbStem;
 
 LEXICON VerbIndicativePrefix3PPL
-						Verb; ! No Object
-[OBJ-1P][OBJ-SG]:mu				Verb;
-[OBJ-2P][OBJ-SG]:nI				Verb;
-[OBJ-3P][OBJ-SG]:lu				Verb;
-[OBJ-1P][OBJ-PL]:nu				Verb;
-[OBJ-2P][OBJ-PL]:lI				Verb;
-[OBJ-3P][OBJ-PL]:0				Verb;
+						VerbStem; ! No Object
+[OBJ-1P][OBJ-SG]:mu				VerbStem;
+[OBJ-2P][OBJ-SG]:nI				VerbStem;
+[OBJ-3P][OBJ-SG]:lu				VerbStem;
+[OBJ-1P][OBJ-PL]:nu				VerbStem;
+[OBJ-2P][OBJ-PL]:lI				VerbStem;
+[OBJ-3P][OBJ-PL]:0				VerbStem;
 
 LEXICON VerbIndicativePrefixUnspecified
-						Verb; ! No Object
-[OBJ-1P][OBJ-SG]:vI				Verb;
-[OBJ-2P][OBJ-SG]:Da				Verb;
-[OBJ-3P][OBJ-SG]:0				Verb;
-[OBJ-1P][OBJ-PL]:wI				Verb;
-[OBJ-2P][OBJ-PL]:bo				Verb;
-[OBJ-3P][OBJ-PL]:lu				Verb;
+						VerbStem; ! No Object
+[OBJ-1P][OBJ-SG]:vI				VerbStem;
+[OBJ-2P][OBJ-SG]:Da				VerbStem;
+[OBJ-3P][OBJ-SG]:0				VerbStem;
+[OBJ-1P][OBJ-PL]:wI				VerbStem;
+[OBJ-2P][OBJ-PL]:bo				VerbStem;
+[OBJ-3P][OBJ-PL]:lu				VerbStem;
 
 
 LEXICON VerbImperativePrefix
-[2P][SG]:yI					Verb;
-[2P][SG][OBJ-1P][OBJ-SG]:HI			Verb;
-[2P][SG][OBJ-3P][OBJ-SG]:yI			Verb;
-[2P][SG][OBJ-1P][OBJ-PL]:gho			Verb;
-[2P][SG][OBJ-3P][OBJ-PL]:tI			Verb;
-[2P][PL]:pe					Verb;
-[2P][PL][OBJ-1P][OBJ-SG]:HI			Verb;
-[2P][PL][OBJ-3P][OBJ-SG]:yI			Verb;
-[2P][PL][OBJ-1P][OBJ-PL]:gho			Verb;
-[2P][PL][OBJ-3P][OBJ-PL]:tI			Verb;
+[2P][SG]:yI					VerbStem;
+[2P][SG][OBJ-1P][OBJ-SG]:HI			VerbStem;
+[2P][SG][OBJ-3P][OBJ-SG]:yI			VerbStem;
+[2P][SG][OBJ-1P][OBJ-PL]:gho			VerbStem;
+[2P][SG][OBJ-3P][OBJ-PL]:tI			VerbStem;
+[2P][PL]:pe					VerbStem;
+[2P][PL][OBJ-1P][OBJ-SG]:HI			VerbStem;
+[2P][PL][OBJ-3P][OBJ-SG]:yI			VerbStem;
+[2P][PL][OBJ-1P][OBJ-PL]:gho			VerbStem;
+[2P][PL][OBJ-3P][OBJ-PL]:tI			VerbStem;
 
 
-LEXICON Verb
+LEXICON VerbStem
 @U.VERBTYPE.STATIVE@				StativeVerb;
 @U.VERBTYPE.ACTION@				ActionVerb;
 
@@ -384,6 +385,7 @@ DeS[arm]:DeS					NounSuffix;
 mIn[eye]:mIn					NounSuffix;
 qam[foot]:qam					NounSuffix;
 ghop[hand]:ghop					NounSuffix;
+'uS[leg]:'uS					NounSuffix;
 ghIch[nose]:ghIch				NounSuffix;
 DIr[skin]:DIr					NounSuffix;
 
@@ -397,6 +399,7 @@ puq[child]:puq					NounSuffix;
 vav[father]:vav					NounSuffix;
 jup[friend]:jup					NounSuffix;
 be'Hom[girl]:be'Hom				NounSuffix;
+meb[guest]:meb					NounSuffix;
 baHwI'[gunner]:baHwI'				NounSuffix;
 DeghwI'[helmsman]:DeghwI'			NounSuffix;
 loDnal[husband]:loDnal				NounSuffix;
@@ -552,11 +555,147 @@ LEXICON NounTag
 
 
 
-! #############################
-! ########## ADVERBS ##########
-! #############################
+! ####################################################
+! ########## LEFT-OVER WORD FORMS (chuvmey) ##########
+! ####################################################
 
-LEXICON Adverb
+
+LEXICON LeftOverWordForms
+						Pronoun;
+						Number;
+						Conjunction;
+						Adverbial;
+						Exclamation;
+						NameAddress;
+
+
+! ########## PRONOUN ##########
+
+LEXICON Pronoun
+bIH[they,them]@U.NOUNTYPE.OTHER@:bIH@U.NOUNTYPE.OTHER@				PronounTag;
+chaH[they,them]@U.NOUNTYPE.CAPABLELANGUAGE@:chaH@U.NOUNTYPE.CAPABLELANGUAGE@	PronounTag;
+'e'[that]:'e'					PronounTag; ! Referring to previous part of sentence
+ghaH[he,she,him,her]:ghaH			PronounTag;
+jIH[I,me]:jIH					PronounTag;
+maH[we,us]:maH					PronounTag;
+net[that,also]:net				PronounTag; ! Similar to 'e'
+'oH[it]:'oH					PronounTag;
+SoH[you-SG]:SoH					PronounTag;
+tlhIH[you-PL]:tlhIH				PronounTag;
+
+LEXICON PronounTag
+[PRONOUN]:0					#;
+
+
+! ########## NUMBER ##########
+
+LEXICON Number
+						NumberDecimal;
+						NumberMultiple;
+
+LEXICON NumberDecimal
+[zero]:pagh					NumberIntermediateSuffix;
+[+one]:wa'					NumberIntermediateSuffix;
+[+two]:cha'					NumberIntermediateSuffix;
+[+three]:wej					NumberIntermediateSuffix;
+[+four]:loS					NumberIntermediateSuffix;
+[+five]:vagh					NumberIntermediateSuffix;
+[+six]:jav					NumberIntermediateSuffix;
+[+seven]:Soch					NumberIntermediateSuffix;
+[+eight]:chorgh					NumberIntermediateSuffix;
+[+nine]:Hut					NumberIntermediateSuffix;
+
+
+LEXICON NumberIntermediateSuffix
+ 						NumberMultiple;
+						NumberSuffix;
+
+LEXICON NumberMultiple ! Use gating so that the multiples are used in the correct order and not repeated
+						Multiple1234567Gate;
+						Multiple123456Gate;
+						Multiple12345Gate;
+						Multiple1234Gate;
+						Multiple123Gate;
+						Multiple12Gate;
+
+LEXICON Multiple1234567Gate
+@D.MULTIPLE1234567.ON@@P.MULTIPLE1234567.ON@		Multiple1234567;
+
+LEXICON Multiple1234567
+[x1,%0%0%0,%0%0%0]:'uy'			NumberSuffix;
+
+
+LEXICON Multiple123456Gate
+@P.MULTIPLE1234567.ON@@D.MULTIPLE123456.ON@@P.MULTIPLE123456.ON@		Multiple123456;
+
+LEXICON Multiple123456
+[x1%0%0,%0%0%0]:bIp				NumberSuffix;
+
+
+LEXICON Multiple12345Gate
+@P.MULTIPLE1234567.ON@@P.MULTIPLE123456.ON@@D.MULTIPLE12345.ON@@P.MULTIPLE12345.ON@		Multiple12345;
+
+LEXICON Multiple12345
+[x1%0,%0%0%0]:netlh				NumberSuffix;
+
+
+LEXICON Multiple1234Gate
+@P.MULTIPLE1234567.ON@@P.MULTIPLE123456.ON@@P.MULTIPLE12345.ON@@D.MULTIPLE1234.ON@@P.MULTIPLE1234.ON@		Multiple1234;
+
+LEXICON Multiple1234
+[x1,%0%0%0]:SanID				NumberSuffix;
+[x1,%0%0%0]:SaD					NumberSuffix;
+
+
+LEXICON Multiple123Gate
+@P.MULTIPLE1234567.ON@@P.MULTIPLE123456.ON@@P.MULTIPLE12345.ON@@P.MULTIPLE1234.ON@@D.MULTIPLE123.ON@@P.MULTIPLE123.ON@			Multiple123;
+
+LEXICON Multiple123
+[x1%0%0]:vatlh					NumberSuffix;
+
+
+LEXICON Multiple12Gate
+@P.MULTIPLE1234567.ON@@P.MULTIPLE123456.ON@@P.MULTIPLE12345.ON@@P.MULTIPLE1234.ON@@P.MULTIPLE123.ON@@D.MULTIPLE12.ON@@P.MULTIPLE12.ON@			Multiple12;
+
+LEXICON Multiple12
+[x1%0]:maH					NumberSuffix;
+
+
+LEXICON NumberSuffix
+0:% 						NumberDecimal; ! Potentially repeat with spaces
+[NUMBER]:0					NumberTag;
+
+LEXICON NumberTag
+[ORDINAL]@D.POS.ADVERB@:@D.POS.ADVERB@DIch	#; ! If the current part-of-speech is an adverb, then the '-logh' suffix is required
+[REPEATCOUNT]:logh				NumberAdverbTag;
+@D.POS.ADVERB@					#; ! If the current part-of-speech is an adverb, then the '-logh' suffix is required
+
+
+LEXICON NumberAdverbTag
+@R.POS.ADVERB@[ADV]:@R.POS.ADVERB@		#;
+@D.POS.ADVERB@					#;
+
+
+! ########## CONJUNCTION ##########
+
+LEXICON Conjunction
+je[word-and]:je					ConjunctionTag;
+joq[word-or]:joq				ConjunctionTag;
+ghap[word-xor]:ghap				ConjunctionTag;
+'ej[sentence-and]:'ej				ConjunctionTag;
+qoj[sentence-or]:qoj				ConjunctionTag;
+pagh[sentence-xor]:pagh			ConjunctionTag;
+'ach[sentence-contrast]:'ach			ConjunctionTag;
+'a[sentence-contrast]:'a			ConjunctionTag;
+
+LEXICON ConjunctionTag
+[CONJ]:0					#;
+
+
+
+! ########## ADVERBIAL ##########
+
+LEXICON Adverbial
 						BasicAdverbs;
 						TimeStampAdverbs;
 @P.POS.ADVERB@					Number;
@@ -611,48 +750,7 @@ LEXICON AdverbSuffix
 
 
 
-! ##############################
-! ########## PRONOUNS ##########
-! ##############################
-
-
-LEXICON Pronoun
-bIH[they,them]@U.NOUNTYPE.OTHER@:bIH@U.NOUNTYPE.OTHER@				PronounTag;
-chaH[they,them]@U.NOUNTYPE.CAPABLELANGUAGE@:chaH@U.NOUNTYPE.CAPABLELANGUAGE@	PronounTag;
-'e'[that]:'e'					PronounTag; ! Referring to previous part of sentence
-ghaH[he,she,him,her]:ghaH			PronounTag;
-jIH[I,me]:jIH					PronounTag;
-maH[we,us]:maH					PronounTag;
-net[that,also]:net				PronounTag; ! Similar to 'e'
-'oH[it]:'oH					PronounTag;
-SoH[you-SG]:SoH					PronounTag;
-tlhIH[you-PL]:tlhIH				PronounTag;
-
-LEXICON PronounTag
-[PRONOUN]:0					#;
-
-! ######################################
-! ########## OTHER WORD FORMS ##########
-! ######################################
-
-LEXICON OtherWordForms
-						Number;
-						Exclamation;
-						Conjunction;
-
-
-LEXICON Conjunction
-je[word-and]:je					ConjunctionTag;
-joq[word-or]:joq				ConjunctionTag;
-ghap[word-xor]:ghap				ConjunctionTag;
-'ej[sentence-and]:'ej				ConjunctionTag;
-qoj[sentence-or]:qoj				ConjunctionTag;
-pagh[sentence-xor]:pagh			ConjunctionTag;
-'ach[sentence-contrast]:'ach			ConjunctionTag;
-'a[sentence-contrast]:'a			ConjunctionTag;
-
-LEXICON ConjunctionTag
-[CONJ]:0					#;
+! ########## EXCLAMATION ##########
 
 LEXICON Exclamation
 HISlaH[yes]:HISlaH				ExclamationSuffix;
@@ -660,87 +758,26 @@ HIja'[yes]:HIja'				ExclamationSuffix;
 ghobe'[no]:ghobe'				ExclamationSuffix;
 Ha'[let's-go]:Ha'				ExclamationSuffix;
 Qapla'[success]:Qapla'				ExclamationSuffix;
+lu'[yes,okay-I-will]:lu'			ExclamationSuffix;
+maj[Good,express-satisfaction]:maj		ExclamationSuffix;
+majQa'[Very-good,Well-done]:majQa'		ExclamationSuffix;
+nuqneH[What-do-you-want]:nuqneH		ExclamationSuffix;
+pItlh[Done!]:pItlh				ExclamationSuffix;
+Qo'[No,I-won't,I-refuse]:Qo'			ExclamationSuffix;
+SuH[Ready%!]:SuH				ExclamationSuffix;
+toH[Well%!]:toH					ExclamationSuffix;
+wejpuH[Charming(ironic)]:wejpuH		ExclamationSuffix;
+'eH[Ready%!]:'eH				ExclamationSuffix;
 
 LEXICON ExclamationSuffix
 [EXCLAMATION]:0					#;
 
-LEXICON Number
-[NUMBER]:0					NumberEntries;
-
-LEXICON NumberEntries
-[zero]:pagh					NumberIntermediateSuffix;
-[+one]:wa'					NumberIntermediateSuffix;
-[+two]:cha'					NumberIntermediateSuffix;
-[+three]:wej					NumberIntermediateSuffix;
-[+four]:loS					NumberIntermediateSuffix;
-[+five]:vagh					NumberIntermediateSuffix;
-[+six]:jav					NumberIntermediateSuffix;
-[+seven]:Soch					NumberIntermediateSuffix;
-[+eight]:chorgh					NumberIntermediateSuffix;
-[+nine]:Hut					NumberIntermediateSuffix;
 
 
-LEXICON NumberIntermediateSuffix
-						NumberMultipleSuffix;
-						NumberFinalSuffix;
+! ########## NAME & ADDRESS ##########
 
-LEXICON NumberMultipleSuffix ! Use gating so that the multiples are used in the correct order and not repeated
-			Multiple1234567Gate;
-@P.MULTIPLE1234567.ON@			Multiple123456Gate;
-@P.MULTIPLE1234567.ON@@P.MULTIPLE123456.ON@		Multiple12345Gate;
-@P.MULTIPLE1234567.ON@@P.MULTIPLE123456.ON@@P.MULTIPLE12345.ON@		Multiple1234Gate;
-@P.MULTIPLE1234567.ON@@P.MULTIPLE123456.ON@@P.MULTIPLE12345.ON@@P.MULTIPLE1234.ON@		Multiple123Gate;
-@P.MULTIPLE1234567.ON@@P.MULTIPLE123456.ON@@P.MULTIPLE12345.ON@@P.MULTIPLE1234.ON@@P.MULTIPLE123.ON@		Multiple12Gate;
-
-LEXICON Multiple1234567Gate
-@D.MULTIPLE1234567.ON@@P.MULTIPLE1234567.ON@		Multiple1234567Suffix;
-
-LEXICON Multiple1234567Suffix
-[x1,%0%0%0,%0%0%0]:'uy'				NumberFinalSuffix;
-
-
-LEXICON Multiple123456Gate
-@D.MULTIPLE123456.ON@@P.MULTIPLE123456.ON@		Multiple123456Suffix;
-
-LEXICON Multiple123456Suffix
-[x1%0%0,%0%0%0]:bIp					NumberFinalSuffix;
-
-
-LEXICON Multiple12345Gate
-@D.MULTIPLE12345.ON@@P.MULTIPLE12345.ON@		Multiple12345Suffix;
-
-LEXICON Multiple12345Suffix
-[x1%0,%0%0%0]:netlh					NumberFinalSuffix;
-
-
-LEXICON Multiple1234Gate
-@D.MULTIPLE1234.ON@@P.MULTIPLE1234.ON@		Multiple1234Suffix;
-
-LEXICON Multiple1234Suffix
-[x1,%0%0%0]:SanID					NumberFinalSuffix;
-[x1,%0%0%0]:SaD						NumberFinalSuffix;
-
-
-LEXICON Multiple123Gate
-@D.MULTIPLE123.ON@@P.MULTIPLE123.ON@			Multiple123Suffix;
-
-LEXICON Multiple123Suffix
-[x1%0%0]:vatlh						NumberFinalSuffix;
-
-
-LEXICON Multiple12Gate
-@D.MULTIPLE12.ON@@P.MULTIPLE12.ON@			Multiple12Suffix;
-
-LEXICON Multiple12Suffix
-[x1%0]:maH						NumberFinalSuffix;
-
-
-LEXICON NumberFinalSuffix
-						Number; ! Potentially repeat
-[ORDINAL]@D.POS.ADVERB@:@D.POS.ADVERB@DIch	#; ! If the current part-of-speech is an adverb, then the '-logh' suffix is required
-[REPEATCOUNT]:logh				NumberAdverbTag;
-@D.POS.ADVERB@					#; ! If the current part-of-speech is an adverb, then the '-logh' suffix is required
-
-LEXICON NumberAdverbTag
-@R.POS.ADVERB@[ADV]:@R.POS.ADVERB@		#;
-@D.POS.ADVERB@					#;
+LEXICON NameAddress
+mara[Mara]:mara					#;
+matlh[Maltz]:matlh				#;
+qeng[Kang]:qeng					#;
+qeylIS[Kahless]:qeylIS				#;qolotlh[Koloth]:qolotlh			#;qor[Kor]:qor					#;qoreQ[Korax]:qoreQ				#;QaS[Kras]:QaS					#;Qel[Krell]:Qel					#;Qugh[Kruge]:Qugh				#;torgh[Torg]:torgh				#;valQIS[Valkris]:valQIS				#;
