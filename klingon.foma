@@ -25,11 +25,7 @@ echo ##Loading Grammar…##
 clear stack
 regex Grammar;
 
-# QUESTIONS
-# 1. The perfective aspect can also be indicated by the use of the verb form rIntaH after the main verb. This carries the connotation of irreversibility.[28]
-
 # TODO
 # 7. More test cases
-# 9. Handle plural exceptions
 # 10. Make sure flags are on both upper and lower.
 # 11. Can the ghach deverbal noun suffix take noun suffixes?
