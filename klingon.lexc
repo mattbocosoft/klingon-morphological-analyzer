@@ -376,6 +376,7 @@ LEXICON Noun
 LEXICON NounBodyPart
 DeS[arm]:DeS					AllNounTypeSuffixes;
 mIn[eye]:mIn					AllNounTypeSuffixes;
+qam[foot]:qam					AllNounTypeSuffixes;
 ghop[hand]:ghop					AllNounTypeSuffixes;
 ghIch[nose]:ghIch				AllNounTypeSuffixes;
 DIr[skin]:DIr					AllNounTypeSuffixes;
@@ -423,6 +424,7 @@ Hatlh[country]:Hatlh				AllNounTypeSuffixes;
 De'[data,information]:De'			AllNounTypeSuffixes;
 lojmIt[door,gate]:lojmIt			AllNounTypeSuffixes;
 jagh[enemy]:jagh				AllNounTypeSuffixes;
+Qagh[error]:error				AllNounTypeSuffixes;
 Soj[food]:Soj					AllNounTypeSuffixes;
 jup[friend]:jup					AllNounTypeSuffixes;
 HIvje'[glass,tumble]:HIvje'			AllNounTypeSuffixes;
