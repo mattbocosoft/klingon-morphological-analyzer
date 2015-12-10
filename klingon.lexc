@@ -252,122 +252,117 @@ ghItlh[to-write]:ghItlh			VerbSuffix;
 
 
 LEXICON VerbSuffix
-@U.MOOD.INFINITIVE@@U.VERBTYPE.STATIVE@	NounType5Suffix; ! Type-5 noun suffixes that would normally be attached to the noun are instead attached to the ADJECTIVAL (stative) verb
-						VerbRoversSuffix;
+@D.VERBTYPE9.ON@				VerbRoversSuffix;
+						VerbType1Gate;
+						VerbType2Gate;
+						VerbType3Gate;
+						VerbType4Gate;
+						VerbType5Gate;
+						VerbType6Gate;
+						VerbType7Gate;
+						VerbType8Gate;
+						VerbType9Gate;
+[V]:0						VerbMoodTag;
+[V]@U.MOOD.INFINITIVE@@U.VERBTYPE.STATIVE@:@U.MOOD.INFINITIVE@@U.VERBTYPE.STATIVE@			NounType5Suffix; ! Type-5 noun suffixes that would normally be attached to the noun are instead attached to the ADJECTIVAL (stative) verb;
 
 
 LEXICON VerbRoversSuffix
 ! "These suffixes have no defined position, and can go after the verb stem or after any suffix – even another rover – except after a type-9 suffix or where the result would be meaningless. They modify whatever directly precedes them."
-[NEG]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@be'			VerbRoversSuffix;
-[NEG]@U.MOOD.IMPERATIVE@:@U.MOOD.IMPERATIVE@Qo'			VerbRoversSuffix;
-[REFUSE]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@Qo'			VerbRoversSuffix;
-[EMPHASIS]:qu'								VerbRoversSuffix;
-[REVERSE]:Ha'								VerbRoversSuffix;
-									AllVerbTypeSuffixes;
-
-
-LEXICON AllVerbTypeSuffixes
-			VerbType1Gate;
-@P.VERBTYPE1.ON@			VerbType2Gate;
-@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@		VerbType3Gate;
-@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@		VerbType4Gate;
-@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@		VerbType5Gate;
-@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@		VerbType6Gate;
-@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@P.VERBTYPE6.ON@		VerbType7Gate;
-@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@P.VERBTYPE6.ON@@P.VERBTYPE7.ON@		VerbType8Gate;
-@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@P.VERBTYPE6.ON@@P.VERBTYPE7.ON@@P.VERBTYPE8.ON@		VerbType9Gate;
-[V]:0						VerbMoodTag;
-
-
-LEXICON VerbMoodTag
-[INDICATIVE]@U.MOOD.INDICATIVE@@D.INDICATIVE.UNSPECIFIED@:@U.MOOD.INDICATIVE@@D.INDICATIVE.UNSPECIFIED@			#;
-[IMPERATIVE]@U.MOOD.IMPERATIVE@:@U.MOOD.IMPERATIVE@			#;
-
+[NEG]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@be'			VerbSuffix;
+[NEG]@U.MOOD.IMPERATIVE@:@U.MOOD.IMPERATIVE@Qo'			VerbSuffix;
+[REFUSE]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@Qo'			VerbSuffix;
+[EMPHASIS]:qu'								VerbSuffix;
+[REVERSE]:Ha'								VerbSuffix;
 
 LEXICON VerbType1Gate
 @D.VERBTYPE1.ON@@P.VERBTYPE1.ON@		VerbType1Suffix;
 
 LEXICON VerbType1Suffix ! 2 Count = reflexive/reciprocal
-[REFLEXIVE]:'egh				VerbRoversSuffix;
-[RECIPROCAL]:chuq				VerbRoversSuffix;
+[REFLEXIVE]:'egh				VerbSuffix;
+[RECIPROCAL]:chuq				VerbSuffix;
 
 
 LEXICON VerbType2Gate
-@D.VERBTYPE2.ON@@P.VERBTYPE2.ON@		VerbType2Suffix;
+@P.VERBTYPE1.ON@@D.VERBTYPE2.ON@@P.VERBTYPE2.ON@		VerbType2Suffix;
 
 LEXICON VerbType2Suffix ! 5 Count = volition/necessity
-[REQUIRED]:nIS					VerbRoversSuffix;
-[WILLING]:qang					VerbRoversSuffix;
-[PREPARED]:rup					VerbRoversSuffix;
-[SET-UP]:beH					VerbRoversSuffix;
-[AFRAID]:vIp					VerbRoversSuffix;
+[REQUIRED]:nIS					VerbSuffix;
+[WILLING]:qang					VerbSuffix;
+[PREPARED]:rup					VerbSuffix;
+[SET-UP]:beH					VerbSuffix;
+[AFRAID]:vIp					VerbSuffix;
 
 
 LEXICON VerbType3Gate
-@D.VERBTYPE3.ON@@P.VERBTYPE3.ON@		VerbType3Suffix;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@D.VERBTYPE3.ON@@P.VERBTYPE3.ON@		VerbType3Suffix;
 
 LEXICON VerbType3Suffix ! 2 Count = inceptive/inchoative
-[STATECHANGE]:choH				VerbRoversSuffix;
-[RESUME]:qa'					VerbRoversSuffix;
+[STATECHANGE]:choH				VerbSuffix;
+[RESUME]:qa'					VerbSuffix;
 
 
 LEXICON VerbType4Gate
-@D.VERBTYPE4.ON@@P.VERBTYPE4.ON@		VerbType4Suffix;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@D.VERBTYPE4.ON@@P.VERBTYPE4.ON@		VerbType4Suffix;
 
 LEXICON VerbType4Suffix ! 1 Count = causative
-[CAUSATIVE]:moH					VerbRoversSuffix;
+[CAUSATIVE]:moH					VerbSuffix;
 
 
 LEXICON VerbType5Gate
-@D.VERBTYPE5.ON@@P.VERBTYPE5.ON@		VerbType5Suffix;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@D.VERBTYPE5.ON@@P.VERBTYPE5.ON@		VerbType5Suffix;
 
 LEXICON VerbType5Suffix ! 2 Count = undefined subject; capability
-[UNDEFINED-SUBJ]@R.INDICATIVE.UNSPECIFIED@@C.INDICATIVE@:@R.INDICATIVE.UNSPECIFIED@@C.INDICATIVE@lu'				VerbRoversSuffix;
-[CAPABLE]:laH					VerbRoversSuffix;
+[UNDEFINED-SUBJ]@R.INDICATIVE.UNSPECIFIED@@C.INDICATIVE@:@R.INDICATIVE.UNSPECIFIED@@C.INDICATIVE@lu'				VerbSuffix;
+[CAPABLE]:laH					VerbSuffix;
 
 
 LEXICON VerbType6Gate
-@D.VERBTYPE6.ON@@P.VERBTYPE6.ON@		VerbType6Suffix;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@D.VERBTYPE6.ON@@P.VERBTYPE6.ON@		VerbType6Suffix;
 
 LEXICON VerbType6Suffix ! 4 Count = perfection; uncertainty
-[BEST]:chu'					VerbRoversSuffix;
-[CERTAIN]:bej					VerbRoversSuffix;
-[UNCERTAIN]:law'				VerbRoversSuffix;
-[OBVIOUS]:ba'					VerbRoversSuffix;
+[BEST]:chu'					VerbSuffix;
+[CERTAIN]:bej					VerbSuffix;
+[UNCERTAIN]:law'				VerbSuffix;
+[OBVIOUS]:ba'					VerbSuffix;
 
 
 LEXICON VerbType7Gate
-@D.VERBTYPE7.ON@@P.VERBTYPE7.ON@		VerbType7Suffix;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@P.VERBTYPE6.ON@@D.VERBTYPE7.ON@@P.VERBTYPE7.ON@		VerbType7Suffix;
 
 LEXICON VerbType7Suffix ! 4 Count = aspect
-[PERFECT]:pu'					VerbRoversSuffix;
-[PERFECTPURPOSE]:ta'				VerbRoversSuffix;
-[CONTINUOUS]@P.VERBSUFFIX.CONTINUOUS@:@P.VERBSUFFIX.CONTINUOUS@taH		VerbRoversSuffix;
-[CONTINUOUSEND]:lI'				VerbRoversSuffix;
+[PERFECT]:pu'					VerbSuffix;
+[PERFECTPURPOSE]:ta'				VerbSuffix;
+[CONTINUOUS]@P.VERBSUFFIX.CONTINUOUS@:@P.VERBSUFFIX.CONTINUOUS@taH		VerbSuffix;
+[CONTINUOUSEND]:lI'				VerbSuffix;
 
 
 LEXICON VerbType8Gate
-@D.VERBTYPE8.ON@@P.VERBTYPE8.ON@		VerbType8Suffix;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@P.VERBTYPE6.ON@@P.VERBTYPE7.ON@@D.VERBTYPE8.ON@@P.VERBTYPE8.ON@		VerbType8Suffix;
 
 LEXICON VerbType8Suffix ! 1 Count = honorific
-[HONOR]:neS					VerbRoversSuffix;
+[HONOR]:neS					VerbSuffix;
 
 
 LEXICON VerbType9Gate
-@D.VERBTYPE9.ON@@P.VERBTYPE9.ON@		VerbType9Suffix;
+@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@P.VERBTYPE6.ON@@P.VERBTYPE7.ON@@P.VERBTYPE8.ON@@D.VERBTYPE9.ON@@P.VERBTYPE9.ON@		VerbType9Suffix;
 
 LEXICON VerbType9Suffix ! 11 Count = syntactic
 @U.MOOD.INFINITIVE@[PERSON]:@U.MOOD.INFINITIVE@wI'					NounSuffix; ! Nominalizer. Verbs can take the Type 9 suffix -wI' one/thing which does, and the resulting word is a noun which can take all noun suffixes. Other verb suffixes can be added before -wI', provided no other Type 9 suffix is used.
-[DVN]:ghach					AllVerbTypeSuffixes; ! Nominalizer, '-ness' "Turns a verb (which must have at least one other suffix attached) into a noun. The use of this suffix often makes for bad Klingon, and it is strongly suggested that you refrain from using any word with -ghach, unless it is found in the dictionary." -http://klingonska.org/dict/suffix.html
-[INTEROGATIVE]:'a'				AllVerbTypeSuffixes; ! Modal
-[OPTATIVE]:jaj					AllVerbTypeSuffixes; ! Modal
-[BEFORE]:pa'					AllVerbTypeSuffixes; ! Subordinator
-[SIMULTANEOUS]@R.VERBSUFFIX.CONTINUOUS@:vIS@R.VERBSUFFIX.CONTINUOUS@				VerbMoodTag; ! Subordinator - It is always used in conjunction with the type-7 suffix continuous suffix -taH.
-[AFTER]:DI'					AllVerbTypeSuffixes; ! Subordinator
-[CONDITIONAL]:chugh				AllVerbTypeSuffixes; ! Cause and effect
-[CAUSE]:mo'					AllVerbTypeSuffixes; ! Cause and effect
-[RELATIVE]:bogh					AllVerbTypeSuffixes; ! Relative and purpose clause
-[PURPOSE]:meH					AllVerbTypeSuffixes; ! Relative and purpose clause
+[DVN]:ghach					VerbSuffix; ! Nominalizer, '-ness' "Turns a verb (which must have at least one other suffix attached) into a noun. The use of this suffix often makes for bad Klingon, and it is strongly suggested that you refrain from using any word with -ghach, unless it is found in the dictionary." -http://klingonska.org/dict/suffix.html
+[INTEROGATIVE]:'a'				VerbSuffix; ! Modal
+[OPTATIVE]:jaj					VerbSuffix; ! Modal
+[BEFORE]:pa'					VerbSuffix; ! Subordinator
+[SIMULTANEOUS]@R.VERBSUFFIX.CONTINUOUS@:vIS@R.VERBSUFFIX.CONTINUOUS@				VerbSuffix; ! Subordinator - It is always used in conjunction with the type-7 suffix continuous suffix -taH.
+[AFTER]:DI'					VerbSuffix; ! Subordinator
+[CONDITIONAL]:chugh				VerbSuffix; ! Cause and effect
+[CAUSE]:mo'					VerbSuffix; ! Cause and effect
+[RELATIVE]:bogh					VerbSuffix; ! Relative and purpose clause
+[PURPOSE]:meH					VerbSuffix; ! Relative and purpose clause
+
+
+LEXICON VerbMoodTag
+[INDICATIVE]@U.MOOD.INDICATIVE@@D.INDICATIVE.UNSPECIFIED@:@U.MOOD.INDICATIVE@@D.INDICATIVE.UNSPECIFIED@			#;
+[IMPERATIVE]@U.MOOD.IMPERATIVE@:@U.MOOD.IMPERATIVE@										#;
 
 
  
@@ -551,9 +546,9 @@ LEXICON NounType5Suffix ! syntactic role
 						NounTag; ! Type 5 suffix not required, jump to next type
 
 LEXICON NounTag
-@R.VERBTYPE.STATIVE@[ADJ]:@R.VERBTYPE.STATIVE@		#;
-@D.MOOD@[N]:@D.MOOD@						#;
-@R.MOOD@[DVN]:@R.MOOD@						#;
+@R.VERBTYPE.STATIVE@				#;
+@D.MOOD@[N]:@D.MOOD@				#;
+@D.VERBTYPE.STATIVE@@R.MOOD@[DVN]:@D.VERBTYPE.STATIVE@@R.MOOD@						#;
 
 
 
