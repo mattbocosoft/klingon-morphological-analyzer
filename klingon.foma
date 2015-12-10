@@ -18,9 +18,7 @@ echo ##Rules##
 # If the noun to which the endearment suffix is added ends with a vowel, a glottal stop is inserted between them
 def EndearmentGlottalStop [..] -> GlottalStop || Vowel _ {oy};
 
-def AccentOptions GlottalStop (->) ';
-
-def Grammar [Grammar] .o. EndearmentGlottalStop .o. AccentOptions;
+def Grammar [Grammar] .o. EndearmentGlottalStop;
 
 
 echo
@@ -56,16 +54,6 @@ echo
 echo --Guessing 'blamaagatakebla' [PRES][2P][SG][DURATIVE][HEARSAY] / [INF][HEARSAY] / [INF]
 up blamaagatakebla
 clear stack
-
-echo
-echo Spell Checker
-def Insert $[0:Alpha];
-def Delete $[Alpha:0];
-def Replace $[Alpha:Alpha];
-def SpellCheck [Insert | Delete | Replace] .o. [Grammar.u - $["[GUESS]"] .o. Grammar].l;
-regex SpellCheck;
-echo --Checking spelling of 'skatns'
-down skatns
 
 echo
 echo ##Loading Grammar…##
