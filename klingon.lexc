@@ -346,7 +346,7 @@ LEXICON VerbType9Gate
 @D.VERBTYPE9.ON@@P.VERBTYPE9.ON@		VerbType9Suffix;
 
 LEXICON VerbType9Suffix ! 11 Count = syntactic
-@U.MOOD.INFINITIVE@[PERSON]:@U.MOOD.INFINITIVE@wI'					AllNounTypeSuffixes; ! Nominalizer. Verbs can take the Type 9 suffix -wI' one/thing which does, and the resulting word is a noun which can take all noun suffixes. Other verb suffixes can be added before -wI', provided no other Type 9 suffix is used.
+@U.MOOD.INFINITIVE@[PERSON]:@U.MOOD.INFINITIVE@wI'					NounSuffix; ! Nominalizer. Verbs can take the Type 9 suffix -wI' one/thing which does, and the resulting word is a noun which can take all noun suffixes. Other verb suffixes can be added before -wI', provided no other Type 9 suffix is used.
 [DVN]:ghach					AllVerbTypeSuffixes; ! Nominalizer, '-ness' "Turns a verb (which must have at least one other suffix attached) into a noun. The use of this suffix often makes for bad Klingon, and it is strongly suggested that you refrain from using any word with -ghach, unless it is found in the dictionary." -http://klingonska.org/dict/suffix.html
 [INTEROGATIVE]:'a'				AllVerbTypeSuffixes; ! Modal
 [OPTATIVE]:jaj					AllVerbTypeSuffixes; ! Modal
@@ -371,124 +371,124 @@ LEXICON Noun
 @U.NOUNTYPE.OTHER@				NounOther;
 
 ! LEXICON NounName
-! be'etor[B'Etor]:be'etor			AllNounTypeSuffixes;
+! be'etor[B'Etor]:be'etor			NounSuffix;
 
 LEXICON NounBodyPart
-DeS[arm]:DeS					AllNounTypeSuffixes;
-mIn[eye]:mIn					AllNounTypeSuffixes;
-qam[foot]:qam					AllNounTypeSuffixes;
-ghop[hand]:ghop					AllNounTypeSuffixes;
-ghIch[nose]:ghIch				AllNounTypeSuffixes;
-DIr[skin]:DIr					AllNounTypeSuffixes;
+DeS[arm]:DeS					NounSuffix;
+mIn[eye]:mIn					NounSuffix;
+qam[foot]:qam					NounSuffix;
+ghop[hand]:ghop					NounSuffix;
+ghIch[nose]:ghIch				NounSuffix;
+DIr[skin]:DIr					NounSuffix;
 
 
 LEXICON NounCapableOfLanguage
-loDHom[boy]:loDHom				AllNounTypeSuffixes;
-loDnI'[brother]:loDnI'				AllNounTypeSuffixes;
-je'wI'[buyer]:je'wI'				AllNounTypeSuffixes;
-HoD[captain]:HoD				AllNounTypeSuffixes;
-puq[child]:puq					AllNounTypeSuffixes;
-vav[father]:vav					AllNounTypeSuffixes;
-jup[friend]:jup					AllNounTypeSuffixes;
-be'Hom[girl]:be'Hom				AllNounTypeSuffixes;
-baHwI'[gunner]:baHwI'				AllNounTypeSuffixes;
-DeghwI'[helmsman]:DeghwI'			AllNounTypeSuffixes;
-loDnal[husband]:loDnal				AllNounTypeSuffixes;
-loD[male,man]:loD				AllNounTypeSuffixes;
-ghot[person]:ghot				AllNounTypeSuffixes;
-Duy[representative]:Duy			AllNounTypeSuffixes;
-qetwI'[runner]:qetwI'				AllNounTypeSuffixes;
-bu'[sergeant]:bu'				AllNounTypeSuffixes;
-be'nI'[sister]:be'nI'				AllNounTypeSuffixes;
-be'nal[wife]:be'nal				AllNounTypeSuffixes;
-be'[woman]:be'					AllNounTypeSuffixes;
+loDHom[boy]:loDHom				NounSuffix;
+loDnI'[brother]:loDnI'				NounSuffix;
+je'wI'[buyer]:je'wI'				NounSuffix;
+HoD[captain]:HoD				NounSuffix;
+puq[child]:puq					NounSuffix;
+vav[father]:vav					NounSuffix;
+jup[friend]:jup					NounSuffix;
+be'Hom[girl]:be'Hom				NounSuffix;
+baHwI'[gunner]:baHwI'				NounSuffix;
+DeghwI'[helmsman]:DeghwI'			NounSuffix;
+loDnal[husband]:loDnal				NounSuffix;
+loD[male,man]:loD				NounSuffix;
+ghot[person]:ghot				NounSuffix;
+Duy[representative]:Duy			NounSuffix;
+qetwI'[runner]:qetwI'				NounSuffix;
+bu'[sergeant]:bu'				NounSuffix;
+be'nI'[sister]:be'nI'				NounSuffix;
+be'nal[wife]:be'nal				NounSuffix;
+be'[woman]:be'					NounSuffix;
 
 
 LEXICON NounOther
-laH[ability]:laH				AllNounTypeSuffixes;
-latlh[additional-one]:latlh			AllNounTypeSuffixes;
-Hoch[all,everything]:Hoch			AllNounTypeSuffixes;
-Ha'DIbaH[animal,meat]:Ha'DIbaH			AllNounTypeSuffixes;
-chav[achievement]:chav				AllNounTypeSuffixes;
-ngup[authority]:ngup				AllNounTypeSuffixes;
-'alnIl[belt,buckle]:'alnIl			AllNounTypeSuffixes;
-DaS[boot]:DaS					AllNounTypeSuffixes;
-jaj[day]:jaj					AllNounTypeSuffixes;
-quS[chair]:quS					AllNounTypeSuffixes;
-choH[change]:choH				AllNounTypeSuffixes;
-veng[city]:veng					AllNounTypeSuffixes;
-qoj[cliff]:qoj					AllNounTypeSuffixes;
-wep[coat]:wep					AllNounTypeSuffixes;
-De'wI'[computer]:De'wI'			AllNounTypeSuffixes;
-Hatlh[country]:Hatlh				AllNounTypeSuffixes;
-De'[data,information]:De'			AllNounTypeSuffixes;
-lojmIt[door,gate]:lojmIt			AllNounTypeSuffixes;
-jagh[enemy]:jagh				AllNounTypeSuffixes;
-Qagh[error]:error				AllNounTypeSuffixes;
-Soj[food]:Soj					AllNounTypeSuffixes;
-jup[friend]:jup					AllNounTypeSuffixes;
-HIvje'[glass,tumble]:HIvje'			AllNounTypeSuffixes;
-ghom[group]:ghom				AllNounTypeSuffixes;
-QaH[help]:QaH					AllNounTypeSuffixes;
-Degh[helm]:Degh					AllNounTypeSuffixes;
-juH[home,house]:juH				AllNounTypeSuffixes;
-qach[idea]:qach					AllNounTypeSuffixes;
-Hol[language]:Hol				AllNounTypeSuffixes;
-bang[love]:bang					AllNounTypeSuffixes;
-ghItlh[manuscript]:ghItlh			AllNounTypeSuffixes;
-Qagh[mistake]:Qagh				AllNounTypeSuffixes;
-jar[month]:jar					AllNounTypeSuffixes;
-Dap[nonsense]:Dap				AllNounTypeSuffixes;
-nav[paper]:nav					AllNounTypeSuffixes;
-roj[peace]:roj					AllNounTypeSuffixes;
-Saj[pet]:Saj					AllNounTypeSuffixes;
-yuQ[planet]:yuQ					AllNounTypeSuffixes;
-bel[pleasure]:bel				AllNounTypeSuffixes;
-woQ[power]:woQ					AllNounTypeSuffixes;
-bortaS[revenge]:bortaS				AllNounTypeSuffixes;
-pa'[room]:pa'					AllNounTypeSuffixes;
-bach[shot]:bach					AllNounTypeSuffixes;
-Duj[ship,vessel]:Duj				AllNounTypeSuffixes;
-ghu'[situation]:ghu'				AllNounTypeSuffixes;
-chal[sky]:chal					AllNounTypeSuffixes;
-Hal[source]:Hal					AllNounTypeSuffixes;
-Hov[star]:Hov					AllNounTypeSuffixes;
-'ejyo'[starfleet]:'ejyo'			AllNounTypeSuffixes;
-'ejDo'[starship]:'ejDo'			AllNounTypeSuffixes;
-lut[story]:lut					AllNounTypeSuffixes;
-Duj[ship]:Duj					AllNounTypeSuffixes;
-baghneQ[spoon]:baghneQ				AllNounTypeSuffixes;
-targh[targ]:targh				AllNounTypeSuffixes; ! A "targ" is a Klingon animal somewhat resembling a boar
-DoS[target]@P.SINGULAR.IRREGULAR@:DoS@P.SINGULAR.IRREGULAR@		AllNounTypeSuffixes;
-ray'[targets]@P.PLURAL.IRREGULAR@:ray'@P.PLURAL.IRREGULAR@		AllNounTypeSuffixes;
-Doch[thing]:Doch				AllNounTypeSuffixes;
-vIj[thruster]@P.SINGULAR.IRREGULAR@:vIj@P.SINGULAR.IRREGULAR@	AllNounTypeSuffixes;
-chuyDaH[thrusters]@P.PLURAL.IRREGULAR@:chuyDaH@P.PLURAL.IRREGULAR@	AllNounTypeSuffixes;
-DaHjaj[today]:DaHjaj				AllNounTypeSuffixes;
-peng[torpedo]@P.SINGULAR.IRREGULAR@:peng@P.SINGULAR.IRREGULAR@	AllNounTypeSuffixes;
-cha[torpedoes]@P.PLURAL.IRREGULAR@:cha@P.PLURAL.IRREGULAR@		AllNounTypeSuffixes;
-ghogh[voice]:ghogh				AllNounTypeSuffixes;
-bIQ[water]:bIQ					AllNounTypeSuffixes;
-Hogh[week]:Hogh					AllNounTypeSuffixes;
-SuS[wind,breeze]:SuS				AllNounTypeSuffixes;
-DIS[year]:DIS					AllNounTypeSuffixes;
+laH[ability]:laH				NounSuffix;
+latlh[additional-one]:latlh			NounSuffix;
+Hoch[all,everything]:Hoch			NounSuffix;
+Ha'DIbaH[animal,meat]:Ha'DIbaH			NounSuffix;
+chav[achievement]:chav				NounSuffix;
+ngup[authority]:ngup				NounSuffix;
+'alnIl[belt,buckle]:'alnIl			NounSuffix;
+DaS[boot]:DaS					NounSuffix;
+jaj[day]:jaj					NounSuffix;
+quS[chair]:quS					NounSuffix;
+choH[change]:choH				NounSuffix;
+veng[city]:veng					NounSuffix;
+qoj[cliff]:qoj					NounSuffix;
+wep[coat]:wep					NounSuffix;
+De'wI'[computer]:De'wI'			NounSuffix;
+Hatlh[country]:Hatlh				NounSuffix;
+De'[data,information]:De'			NounSuffix;
+lojmIt[door,gate]:lojmIt			NounSuffix;
+jagh[enemy]:jagh				NounSuffix;
+Qagh[error]:error				NounSuffix;
+Soj[food]:Soj					NounSuffix;
+jup[friend]:jup					NounSuffix;
+HIvje'[glass,tumble]:HIvje'			NounSuffix;
+ghom[group]:ghom				NounSuffix;
+QaH[help]:QaH					NounSuffix;
+Degh[helm]:Degh					NounSuffix;
+juH[home,house]:juH				NounSuffix;
+qach[idea]:qach					NounSuffix;
+Hol[language]:Hol				NounSuffix;
+bang[love]:bang					NounSuffix;
+ghItlh[manuscript]:ghItlh			NounSuffix;
+Qagh[mistake]:Qagh				NounSuffix;
+jar[month]:jar					NounSuffix;
+Dap[nonsense]:Dap				NounSuffix;
+nav[paper]:nav					NounSuffix;
+roj[peace]:roj					NounSuffix;
+Saj[pet]:Saj					NounSuffix;
+yuQ[planet]:yuQ					NounSuffix;
+bel[pleasure]:bel				NounSuffix;
+woQ[power]:woQ					NounSuffix;
+bortaS[revenge]:bortaS				NounSuffix;
+pa'[room]:pa'					NounSuffix;
+bach[shot]:bach					NounSuffix;
+Duj[ship,vessel]:Duj				NounSuffix;
+ghu'[situation]:ghu'				NounSuffix;
+chal[sky]:chal					NounSuffix;
+Hal[source]:Hal					NounSuffix;
+Hov[star]:Hov					NounSuffix;
+'ejyo'[starfleet]:'ejyo'			NounSuffix;
+'ejDo'[starship]:'ejDo'			NounSuffix;
+lut[story]:lut					NounSuffix;
+Duj[ship]:Duj					NounSuffix;
+baghneQ[spoon]:baghneQ				NounSuffix;
+targh[targ]:targh				NounSuffix; ! A "targ" is a Klingon animal somewhat resembling a boar
+DoS[target]@P.SINGULAR.IRREGULAR@:DoS@P.SINGULAR.IRREGULAR@		NounSuffix;
+ray'[targets]@P.PLURAL.IRREGULAR@:ray'@P.PLURAL.IRREGULAR@		NounSuffix;
+Doch[thing]:Doch				NounSuffix;
+vIj[thruster]@P.SINGULAR.IRREGULAR@:vIj@P.SINGULAR.IRREGULAR@	NounSuffix;
+chuyDaH[thrusters]@P.PLURAL.IRREGULAR@:chuyDaH@P.PLURAL.IRREGULAR@	NounSuffix;
+DaHjaj[today]:DaHjaj				NounSuffix;
+peng[torpedo]@P.SINGULAR.IRREGULAR@:peng@P.SINGULAR.IRREGULAR@	NounSuffix;
+cha[torpedoes]@P.PLURAL.IRREGULAR@:cha@P.PLURAL.IRREGULAR@		NounSuffix;
+ghogh[voice]:ghogh				NounSuffix;
+bIQ[water]:bIQ					NounSuffix;
+Hogh[week]:Hogh					NounSuffix;
+SuS[wind,breeze]:SuS				NounSuffix;
+DIS[year]:DIS					NounSuffix;
 						NounOtherLocation;
 
 LEXICON NounOtherLocation
-vogh[somewhere]:vogh				AllNounTypeSuffixes;
-nIH[right-side]:nIH				AllNounTypeSuffixes;
-poS[left-side]:poS				AllNounTypeSuffixes;
-tlhop[area-in-front]:tlhop			AllNounTypeSuffixes;
-'em[area-in-back]:'em				AllNounTypeSuffixes;
-Dung[area-above]:Dung				AllNounTypeSuffixes;
-bIng[area-below]:bIng				AllNounTypeSuffixes;
-retlh[area-beside]:retlh			AllNounTypeSuffixes;
-joj[area-between]:joj				AllNounTypeSuffixes;
-qoD[inside]:qoD					AllNounTypeSuffixes;
-Hur[outside]:Hur				AllNounTypeSuffixes;
+vogh[somewhere]:vogh				NounSuffix;
+nIH[right-side]:nIH				NounSuffix;
+poS[left-side]:poS				NounSuffix;
+tlhop[area-in-front]:tlhop			NounSuffix;
+'em[area-in-back]:'em				NounSuffix;
+Dung[area-above]:Dung				NounSuffix;
+bIng[area-below]:bIng				NounSuffix;
+retlh[area-beside]:retlh			NounSuffix;
+joj[area-between]:joj				NounSuffix;
+qoD[inside]:qoD					NounSuffix;
+Hur[outside]:Hur				NounSuffix;
 
 
-LEXICON AllNounTypeSuffixes
+LEXICON NounSuffix
 						NounType1Suffix;
 
 LEXICON NounType1Suffix ! size, affection
