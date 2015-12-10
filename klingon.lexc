@@ -370,8 +370,8 @@ LEXICON Noun
 @U.NOUNTYPE.CAPABLELANGUAGE@			NounCapableOfLanguage;
 @U.NOUNTYPE.OTHER@				NounOther;
 
-LEXICON NounName
-be'etor[B'Etor]:be'etor			AllNounTypeSuffixes;
+! LEXICON NounName
+! be'etor[B'Etor]:be'etor			AllNounTypeSuffixes;
 
 LEXICON NounBodyPart
 DeS[arm]:DeS					AllNounTypeSuffixes;
@@ -395,6 +395,7 @@ DeghwI'[helmsman]:DeghwI'			AllNounTypeSuffixes;
 loDnal[husband]:loDnal				AllNounTypeSuffixes;
 loD[male,man]:loD				AllNounTypeSuffixes;
 ghot[person]:ghot				AllNounTypeSuffixes;
+Duy[representative]:Duy			AllNounTypeSuffixes;
 qetwI'[runner]:qetwI'				AllNounTypeSuffixes;
 bu'[sergeant]:bu'				AllNounTypeSuffixes;
 be'nI'[sister]:be'nI'				AllNounTypeSuffixes;
@@ -657,6 +658,7 @@ HISlaH[yes]:HISlaH				ExclamationSuffix;
 HIja'[yes]:HIja'				ExclamationSuffix;
 ghobe'[no]:ghobe'				ExclamationSuffix;
 Ha'[let's-go]:Ha'				ExclamationSuffix;
+Qapla'[success]:Qapla'				ExclamationSuffix;
 
 LEXICON ExclamationSuffix
 [EXCLAMATION]:0					#;
