@@ -460,8 +460,10 @@ targh[targ]:targh				AllNounTypeSuffixes; ! A "targ" is a Klingon animal somewha
 DoS[target]@P.SINGULAR.IRREGULAR@:DoS@P.SINGULAR.IRREGULAR@		AllNounTypeSuffixes;
 ray'[targets]@P.PLURAL.IRREGULAR@:ray'@P.PLURAL.IRREGULAR@		AllNounTypeSuffixes;
 Doch[thing]:Doch				AllNounTypeSuffixes;
+vIj[thruster]@P.SINGULAR.IRREGULAR@:vIj@P.SINGULAR.IRREGULAR@	AllNounTypeSuffixes;
 chuyDaH[thrusters]@P.PLURAL.IRREGULAR@:chuyDaH@P.PLURAL.IRREGULAR@	AllNounTypeSuffixes;
 DaHjaj[today]:DaHjaj				AllNounTypeSuffixes;
+peng[torpedo]@P.SINGULAR.IRREGULAR@:peng@P.SINGULAR.IRREGULAR@	AllNounTypeSuffixes;
 cha[torpedoes]@P.PLURAL.IRREGULAR@:cha@P.PLURAL.IRREGULAR@		AllNounTypeSuffixes;
 ghogh[voice]:ghogh				AllNounTypeSuffixes;
 bIQ[water]:bIQ					AllNounTypeSuffixes;
