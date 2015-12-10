@@ -1,10 +1,9 @@
 echo
 echo ##Variables##
-def Consonant [b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z|B|C|D|F|G|H|J|K|L|M|N|P|Q|R|S|T|V|W|X|Y|Z];
-def Vowel [a|e|i|o|u|A|E|I|O|U];
+def Consonant [b|{ch}|D|{gh}|H|{gh}|n|{ng}|p|q|Q|r|S|t|{tlh}|v|w|y|'];
+def Vowel [a | e | I | o | u];
 def Alpha [Consonant | Vowel];
 def Word [Alpha]+;
-def GlottalStop [’ | '];
 
 echo
 echo ##Main Lex File##
@@ -19,41 +18,6 @@ echo ##Rules##
 def EndearmentGlottalStop [..] -> GlottalStop || Vowel _ {oy};
 
 def Grammar [Grammar] .o. EndearmentGlottalStop;
-
-
-echo
-echo Guesser
-def GuesserInsertion [..] -> "[GUESS]" || "[GUESSWORD]" ?* _ .#.;
-def Grammar [Grammar.i .o. GuesserInsertion].i;
-regex Grammar;
-substitute defined Word for "[GUESSWORD]"
-def Grammar;
-
-def GuessGr $["[GUESS]"] .o. Grammar;
-def RealGr ~$["[GUESS]"] .o. Grammar;
-def Grammar [RealGr .p. GuessGr];
-
-echo
-regex Grammar;
-echo
-echo --Guessing 'gata' [INF]
-up gata
-echo
-echo --Guessing 'nagata' [NEG][INF] / [INF]
-up nagata
-echo
-echo --Guessing 'gagata' [NEG][INF][ITERATIVE] / [INF]
-up gagata
-echo
-echo --Guessing 'maagata' [INF][DURATIVE] / [INF]
-up maagata
-echo
-echo --Guessing 'maagatake' [PRES][2P][SG][DURATIVE] / [INF][DURATIVE] / [PRES][2P][SG] / [INF]
-up maagatake
-echo
-echo --Guessing 'blamaagatakebla' [PRES][2P][SG][DURATIVE][HEARSAY] / [INF][HEARSAY] / [INF]
-up blamaagatakebla
-clear stack
 
 echo
 echo ##Loading Grammar…##
