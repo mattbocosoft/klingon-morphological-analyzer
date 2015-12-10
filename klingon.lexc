@@ -177,6 +177,7 @@ HIv[to-attack]:HIv				VerbSuffix;
 jol[to-beam-aboard]:jol			VerbSuffix;
 Har[to-believe]:Har				VerbSuffix;
 chop[to-bite]:chop				VerbSuffix;
+tIj[to-board]:tIj				VerbSuffix;
 ghor[to-break]:ghor				VerbSuffix;
 je'[to-buy,to-purchase]:je'			VerbSuffix;
 SaH[to-care]:SaH				VerbSuffix;
@@ -432,6 +433,7 @@ wep[coat]:wep					NounSuffix;
 De'wI'[computer]:De'wI'			NounSuffix;
 Hatlh[country]:Hatlh				NounSuffix;
 De'[data,information]:De'			NounSuffix;
+QIH[destruction]:QIH				NounSuffix;
 lojmIt[door,gate]:lojmIt			NounSuffix;
 jagh[enemy]:jagh				NounSuffix;
 Qagh[error]:error				NounSuffix;
@@ -769,6 +771,8 @@ SuH[Ready%!]:SuH				ExclamationSuffix;
 toH[Well%!]:toH					ExclamationSuffix;
 wejpuH[Charming(ironic)]:wejpuH		ExclamationSuffix;
 'eH[Ready%!]:'eH				ExclamationSuffix;
+'o:[Oh]:'o					ExclamationSuffix;
+mevyap:[Stop.Enough-already]:mevyap		ExclamationSuffix;
 
 LEXICON ExclamationSuffix
 [EXCLAMATION]:0					#;
