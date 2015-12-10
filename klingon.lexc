@@ -2,7 +2,7 @@
 ! https://en.wikipedia.org/wiki/Klingon_grammar
 ! https://www.youtube.com/watch?v=e5Did-eVQDc
 
-Multichar_Symbols [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [PL-LANGUSER] [PL-BODYPART] [PL-OTHERNOUN] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] [ALL-OVER-THE-PLACE] @D.NOUNTYPE1.ON@ @P.NOUNTYPE1.ON@ @D.NOUNTYPE2.ON@ @P.NOUNTYPE2.ON@ @D.NOUNTYPE3.ON@ @P.NOUNTYPE3.ON@ @D.NOUNTYPE4.ON@ @P.NOUNTYPE4.ON@ @D.NOUNTYPE5.ON@ @P.NOUNTYPE5.ON@ @U.NOUNTYPE.BODYPART@ @U.NOUNTYPE.CAPABLELANGUAGE@ @U.NOUNTYPE.OTHER@ [NEG] [1P] [2P] [3P] [SG] [PL] [GUESSWORD] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED-SUBJ] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DVN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE] [REFUSE] [EMPHASIS] [REVERSE] @U.MOOD.INDICATIVE@ @U.MOOD.IMPERATIVE@ @U.MOOD.INFINITIVE@ @D.MOOD@ @R.MOOD@ @D.VERBTYPE1.ON@ @P.VERBTYPE1.ON@ @D.VERBTYPE2.ON@ @P.VERBTYPE2.ON@ @D.VERBTYPE3.ON@ @P.VERBTYPE3.ON@ @D.VERBTYPE4.ON@ @P.VERBTYPE4.ON@ @D.VERBTYPE5.ON@ @P.VERBTYPE5.ON@ @D.VERBTYPE6.ON@ @P.VERBTYPE6.ON@ @D.VERBTYPE7.ON@ @P.VERBTYPE7.ON@ @D.VERBTYPE8.ON@ @P.VERBTYPE8.ON@ @D.VERBTYPE9.ON@ @P.VERBTYPE9.ON@ @P.INDICATIVE.UNSPECIFIED@ @R.INDICATIVE.UNSPECIFIED@ @C.INDICATIVE@ @D.INDICATIVE.UNSPECIFIED@ @P.VERBSUFFIX.CONTINUOUS@ @R.VERBSUFFIX.CONTINUOUS@ @U.VERBTYPE.STATIVE@ @D.VERBTYPE.STATIVE@ @R.VERBTYPE.STATIVE@ @U.VERBTYPE.ACTION@ [ORDINAL] [REPEATCOUNT] @P.POS.ADVERB@ @D.POS.ADVERB@ @R.POS.ADVERB@ [ADV] [NUMBER] @P.MULTIPLE1234567.ON@ @D.MULTIPLE1234567.ON@ @P.MULTIPLE123456.ON@ @D.MULTIPLE123456.ON@ @P.MULTIPLE12345.ON@ @D.MULTIPLE12345.ON@ @P.MULTIPLE1234.ON@ @D.MULTIPLE1234.ON@ @P.MULTIPLE123.ON@ @D.MULTIPLE123.ON@ @P.MULTIPLE12.ON@ @D.MULTIPLE12.ON@ [POSSESSIVE-1P-SG] [POSSESSIVE-2P-SG] [POSSESSIVE-3P-SG] [POSSESSIVE-1P-PL] [POSSESSIVE-2P-PL] [POSSESSIVE-3P-PL] [PRONOUN] [CONJ] [N] [V] [ADV] [ADJ] [EXCLAMATION]
+Multichar_Symbols [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] [ALL-OVER-THE-PLACE] @U.NOUNTYPE.BODYPART@ @U.NOUNTYPE.CAPABLELANGUAGE@ @U.NOUNTYPE.OTHER@ [NEG] [1P] [2P] [3P] [SG] [PL] [PL-IRREGULAR] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED-SUBJ] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DVN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE] [REFUSE] [EMPHASIS] [REVERSE] @U.MOOD.INDICATIVE@ @U.MOOD.IMPERATIVE@ @U.MOOD.INFINITIVE@ @D.MOOD@ @R.MOOD@ @D.VERBTYPE1.ON@ @P.VERBTYPE1.ON@ @D.VERBTYPE2.ON@ @P.VERBTYPE2.ON@ @D.VERBTYPE3.ON@ @P.VERBTYPE3.ON@ @D.VERBTYPE4.ON@ @P.VERBTYPE4.ON@ @D.VERBTYPE5.ON@ @P.VERBTYPE5.ON@ @D.VERBTYPE6.ON@ @P.VERBTYPE6.ON@ @D.VERBTYPE7.ON@ @P.VERBTYPE7.ON@ @D.VERBTYPE8.ON@ @P.VERBTYPE8.ON@ @D.VERBTYPE9.ON@ @P.VERBTYPE9.ON@ @P.INDICATIVE.UNSPECIFIED@ @R.INDICATIVE.UNSPECIFIED@ @C.INDICATIVE@ @D.INDICATIVE.UNSPECIFIED@ @P.VERBSUFFIX.CONTINUOUS@ @R.VERBSUFFIX.CONTINUOUS@ @U.VERBTYPE.STATIVE@ @D.VERBTYPE.STATIVE@ @R.VERBTYPE.STATIVE@ @U.VERBTYPE.ACTION@ [ORDINAL] [REPEATCOUNT] @P.POS.ADVERB@ @D.POS.ADVERB@ @R.POS.ADVERB@ [ADV] [NUMBER] @P.MULTIPLE1234567.ON@ @D.MULTIPLE1234567.ON@ @P.MULTIPLE123456.ON@ @D.MULTIPLE123456.ON@ @P.MULTIPLE12345.ON@ @D.MULTIPLE12345.ON@ @P.MULTIPLE1234.ON@ @D.MULTIPLE1234.ON@ @P.MULTIPLE123.ON@ @D.MULTIPLE123.ON@ @P.MULTIPLE12.ON@ @D.MULTIPLE12.ON@ @P.PLURAL.IRREGULAR@ @D.PLURAL.IRREGULAR@ @P.SINGULAR.IRREGULAR@ @D.SINGULAR.IRREGULAR@ @R.SINGULAR.IRREGULAR@ [POSSESSIVE-1P-SG] [POSSESSIVE-2P-SG] [POSSESSIVE-3P-SG] [POSSESSIVE-1P-PL] [POSSESSIVE-2P-PL] [POSSESSIVE-3P-PL] [PRONOUN] [CONJ] [N] [V] [ADV] [ADJ] [EXCLAMATION]
 
 LEXICON Root
 						VerbPrefix; ! Includes Adjective part-of-speech via adjectival verbs
@@ -241,7 +241,7 @@ ghItlh[to-write]:ghItlh			VerbSuffix;
 
 
 LEXICON VerbSuffix
-@U.MOOD.INFINITIVE@@U.VERBTYPE.STATIVE@	NounType5Gate; ! Type-5 noun suffixes that would normally be attached to the noun are instead attached to the ADJECTIVAL (stative) verb
+@U.MOOD.INFINITIVE@@U.VERBTYPE.STATIVE@	NounType5Suffix; ! Type-5 noun suffixes that would normally be attached to the noun are instead attached to the ADJECTIVAL (stative) verb
 						VerbRoversSuffix;
 
 
@@ -457,9 +457,12 @@ lut[story]:lut					AllNounTypeSuffixes;
 Duj[ship]:Duj					AllNounTypeSuffixes;
 baghneQ[spoon]:baghneQ				AllNounTypeSuffixes;
 targh[targ]:targh				AllNounTypeSuffixes; ! A "targ" is a Klingon animal somewhat resembling a boar
+DoS[target]@P.SINGULAR.IRREGULAR@:DoS@P.SINGULAR.IRREGULAR@		AllNounTypeSuffixes;
+ray'[targets]@P.PLURAL.IRREGULAR@:ray'@P.PLURAL.IRREGULAR@		AllNounTypeSuffixes;
 Doch[thing]:Doch				AllNounTypeSuffixes;
+chuyDaH[thrusters]@P.PLURAL.IRREGULAR@:chuyDaH@P.PLURAL.IRREGULAR@	AllNounTypeSuffixes;
 DaHjaj[today]:DaHjaj				AllNounTypeSuffixes;
-cha[torpedo]:cha				AllNounTypeSuffixes;
+cha[torpedoes]@P.PLURAL.IRREGULAR@:cha@P.PLURAL.IRREGULAR@		AllNounTypeSuffixes;
 ghogh[voice]:ghogh				AllNounTypeSuffixes;
 bIQ[water]:bIQ					AllNounTypeSuffixes;
 Hogh[week]:Hogh					AllNounTypeSuffixes;
@@ -482,72 +485,60 @@ Hur[outside]:Hur				AllNounTypeSuffixes;
 
 
 LEXICON AllNounTypeSuffixes
-						NounType1Gate;
-						NounType2Gate;
-						NounType3Gate;
-						NounType4Gate;
-						NounType5Gate;
-@R.VERBTYPE.STATIVE@[ADJ]:@R.VERBTYPE.STATIVE@			#;
-@D.MOOD@[N]:@D.MOOD@							#;
-@R.MOOD@[DVN]:@R.MOOD@							#;
-
-
-LEXICON NounType1Gate
-@D.NOUNTYPE1.ON@@P.NOUNTYPE1.ON@		NounType1Suffix;
+						NounType1Suffix;
 
 LEXICON NounType1Suffix ! size, affection
-[AUGMENTATIVE]:'a'				AllNounTypeSuffixes;
-[DIMINUTIVE]:Hom				AllNounTypeSuffixes;
-[ENDEARMENT]:-oy				AllNounTypeSuffixes;
+[AUGMENTATIVE]:'a'				NounType2Suffix;
+[DIMINUTIVE]:Hom				NounType2Suffix;
+[ENDEARMENT]:-oy				NounType2Suffix; ! The dash character will either be discarded or turned into a glottal stop in the foma file
+						NounType2Suffix; ! Type 1 suffix not required, jump to next type
 
-
-LEXICON NounType2Gate
-@P.NOUNTYPE1.ON@@D.NOUNTYPE2.ON@@P.NOUNTYPE2.ON@		NounType2Suffix;
 
 ! A noun does not require a plural suffix if a pronoun or pronominal prefix serves to indicate that it is plural,[10] or if it is being used in conjunction with a number.
-LEXICON NounType2Suffix ! plurals
-[PL]@U.NOUNTYPE.CAPABLELANGUAGE@:pu'@U.NOUNTYPE.CAPABLELANGUAGE@		AllNounTypeSuffixes;
-[PL]@U.NOUNTYPE.BODYPART@:Du'@U.NOUNTYPE.BODYPART@				AllNounTypeSuffixes;
-[PL]@U.NOUNTYPE.OTHER@:@U.NOUNTYPE.OTHER@mey					AllNounTypeSuffixes;
-[PL][ALL-OVER-THE-PLACE]@U.NOUNTYPE.CAPABLELANGUAGE@:@U.NOUNTYPE.CAPABLELANGUAGE@mey	AllNounTypeSuffixes; ! When -mey is used for nouns that would normally take -pu’ or -Du’, it carries the connotation of being all over the place.
-[PL]						AllNounTypeSuffixes; ! A plural suffix is never obligatory
+LEXICON NounType2Suffix ! number
+[PL]@D.SINGULAR.IRREGULAR@@D.PLURAL.IRREGULAR@@U.NOUNTYPE.CAPABLELANGUAGE@:@D.SINGULAR.IRREGULAR@@D.PLURAL.IRREGULAR@pu'@U.NOUNTYPE.CAPABLELANGUAGE@				NounType3Suffix;
+[PL]@D.SINGULAR.IRREGULAR@@D.PLURAL.IRREGULAR@@U.NOUNTYPE.BODYPART@:@D.SINGULAR.IRREGULAR@@D.PLURAL.IRREGULAR@Du'@U.NOUNTYPE.BODYPART@						NounType3Suffix;
+[PL]@D.SINGULAR.IRREGULAR@@D.PLURAL.IRREGULAR@@U.NOUNTYPE.OTHER@:@D.SINGULAR.IRREGULAR@@D.PLURAL.IRREGULAR@@U.NOUNTYPE.OTHER@mey							NounType3Suffix;
+[PL][ALL-OVER-THE-PLACE]@R.SINGULAR.IRREGULAR@:@R.SINGULAR.IRREGULAR@mey	NounType3Suffix; ! The singular [irregular] forms may take the {-mey} suffix, but the meaning always carries the ``scattered all about'' connotation
+[PL][ALL-OVER-THE-PLACE]@D.PLURAL.IRREGULAR@@U.NOUNTYPE.CAPABLELANGUAGE@:@D.PLURAL.IRREGULAR@@U.NOUNTYPE.CAPABLELANGUAGE@mey	NounType3Suffix; ! When -mey is used for nouns that would normally take -pu’ or -Du’, it carries the connotation of being all over the place.
+[PL]@D.SINGULAR.IRREGULAR@:@D.SINGULAR.IRREGULAR@0						NounType3Suffix; ! A plural suffix is never obligatory
+[SG]@D.PLURAL.IRREGULAR@:@D.PLURAL.IRREGULAR@	NounType3Suffix;
 
-LEXICON NounType3Gate
-@P.NOUNTYPE1.ON@@P.NOUNTYPE2.ON@@D.NOUNTYPE3.ON@@P.NOUNTYPE3.ON@		NounType3Suffix;
 
 LEXICON NounType3Suffix ! accuracy
-[SOCALLED]:qoq					AllNounTypeSuffixes;
-[DUBITATIVE]:Hey				AllNounTypeSuffixes;
-[ACCURATE]:na'					AllNounTypeSuffixes;
+[SOCALLED]:qoq					NounType4Suffix;
+[DUBITATIVE]:Hey				NounType4Suffix;
+[ACCURATE]:na'					NounType4Suffix;
+						NounType4Suffix;  ! Type 3 suffix not required, jump to next type
 
-
-LEXICON NounType4Gate
-@P.NOUNTYPE1.ON@@P.NOUNTYPE2.ON@@P.NOUNTYPE3.ON@@D.NOUNTYPE4.ON@@P.NOUNTYPE4.ON@		NounType4Suffix;
 
 LEXICON NounType4Suffix ! possession, determiners
-[POSSESSIVE-1P-SG]:wIj					AllNounTypeSuffixes;
-[POSSESSIVE-1P-SG]@U.NOUNTYPE.CAPABLELANGUAGE@:wI'@U.NOUNTYPE.CAPABLELANGUAGE@				AllNounTypeSuffixes;
-[POSSESSIVE-2P-SG]:lIj					AllNounTypeSuffixes;
-[POSSESSIVE-2P-SG]@U.NOUNTYPE.CAPABLELANGUAGE@:lI'@U.NOUNTYPE.CAPABLELANGUAGE@				AllNounTypeSuffixes;
-[POSSESSIVE-3P-SG]:Daj					AllNounTypeSuffixes;
-[POSSESSIVE-1P-PL]:maj					AllNounTypeSuffixes;
-[POSSESSIVE-1P-PL]@U.NOUNTYPE.CAPABLELANGUAGE@:ma'@U.NOUNTYPE.CAPABLELANGUAGE@				AllNounTypeSuffixes;
-[POSSESSIVE-2P-PL]:raj					AllNounTypeSuffixes;
-[POSSESSIVE-2P-PL]@U.NOUNTYPE.CAPABLELANGUAGE@:ra'@U.NOUNTYPE.CAPABLELANGUAGE@				AllNounTypeSuffixes;
-[POSSESSIVE-3P-PL]:chaj					AllNounTypeSuffixes;
-[THIS]:vam					AllNounTypeSuffixes;
-[THAT]:vetlh					AllNounTypeSuffixes;
-
-
-LEXICON NounType5Gate
-@P.NOUNTYPE1.ON@@P.NOUNTYPE2.ON@@P.NOUNTYPE3.ON@@P.NOUNTYPE4.ON@@D.NOUNTYPE5.ON@@P.NOUNTYPE5.ON@	NounType5Suffix;
+[POSSESSIVE-1P-SG]:wIj					NounType5Suffix;
+[POSSESSIVE-1P-SG]@U.NOUNTYPE.CAPABLELANGUAGE@:wI'@U.NOUNTYPE.CAPABLELANGUAGE@				NounType5Suffix;
+[POSSESSIVE-2P-SG]:lIj					NounType5Suffix;
+[POSSESSIVE-2P-SG]@U.NOUNTYPE.CAPABLELANGUAGE@:lI'@U.NOUNTYPE.CAPABLELANGUAGE@				NounType5Suffix;
+[POSSESSIVE-3P-SG]:Daj					NounType5Suffix;
+[POSSESSIVE-1P-PL]:maj					NounType5Suffix;
+[POSSESSIVE-1P-PL]@U.NOUNTYPE.CAPABLELANGUAGE@:ma'@U.NOUNTYPE.CAPABLELANGUAGE@				NounType5Suffix;
+[POSSESSIVE-2P-PL]:raj					NounType5Suffix;
+[POSSESSIVE-2P-PL]@U.NOUNTYPE.CAPABLELANGUAGE@:ra'@U.NOUNTYPE.CAPABLELANGUAGE@				NounType5Suffix;
+[POSSESSIVE-3P-PL]:chaj					NounType5Suffix;
+[THIS]:vam					NounType5Suffix;
+[THAT]:vetlh					NounType5Suffix;
+						NounType5Suffix;  ! Type 4 suffix not required, jump to next type
 
 LEXICON NounType5Suffix ! syntactic role
-[LOCATIVE]:Daq					AllNounTypeSuffixes;
-[ABLATIVE]:vo'					AllNounTypeSuffixes;
-[CAUSAL]:mo'					AllNounTypeSuffixes;
-[DATIVE]:vaD					AllNounTypeSuffixes;
-[TOPIC]:'e'					AllNounTypeSuffixes;
+[LOCATIVE]:Daq					NounTag;
+[ABLATIVE]:vo'					NounTag;
+[CAUSAL]:mo'					NounTag;
+[DATIVE]:vaD					NounTag;
+[TOPIC]:'e'					NounTag;
+						NounTag; ! Type 5 suffix not required, jump to next type
+
+LEXICON NounTag
+@R.VERBTYPE.STATIVE@[ADJ]:@R.VERBTYPE.STATIVE@		#;
+@D.MOOD@[N]:@D.MOOD@						#;
+@R.MOOD@[DVN]:@R.MOOD@						#;
 
 
 
