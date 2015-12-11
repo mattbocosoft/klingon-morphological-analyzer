@@ -7,7 +7,28 @@ echo ###################
 echo POSITIVE TEST CASES (Success: >1 States)
 echo ###################
 echo
-echo --NOUNS
+echo ~~~~~~~~~~~~~~
+echo ~~~ NOUNS ~~~
+echo ~~~~~~~~~~~~~~
+echo
+echo ~# Simple Nouns #~
+echo ~~~~~~~~~~~~~~~~~~
+regex {DoS[target]}"[SG]""[N]" .o. Grammar .o. {DoS};	! DoS[target][SG][N] -> DoS
+regex {QIH[destruction]}"[SG]""[N]" .o. Grammar .o. {QIH};	! QIH[destruction]}[SG][N] -> QIH
+echo
+echo ~# Verb plus -wI' #~
+echo ~~~~~~~~~~~~~~~~~~~~
+regex {baHwI'[gunner]}"[SG]""[N]" .o. Grammar .o. {baHwI'};
+regex {So'[to-cloak,to-hide]}"[PERSON]""[SG]""[DVN]" .o. Grammar .o. {So'wI'};
+echo
+echo ~# Other complex nouns #~
+echo ~~~~~~~~~~~~~~~~~~~~~~~~~
+regex {'ejDo'[starship]}"[SG]""[N]" .o. Grammar .o. {'ejDo'};
+regex {'ejyo'[starfleet]}"[SG]""[N]" .o. Grammar .o. {'ejyo'};
+echo
+echo ~# Suffixes #~
+echo ~~~~~~~~~~~~~~
+
 regex {veng[city]}"[DIMINUTIVE]""[PL-OTHERNOUN]""[SOCALLED]""[3P]""[PL]""[LOCATIVE]" .o. Grammar .o. {vengHommeyqoqchajDaq};
 
 echo Plurals (from Wikipedia)
