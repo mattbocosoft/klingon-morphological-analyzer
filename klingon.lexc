@@ -280,6 +280,8 @@ LEXICON VerbRoversSuffix
 LEXICON VerbType1Gate
 @D.VERBTYPE1.ON@@P.VERBTYPE1.ON@		VerbType1Suffix;
 
+! Example: {chop} <to bite>  {chop'egh} <to bite oneself>
+
 LEXICON VerbType1Suffix ! 2 Count = reflexive/reciprocal
 [REFLEXIVE]:'egh				VerbSuffix;
 [RECIPROCAL]:chuq				VerbSuffix;
@@ -287,6 +289,8 @@ LEXICON VerbType1Suffix ! 2 Count = reflexive/reciprocal
 
 LEXICON VerbType2Gate
 @P.VERBTYPE1.ON@@D.VERBTYPE2.ON@@P.VERBTYPE2.ON@		VerbType2Suffix;
+
+! Example: {chop} <to bite>  {jIchoprup} <I am prepared to bite>
 
 LEXICON VerbType2Suffix ! 5 Count = volition/necessity
 [REQUIRED]:nIS					VerbSuffix;
@@ -299,6 +303,8 @@ LEXICON VerbType2Suffix ! 5 Count = volition/necessity
 LEXICON VerbType3Gate
 @P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@D.VERBTYPE3.ON@@P.VERBTYPE3.ON@		VerbType3Suffix;
 
+! Example: {Qong} <to sleep>  {Qongqa'} <to resume sleeping>
+
 LEXICON VerbType3Suffix ! 2 Count = inceptive/inchoative
 [STATECHANGE]:choH				VerbSuffix;
 [RESUME]:qa'					VerbSuffix;
@@ -307,12 +313,16 @@ LEXICON VerbType3Suffix ! 2 Count = inceptive/inchoative
 LEXICON VerbType4Gate
 @P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@D.VERBTYPE4.ON@@P.VERBTYPE4.ON@		VerbType4Suffix;
 
+! Example: {Qong} <to sleep>  {QongmoH} <to cause to sleep>
+
 LEXICON VerbType4Suffix ! 1 Count = causative
 [CAUSATIVE]:moH					VerbSuffix;
 
 
 LEXICON VerbType5Gate
 @P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@D.VERBTYPE5.ON@@P.VERBTYPE5.ON@		VerbType5Suffix;
+
+! Example: {Qong} <to sleep>  {jIQonglaH} <I am capable of sleeping>
 
 LEXICON VerbType5Suffix ! 2 Count = undefined subject; capability
 [UNDEFINED-SUBJ]@R.INDICATIVE.UNSPECIFIED@@C.INDICATIVE@:@R.INDICATIVE.UNSPECIFIED@@C.INDICATIVE@lu'				VerbSuffix;
@@ -321,6 +331,8 @@ LEXICON VerbType5Suffix ! 2 Count = undefined subject; capability
 
 LEXICON VerbType6Gate
 @P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@D.VERBTYPE6.ON@@P.VERBTYPE6.ON@		VerbType6Suffix;
+
+! Example: {yaj} <to understand>  {luyajlaw’} <they seem to understand it>
 
 LEXICON VerbType6Suffix ! 4 Count = perfection; uncertainty
 [BEST]:chu'					VerbSuffix;
@@ -332,6 +344,8 @@ LEXICON VerbType6Suffix ! 4 Count = perfection; uncertainty
 LEXICON VerbType7Gate
 @P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@P.VERBTYPE6.ON@@D.VERBTYPE7.ON@@P.VERBTYPE7.ON@		VerbType7Suffix;
 
+! Example: {ghor} <to break>  {vIghorta’} <I broke it (on purpose)>
+
 LEXICON VerbType7Suffix ! 4 Count = aspect
 [PERFECT]:pu'					VerbSuffix;
 [PERFECTPURPOSE]:ta'				VerbSuffix;
@@ -342,12 +356,16 @@ LEXICON VerbType7Suffix ! 4 Count = aspect
 LEXICON VerbType8Gate
 @P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@P.VERBTYPE6.ON@@P.VERBTYPE7.ON@@D.VERBTYPE8.ON@@P.VERBTYPE8.ON@		VerbType8Suffix;
 
+! Example: {qaleghneS} <I am honored to see you> ({legh} <see>)
+
 LEXICON VerbType8Suffix ! 1 Count = honorific
 [HONOR]:neS					VerbSuffix;
 
 
 LEXICON VerbType9Gate
 @P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@P.VERBTYPE6.ON@@P.VERBTYPE7.ON@@P.VERBTYPE8.ON@@D.VERBTYPE9.ON@@P.VERBTYPE9.ON@		VerbType9Suffix;
+
+! Example: jachnISchoH to start to need to scream → jachnISchoHwI’ someone who starts needing to scream
 
 LEXICON VerbType9Suffix ! 11 Count = syntactic
 @U.MOOD.INFINITIVE@[PERSON]:@U.MOOD.INFINITIVE@wI'					NounSuffix; ! Nominalizer. Verbs can take the Type 9 suffix -wI' one/thing which does, and the resulting word is a noun which can take all noun suffixes. Other verb suffixes can be added before -wI', provided no other Type 9 suffix is used.
@@ -372,6 +390,11 @@ LEXICON VerbMoodTag
 ! ##########################
 ! ########## NOUN ##########
 ! ##########################
+! NOUN SUFFIX EXAMPLE: {DujoymeyqoqwIjDaq} <on my so-called dear ships>
+! vengHommeyqoqchajDaq
+! veng	-	Hom	-	mey	-	qoq	-	chaj	-	Daq
+! city	+	(1) diminutive	+	(2) plural	+	(3) dubitative	+	(4) their	+	(5) locative
+! in their so-called villages
 
 
 LEXICON Noun
@@ -459,8 +482,8 @@ bel[pleasure]:bel				NounSuffix;
 woQ[power]:woQ					NounSuffix;
 bortaS[revenge]:bortaS				NounSuffix;
 pa'[room]:pa'					NounSuffix;
-bach[shot]:bach					NounSuffix;
 Duj[ship,vessel]:Duj				NounSuffix;
+bach[shot]:bach					NounSuffix;
 ghu'[situation]:ghu'				NounSuffix;
 chal[sky]:chal					NounSuffix;
 Hal[source]:Hal					NounSuffix;
@@ -468,7 +491,6 @@ Hov[star]:Hov					NounSuffix;
 'ejyo'[starfleet]:'ejyo'			NounSuffix;
 'ejDo'[starship]:'ejDo'			NounSuffix;
 lut[story]:lut					NounSuffix;
-Duj[ship]:Duj					NounSuffix;
 baghneQ[spoon]:baghneQ				NounSuffix;
 targh[targ]:targh				NounSuffix; ! A "targ" is a Klingon animal somewhat resembling a boar
 DoS[target]@P.SINGULAR.IRREGULAR@:DoS@P.SINGULAR.IRREGULAR@		NounSuffix;
@@ -504,10 +526,12 @@ LEXICON NounSuffix
 						NounType1Suffix;
 
 LEXICON NounType1Suffix ! size, affection
-[AUGMENTATIVE]:'a'				NounType2Suffix;
+[AUGMENTATIVE]:'a'				NounType2Suffix; 
 [DIMINUTIVE]:Hom				NounType2Suffix;
 [ENDEARMENT]:-oy				NounType2Suffix; ! The dash character will either be discarded or turned into a glottal stop in the foma file
 						NounType2Suffix; ! Type 1 suffix not required, jump to next type
+
+! Example: {SuS} <wind, breeze>  {SuS'a'} <strong wind>  {SuSHom} <wisp of air>  {cha’oy} <dear torpedos>
 
 
 ! A noun does not require a plural suffix if a pronoun or pronominal prefix serves to indicate that it is plural,[10] or if it is being used in conjunction with a number.
@@ -520,12 +544,16 @@ LEXICON NounType2Suffix ! number
 [PL]@D.SINGULAR.IRREGULAR@:@D.SINGULAR.IRREGULAR@0						NounType3Suffix; ! A plural suffix is never obligatory
 [SG]@D.PLURAL.IRREGULAR@:@D.PLURAL.IRREGULAR@	NounType3Suffix;
 
+! Example: {Duy} <emissary>  {Duypu'} <emissaries> (Plural marker is not required)
 
-LEXICON NounType3Suffix ! accuracy
+
+LEXICON NounType3Suffix ! accuracy, speaker's attitude toward the noun 
 [SOCALLED]:qoq					NounType4Suffix;
 [DUBITATIVE]:Hey				NounType4Suffix;
 [ACCURATE]:na'					NounType4Suffix;
 						NounType4Suffix;  ! Type 3 suffix not required, jump to next type
+
+! Example: {Dujqoq} <so called ship>
 
 
 LEXICON NounType4Suffix ! possession, determiners
@@ -543,6 +571,9 @@ LEXICON NounType4Suffix ! possession, determiners
 [THAT]:vetlh					NounType5Suffix;
 						NounType5Suffix;  ! Type 4 suffix not required, jump to next type
 
+! Example: {DujwIj} <my ship>, {Dujvam} <this ship>
+
+
 LEXICON NounType5Suffix ! syntactic role
 [LOCATIVE]:Daq					NounTag;
 [ABLATIVE]:vo'					NounTag;
@@ -550,6 +581,9 @@ LEXICON NounType5Suffix ! syntactic role
 [DATIVE]:vaD					NounTag;
 [TOPIC]:'e'					NounTag;
 						NounTag; ! Type 5 suffix not required, jump to next type
+
+! Example: {DujDaq} <on the ship>, {DujwIjDaq} <on my ship>
+
 
 LEXICON NounTag
 @R.VERBTYPE.STATIVE@				#;
@@ -592,6 +626,7 @@ LEXICON PronounTag
 
 
 ! ########## NUMBER ##########
+! Example: {'uy' cha'netlh vaghvatlh SochDIch} <one million, twenty-thousand, five-hundred and seven-th (ordinal) = 1,020,507th)
 
 LEXICON Number
 						NumberDecimal;
