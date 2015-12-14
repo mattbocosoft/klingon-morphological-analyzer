@@ -1,0 +1,176 @@
+%
+% File acl2014.tex
+%
+% Contact: koller@ling.uni-potsdam.de, yusuke@nii.ac.jp
+%%
+%% Based on the style files for ACL-2013, which were, in turn,
+%% Based on the style files for ACL-2012, which were, in turn,
+%% based on the style files for ACL-2011, which were, in turn, 
+%% based on the style files for ACL-2010, which were, in turn, 
+%% based on the style files for ACL-IJCNLP-2009, which were, in turn,
+%% based on the style files for EACL-2009 and IJCNLP-2008...
+
+%% Based on the style files for EACL 2006 by 
+%%e.agirre@ehu.es or Sergi.Balari@uab.es
+%% and that of ACL 08 by Joakim Nivre and Noah Smith
+
+\documentclass[11pt]{article}
+\usepackage{acl2014}
+\usepackage{times}
+\usepackage{url}
+\usepackage{latexsym}
+
+%\setlength\titlebox{5cm}
+
+% You can expand the titlebox if you need extra space
+% to show all the authors. Please do not make the titlebox
+% smaller than 5cm (the original size); we will check this
+% in the camera-ready version and ask you to change it back.
+
+
+\title{A finite-state morphological analyzer using foma for Klingon, a constructed language}
+
+\author{Matthew David Dreselly Thomas \\
+  University of Colorado at Boulder \\
+  {\tt matt@bocosoft.net} \\}
+
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+This paper presents a morphological analyzer for Klingon, constructed language, developed following the official description of the morphology in the Klingon Dictionary~\cite{Okrand:92}.
+
+The open-source tool \textit{foma} for constructing finite-state automata and transducers is used for building the morphological analyzer.
+
+\end{abstract}
+
+\section{Introduction}
+
+Klingon was created by Marc Okrand, an American Linguist, for the 1984 movie Star Trek III. Klingon is spoken by the fictional Klingons in the Star Trek universe, so Okrand designed the Klingon language to sound alien by using grammatical constructs and sound combinations infrequently used in natural language~\cite{KLI:Development,KLI:Sounds}.
+
+Klingon has a complete grammar that can be spoken and used as a real language. Marc Okrand formalized the Klingon grammar and vocabulary in The Klingon Dictionary~\cite{Okrand:92}.
+
+The number of fluent Klingon speakers is not known, but has been estimated between a few dozen~\cite{Okrent:09} to around 100~\cite{Kelly:13}. The Klingon Dictionary~\cite{Okrand:92} has sold more than 300,000 copies and has been translated into 4 languages. Klingon has entered into popular culture, and literary works such Shakespeare's Hamlet, Gilgamesh, and "A Christmas Carol" have been translated into Klingon. The Bible is currently being translated~\cite{KLI:Bible} but is a difficult task due to limited Klingon vocabulary. The current lexicon contains almost 3,000 words~\cite{Zrajm:12} and only grammar and words coined by Marc Okrand are considered canonical by the Klingon speaking community~\cite{KLI:Canonical}.
+
+\section{Klingon Grammar}
+
+\textbf{The proceedings are designed for printing on A4
+  paper.}
+\texttt{yusuke@nii.ac.jp}
+\textit{pdflatex}
+\texttt{ dvips}
+
+\begin{quote}
+Hello there
+\end{quote}
+
+\section{Klingon Morphology}
+
+Klingon is an agglutinative language that uses Object-Verb-Subject word order. Okrand categorizes down the Klingon word types into Nouns, Verbs, and "Left-overs".
+
+\subsection {Nouns}
+
+Nouns are split into three types; body-parts, beings capable of language, and general nouns.
+
+5 ordered suffix types
+
+\subsection {Verbs}
+
+Verbs are categorized into 2 classes; stative and action. Verbs take both prefixes and suffixes.
+
+Take prefixes
+Take suffixes
+9 ordered suffix types
+
+\subsection {"Left-over" Words}
+
+Pronouns
+
+Numbers
+
+Conjunctions
+
+Adverbials
+
+Exclamations
+
+Names
+
+Questions
+
+\section{Klingon Morphophonology}
+
+Klingon completely lacks morphophonology with one exception. The endearment noun suffix \textit{-oy} is prepended with a glottal stop \textit{'} if the noun stem ends with a vowel.
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline \bf Noun Stem & \bf Noun with Endearment Suffix -oy \\ \hline
+jup (friend) & jupoy (dear friend) \\
+cha (torpedo) & cha'oy (dear torpedo) \\
+\hline
+\end{tabular}
+\end{center}
+\caption{\label{font-table} Endearment Suffix }
+\end{table}
+
+\section{FST Implementation}
+
+Used lexc file.
+Used foma file for rewrite rule(s).
+
+% include your own bib file like this:
+%\bibliographystyle{acl}
+%\bibliography{acl2014}
+
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Okrand}1992]{Okrand:92}
+Marc Okrand.
+\newblock 1992.
+\newblock {\em The Klingon Dictionary}, 2nd edition.
+\newblock New York: Pocket Books, Simon and Schuster Inc.
+
+\bibitem[\protect\citename{KLI}Development]{KLI:Development}
+\newblock {\em Development and Use of the Klingon Language.}
+\newblock The Klingon Language Institute
+\newblock \url{http://www.kli.org/about-klingon/klingon-history/}
+
+\bibitem[\protect\citename{KLI}Sounds]{KLI:Sounds}
+\newblock {\em The Sounds of Klingon.}
+\newblock The Klingon Language Institute
+\newblock \url{http://www.speakklingon.info/about-klingon/sounds-of-klingon/}
+
+\bibitem[\protect\citename{KLI}Canonical]{KLI:Canonical}
+\newblock {\em Canonical Sources.}
+\newblock The Klingon Language Institute
+\newblock \url{http://www.kli.org/wiki/Canonical_sources}
+
+\bibitem[\protect\citename{KLI}Bible]{KLI:Bible}
+\newblock {\em Klingon Bible Translation Project.}
+\newblock The Klingon Language Institute
+\newblock \url{http://www.kli.org/wiki/Klingon_Bible_Translation_Project}
+
+\bibitem[\protect\citename{Okrent}2009]{Okrent:09}
+Arika Okrent.
+\newblock 2009.
+\newblock {\em In the Land of Invented Languages}, 1st edition.
+\newblock New York: Spiegel \& Grau
+
+\bibitem[\protect\citename{Zrajm}2012]{Zrajm:12}
+Zrajm.
+\newblock 2012.
+\newblock {\em Klingon Word Database}, 1st edition.
+\newblock Klingonska Akademien
+
+\bibitem[\protect\citename{Kelly}2013]{Kelly:13}
+Samantha Murphy Kelly.
+\newblock 2013.
+\newblock {\em How Klingon Became a Universal Language}
+\newblock Mashable.com
+\newblock \url{http://mashable.com/2013/05/18/klingon-star-trek/}
+
+\end{thebibliography}
+
+\end{document}
