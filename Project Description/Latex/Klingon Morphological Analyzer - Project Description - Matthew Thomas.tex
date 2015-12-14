@@ -19,6 +19,8 @@
 \usepackage{times}
 \usepackage{url}
 \usepackage{latexsym}
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
 
 %\setlength\titlebox{5cm}
 
@@ -59,7 +61,7 @@ Klingon is an agglutinative language that uses Object-Verb-Subject word order. O
 
 \subsection {Nouns}
 
-Nouns can take five types of suffixes. Each suffix type, if present, must be appended to the noun stem in a specific order. The suffixes that a noun can take also depend on the type of noun. Nouns are split into three types; body-parts, beings capable of language, and general nouns.
+Nouns can take five types of suffixes. Each suffix type, if present, must be appended to the noun stem in a specific order and there can be no more than one suffix per type. The suffixes that a noun can take also depend on the type of noun. Nouns are split into three types; body-parts, beings capable of language, and general nouns.
 
 \begin{description}
 	\item[Type 1] Augmentative/diminutive
@@ -109,16 +111,34 @@ cha & torpedos \\
 
 	\item[Type 3] Qualification
 	\item[Type 4] Possession/specification
+	
+	Possession suffixes are selected depending on whether the \textit{object} being referred to is language-capable.
+
+	\begin{center}
+	\begin{tabular}{ | l | l | l | l |}
+	\hline
+	\bf{Possessive} & \bf{Generic} & \bf{Language} \\
+	\bf{Suffixes} & & \bf{Capable} \\ \hline
+	my & -wIj & -wI' \\ \hline
+	your & -lIj & -lI' \\ \hline
+	his, her, its & -Daj & \textcolor{gray}{-Daj} \\ \hline
+	our & -maj & -ma' \\ \hline
+	your (plural) & -raj & -ra' \\ \hline
+	their & -chaj & \textcolor{gray}{-chaj} \\
+	\hline
+	\end{tabular}
+	\end{center}
+
 	\item[Type 5] Syntactic markers
 \end{description}
 
 \subsection {Verbs}
 
-Verb can take both prefixes and suffixes. Prefixes specify both the subject and object of the verb, including whether or not a subject and/or object exists. Verbs can use either the \textbf{Indicative mood} or the \textbf{Imperative mood}, which can also affect whether some suffixes can be used.
+Verb can take both prefixes and suffixes. Prefixes specify both the subject and object of the verb, including whether or not a subject and/or object exists. Verbs can use either the \textbf{Indicative mood} or the \textbf{Imperative mood}, which can also affect whether some suffixes can be used. There is no infinite form of a verb in Klingon.
 
 Verbs are categorized into \textbf{stative} and \textbf{dynamic}. Klingon does not use adjectives so stative verbs are used to describe nouns. For example to say "red ship", one would use the stative verb Doq meaning to be red/orange, "\textit{Duj Doq}".
 
-Verbs conform to nine ordered suffix types. Just like nouns, each suffix type, if present, must be appended to the verb stem in a specific order.
+Verbs conform to nine ordered suffix types. Just like nouns, each suffix type, if present, must be appended to the verb stem in a specific order. There can be no more than one suffix per type.
 
 \begin{description}
 	\item[Type 1] Reflexive, Reciprocal
