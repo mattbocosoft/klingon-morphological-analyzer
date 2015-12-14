@@ -53,37 +53,105 @@ Klingon has a complete grammar that can be spoken and used as a real language. M
 
 The number of fluent Klingon speakers is not known, but has been estimated between a few dozen~\cite{Okrent:09} to around 100~\cite{Kelly:13}. The Klingon Dictionary~\cite{Okrand:92} has sold more than 300,000 copies and has been translated into 4 languages. Klingon has entered into popular culture, and literary works such Shakespeare's Hamlet, Gilgamesh, and "A Christmas Carol" have been translated into Klingon. The Bible is currently being translated~\cite{KLI:Bible} but is a difficult task due to limited Klingon vocabulary. The current lexicon contains almost 3,000 words~\cite{Zrajm:12} and only grammar and words coined by Marc Okrand are considered canonical by the Klingon speaking community~\cite{KLI:Canonical}.
 
-\section{Klingon Grammar}
-
-\textbf{The proceedings are designed for printing on A4
-  paper.}
-\texttt{yusuke@nii.ac.jp}
-\textit{pdflatex}
-\texttt{ dvips}
-
-\begin{quote}
-Hello there
-\end{quote}
-
 \section{Klingon Morphology}
 
-Klingon is an agglutinative language that uses Object-Verb-Subject word order. Okrand categorizes down the Klingon word types into Nouns, Verbs, and "Left-overs".
+Klingon is an agglutinative language that uses Object-Verb-Subject word order. Okrand categorizes down the Klingon word types into Nouns, Verbs, and Other.
 
 \subsection {Nouns}
 
-Nouns are split into three types; body-parts, beings capable of language, and general nouns.
+Nouns can take five types of suffixes. Each suffix type, if present, must be appended to the noun stem in a specific order. The suffixes that a noun can take also depend on the type of noun. Nouns are split into three types; body-parts, beings capable of language, and general nouns.
 
-5 ordered suffix types
+\begin{description}
+	\item[Type 1] Augmentative/diminutive
+	\item[Type 2] Number
+
+	\begin{center}
+	\begin{tabular}{ | l | l | l | l |}
+	\hline
+	\bf{Noun Type} & \bf{Suffix} \\ \hline
+	Body-Part & -pu' \\ \hline
+	Language-Capable & -Du' \\ \hline
+	Generic & -mey \\
+	\hline
+	\end{tabular}
+	\end{center}
+	
+	The \textit{-mey} suffix may also be used with body-part and beings-capable-of-language nouns, but the resulting word acquires an additional meaning "\textit{all over the place}" on top of the plural meaning.
+	
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{l|l}
+\bf Klingon & \bf English \\
+jup & friend \\
+jupDu' & friends \\
+jupmey & friends all over the place \\
+\end{tabular}
+\end{center}
+\caption{Generic Plural Suffix Usage with Inherently Singular Nouns}
+\end{table}
+
+	There are some nouns that are inherently singular or inherently plural. For example the Klingon word \textit{peng} means torpedo (singular) but \textit{cha} means torpedos (plural). The singular forms of these types of nouns may also take the \textit{-mey} generic plural suffix, but the resulting word also acquires the "\textit{all over the place}" meaning.
+	
+	\begin{table}[h]
+\begin{center}
+\begin{tabular}{l|l}
+\bf Klingon & \bf English \\
+peng & torpedo \\
+pengmey & torpedos all over the place \\
+cha & torpedos \\
+**chamey & \it Not allowed \\
+\end{tabular}
+\end{center}
+\caption{Generic Plural Suffix Usage with Language-Capable Nouns}
+\end{table}
+
+	Lastly, nouns in Klingon are not required to take any plural suffix in order to be plural. The singular form of a noun may be used where the plural form would normally be used, and this is perfectly grammatically correct. The meaning is disambiguated using the context of the word in the sentence. Therefore \textit{jup} means both "friend" and "friends" depending on the context.
+
+	\item[Type 3] Qualification
+	\item[Type 4] Possession/specification
+	\item[Type 5] Syntactic markers
+\end{description}
 
 \subsection {Verbs}
 
-Verbs are categorized into 2 classes; stative and action. Verbs take both prefixes and suffixes.
+Verb can take both prefixes and suffixes. Prefixes specify both the subject and object of the verb, including whether or not a subject and/or object exists. Verbs can use either the \textbf{Indicative mood} or the \textbf{Imperative mood}, which can also affect whether some suffixes can be used.
 
-Take prefixes
-Take suffixes
-9 ordered suffix types
+Verbs are categorized into \textbf{stative} and \textbf{dynamic}. Klingon does not use adjectives so stative verbs are used to describe nouns. For example to say "red ship", one would use the stative verb Doq meaning to be red/orange, "\textit{Duj Doq}".
 
-\subsection {"Left-over" Words}
+Verbs conform to nine ordered suffix types. Just like nouns, each suffix type, if present, must be appended to the verb stem in a specific order.
+
+\begin{description}
+	\item[Type 1] Reflexive, Reciprocal
+	\item[Type 2] Volition, Necessity
+	\item[Type 3] Inceptive, Inchoative
+	\item[Type 4] Causative
+	\item[Type 5] Undefined Subject, Capability
+	\item[Type 6] Perfection, Uncertainty
+	\item[Type 7] Aspect
+	\item[Type 8] Honorific
+	\item[Type 9] Syntactic markers
+\end{description}
+
+In addition, a "rover" suffix type can be appended immediately after the verb stem or between the nine suffix types, however rover suffixes cannot be appended after a Type-9 suffix. There are no restrictions on the number of rover suffixes that may be used. A rover suffix's meaning applies to the suffix immediately proceeding it. For example the \textbf{negating} rover suffix \textit{be'} can be appended immediately after the verb stem and/or after any other suffix type.
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{l|l}
+\bf Klingon & \bf English \\
+Dub & to improve \\
+Dubbe' & to not improve \\
+DubmoH & to cause to improve \\
+DubmoHbe' & to not cause to improve \\
+Dubbe'moH & to cause to not improve \\
+Dubbe'moHbe' & to not cause to not improve
+\end{tabular}
+\end{center}
+\caption{Verb Rover Suffix Usage }
+\end{table}
+
+Rover suffixes can even be appended after other rover suffixes, e.g. \textit{Dubbe'be'} meaning \textit{to not not improve}.
+
+\subsection {Other Words}
 
 Pronouns
 
@@ -112,7 +180,7 @@ cha (torpedo) & cha'oy (dear torpedo) \\
 \hline
 \end{tabular}
 \end{center}
-\caption{\label{font-table} Endearment Suffix }
+\caption{Endearment Suffix }
 \end{table}
 
 \section{FST Implementation}
@@ -172,5 +240,17 @@ Samantha Murphy Kelly.
 \newblock \url{http://mashable.com/2013/05/18/klingon-star-trek/}
 
 \end{thebibliography}
+
+\section{Examples of text}
+
+\textbf{The proceedings are designed for printing on A4
+  paper.}
+\texttt{yusuke@nii.ac.jp}
+\textit{pdflatex}
+\texttt{ dvips}
+
+\begin{quote}
+Hello there
+\end{quote}
 
 \end{document}
