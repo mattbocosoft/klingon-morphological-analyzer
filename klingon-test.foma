@@ -111,7 +111,7 @@ regex {Duy[representative]}"[PL]""[SOCALLED]""[POSSESSIVE-3P-PL]""[N]" .o. Gramm
 regex {qam[foot]}"[PL]""[POSSESSIVE-1P-SG]""[LOCATIVE]""[N]" .o. Grammar .o. {qamDu'wIjDaq};
 regex {roj[peace]}"[DIMINUTIVE]""[SG]""[TOPIC]""[N]" .o. Grammar .o. {rojHom'e'};
 regex {baHwI'[gunner]}"[PL]""[THIS]""[N]" .o. Grammar .o. {baHwI'pu'vam};
-regex {veng[city]}"[DIMINUTIVE]""[PL-OTHERNOUN]""[SOCALLED]""[3P]""[PL]""[LOCATIVE]" .o. Grammar .o. {vengHommeyqoqchajDaq};
+regex {veng[city]}"[DIMINUTIVE]""[PL]""[SOCALLED]""[POSSESSIVE-3P-PL]""[LOCATIVE]""[N]" .o. Grammar .o. {vengHommeyqoqchajDaq};
 
 echo
 echo ~~~~~~~~~~~~~~
