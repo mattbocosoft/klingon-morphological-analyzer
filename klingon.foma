@@ -8,9 +8,8 @@ def Word [Alpha]+;
 echo
 echo ##Main Lex File##
 read lexc klingon.lexc
-# eliminate flags
 echo
-echo Removing Flags
+echo ##Removing Flags##
 eliminate flag NOUNTYPE
 eliminate flag MOOD
 eliminate flag VERBTYPE1
@@ -36,6 +35,7 @@ eliminate flag PLURAL
 eliminate flag SINGULAR
 eliminate flag OBJECT
 eliminate flag SUBJECT
+eliminate flags ! Eliminate the remaining flags in case I forgot any
 def Grammar;
 
 echo
