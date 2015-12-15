@@ -324,7 +324,7 @@ LEXICON VerbSuffix
 LEXICON VerbRoversSuffix
 ! "These suffixes have no defined position, and can go after the verb stem or after any suffix – even another rover – except after a type-9 suffix or where the result would be meaningless. They modify whatever directly precedes them."
 [NEG]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@be'			VerbSuffix;
-[NEG]@U.MOOD.IMPERATIVE@:@U.MOOD.IMPERATIVE@Qo'			VerbSuffix;
+[NEG]@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@P.VERBTYPE6.ON@@P.VERBTYPE7.ON@@P.VERBTYPE8.ON@@D.VERBTYPE9.ON@@U.MOOD.IMPERATIVE@:@P.VERBTYPE1.ON@@P.VERBTYPE2.ON@@P.VERBTYPE3.ON@@P.VERBTYPE4.ON@@P.VERBTYPE5.ON@@P.VERBTYPE6.ON@@P.VERBTYPE7.ON@@P.VERBTYPE8.ON@@D.VERBTYPE9.ON@@U.MOOD.IMPERATIVE@Qo'			VerbSuffix;
 [REFUSE]@U.MOOD.INDICATIVE@:@U.MOOD.INDICATIVE@Qo'			VerbSuffix;
 [EMPHASIS]:qu'								VerbSuffix;
 [REVERSE]:Ha'								VerbSuffix;
