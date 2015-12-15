@@ -118,8 +118,73 @@ echo ~~~~~~~~~~~~~~
 echo ~~~ VERBS ~~~
 echo ~~~~~~~~~~~~~~
 echo
-echo Type 1 Suffix
-
+echo ~# Basic prefixes #~
+echo ~~~~~~~~~~~~~~~~~~
+regex "[1P]""[SG]"{Qong[to-sleep]}"[V]""[INDICATIVE]" .o. Grammar .o. {jIQong};
+regex "[2P]""[SG]"{Qong[to-sleep]}"[V]""[INDICATIVE]" .o. Grammar .o. {bIQong};
+regex "[3P]""[SG]"{Qong[to-sleep]}"[V]""[INDICATIVE]" .o. Grammar .o. {Qong};
+regex "[1P]""[PL]"{Qong[to-sleep]}"[V]""[INDICATIVE]" .o. Grammar .o. {maQong};
+regex "[2P]""[PL]"{Qong[to-sleep]}"[V]""[INDICATIVE]" .o. Grammar .o. {SuQong};
+regex "[3P]""[PL]"{Qong[to-sleep]}"[V]""[INDICATIVE]" .o. Grammar .o. {Qong};
+regex "[1P]""[SG]""[OBJ-2P]""[OBJ-SG]"{legh[to-see]}"[V]""[INDICATIVE]" .o. Grammar .o. {qalegh};
+regex "[1P]""[SG]""[OBJ-3P]""[OBJ-SG]"{legh[to-see]}"[V]""[INDICATIVE]" .o. Grammar .o. {vIlegh};
+regex "[1P]""[SG]""[OBJ-2P]""[OBJ-PL]"{legh[to-see]}"[V]""[INDICATIVE]" .o. Grammar .o. {Salegh};
+regex "[2P]""[SG]""[OBJ-3P]""[OBJ-SG]"{legh[to-see]}"[V]""[INDICATIVE]" .o. Grammar .o. {Dalegh};
+regex "[2P]""[SG]""[OBJ-3P]""[OBJ-PL]"{legh[to-see]}"[V]""[INDICATIVE]" .o. Grammar .o. {Dalegh};
+regex "[2P]""[SG]""[OBJ-1P]""[OBJ-PL]"{legh[to-see]}"[V]""[INDICATIVE]" .o. Grammar .o. {julegh};
+regex "[3P]""[SG]""[OBJ-3P]""[OBJ-SG]"{legh[to-see]}"[V]""[INDICATIVE]" .o. Grammar .o. {legh};
+regex "[3P]""[PL]""[OBJ-3P]""[OBJ-PL]"{legh[to-see]}"[V]""[INDICATIVE]" .o. Grammar .o. {legh};
+regex "[2P]""[SG]""[OBJ-1P]""[OBJ-SG]"{legh[to-see]}"[V]""[INDICATIVE]" .o. Grammar .o. {cholegh};
+regex "[3P]""[SG]""[OBJ-1P]""[OBJ-SG]"{legh[to-see]}"[V]""[INDICATIVE]" .o. Grammar .o. {mulegh};
+regex "[2P]""[PL]""[OBJ-1P]""[OBJ-SG]"{legh[to-see]}"[V]""[INDICATIVE]" .o. Grammar .o. {tulegh};
+regex "[3P]""[SG]""[OBJ-2P]""[OBJ-SG]"{legh[to-see]}"[V]""[INDICATIVE]" .o. Grammar .o. {Dulegh};
+regex "[1P]""[PL]""[OBJ-2P]""[OBJ-SG]"{legh[to-see]}"[V]""[INDICATIVE]" .o. Grammar .o. {pIlegh};
+regex "[3P]""[PL]""[OBJ-3P]""[OBJ-SG]"{legh[to-see]}"[V]""[INDICATIVE]" .o. Grammar .o. {lulegh};
+echo
+echo ~# Imperative #~
+echo ~~~~~~~~~~~~~~
+regex "[2P]""[SG]"{Qong[to-sleep]}"[V]""[IMPERATIVE]" .o. Grammar .o. {yIQong};
+regex "[2P]""[PL]"{Qong[to-sleep]}"[V]""[IMPERATIVE]" .o. Grammar .o. {peQong};
+regex "[2P]""[SG]""[OBJ-1P]""[OBJ-SG]"{qIp[to-hit]}"[V]""[IMPERATIVE]" .o. Grammar .o. {HIqIp};
+regex "[2P]""[SG]""[OBJ-1P]""[OBJ-PL]"{qIp[to-hit]}"[V]""[IMPERATIVE]" .o. Grammar .o. {ghoqIp};
+regex "[2P]""[SG]""[OBJ-3P]""[OBJ-SG]"{qIp[to-hit]}"[V]""[IMPERATIVE]" .o. Grammar .o. {yIqIp};
+regex "[2P]""[SG]""[OBJ-3P]""[OBJ-PL]"{qIp[to-hit]}"[V]""[IMPERATIVE]" .o. Grammar .o. {tIqIp};
+echo
+echo ~# Suffixes #~
+echo ~~~~~~~~~~~~~~
+echo
+echo Type 1: Oneself/one another
+regex "[1P]""[SG]"{qIp[to-hit]}"[REFLEXIVE]""[V]""[INDICATIVE]" .o. Grammar .o. {jIqIp'egh};
+regex "[2P]""[SG]"{qIp[to-hit]}"[REFLEXIVE]""[V]""[INDICATIVE]" .o. Grammar .o. {bIqIp'egh};
+regex "[3P]""[SG]"{qIp[to-hit]}"[REFLEXIVE]""[V]""[INDICATIVE]" .o. Grammar .o. {qIp'egh};
+regex "[2P]""[SG]"{ja'[to-tell,to-report]}"[REFLEXIVE]""[V]""[IMPERATIVE]" .o. Grammar .o. {yIja''egh};
+regex "[2P]""[PL]"{ja'[to-tell,to-report]}"[REFLEXIVE]""[V]""[IMPERATIVE]" .o. Grammar .o. {peja''egh};
+regex "[1P]""[PL]"{qIp[to-hit]}"[RECIPROCAL]""[V]""[INDICATIVE]" .o. Grammar .o. {maqIpchuq};
+regex "[2P]""[PL]"{qIp[to-hit]}"[RECIPROCAL]""[V]""[INDICATIVE]" .o. Grammar .o. {SuqIpchuq};
+regex "[3P]""[PL]"{qIp[to-hit]}"[RECIPROCAL]""[V]""[INDICATIVE]" .o. Grammar .o. {qIpchuq};
+regex "[2P]""[PL]"{qIp[to-hit]}"[RECIPROCAL]""[V]""[IMPERATIVE]" .o. Grammar .o. {peqIpchuq};
+echo
+echo Type 2: Volition/predisposition
+regex "[1P]""[SG]""[OBJ-3P]""[OBJ-SG]"{legh[to-see]}"[REQUIRED]""[V]""[INDICATIVE]" .o. Grammar .o. {vIleghnIS};
+regex "[2P]""[SG]"{Sop[to-eat]}"[REQUIRED]""[V]""[INDICATIVE]" .o. Grammar .o. {bISopnIS};
+regex "[3P]""[SG]"{Hegh[to-die]}"[WILLING]""[V]""[INDICATIVE]" .o. Grammar .o. {Heghqang};
+regex "[1P]""[SG]""[OBJ-2P]""[OBJ-SG]"{ja'[to-tell,to-report]}"[WILLING]""[V]""[INDICATIVE]" .o. Grammar .o. {qaja'qang};
+regex "[3P]""[SG]"{Hegh[to-die]}"[PREPARED]""[V]""[INDICATIVE]" .o. Grammar .o. {Heghrup};
+regex "[1P]""[SG]""[OBJ-2P]""[OBJ-SG]"{legh[to-see]}"[PREPARED]""[V]""[INDICATIVE]" .o. Grammar .o. {qaleghrup};
+regex "[3P]""[PL]""[OBJ-1P]""[OBJ-PL]"{ja'[to-tell,to-report]}"[PREPARED]""[V]""[INDICATIVE]" .o. Grammar .o. {nuja'rup};
+regex "[3P]""[SG]""[OBJ-3P]""[OBJ-SG]"{poj[to-analyze]}"[SET-UP]""[V]""[INDICATIVE]" .o. Grammar .o. {pojbeH};
+regex "[3P]""[SG]""[OBJ-3P]""[OBJ-SG]"{lab[to-transmit]}"[SET-UP]""[V]""[INDICATIVE]" .o. Grammar .o. {labbeH};
+regex "[2P]""[SG]""[OBJ-1P]""[OBJ-SG]"{HoH[to-kill]}"[AFRAID]""[V]""[INDICATIVE]" .o. Grammar .o. {choHoHvIp};
+regex "[3P]""[PL]""[OBJ-1P]""[OBJ-SG]"{qIp[to-hit]}"[AFRAID]""[V]""[INDICATIVE]" .o. Grammar .o. {muqIpvIp};
+echo
+echo Type 3: Change
+regex "[1P]""[PL]"{Do'[to-be-fortunate]}"[STATECHANGE]""[V]""[STATIVE]""[INDICATIVE]" .o. Grammar .o. {maDo'choH};
+regex "[3P]""[SG]"{ghoS[to-go-onward,to-approach]}"[STATECHANGE]""[V]""[INDICATIVE]" .o. Grammar .o. {ghoSchoH};
+regex "[1P]""[SG]""[OBJ-3P]""[OBJ-SG]"{nej[to-look-for,to-seek,to-search-for]}"[RESUME]""[V]""[INDICATIVE]" .o. Grammar .o. {vInejqa'};
+echo
+echo Type 4: Cause
+regex "[1P]""[SG]""[OBJ-3P]""[OBJ-SG]"{chen[to-take-form]}"[CAUSATIVE]""[V]""[INDICATIVE]" .o. Grammar .o. {vIchenmoH};
+regex "[2P]""[SG]""[OBJ-1P]""[OBJ-SG]"{Qoy[to-hear]}"[CAUSATIVE]""[V]""[IMPERATIVE]" .o. Grammar .o. {HIQoymoH};
 
 echo
 echo ###################
