@@ -9,13 +9,40 @@ echo
 echo ##Main Lex File##
 read lexc klingon.lexc
 # eliminate flags
+echo
+echo Removing Flags
+eliminate flag NOUNTYPE
+eliminate flag MOOD
+eliminate flag VERBTYPE1
+eliminate flag VERBTYPE2
+eliminate flag VERBTYPE3
+eliminate flag VERBTYPE4
+eliminate flag VERBTYPE5
+eliminate flag VERBTYPE6
+eliminate flag VERBTYPE7
+eliminate flag VERBTYPE8
+eliminate flag VERBTYPE9
+eliminate flag INDICATIVE
+eliminate flag VERBSUFFIX
+eliminate flag VERBTYPE
+eliminate flag POS
+eliminate flag MULTIPLE1234567
+eliminate flag MULTIPLE123456
+eliminate flag MULTIPLE12345
+eliminate flag MULTIPLE1234
+eliminate flag MULTIPLE123
+eliminate flag MULTIPLE12
+eliminate flag PLURAL
+eliminate flag SINGULAR
+eliminate flag OBJECT
+eliminate flag SUBJECT
 def Grammar;
 
 echo
 echo ##Rules##
 
 # If the noun to which the endearment suffix is added ends with a vowel, a glottal stop is inserted between them
-def EndearmentGlottalStop "-" -> "'" || Vowel "@D.NOUNTYPE1.ON@""@P.NOUNTYPE1.ON@" _;
+def EndearmentGlottalStop "-" -> "'" || Vowel _;
 def RemoveEndearmentMarker "-" -> 0;
 
 def Grammar Grammar .o. EndearmentGlottalStop .o. RemoveEndearmentMarker;
