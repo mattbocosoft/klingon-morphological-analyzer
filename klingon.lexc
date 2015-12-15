@@ -635,12 +635,6 @@ Hogh[week]:Hogh					NounSuffix;
 SuS[wind,breeze]:SuS				NounSuffix;
 mu'[word]:mu'					NounSuffix;
 DIS[year]:DIS					NounSuffix;
-
-
-LEXICON NounOtherLocation
-naDev[hereabouts]:naDev			NounSuffix;
-pa'[there,over-there]:pa'			NounSuffix;
-Dat[everywhere]:Dat				NounSuffix;
 vogh[somewhere]:vogh				NounSuffix;
 nIH[right-side]:nIH				NounSuffix;
 poS[left-side]:poS				NounSuffix;
@@ -652,6 +646,11 @@ retlh[area-beside]:retlh			NounSuffix;
 joj[area-between]:joj				NounSuffix;
 qoD[inside]:qoD					NounSuffix;
 Hur[outside]:Hur				NounSuffix;
+
+LEXICON NounOtherLocation
+naDev[hereabouts]:naDev			NounSuffix;
+pa'[there,over-there]:pa'			NounSuffix;
+Dat[everywhere]:Dat				NounSuffix;
 
 
 LEXICON NounSuffix
