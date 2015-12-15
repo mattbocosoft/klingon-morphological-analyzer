@@ -1,10 +1,19 @@
 source klingon.foma
 
+# Read in words from file and create automaton
+define CorrectWords @txt"words-sonnet18.txt";
+
+# How many predictions are correct:
+def TestNumberCorrect CorrectWords & [Grammar .o. CorrectWords].l;
+
+# How many are incorrect:
+def TestNumberIncorrect CorrectWords - [Grammar .o. CorrectWords].l;
+
 # TESTS
 
 echo
 echo ###################
-echo POSITIVE TEST CASES (Success: >1 States)
+echo RECALL TEST CASES (Success: >1 States)
 echo ###################
 echo
 echo ~~~~~~~~~~~~~~
@@ -28,41 +37,93 @@ regex {'ejyo'[starfleet]}"[SG]""[N]" .o. Grammar .o. {'ejyo'};
 echo
 echo ~# Suffixes #~
 echo ~~~~~~~~~~~~~~
-
+echo
+echo Type 1: Augmentative/diminutive
+regex {SuS[wind,breeze]}"[AUGMENTATIVE]""[SG]""[N]" .o. Grammar .o. {SuS'a'};
+regex {Qagh[mistake]}"[AUGMENTATIVE]""[SG]""[N]" .o. Grammar .o. {Qagh'a'};
+regex {woQ[power]}"[AUGMENTATIVE]""[SG]""[N]" .o. Grammar .o. {woQ'a'};
+regex {SuS[wind,breeze]}"[DIMINUTIVE]""[SG]""[N]" .o. Grammar .o. {SuSHom};
+regex {roj[peace]}"[DIMINUTIVE]""[SG]""[N]" .o. Grammar .o. {rojHom};
+echo
+echo Type 2: Number
+# a noun without a plural suffix may still refer to more than one entity
+regex {yaS[officer]}"[SG]""[N]" .o. Grammar .o. {yaS};
+regex {yaS[officer]}"[PL]""[N]" .o. Grammar .o. {yaS};
+regex {yaS[officer]}"[PL]""[N]" .o. Grammar .o. {yaSpu'};
+regex {qam[foot]}"[PL]""[N]" .o. Grammar .o. {qamDu'};
+regex {tlhon[nostril]}"[PL]""[N]" .o. Grammar .o. {tlhonDu'};
+regex {mID[colony]}"[PL]""[N]" .o. Grammar .o. {mIDmey};
+regex {yuQ[planet]}"[PL]""[N]" .o. Grammar .o. {yuQmey};
+regex {puq[child,offspring]}"[SG]""[N]" .o. Grammar .o. {puq};
+regex {puq[child,offspring]}"[PL]""[N]" .o. Grammar .o. {puqpu'};
+regex {puq[child,offspring]}"[PL]""[ALL-OVER-THE-PLACE]""[N]" .o. Grammar .o. {puqmey};
+regex {DoS[target]}"[SG]""[N]" .o. Grammar .o. {DoS};
+regex {peng[torpedo]}"[SG]""[N]" .o. Grammar .o. {peng};
+regex {vIj[thruster]}"[SG]""[N]" .o. Grammar .o. {vIj};
+regex {DoS[target]}"[PL]""[ALL-OVER-THE-PLACE]""[N]" .o. Grammar .o. {DoSmey};
+regex {peng[torpedo]}"[PL]""[ALL-OVER-THE-PLACE]""[N]" .o. Grammar .o. {pengmey};
+echo ---False Positives (Success: 1 State)
+regex Grammar .o. {tlhonmey};
+regex Grammar .o. {ray'mey};
+regex Grammar .o. {chamey};
+regex Grammar .o. {chuyDaHmey};
+echo
+echo Type 3: Qualification
+regex {roj[peace]}"[SG]""[SOCALLED]""[N]" .o. Grammar .o. {rojqoq};
+regex {Duj[ship,vessel]}"[SG]""[DUBITATIVE]""[N]" .o. Grammar .o. {DujHey};
+regex {Duj[ship,vessel]}"[SG]""[ACCURATE]""[N]" .o. Grammar .o. {Dujna'};
+echo
+echo Type 4: Possession/specification
+regex {juH[home,house]}"[SG]""[POSSESSIVE-1P-SG]""[N]" .o. Grammar .o. {juHwIj};
+regex {juH[home,house]}"[SG]""[POSSESSIVE-2P-SG]""[N]" .o. Grammar .o. {juHlIj};
+regex {juH[home,house]}"[SG]""[POSSESSIVE-3P-PL]""[N]" .o. Grammar .o. {juHchaj};
+regex {joH[lord]}"[SG]""[POSSESSIVE-1P-SG]""[N]" .o. Grammar .o. {joHwI'};
+regex {puq[child,offspring]}"[SG]""[POSSESSIVE-2P-SG]""[N]" .o. Grammar .o. {puqlI'};
+regex {puq[child,offspring]}"[SG]""[POSSESSIVE-2P-SG]""[DEROGATORY]""[N]" .o. Grammar .o. {puqlIj};
+regex {joH[lord]}"[SG]""[POSSESSIVE-1P-SG]""[DEROGATORY]""[N]" .o. Grammar .o. {joHwIj};
+regex {nuH[weapon]}"[SG]""[THIS]""[N]" .o. Grammar .o. {nuHvam};
+regex {yuQ[planet]}"[SG]""[THIS]""[N]" .o. Grammar .o. {yuQvam};
+regex {nuH[weapon]}"[PL]""[THIS]""[N]" .o. Grammar .o. {nuHmeyvam};
+regex {nuH[weapon]}"[SG]""[THAT]""[N]" .o. Grammar .o. {nuHvetlh};
+regex {yuQ[planet]}"[SG]""[THAT]""[N]" .o. Grammar .o. {yuQvetlh};
+regex {nuH[weapon]}"[PL]""[THAT]""[N]" .o. Grammar .o. {nuHmeyvetlh};
+echo ---False Positives (Success: 1 State)
+regex {puq[child,offspring]}"[SG]""[POSSESSIVE-2P-SG]""[N]" .o. Grammar .o. {puqlIj}; ! Requires derogatory tag
+echo
+echo Type 5: Syntactic markers
+regex {pa'[room]}"[SG]""[LOCATIVE]""[N]" .o. Grammar .o. {pa'Daq};
+regex {Dung[area-above]}"[SG]""[LOCATIVE]""[N]" .o. Grammar .o. {DungDaq};
+regex {pa'[room]}"[SG]""[ABLATIVE]""[N]" .o. Grammar .o. {pa'vo'};
+regex {SuS[wind,breeze]}"[SG]""[CAUSAL]""[N]" .o. Grammar .o. {SuSmo'};
+regex {Qu'[mission]}"[SG]""[DATIVE]""[N]" .o. Grammar .o. {Qu'vaD};
+# Do not Support: regex {jIH[I,me][PRONOUN]}"[SG]""[TOPIC]""[PRONOUN]" .o. Grammar .o. {jIH'e'};
+regex {De'[data,information]}"[SG]""[TOPIC]""[N]" .o. Grammar .o. {De''e'};
+echo ---False Positives (Success: 1 State)
+# "Unlike other nouns, [Location Nouns] are never followed by the locative suffix." - TKD
+regex {pa'[there,over-there]}"[SG]""[LOCATIVE]""[N]" .o. Grammar .o. {pa'Daq};
+regex {naDev[hereabouts]}"[SG]""[LOCATIVE]""[N]" .o. Grammar .o. {naDevDaq};
+regex {Dat[everywhere]}"[SG]""[LOCATIVE]""[N]" .o. Grammar .o. {DatDaq};
+echo
+echo Multiple Types
+regex {Qagh[mistake]}"[DIMINUTIVE]""[PL]""[DUBITATIVE]""[POSSESSIVE-2P-SG]""[CAUSAL]""[N]" .o. Grammar .o. {QaghHommeyHeylIjmo'};
+regex {pa'[room]}"[SG]""[POSSESSIVE-1P-SG]""[LOCATIVE]""[N]" .o. Grammar .o. {pa'wIjDaq};
+regex {Duy[representative]}"[PL]""[SOCALLED]""[POSSESSIVE-3P-PL]""[N]" .o. Grammar .o. {Duypu'qoqchaj};
+regex {qam[foot]}"[PL]""[POSSESSIVE-1P-SG]""[LOCATIVE]""[N]" .o. Grammar .o. {qamDu'wIjDaq};
+regex {roj[peace]}"[DIMINUTIVE]""[SG]""[TOPIC]""[N]" .o. Grammar .o. {rojHom'e'};
+regex {baHwI'[gunner]}"[PL]""[THIS]""[N]" .o. Grammar .o. {baHwI'pu'vam};
 regex {veng[city]}"[DIMINUTIVE]""[PL-OTHERNOUN]""[SOCALLED]""[3P]""[PL]""[LOCATIVE]" .o. Grammar .o. {vengHommeyqoqchajDaq};
 
-echo Plurals (from Wikipedia)
-regex {tlhIngan[Klingon]}"[N]""[PL_Lang]" .o. Grammar .o. {tlhInganpu'};
-regex {jagh[enemy]}"[N]""[PL_Lang]" .o. Grammar .o. {jaghpu'};
-regex {mIn[eye]}"[N]""[PL_Body]" .o. Grammar .o. {mInDu'};
-regex {targh[targ]}"[N]""[PL_Obj]" .o. Grammar .o. {targhmey};
 echo
-echo Plural Exceptions
-regex {jengva'[plate]}"[N]""[PL_Obj]" .o. Grammar .o. {ngop};
-echo
-echo Other Nouns
-regex {loD[man]}"[N]""[SG]" .o. Grammar .o. {loD};
-regex {be'[woman]}"[N]""[SG]" .o. Grammar .o. {be'};
-regex {puq[child]}"[N]""[SG]" .o. Grammar .o. {puq};
-regex {puqloD[son]}"[N]""[SG]" .o. Grammar .o. {puqloD};
-regex {puqbe'[daughter]}"[N]""[SG]" .o. Grammar .o. {puqbe'};
-regex {Hov}"[N]""[SG]" .o. Grammar .o. {Hov};
-regex {Hov}"[N]""[PL]" .o. Grammar .o. {Hov};
-regex {Hov}"[N]""[PL]" .o. Grammar .o. {Hovmey};
-regex {'e'}"N" .o. Grammar .o. {that};
-
-echo
-echo --VERBS
+echo ~~~~~~~~~~~~~~
+echo ~~~ VERBS ~~~
+echo ~~~~~~~~~~~~~~
 echo
 echo Type 1 Suffix
-regex "[1P]""[PL]"{'ang[to-reveal]}"[REFLEXIVE]""[INDICATIVE]" .o. Grammar .o. {ma'ang'egh};
-regex "[1P]""[SG]"{yaj[to-understand]}"[NEG]""[INDICATIVE]" .o. Grammar .o. {jIyajbe'}; ! Present
-regex "[1P]""[SG]"{bom[to-sing]}"[INDICATIVE]" .o. Grammar .o. {vIbom}; ! Present
 
 
 echo
 echo ###################
-echo NEGATIVE TEST CASES (Success: 1 State)
+echo FALSE POSITIVE TEST CASES (Success: 1 State)
 echo ###################
 echo
 def NounType1 [{'a'} | {Hom} | {oy}];
