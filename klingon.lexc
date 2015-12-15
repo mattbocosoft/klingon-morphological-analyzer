@@ -2,7 +2,7 @@
 ! https://en.wikipedia.org/wiki/Klingon_grammar
 ! https://www.youtube.com/watch?v=e5Did-eVQDc
 
-Multichar_Symbols [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] [ALL-OVER-THE-PLACE] @U.NOUNTYPE.BODYPART@ @U.NOUNTYPE.CAPABLELANGUAGE@ @D.NOUNTYPE.CAPABLELANGUAGE@ @U.NOUNTYPE.OTHER@ [NEG] [1P] [2P] [3P] [SG] [PL] [PL-IRREGULAR] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED-SUBJ] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DVN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE] [REFUSE] [EMPHASIS] [REVERSE] @U.MOOD.INDICATIVE@ @U.MOOD.IMPERATIVE@ @U.MOOD.INFINITIVE@ @D.MOOD@ @R.MOOD@ @D.VERBTYPE1.ON@ @P.VERBTYPE1.ON@ @D.VERBTYPE2.ON@ @P.VERBTYPE2.ON@ @D.VERBTYPE3.ON@ @P.VERBTYPE3.ON@ @D.VERBTYPE4.ON@ @P.VERBTYPE4.ON@ @D.VERBTYPE5.ON@ @P.VERBTYPE5.ON@ @D.VERBTYPE6.ON@ @P.VERBTYPE6.ON@ @D.VERBTYPE7.ON@ @P.VERBTYPE7.ON@ @D.VERBTYPE8.ON@ @P.VERBTYPE8.ON@ @D.VERBTYPE9.ON@ @P.VERBTYPE9.ON@ @P.INDICATIVE.UNSPECIFIED@ @R.INDICATIVE.UNSPECIFIED@ @C.INDICATIVE@ @D.INDICATIVE.UNSPECIFIED@ @P.VERBSUFFIX.CONTINUOUS@ @R.VERBSUFFIX.CONTINUOUS@ @U.VERBTYPE.STATIVE@ @D.VERBTYPE.STATIVE@ @R.VERBTYPE.STATIVE@ @U.VERBTYPE.DYNAMIC@ [ORDINAL] [REPEATCOUNT] @P.POS.ADVERB@ @D.POS.ADVERB@ @R.POS.ADVERB@ [ADV] [NUMBER] @P.MULTIPLE1234567.ON@ @D.MULTIPLE1234567.ON@ @P.MULTIPLE123456.ON@ @D.MULTIPLE123456.ON@ @P.MULTIPLE12345.ON@ @D.MULTIPLE12345.ON@ @P.MULTIPLE1234.ON@ @D.MULTIPLE1234.ON@ @P.MULTIPLE123.ON@ @D.MULTIPLE123.ON@ @P.MULTIPLE12.ON@ @D.MULTIPLE12.ON@ @P.PLURAL.IRREGULAR@ @D.PLURAL.IRREGULAR@ @P.SINGULAR.IRREGULAR@ @D.SINGULAR.IRREGULAR@ @R.SINGULAR.IRREGULAR@ [POSSESSIVE-1P-SG] [POSSESSIVE-2P-SG] [POSSESSIVE-3P-SG] [POSSESSIVE-1P-PL] [POSSESSIVE-2P-PL] [POSSESSIVE-3P-PL] [PRONOUN] [CONJ] [N] [V] [ADV] [ADJ] [EXCLAMATION] [NAME] [QUESTION] [STATIVE] @P.OBJECT.NONE@ @R.OBJECT.NONE@ @U.SUBJECT.PLURAL@ @U.SUBJECT.SINGULAR@
+Multichar_Symbols [AUGMENTATIVE] [DIMINUTIVE] [ENDEARMENT] [SOCALLED] [DUBITATIVE] [ACCURATE] [THIS] [THAT] [LOCATIVE] [ABLATIVE] [CAUSAL] [DATIVE] [TOPIC] [ALL-OVER-THE-PLACE] @U.NOUNTYPE.BODYPART@ @U.NOUNTYPE.CAPABLELANGUAGE@ @D.NOUNTYPE.CAPABLELANGUAGE@ @U.NOUNTYPE.OTHER@ @U.NOUNTYPE.LOCATION@ @D.NOUNTYPE.LOCATION@ [NEG] [1P] [2P] [3P] [SG] [PL] [PL-IRREGULAR] [OBJ-1P] [OBJ-2P] [OBJ-3P] [OBJ-SG] [OBJ-PL] [INDICATIVE] [IMPERATIVE] [REFLEXIVE] [RECIPROCAL] [REQUIRED] [WILLING] [PREPARED] [SET-UP] [AFRAID] [STATECHANGE] [RESUME] [CAUSATIVE] [UNDEFINED-SUBJ] [CAPABLE] [BEST] [CERTAIN] [UNCERTAIN] [OBVIOUS] [PERFECT] [PERFECTPURPOSE] [CONTINUOUS] [CONTINUOUSEND] [HONOR] [PERSON] [DVN] [INTEROGATIVE] [BEFORE] [SIMULTANEOUS] [AFTER] [CONDITIONAL] [CAUSE] [RELATIVE] [PURPOSE] [REFUSE] [EMPHASIS] [REVERSE] @U.MOOD.INDICATIVE@ @U.MOOD.IMPERATIVE@ @U.MOOD.INFINITIVE@ @D.MOOD@ @R.MOOD@ @D.VERBTYPE1.ON@ @P.VERBTYPE1.ON@ @D.VERBTYPE2.ON@ @P.VERBTYPE2.ON@ @D.VERBTYPE3.ON@ @P.VERBTYPE3.ON@ @D.VERBTYPE4.ON@ @P.VERBTYPE4.ON@ @D.VERBTYPE5.ON@ @P.VERBTYPE5.ON@ @D.VERBTYPE6.ON@ @P.VERBTYPE6.ON@ @D.VERBTYPE7.ON@ @P.VERBTYPE7.ON@ @D.VERBTYPE8.ON@ @P.VERBTYPE8.ON@ @D.VERBTYPE9.ON@ @P.VERBTYPE9.ON@ @P.INDICATIVE.UNSPECIFIED@ @R.INDICATIVE.UNSPECIFIED@ @C.INDICATIVE@ @D.INDICATIVE.UNSPECIFIED@ @P.VERBSUFFIX.CONTINUOUS@ @R.VERBSUFFIX.CONTINUOUS@ @U.VERBTYPE.STATIVE@ @D.VERBTYPE.STATIVE@ @R.VERBTYPE.STATIVE@ @U.VERBTYPE.DYNAMIC@ [ORDINAL] [REPEATCOUNT] @P.POS.ADVERB@ @D.POS.ADVERB@ @R.POS.ADVERB@ [ADV] [NUMBER] @P.MULTIPLE1234567.ON@ @D.MULTIPLE1234567.ON@ @P.MULTIPLE123456.ON@ @D.MULTIPLE123456.ON@ @P.MULTIPLE12345.ON@ @D.MULTIPLE12345.ON@ @P.MULTIPLE1234.ON@ @D.MULTIPLE1234.ON@ @P.MULTIPLE123.ON@ @D.MULTIPLE123.ON@ @P.MULTIPLE12.ON@ @D.MULTIPLE12.ON@ @P.PLURAL.IRREGULAR@ @D.PLURAL.IRREGULAR@ @P.SINGULAR.IRREGULAR@ @D.SINGULAR.IRREGULAR@ @R.SINGULAR.IRREGULAR@ [POSSESSIVE-1P-SG] [POSSESSIVE-2P-SG] [POSSESSIVE-3P-SG] [POSSESSIVE-1P-PL] [POSSESSIVE-2P-PL] [POSSESSIVE-3P-PL] [PRONOUN] [CONJ] [N] [V] [ADV] [ADJ] [EXCLAMATION] [NAME] [QUESTION] [STATIVE] @P.OBJECT.NONE@ @R.OBJECT.NONE@ @U.SUBJECT.PLURAL@ @U.SUBJECT.SINGULAR@ [DEROGATORY]
 
 LEXICON Root
 						Verb; ! Includes Adjective part-of-speech via adjectival verbs
@@ -117,14 +117,17 @@ Dach[to-be-absent]:Dach			VerbSuffix;
 loj[to-be-all-gone]:loj			VerbSuffix;
 mob[to-be-alone]:mob				VerbSuffix;
 nID[to-attempt,to-try]:nID			VerbSuffix;
+'IH[to-be-beautiful,handsome]:'IH		VerbSuffix;
 tIn[to-be-big]:tIn				VerbSuffix;
 Dal[to-be-boring]:Dal				VerbSuffix;
 jot[to-be-calm]:jot				VerbSuffix;
 Say'[to-be-clean]:Say'				VerbSuffix;
+Huv[to-be-clear,unobstructed]:Huv		VerbSuffix;
 bIr[to-be-cold]:bIr				VerbSuffix;
 mIS[to-be-confused,to-be-mixed-up]:mIS	VerbSuffix;
 ngeb[to-be-conterfeit,to-be-false,to-be-fake]:ngeb	VerbSuffix;
 maw'[to-be-crazy]:maw'				VerbSuffix;
+Hurgh[to-be-dark]:Hurgh			VerbSuffix;
 pIm[to-be-different]:pIm			VerbSuffix;
 lam[to-be-dirty]:lam				VerbSuffix;
 chech[to-be-drunk]:chech			VerbSuffix;
@@ -133,16 +136,23 @@ po'[to-be-expert,to-be-skilled]:po'		VerbSuffix;
 noy[to-be-famous,to-be-well-known]:noy	VerbSuffix;
 pI'[to-be-fat]:pI'				VerbSuffix;
 puS[to-be-few]:puS				VerbSuffix;
+qu'[to-be-fierce]:qu'				VerbSuffix;
 Do'[to-be-fortunate]:Do'			VerbSuffix;
+SuD[to-be-green,blue,yellow]:SuD		VerbSuffix;
 QaQ[to-be-good]:QaQ				VerbSuffix;
 let[to-be-hard-like-a-rock]:let		VerbSuffix;
 Quch[to-be-happy]:Quch				VerbSuffix;
+joch[to-be-harmful]:joch			VerbSuffix;
 pIv[to-be-healthy]:pIv				VerbSuffix;
+quv[to-be-honored]:quv				VerbSuffix;
+tuj[to-be-hot]:tuj				VerbSuffix;
 ghung[to-be-hungry]:ghung			VerbSuffix;
 nIb[to-be-identical]:nIb			VerbSuffix;
+jub[to-be-immortal]:jub			VerbSuffix;
 Doj[to-be-impressive]:Doj			VerbSuffix;
 Daj[to-be-interesting]:Daj			VerbSuffix;
 buD[to-be-lazy]:buD				VerbSuffix;
+wov[to-be-light,bright]:wov			VerbSuffix;
 rur[to-be-like]:rur				VerbSuffix;
 tIq[to-be-long]:tIq				VerbSuffix;
 law'[to-be-many]:law'				VerbSuffix;
@@ -154,6 +164,7 @@ chuS[to-be-noisy]:chuS				VerbSuffix;
 ngo'[to-be-old]:ngo'				VerbSuffix;
 poS[to-be-open]:poS				VerbSuffix;
 Doq[to-be-orange,to-be-red]:Doq		VerbSuffix;
+Don[to-be-parallel]:Don			VerbSuffix;
 bel[to-be-pleased]:bel				VerbSuffix;
 Hem[to-be-proud]:Hem				VerbSuffix;
 Hev[to-receive]:Hev				VerbSuffix;
@@ -163,6 +174,7 @@ lugh[to-be-right,to-be-correct]:lugh		VerbSuffix;
 ghegh[to-be-rough]:ghegh			VerbSuffix;
 mach[to-be-small]:mach				VerbSuffix;
 jej[to-be-sharp]:jej				VerbSuffix;
+boch[to-be-shiny]:boch				VerbSuffix;
 run[to-be-short]:run				VerbSuffix;
 nap[to-be-simple]:nap				VerbSuffix;
 Hab[to-be-smooth]:Hab				VerbSuffix;
@@ -176,6 +188,7 @@ lI'[to-be-useful]:lI'				VerbSuffix;
 puj[to-be-weak]:puj				VerbSuffix;
 yIQ[to-be-wet]:yIQ				VerbSuffix;
 chIS[to-be-white]:chIS				VerbSuffix;
+Dun[to-be-wonderful,great]:Dun			VerbSuffix;
 muj[to-be-wrong]:muj				VerbSuffix;
 
 
@@ -184,6 +197,7 @@ LEXICON DynamicVerb
 laj[to-accept]:laj				VerbSuffix;
 chav[to-achieve]:chav				VerbSuffix;
 chel[to-add]:chel				VerbSuffix;
+Ho'[to-admire]:Ho'				VerbSuffix;
 chID[to-admit]:chID				VerbSuffix;
 qeS[to-advise]:qeS				VerbSuffix;
 chaw'[to-allow]:chaw'				VerbSuffix;
@@ -200,7 +214,9 @@ chop[to-bite]:chop				VerbSuffix;
 pIch[to-blame]:pIch				VerbSuffix;
 tIj[to-board]:tIj				VerbSuffix;
 ngIp[to-borrow]:ngIp				VerbSuffix;
+mIy[to-brag]:mIy				VerbSuffix;
 ghor[to-break]:ghor				VerbSuffix;
+tlhuH[to-breathe]:tlhuH			VerbSuffix;
 meQ[to-burn]:meQ				VerbSuffix;
 je'[to-buy,to-purchase]:je'			VerbSuffix;
 SaH[to-care]:SaH				VerbSuffix;
@@ -214,6 +230,7 @@ chargh[to-conquer]:chargh			VerbSuffix;
 ngaS[to-contain]:ngaS				VerbSuffix;
 SeH[to-control]:SeH				VerbSuffix;
 ngach[to-debate]:ngach				VerbSuffix;
+Sab[to-decline,deteriorate]:Sab		VerbSuffix;
 baghHa'[to-decrypt]:baghHa'			VerbSuffix;
 poQ[to-demand,to-require]:poQ			VerbSuffix;
 Del[to-describe]:Del				VerbSuffix;
@@ -222,6 +239,7 @@ Hegh[to-die]:Hegh				VerbSuffix;
 ngab[to-disappear,to-vanish]:ngab		VerbSuffix;
 par[to-dislike]:par				VerbSuffix;
 Hon[to-doubt]:Hon				VerbSuffix;
+Haj[to-dread]:Haj				VerbSuffix;
 naj[to-dream]:naj				VerbSuffix;
 chagh[to-drop]:chagh				VerbSuffix;
 Sop[to-eat]:Sop					VerbSuffix;
@@ -255,10 +273,13 @@ Dev[to-lead,to-guide]:Dev			VerbSuffix;
 ghoj[to-learn]:ghoj				VerbSuffix;
 mej[to-leave]:mej				VerbSuffix;
 nep[to-lie,to-fib]:nep				VerbSuffix;
+vuS[to-limit]:vuS				VerbSuffix;
+yIn[to-live]:yIn				VerbSuffix;
 nej[to-look-for,to-seek,to-search-for]:nej	VerbSuffix;
 ghom[to-meet]:ghom				VerbSuffix;
 chIj[to-navigate]:chIj				VerbSuffix;
 Sutlh[to-negotiate]:Sutlh			VerbSuffix;
+Sang[to-obliterate]:Sang			VerbSuffix;
 DIl[to-pay]:DIl					VerbSuffix;
 nab[to-plan]:nab				VerbSuffix;
 maS[to-prefer]:maS				VerbSuffix;
@@ -269,6 +290,7 @@ laD[to-read]:laD				VerbSuffix;
 ghov[to-recognize]:ghov			VerbSuffix;
 chup[to-recommend,to-suggest]:chup		VerbSuffix;
 pay[to-regret]:pay				VerbSuffix;
+ratlh[to-remain]:ratlh				VerbSuffix;
 qaw[to-remember]:qaw				VerbSuffix;
 leS[to-rest,to-relax]:leS			VerbSuffix;
 chegh[to-return-to]:chegh			VerbSuffix;
@@ -282,7 +304,7 @@ legh[to-see]:legh				VerbSuffix;
 ngev[to-sell]:ngev				VerbSuffix;
 ngeH[to-send]:ngeH				VerbSuffix;
 bach[to-shoot]:bach				VerbSuffix;
-bom[to-sing]:bom				VerbSuffix;
+bom[to-sing,chant]:bom				VerbSuffix;
 ba'[to-sit]:ba'					VerbSuffix;
 Qong[to-sleep]:Qong				VerbSuffix;
 mev[to-stop,to-cease]:mev			VerbSuffix;
@@ -453,6 +475,7 @@ LEXICON Noun
 @U.NOUNTYPE.BODYPART@				NounBodyPart;
 @U.NOUNTYPE.CAPABLELANGUAGE@			NounCapableOfLanguage;
 @U.NOUNTYPE.OTHER@				NounOther;
+@U.NOUNTYPE.LOCATION@				NounOtherLocation;
 
 ! LEXICON NounName
 ! be'etor[B'Etor]:be'etor			NounSuffix;
@@ -462,13 +485,16 @@ DeS[arm]:DeS					NounSuffix;
 porgh[body]:porgh				NounSuffix;
 mIn[eye]:mIn					NounSuffix;
 nItlh[finger]:nItlh				NounSuffix;
+ro'[fist]:ro'					NounSuffix;
 qam[foot]:qam					NounSuffix;
 ghop[hand]:ghop					NounSuffix;
 nach[head]:nach					NounSuffix;
 'uS[leg]:'uS					NounSuffix;
 nuj[mouth]:nuj					NounSuffix;
 ghIch[nose]:ghIch				NounSuffix;
+tlhon[nostril]:tlhon				NounSuffix;
 DIr[skin]:DIr					NounSuffix;
+Ho'[tooth]:Ho'					NounSuffix;
 
 
 LEXICON NounCapableOfLanguage
@@ -481,6 +507,7 @@ HoD[captain]:HoD				NounSuffix;
 puq[child,offspring]:puq			NounSuffix;
 nuch[coward]:nuch				NounSuffix;
 puqbe'[daughter]puqbe'				NounSuffix;
+jagh[enemy]:jagh				NounSuffix;
 vav[father]:vav					NounSuffix;
 jup[friend]:jup					NounSuffix;
 be'Hom[girl]:be'Hom				NounSuffix;
@@ -489,7 +516,9 @@ baHwI'[gunner]:baHwI'				NounSuffix;
 DeghwI'[helmsman]:DeghwI'			NounSuffix;
 loDnal[husband]:loDnal				NounSuffix;
 ngan[inhabitant]:ngan				NounSuffix;
+joH[lord]:joH					NounSuffix;
 loD[male,man]:loD				NounSuffix;
+yaS[officer]:yaS				NounSuffix;
 ghot[person]:ghot				NounSuffix;
 nuv[person,humanoid]:nuv			NounSuffix;
 Duy[representative]:Duy			NounSuffix;
@@ -514,21 +543,26 @@ may'[battle]:may'				NounSuffix;
 paq[book]:paq					NounSuffix;
 DaS[boot]:DaS					NounSuffix;
 nIQ[breakfast]:nIQ				NounSuffix;
+tlhuH[breath]:tlhuH				NounSuffix;
 quS[chair]:quS					NounSuffix;
 choH[change]:choH				NounSuffix;
 veng[city]:veng					NounSuffix;
 qoj[cliff]:qoj					NounSuffix;
 wep[coat]:wep					NounSuffix;
+mID[colony]:mID					NounSuffix;
 De'wI'[computer]:De'wI'			NounSuffix;
 Hatlh[country]:Hatlh				NounSuffix;
+He[course,route]:He				NounSuffix;
 De'[data,information]:De'			NounSuffix;
 jaj[day]:jaj					NounSuffix;
+pem[daytime]:pem				NounSuffix;
 QIH[destruction]:QIH				NounSuffix;
 mu'ghom[dictionary]:mu'ghom			NounSuffix;
 lojmIt[door,gate]:lojmIt			NounSuffix;
-jagh[enemy]:jagh				NounSuffix;
+bov[era]:bov					NounSuffix;
 Qagh[error]:error				NounSuffix;
 ngoD[fact]:ngoD					NounSuffix;
+San[fate]:San					NounSuffix;
 Soj[food]:Soj					NounSuffix;
 ngem[forest,woods]:ngem			NounSuffix;
 nob[gift]:nob					NounSuffix;
@@ -536,14 +570,18 @@ HIvje'[glass,tumble]:HIvje'			NounSuffix;
 ngoQ[goal,purpose]:ngoQ			NounSuffix;
 pab[grammar]:pab				NounSuffix;
 ghom[group]:ghom				NounSuffix;
+tuj[hot]:tuj					NounSuffix;
 QaH[help]:QaH					NounSuffix;
 Degh[helm]:Degh					NounSuffix;
 juH[home,house]:juH				NounSuffix;
+quv[honor]:quv					NounSuffix;
 qach[idea]:qach					NounSuffix;
 Hol[language]:Hol				NounSuffix;
 ngeng[lake]:ngeng				NounSuffix;
+yIn[life]:yIn					NounSuffix;
 bang[love]:bang					NounSuffix;
 ghItlh[manuscript]:ghItlh			NounSuffix;
+Qu'[mission]:Qu'				NounSuffix;
 Qagh[mistake]:Qagh				NounSuffix;
 jar[month]:jar					NounSuffix;
 maS[moon]:maS					NounSuffix;
@@ -563,22 +601,25 @@ bortaS[revenge]:bortaS				NounSuffix;
 pa'[room]:pa'					NounSuffix;
 pegh[secret]:pegh				NounSuffix;
 mu'tlhegh[sentence]:mu'tlhegh			NounSuffix;
+QIb[shadow]:QIb					NounSuffix;
 Duj[ship,vessel]:Duj				NounSuffix;
+leSpoH[short-leave]:leSpoH			NounSuffix;
 bach[shot]:bach					NounSuffix;
 ghu'[situation]:ghu'				NounSuffix;
 chal[sky]:chal					NounSuffix;
+bom[song]:bom					NounSuffix;
 Hal[source]:Hal					NounSuffix;
 baghneQ[spoon]:baghneQ				NounSuffix;
 Hov[star]:Hov					NounSuffix;
 'ejyo'[starfleet]:'ejyo'			NounSuffix;
 'ejDo'[starship]:'ejDo'			NounSuffix;
+Dotlh[status]:Dotlh				NounSuffix;
 lut[story]:lut					NounSuffix;
 pat[system]:pat					NounSuffix;
 targh[targ]:targh				NounSuffix; ! A "targ" is a Klingon animal somewhat resembling a boar
 DoS[target]@P.SINGULAR.IRREGULAR@:DoS@P.SINGULAR.IRREGULAR@		NounSuffix;
 ray'[targets]@P.PLURAL.IRREGULAR@:ray'@P.PLURAL.IRREGULAR@		NounSuffix;
 nger[theory]nger				NounSuffix;
-pa'[there,over-there]:pa'			NounSuffix;
 Doch[thing]:Doch				NounSuffix;
 vIj[thruster]@P.SINGULAR.IRREGULAR@:vIj@P.SINGULAR.IRREGULAR@	NounSuffix;
 chuyDaH[thrusters]@P.PLURAL.IRREGULAR@:chuyDaH@P.PLURAL.IRREGULAR@	NounSuffix;
@@ -586,6 +627,7 @@ poH[time]:poH					NounSuffix;
 DaHjaj[today]:DaHjaj				NounSuffix;
 peng[torpedo]@P.SINGULAR.IRREGULAR@:peng@P.SINGULAR.IRREGULAR@	NounSuffix;
 cha[torpedoes]@P.PLURAL.IRREGULAR@:cha@P.PLURAL.IRREGULAR@		NounSuffix;
+'u'[universe]:'u'				NounSuffix;
 ghogh[voice]:ghogh				NounSuffix;
 bIQ[water]:bIQ					NounSuffix;
 nuH[weapon]:nuH					NounSuffix;
@@ -593,9 +635,12 @@ Hogh[week]:Hogh					NounSuffix;
 SuS[wind,breeze]:SuS				NounSuffix;
 mu'[word]:mu'					NounSuffix;
 DIS[year]:DIS					NounSuffix;
-						NounOtherLocation;
+
 
 LEXICON NounOtherLocation
+naDev[hereabouts]:naDev			NounSuffix;
+pa'[there,over-there]:pa'			NounSuffix;
+Dat[everywhere]:Dat				NounSuffix;
 vogh[somewhere]:vogh				NounSuffix;
 nIH[right-side]:nIH				NounSuffix;
 poS[left-side]:poS				NounSuffix;
@@ -644,14 +689,19 @@ LEXICON NounType3Suffix ! accuracy, speaker's attitude toward the noun
 
 
 LEXICON NounType4Suffix ! possession, determiners
+! It is grammatically correct to use the regular possessive suffixes with nouns referring to beings capable of speech (as in {puqlIj} <your child>), but such constructions are considered derogatory
 [POSSESSIVE-1P-SG]@D.NOUNTYPE.CAPABLELANGUAGE@:@D.NOUNTYPE.CAPABLELANGUAGE@wIj				NounType5Suffix;
+[POSSESSIVE-1P-SG][DEROGATORY]@U.NOUNTYPE.CAPABLELANGUAGE@:wIj@U.NOUNTYPE.CAPABLELANGUAGE@			NounType5Suffix;
 [POSSESSIVE-1P-SG]@U.NOUNTYPE.CAPABLELANGUAGE@:wI'@U.NOUNTYPE.CAPABLELANGUAGE@				NounType5Suffix;
-[POSSESSIVE-2P-SG]@D.NOUNTYPE.CAPABLELANGUAGE@:@D.NOUNTYPE.CAPABLELANGUAGE@lIj					NounType5Suffix;
+[POSSESSIVE-2P-SG]@D.NOUNTYPE.CAPABLELANGUAGE@:@D.NOUNTYPE.CAPABLELANGUAGE@lIj				NounType5Suffix;
+[POSSESSIVE-2P-SG][DEROGATORY]@U.NOUNTYPE.CAPABLELANGUAGE@:@U.NOUNTYPE.CAPABLELANGUAGE@lIj			NounType5Suffix;
 [POSSESSIVE-2P-SG]@U.NOUNTYPE.CAPABLELANGUAGE@:lI'@U.NOUNTYPE.CAPABLELANGUAGE@				NounType5Suffix;
 [POSSESSIVE-3P-SG]:Daj					NounType5Suffix;
-[POSSESSIVE-1P-PL]@D.NOUNTYPE.CAPABLELANGUAGE@:maj@D.NOUNTYPE.CAPABLELANGUAGE@					NounType5Suffix;
+[POSSESSIVE-1P-PL]@D.NOUNTYPE.CAPABLELANGUAGE@:maj@D.NOUNTYPE.CAPABLELANGUAGE@				NounType5Suffix;
+[POSSESSIVE-1P-PL][DEROGATORY]@U.NOUNTYPE.CAPABLELANGUAGE@:maj@U.NOUNTYPE.CAPABLELANGUAGE@			NounType5Suffix;
 [POSSESSIVE-1P-PL]@U.NOUNTYPE.CAPABLELANGUAGE@:ma'@U.NOUNTYPE.CAPABLELANGUAGE@				NounType5Suffix;
-[POSSESSIVE-2P-PL]@D.NOUNTYPE.CAPABLELANGUAGE@:raj@D.NOUNTYPE.CAPABLELANGUAGE@					NounType5Suffix;
+[POSSESSIVE-2P-PL]@D.NOUNTYPE.CAPABLELANGUAGE@:raj@D.NOUNTYPE.CAPABLELANGUAGE@				NounType5Suffix;
+[POSSESSIVE-2P-PL][DEROGATORY]@U.NOUNTYPE.CAPABLELANGUAGE@:raj@U.NOUNTYPE.CAPABLELANGUAGE@			NounType5Suffix;
 [POSSESSIVE-2P-PL]@U.NOUNTYPE.CAPABLELANGUAGE@:ra'@U.NOUNTYPE.CAPABLELANGUAGE@				NounType5Suffix;
 [POSSESSIVE-3P-PL]:chaj					NounType5Suffix;
 [THIS]:vam					NounType5Suffix;
@@ -662,7 +712,7 @@ LEXICON NounType4Suffix ! possession, determiners
 
 
 LEXICON NounType5Suffix ! syntactic role
-[LOCATIVE]:Daq					NounTag;
+@D.NOUNTYPE.LOCATION@[LOCATIVE]:@D.NOUNTYPE.LOCATION@Daq	NounTag; ! Unlike other nouns, these three words are never followed by the locative suffix.
 [ABLATIVE]:vo'					NounTag;
 [CAUSAL]:mo'					NounTag;
 [DATIVE]:vaD					NounTag;
