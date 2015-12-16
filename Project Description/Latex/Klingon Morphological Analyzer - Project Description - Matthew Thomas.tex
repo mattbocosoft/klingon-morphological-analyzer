@@ -52,27 +52,27 @@ The number of fluent Klingon speakers is not known, but has been estimated betwe
 
 \section{FST Implementation}
 
-The morphological analyzer FST consists of two files; a lexc file and a foma file. References to The Klingon Dictionary and other sources are captured in comments throughout the FST files for reference and as an explanation of implementation decisions.
+The morphological analyzer FST consists of two files; a lexc file and a foma file. Quotes from The Klingon Dictionary and other sources are captured in comments throughout the FST files to explain of implementation decisions.
 
 \subsection{\textit{lexc} file}
 
-The lexc file describes Klingon morphology and contains the basic set of Klingon lexical entries. I use A-P entires of the KLCP1, which are the 502 basic words of first level of KLI's ``Klingon Language Certification Program''~\cite{Zrajm:12}. Each lexical entry contains the stem and the english meaning on the upper-side (analysis) of the FST.
+The lexc file describes Klingon morphology and contains the basic set of Klingon lexical entries. I use entries A-P of the KLCP1, which are the 502 basic words of first level of KLI's ``Klingon Language Certification Program''~\cite{Zrajm:12}. Each lexical entry contains the stem and the english meaning on the upper-side (analysis) of the FST.
 
 Beesley and Karttunen~\shortcite{BeesleyKarttunen:02} flag diacritics are used to restrict the stem and affix combinations according to the grammar description.
 
 \subsection{\textit{foma} file}
 
-The foma file creates an FST from the lexc and adds morphophonogical rewrite rules. The single Klingon morphophonological rule is implemented in the \textit{foma} file as a rewrite rule.
+The foma file creates an FST from the lexc and adds the single Klingon morphophonogical rewrite rule.
 
 \section{Klingon Morphology}
 
-Klingon is an agglutinative language that uses Object-Verb-Subject word order. Okrand categorizes all Klingon words into Nouns, Verbs, and Other. The morphological analyzer is specifically designed and tested to work with Nouns and Verbs, however some additional work was done to account for the words in the 'Other' category.
+Klingon is an agglutinative language that uses Object-Verb-Subject word order. Okrand categorizes all Klingon words into Nouns, Verbs, and Other. The morphological analyzer is specifically designed and tested to work with Nouns and Verbs, however some additional work was done to handle for the words in the left-over (chuvmey) categories.
 
 \subsection {Nouns}
 
 Nouns can take five types of suffixes. Each suffix type, if present, must be appended to the noun stem in a specific order and there can be no more than one suffix per type. Nouns are divided into three categories; body-parts, beings capable of language, and general nouns. Some suffixes can only be appended to certain noun categories or their meaning changes when they are appended appended.
 
-Nouns use the "NOUNTYPE" feature flag to track the noun category; \texttt{@U.NOUNTYPE.BODYPART@}, \texttt{@U.NOUNTYPE.CAPABLELANGUAGE@}, \texttt{@U.NOUNTYPE.OTHER@} and \texttt{@U.NOUNTYPE.LOCATION@}.
+Nouns use the NOUNTYPE feature flag to track the noun category; \texttt{@U.NOUNTYPE.BODYPART@}, \texttt{@U.NOUNTYPE.CAPABLELANGUAGE@}, \texttt{@U.NOUNTYPE.OTHER@} and \texttt{@U.NOUNTYPE.LOCATION@}.
 
 Below are the noun suffix types and the relevant rules for each type.
 
@@ -111,7 +111,7 @@ The \textit{-mey} suffix may also be used with body-part and beings-capable-of-l
 	\caption{Generic Plural Suffix Usage with Inherently Singular Nouns}
 	\end{table}
 
-Some nouns are inherently singular or inherently plural. For example the Klingon word \textit{peng} means torpedo (singular) but \textit{cha} means torpedos (plural). The singular forms of these types of nouns may also take the \textit{-mey} generic plural suffix, but the resulting word also acquires the ``\textit{all over the place}'' meaning.
+Some nouns are inherently singular or inherently plural. For example the Klingon word \textit{peng} means torpedo (singular) but \textit{cha} means torpedos (plural). The singular forms of these types of nouns can take the \textit{-mey} generic plural suffix, but the resulting word acquires the ``\textit{all over the place}'' meaning.
 	
 If a noun is inherently singular or inherently plural, it is marked using the Positive flag diacritic \texttt{@P.SINGULAR.IRREGULAR@} or \texttt{@P.PLURAL.IRREGULAR@}.
 	
@@ -164,10 +164,10 @@ Language-capable nouns can still take the generic suffix but the meaning becomes
 \cite{Okrand:92} notes that the locative suffix \textit{-Daq} cannot be appended to three adverb-like Klingon nouns.
 
 \begin{quote}
-"It is worth noting at this point that the concepts expressed by the English adverbs (here, there), and (everywhere) are expressed by nouns in Klingon: \textit{naDev} (hereabouts), \textit{pa'} (there-abouts), \textit{Dat} (everywhere). These words may perhaps be translated more literally as ``area around here,'' ``area over there,'' and ``all places,'' respectively. Unlike other nouns, these three words are never followed by the locative suffix."
+``It is worth noting at this point that the concepts expressed by the English adverbs (here, there), and (everywhere) are expressed by nouns in Klingon: \textit{naDev} (hereabouts), \textit{pa'} (there-abouts), \textit{Dat} (everywhere). These words may perhaps be translated more literally as ``area around here,'' ``area over there,'' and ``all places,'' respectively. Unlike other nouns, these three words are never followed by the locative suffix.''
 \end{quote}
 
-These three nouns are tracked by setting the NOUNTYPE flag (\texttt{@U.NOUNTYPE.LOCATION"@"}). These can be prevented from taking the locative suffix using the Disallow flag test (\texttt{@D.NOUNTYPE.LOCATION@}).
+These three nouns are tracked by setting the NOUNTYPE flag (\texttt{@U.NOUNTYPE.LOCATION@}). These can be prevented from taking the locative suffix using the Disallow flag test (\texttt{@D.NOUNTYPE.LOCATION@}).
 
 \textbf{Noun Tag}
 
@@ -223,7 +223,7 @@ Rover suffixes can even be appended after other rover suffixes, e.g. \textit{Dub
 
 The [REFUSE] tag/suffix \textit{Qo'} can only be appended if the MOOD is Indicative (\texttt{@U.MOOD.INDICATIVE@}).
 
-The suffix \textit{be'} meaning "negation" can only be appended if the MOOD is Indicative (\texttt{@U.MOOD.INDICATIVE@}). Otherwise if the MOOD is Imperative, a different suffix \textit{Qo'} must be used to negate the verb. The Indicative negation suffix \textit{Qo'} can only occur at the end of the nine suffix types, so I turn the verb suffix gate type switches on to apply this restriction. If the MOOD is Imperative but the suffix \textit{Qo'} is used, then the suffix takes on a meaning of refusal.
+The suffix \textit{be'} meaning ``negation'' can only be appended if the MOOD is Indicative (\texttt{@U.MOOD.INDICATIVE@}). Otherwise if the MOOD is Imperative, a different suffix \textit{Qo'} must be used to negate the verb. The Indicative negation suffix \textit{Qo'} can only occur at the end of the nine suffix types, so I turn the verb suffix gate type switches on to apply this restriction. If the MOOD is Imperative but the suffix \textit{Qo'} is used, then the suffix takes on a meaning of refusal.
 
 \textbf{Suffix Type Gates}
 
@@ -231,7 +231,7 @@ Just like nouns, verb suffix types need to occur in a certain order. However bec
 
 \textbf{Suffix Type 1} Reflexive, Reciprocal
 	
-This suffix type can only be used with the set of prefixes that mean "no object".
+This suffix type can only be used with the set of prefixes that mean ``no object''.
 
 The \textit{-chuq} reciprocal suffix is additionally restricted to use when the subject is plural (\texttt{@U.SUBJECT.PLURAL@}) and the verb type is dynamic (\texttt{@U.VERBTYPE.DYNAMIC@}).
 
@@ -360,7 +360,7 @@ Klingon has only a single morphophonological rule. The endearment noun suffix \t
 
 More than 150 test cases are contained in a separate \textit{foma} file. These test cases follow Okrand's examples in The Klingon Dictionary. The morphology \textit{lexc} was modified until all test cases passed and recall reached 100\%.
 
-In order to obtain a quantitative analysis of the morphological analyzer, I compiled a list of words from The Klingon Dictionary and The Klingon Hamlet~\cite{0964434512}. Of the 267 words on the list, the morphological analyzer accounted for 264. The remaining 3 words were \texttt{DatDaq}, \texttt{tIpuq} and \texttt{naDevDaq}. Both \texttt{DatDaq} and \texttt{naDevDaq} are explicitly forbidden by Marc Okrand in The Klingon Dictionary as there are location nouns with the locative suffix, therefore these words are technically not grammatically. The last word \texttt{tIpuq} comes from the Sonnet-18 translation in Hamlet and appears to translate to "bud" (as in rose bud), however this word does not appear in any canonical sources of Klingon. Therefore I consider the morphological analyzer to have achieved 100\% recall for the target word list.
+In order to obtain a quantitative analysis of the morphological analyzer, I compiled a list of words from The Klingon Dictionary and The Klingon Hamlet~\cite{0964434512}. Of the 267 words on the list, the morphological analyzer accounted for 264. The remaining 3 words were \texttt{DatDaq}, \texttt{tIpuq} and \texttt{naDevDaq}. Both \texttt{DatDaq} and \texttt{naDevDaq} are explicitly forbidden by Marc Okrand in The Klingon Dictionary as there are location nouns with the locative suffix, therefore these words are technically not grammatically. The last word \texttt{tIpuq} comes from the Sonnet-18 translation in Hamlet and appears to translate to (rose) ``bud'', however this word does not appear in any canonical sources of Klingon. Therefore I consider the morphological analyzer to have achieved 100\% recall for the target word list.
 
 \bibliographystyle{apalike}
 \bibliography{mybibfile}
