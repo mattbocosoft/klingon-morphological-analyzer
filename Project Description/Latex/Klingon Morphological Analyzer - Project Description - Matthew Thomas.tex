@@ -197,7 +197,7 @@ Finally the verb type (dynamic vs stative) is tracked using the VERBTYPE flag.
 
 \textbf{Rover Suffixes}
 
-In addition, a ``rover'' suffix type can be appended immediately after the verb stem or between the nine suffix types, however rover suffixes cannot be appended after a Type 9 suffix. There are no restrictions on the number of rover suffixes that may be used. A rover suffix's meaning applies to the suffix immediately proceeding it. For example the \textbf{negating} rover suffix \textit{be'} can be appended immediately after the verb stem and/or after any other suffix type.
+In addition, a ``rover'' suffix type can be appended immediately after the verb stem or between the nine suffix types, however rover suffixes cannot be appended after a Type 9 suffix. There are no restrictions on the number of rover suffixes that may be used. A rover suffix modifies whatever directly immediately precedes it. For example the \textbf{negating} rover suffix \textit{be'} can be appended immediately after the verb stem and/or after any other suffix type.
 
 	\begin{table}[h]
 	\begin{center}
@@ -255,7 +255,9 @@ The simultaneous suffix \textit{-vIS} can only be used when the type 7 continuou
 
 \textbf{Verb Tag}
 
-The last LEXICON in the verb path is the verb tag. Using the MOOD unification flag test, either the [INDICATIVE] or [IMPERATIVE] tag is appended (\texttt{@U.MOOD.INDICATIVE@} or \texttt{@U.MOOD.IMPERATIVE@}).
+Verbs are tagged with [V]. if the verb is stative \texttt{@U.VERBTYPE.STATIVE@} then an additional tag [STATIVE] is appended as well.
+
+If the mood is infinitive \texttt{@U.MOOD.INFINITIVE@}, stative nouns can attach a noun suffix type 5. Otherwise either the [INDICATIVE] or [IMPERATIVE] tag is appended to the verb using the unification tests (\texttt{@U.MOOD.INDICATIVE@} and \texttt{@U.MOOD.IMPERATIVE@}).
 
 \subsection {Other Words}
 
@@ -289,7 +291,10 @@ Pronouns may be used as nouns however appending suffixes to pronouns is outside 
 
 \textbf{Numbers}
 
-The Klingon number system is base ten and numbers are combined just like in English with higher-order number coming first. For example 10,503 would be ten THOUSAND five HUNDRED and three. The thousands value needs to proceed the hundreds value. In order to enforce this ordering, I needed applied the same gating system that was used for the verb ordered suffix types.
+The Klingon number system is base ten and numbers are combined just like in English with higher-order number coming first. For example 10,503 would be ten THOUSAND five HUNDRED and three. The thousands value needs to preceed the hundreds value. In order to enforce this ordering, I needed applied the same gating system that was used for the verb ordered suffix types.
+
+Numbers can take the ordinal suffix \textit{-DIch} or 
+Numbers can act as adverbs if given 
 
 \textbf{Conjunctions}
 
@@ -313,13 +318,19 @@ In Klingon a different set of conjunctions is used when combining sentences than
 
 \textbf{Adverbials}
 
-
+Adverbials take a single reversal suffix \textit{Ha'} and no prefixes. Numbers can also act as adverbs if they take the repeat-count suffix \textit{-logh}.
 
 \textbf{Exclamations}
 
+There are a closed set of exclamations and they are handled in the \textit{lexc} file. Exclamations do not take affixes.
+
 \textbf{Names}
 
+A few common Klingon names are added to the \textit{lexc} file without any special handling.
+
 \textbf{Questions}
+
+There are a closed set of questions and they are handled in the \textit{lexc} file. Questions do not take affixes.
 
 \section{Klingon Morphophonology}
 
