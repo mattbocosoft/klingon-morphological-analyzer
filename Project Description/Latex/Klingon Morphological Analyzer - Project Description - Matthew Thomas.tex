@@ -21,6 +21,7 @@
 \usepackage{latexsym}
 \usepackage{color}
 \usepackage[dvipsnames]{xcolor}
+\usepackage{booktabs}
 
 %\setlength\titlebox{5cm}
 
@@ -70,16 +71,17 @@ Below are the noun suffix types and the relevant rules for each type.
 	\item[Type 2] Number
 
 	\begin{center}
-	\begin{tabular}{ | l | l | l | l |}
-	\hline
-	\bf{Noun Type} & \bf{Suffix} \\ \hline
-	Body-Part & -pu' \\ \hline
-	Language-Capable & -Du' \\ \hline
+	\begin{tabular}{lll}
+	\toprule
+	\bf{Noun Type} & \bf{Suffix} \\
+	\midrule
+	Body-Part & -pu' \\
+	Language-Capable & -Du' \\
 	Generic & -mey \\
-	\hline
+	\bottomrule
 	\end{tabular}
 	\end{center}
-	
+
 	The \textit{-mey} suffix may also be used with body-part and beings-capable-of-language nouns, but the resulting word acquires an additional meaning ``\textit{all over the place}'' on top of the plural meaning.
 	
 \begin{table}[h]
@@ -226,9 +228,9 @@ Beesley and Karttunen~\shortcite{BeesleyKarttunen:02} flag diacritics are used t
 
 The Noun LEXICON uses Unification flags to mark the noun category:
 \begin{itemize}
-	\item \textit{@U.NOUNTYPE.BODYPART@}
-	\item \textit{@U.NOUNTYPE.CAPABLELANGUAGE@}
-	\item \textit{@U.NOUNTYPE.OTHER@}.
+	\item \texttt{@U.NOUNTYPE.BODYPART@}
+	\item \texttt{@U.NOUNTYPE.CAPABLELANGUAGE@}
+	\item \texttt{@U.NOUNTYPE.OTHER@}.
 \end{itemize}
 
 If a noun is inherently singular or inherently plural, it is marked using the Positive flag diacritic \textit{@P.SINGULAR.IRREGULAR@} or \textit{@P.PLURAL.IRREGULAR@}.
@@ -237,74 +239,17 @@ If a noun is inherently singular or inherently plural, it is marked using the Po
 
 The foma file creates an FST from the lexc and adds morphophonogical rewrite rules. The single Klingon morphophonological rule is implemented in the \textit{foma} file as a rewrite rule.
 
-\subsection{Test case \textit{foma} file}
+\section{Evaluation}
 
-Positive examples of Klingon words are taken from The Klingon Dictionary to assure that morphology recall is 100\%.
+More than 150 test cases are contained in a separate \textit{foma} file. These test cases follow Okrand's examples in The Klingon Dictionary. The morphology \textit{lexc} was modified until all test cases passed and recall reached 100\%.
+
+In order to obtain a quantitative analysis of the morphological analyzer, I compiled a list of words from The Klingon Dictionary and The Klingon Hamlet~\cite{0964434512}. Of the 267 words on the list, the morphological analyzer accounted for 264. The remaining 3 words were \texttt{DatDaq}, \texttt{tIpuq} and \texttt{naDevDaq}. Both \texttt{DatDaq} and \texttt{naDevDaq} are explicitly forbidden by Marc Okrand in The Klingon Dictionary as there are location nouns with the locative suffix, therefore these words are technically not grammatically. The last word \texttt{tIpuq} comes from the Sonnet-18 translation in Hamlet and appears to translate to "bud" (as in rose bud), however this word does not appear in any canonical sources of Klingon. Therefore I consider the morphological analyzer to have achieved 100\% recall for the target word list.
 
 % include your own bib file like this:
 %\bibliographystyle{acl}
 %\bibliography{acl2014}
 
-\begin{thebibliography}{}
-
-\bibitem[\protect\citename{Okrand}1992]{Okrand:92}
-Marc Okrand.
-\newblock 1992.
-\newblock {\em The Klingon Dictionary}, 2nd edition.
-\newblock New York: Pocket Books, Simon and Schuster Inc.
-
-\bibitem[\protect\citename{KLI}Development]{KLI:Development}
-\newblock {\em Development and Use of the Klingon Language.}
-\newblock The Klingon Language Institute
-\newblock \url{http://www.kli.org/about-klingon/klingon-history/}
-
-\bibitem[\protect\citename{KLI}Sounds]{KLI:Sounds}
-\newblock {\em The Sounds of Klingon.}
-\newblock The Klingon Language Institute
-\newblock \url{http://www.speakklingon.info/about-klingon/sounds-of-klingon/}
-
-\bibitem[\protect\citename{KLI}Canonical]{KLI:Canonical}
-\newblock {\em Canonical Sources.}
-\newblock The Klingon Language Institute
-\newblock \url{http://www.kli.org/wiki/Canonical_sources}
-
-\bibitem[\protect\citename{Okrent}2009]{Okrent:09}
-Arika Okrent.
-\newblock 2009.
-\newblock {\em In the Land of Invented Languages}, 1st edition.
-\newblock New York: Spiegel \& Grau
-
-\bibitem[\protect\citename{Zrajm}2012]{Zrajm:12}
-Zrajm.
-\newblock 2012.
-\newblock {\em Klingon Word Database}, 1st edition.
-\newblock Klingonska Akademien
-
-\bibitem[\protect\citename{Kelly}2013]{Kelly:13}
-Samantha Murphy Kelly.
-\newblock 2013.
-\newblock {\em How Klingon Became a Universal Language}
-\newblock Mashable.com
-\newblock \url{http://mashable.com/2013/05/18/klingon-star-trek/}
-
-\bibitem[\protect\citename{BeesleyKarttunen}2002]{BeesleyKarttunen:02}
-Beesley and Karttunen.
-\newblock 2002.
-\newblock {\em Finite-State Morphology: Xerox Tools and Techniques}, 2nd edition.
-\newblock Xerox Corporation
-
-\end{thebibliography}
-
-\section{Examples of text}
-
-\textbf{The proceedings are designed for printing on A4
-  paper.}
-\texttt{yusuke@nii.ac.jp}
-\textit{pdflatex}
-\texttt{ dvips}
-
-\begin{quote}
-Hello there
-\end{quote}
+\bibliographystyle{apalike}
+\bibliography{mybibfile}
 
 \end{document}
