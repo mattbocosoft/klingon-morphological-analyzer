@@ -76,11 +76,11 @@ Nouns can take five types of suffixes. Each suffix type, if present, must be app
 
 Below are the noun suffix types and the relevant rules for each type.
 
-\textbf{Type 1} Augmentative/diminutive
+\textbf{Suffix Type 1} Augmentative/diminutive
 
 The endearment suffix \textit{-oy} adds a dash '-' which is replaced with either null or with a glottal stop in the \textit{foma} file depending on whether the last letter of the noun stem is a consonant or vowel, respectively.
 
-\textbf{Type 2} Number
+\textbf{Suffix Type 2} Number
 
 	\begin{center}
 	\begin{tabular}{lll}
@@ -135,9 +135,9 @@ Lastly, nouns in Klingon are not required to take any plural suffix in order to 
 	
 The Type-2 suffix group uses the NOUNTYPE, SINGULAR and PLURAL flag diacritics to control which suffixes can be applied and what their meaning is.
 
-\textbf{Type 3} Qualification
+\textbf{Suffix Type 3} Qualification
 	
-\textbf{Type 4} Possession/specification
+\textbf{Suffix Type 4} Possession/specification
 	
 Possession suffixes are selected depending on whether the \textit{object} being referred to is language-capable.
 
@@ -159,7 +159,7 @@ Possession suffixes are selected depending on whether the \textit{object} being 
 	
 Language-capable nouns can still take the generic suffix but the meaning becomes derogatory~\cite{Okrand:92}. The noun type is tracked using the NOUNTYPE flag and in this case the tag [DEROGATORY] is appended to the analysis.
 
-\textbf{Type 5} Syntactic markers
+\textbf{Suffix Type 5} Syntactic markers
 
 \cite{Okrand:92} notes that the locative suffix \textit{-Daq} cannot be appended to three adverb-like Klingon nouns.
 
@@ -185,29 +185,19 @@ Verbs are categorized into \textbf{stative} and \textbf{dynamic}. Klingon does n
 
 Verbs conform to nine ordered suffix types. Just like nouns, each suffix type, if present, must be appended to the verb stem in a specific order. There can be no more than one suffix per type.
 
-Below are the verb suffix types and the relevant rules and flag diacritics for each type.
+Below are the verb suffix types and the relevant rules and flag diacritics for each type. Verbs can take either an Indicative or Imperative mood, which affects the suffixes they can take and their meaning.
 
-	\textbf{Type 1} Reflexive, Reciprocal
-	
-	This suffix type can only be used with the set of prefixes that mean "no object". The \textit{-chuq} reciprocal suffix can only be used when the subject is plural.
-	
-	\textbf{Type 2} Volition, Necessity
+\textbf{Prefix} Indicative or Imperative
 
-	\textbf{Type 3} Inceptive, Inchoative
+The verb mood is tracked using a MOOD flag \texttt{@U.MOOD.INDICATIVE@}, \texttt{@U.MOOD.IMPERATIVE@} or \texttt{@U.MOOD.INFINITIVE@}. In reality Klingon does not use verb infinitives however I apply this mood to restrict verb prefixes when analyzing verbs used adjectivally, which should not have a prefix.
 
-	\textbf{Type 4} Causative
+The Indicative prefixes indicate both the subject (if any) and object (if any) of the verb. Verbs with no object are tracked using the flag \texttt{@P.OBJECT.NONE@}. Verbs with no subject are tracked using the flag \texttt{@P.INDICATIVE.UNSPECIFIED@}. Verb subjects are tracked with the SUBJECT flag (\texttt{@U.SUBJECT.PLURAL@} or \texttt{@U.SUBJECT.PLURAL@}). If there is no subject for the verb, then this is tracked with \texttt{@P.INDICATIVE.UNSPECIFIED@}.
 
-	\textbf{Type 5} Undefined Subject, Capability
+Finally the verb type (dynamic vs stative) is tracked using the VERBTYPE flag.
 
-	\textbf{Type 6} Perfection, Uncertainty
+\textbf{Rover Suffixes}
 
-	\textbf{Type 7} Aspect
-
-	\textbf{Type 8} Honorific
-
-	\textbf{Type 9} Syntactic markers
-
-In addition, a ``rover'' suffix type can be appended immediately after the verb stem or between the nine suffix types, however rover suffixes cannot be appended after a Type-9 suffix. There are no restrictions on the number of rover suffixes that may be used. A rover suffix's meaning applies to the suffix immediately proceeding it. For example the \textbf{negating} rover suffix \textit{be'} can be appended immediately after the verb stem and/or after any other suffix type.
+In addition, a ``rover'' suffix type can be appended immediately after the verb stem or between the nine suffix types, however rover suffixes cannot be appended after a Type 9 suffix. There are no restrictions on the number of rover suffixes that may be used. A rover suffix's meaning applies to the suffix immediately proceeding it. For example the \textbf{negating} rover suffix \textit{be'} can be appended immediately after the verb stem and/or after any other suffix type.
 
 	\begin{table}[h]
 	\begin{center}
@@ -228,6 +218,44 @@ In addition, a ``rover'' suffix type can be appended immediately after the verb 
 	\end{table}
 
 Rover suffixes can even be appended after other rover suffixes, e.g. \textit{Dubbe'be'} meaning \textit{to not not improve}.
+
+\textbf{Suffix Type Gates}
+
+Just like nouns, verb suffix types need to occur in a certain order. However because the rover suffix type can occur \textit{between} the other suffix types, therefore the morphology needs to track the last appended suffix type. To address this, I employed ``suffix type gates''. When the input leads through a specific suffix type, for example suffix type 5, the type gate denies entry if suffix type 5 has already been turned-on (\textit{@D.VERBTYPE5.ON@}). If suffix type 5 flag has not been turned on, then the gate turns it on (\textit{@P.VERBTYPE5.ON@}) as well as all previous suffix types; \texttt{@P.VERBTYPE1.ON@ @P.VERBTYPE2.ON@ @P.VERBTYPE3.ON@ @P.VERBTYPE4.ON@}. In this way, the FST is restricted from repeating the same suffix type more than once, even after appending a rover suffix.
+
+\textbf{Suffix Type 1} Reflexive, Reciprocal
+	
+This suffix type can only be used with the set of prefixes that mean "no object".
+
+The \textit{-chuq} reciprocal suffix is additionally restricted to use when the subject is plural (\texttt{@U.SUBJECT.PLURAL@}) and the verb type is dynamic (\texttt{@U.VERBTYPE.DYNAMIC@}).
+
+\textbf{Suffix Type 2} Volition, Necessity
+
+\textbf{Suffix Type 3} Inceptive, Inchoative
+
+\textbf{Suffix Type 4} Causative
+
+\textbf{Suffix Type 5} Undefined Subject, Capability
+
+The undefined subject suffix \textit{lu'} can only be and is required to be used if the subject of the verb is not specified (\texttt{@R.INDICATIVE.UNSPECIFIED@}). To make sure that both requirements are satisfied, we clear the INDICATIVE flag after appending the undefined-subject suffix and at the end of the word analysis use a disallow test to make sure that the flag has been cleared (\texttt{@D.INDICATIVE.UNSPECIFIED@}).
+
+\textbf{Suffix Type 6} Perfection, Uncertainty
+
+\textbf{Suffix Type 7} Aspect
+
+The continuous suffix \textit{-taH} set a flag diacritic \texttt{@P.VERBSUFFIX.CONTINUOUS@} which will be referenced later by a type 9 suffix.
+
+\textbf{Suffix Type 8} Honorific
+
+\textbf{Suffix Type 9} Syntactic markers
+
+The person suffix \textit{-wI'} can only be used when the verb has no prefix, so the unification test \texttt{@U.MOOD.INFINITIVE@} is applied. This suffix makes the verb a regular noun to which all regular noun suffixes can be applied. Therefore instead of continuing onto the verb suffix path, the person suffix reroutes to the NounSuffix.
+
+The simultaneous suffix \textit{-vIS} can only be used when the type 7 continuous suffix \textit{-taH} has been appended, so the require flag test \texttt{@R.VERBSUFFIX.CONTINUOUS@} is used.
+
+\textbf{Verb Tag}
+
+The last LEXICON in the verb path is the verb tag. Using the MOOD unification flag test, either the [INDICATIVE] or [IMPERATIVE] tag is appended (\texttt{@U.MOOD.INDICATIVE@} or \texttt{@U.MOOD.IMPERATIVE@}).
 
 \subsection {Other Words}
 
