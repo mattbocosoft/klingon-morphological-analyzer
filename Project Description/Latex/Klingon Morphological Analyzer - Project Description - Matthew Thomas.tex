@@ -25,12 +25,6 @@
 
 %\setlength\titlebox{5cm}
 
-% You can expand the titlebox if you need extra space
-% to show all the authors. Please do not make the titlebox
-% smaller than 5cm (the original size); we will check this
-% in the camera-ready version and ask you to change it back.
-
-
 \title{A finite-state morphological analyzer using foma for Klingon, a constructed language}
 
 \author{Matthew David Dreselly Thomas \\
@@ -52,13 +46,29 @@ The open-source tool \textit{foma} for constructing finite-state automata and tr
 
 Klingon was created by Marc Okrand, an American Linguist, for the 1984 movie Star Trek III. Klingon is spoken by the fictional Klingons in the Star Trek universe, so Okrand designed the Klingon language to sound alien by using grammatical constructs and sound combinations that are rarely used in natural language~\cite{KLI:Development,KLI:Sounds}.
 
-Klingon has a complete grammar that can be spoken and used as a real language. Marc Okrand formalized the Klingon grammar and vocabulary in The Klingon Dictionary~\cite{Okrand:92}.
+Klingon has a complete grammar that can be spoken and used as a real language. Marc Okrand formalized the Klingon grammar and vocabulary in The Klingon Dictionary~\cite{Okrand:92}. The official writing system using the Latin alphabet and is case-sensitive. The alien alphabet, called pIqaD, was created for visual effects in the movies by the Astra Image Corporation.
 
 The number of fluent Klingon speakers is not known, but has been estimated between a few dozen~\cite{Okrent:09} to around 100~\cite{Kelly:13}. The Klingon Dictionary~\cite{Okrand:92} has sold more than 300,000 copies and has been translated into 4 languages. Klingon has entered into popular culture, and literary works such as Shakespeare's Hamlet, Gilgamesh, and ``A Christmas Carol'' have been translated into Klingon. The current lexicon contains almost 3,000 words~\cite{Zrajm:12} and only grammar and words coined by Marc Okrand are considered canonical by the Klingon speaking community~\cite{KLI:Canonical}.
+
+\section{FST Implementation}
+
+The morphological analyzer FST consists of two files; a lexc file and a foma file. References to The Klingon Dictionary and other sources are captured in comments throughout the FST files for reference and as an explanation of implementation decisions.
+
+\subsection{\textit{lexc} file}
+
+The lexc file describes Klingon morphology and contains the basic set of Klingon lexical entries. I use the KLCP1, which are the 502 basic words of first level of KLI's ``Klingon Language Certification Program''~\cite{Zrajm:12}. Each lexical entry contains the stem and the english meaning on the upper-side (analysis) of the FST.
+
+Beesley and Karttunen~\shortcite{BeesleyKarttunen:02} flag diacritics are used to restrict the stem and affix combinations according to the grammar description.
+
+\subsection{\textit{foma} file}
+
+The foma file creates an FST from the lexc and adds morphophonogical rewrite rules. The single Klingon morphophonological rule is implemented in the \textit{foma} file as a rewrite rule.
 
 \section{Klingon Morphology}
 
 Klingon is an agglutinative language that uses Object-Verb-Subject word order. Okrand categorizes all Klingon words into Nouns, Verbs, and Other. The morphological analyzer is designed and tested to work with Nouns and Verbs, however some additional work was done to account for the words in the 'Other' category.
+
+The Noun LEXICON uses the "NOUNTYPE" feature flag to track the noun category; \texttt{@U.NOUNTYPE.BODYPART@}, \texttt{@U.NOUNTYPE.CAPABLELANGUAGE@} and \texttt{@U.NOUNTYPE.OTHER@}.
 
 \subsection {Nouns}
 
@@ -66,9 +76,9 @@ Nouns can take five types of suffixes. Each suffix type, if present, must be app
 
 Below are the noun suffix types and the relevant rules for each type.
 
-\begin{description}
-	\item[Type 1] Augmentative/diminutive
-	\item[Type 2] Number
+\textbf{Type 1} Augmentative/diminutive
+
+\textbf{Type 2} Number
 
 	\begin{center}
 	\begin{tabular}{lll}
@@ -82,7 +92,7 @@ Below are the noun suffix types and the relevant rules for each type.
 	\end{tabular}
 	\end{center}
 
-	The \textit{-mey} suffix may also be used with body-part and beings-capable-of-language nouns, but the resulting word acquires an additional meaning ``\textit{all over the place}'' on top of the plural meaning.
+The \textit{-mey} suffix may also be used with body-part and beings-capable-of-language nouns, but the resulting word acquires an additional meaning ``\textit{all over the place}'' on top of the plural meaning.
 	
 	\begin{table}[h]
 	\begin{center}
@@ -99,8 +109,9 @@ Below are the noun suffix types and the relevant rules for each type.
 	\caption{Generic Plural Suffix Usage with Inherently Singular Nouns}
 	\end{table}
 
-	Some nouns are inherently singular or inherently plural. For example the Klingon word \textit{peng} means torpedo (singular) but \textit{cha} means torpedos (plural). The singular forms of these types of nouns may also take the \textit{-mey} generic plural suffix, but the resulting word also acquires the ``\textit{all over the place}'' meaning.
+Some nouns are inherently singular or inherently plural. For example the Klingon word \textit{peng} means torpedo (singular) but \textit{cha} means torpedos (plural). The singular forms of these types of nouns may also take the \textit{-mey} generic plural suffix, but the resulting word also acquires the ``\textit{all over the place}'' meaning.
 	
+If a noun is inherently singular or inherently plural, it is marked using the Positive flag diacritic \texttt{@P.SINGULAR.IRREGULAR@} or \texttt{@P.PLURAL.IRREGULAR@}.
 	
 	\begin{table}[h]
 	\begin{center}
@@ -118,14 +129,15 @@ Below are the noun suffix types and the relevant rules for each type.
 	\caption{Generic Plural Suffix Usage with Language-Capable Nouns}
 	\end{table}
 
-	Lastly, nouns in Klingon are not required to take any plural suffix in order to be plural. The singular form of a noun may be used where the plural form would normally be used, and this is perfectly grammatically correct. The meaning is disambiguated using the context of the word in the sentence. Therefore \textit{jup} means both ``friend'' and ``friends'' depending on the context. There are no articles in Klingon.
+Lastly, nouns in Klingon are not required to take any plural suffix in order to be plural. The singular form of a noun may be used where the plural form would normally be used, and this is perfectly grammatically correct. The meaning is disambiguated using the context of the word in the sentence. Therefore \textit{jup} means both ``friend'' and ``friends'' depending on the context. There are no articles in Klingon.
 	
-	The Type-2 suffix group uses the NOUNTYPE, SINGULAR and PLURAL flag diacritics to control which suffixes can be applied and what their meaning is.
+The Type-2 suffix group uses the NOUNTYPE, SINGULAR and PLURAL flag diacritics to control which suffixes can be applied and what their meaning is.
 
-	\item[Type 3] Qualification
-	\item[Type 4] Possession/specification
+\textbf{Type 3} Qualification
 	
-	Possession suffixes are selected depending on whether the \textit{object} being referred to is language-capable.
+\textbf{Type 4} Possession/specification
+	
+Possession suffixes are selected depending on whether the \textit{object} being referred to is language-capable.
 
 	\begin{center}
 	\begin{tabular}{lll}
@@ -143,10 +155,9 @@ Below are the noun suffix types and the relevant rules for each type.
 	\end{tabular}
 	\end{center}
 	
-	This suffix type uses the NOUNTYPE flag diacritic to restrict language-capable suffixes to always and only be applied to language-capable nouns.
+Language-capable nouns can still take the generic suffix but the meaning becomes derogatory~\cite{Okrand:92}. The noun type is tracked using the NOUNTYPE flag and in this case the tag [DEROGATORY] is appended to the analysis.
 
-	\item[Type 5] Syntactic markers
-\end{description}
+\textbf{Type 5} Syntactic markers
 
 \subsection {Verbs}
 
@@ -158,20 +169,25 @@ Verbs conform to nine ordered suffix types. Just like nouns, each suffix type, i
 
 Below are the verb suffix types and the relevant rules and flag diacritics for each type.
 
-\begin{description}
-	\item[Type 1] Reflexive, Reciprocal
+	\textbf{Type 1} Reflexive, Reciprocal
 	
 	This suffix type can only be used with the set of prefixes that mean "no object". The \textit{-chuq} reciprocal suffix can only be used when the subject is plural.
 	
-	\item[Type 2] Volition, Necessity
-	\item[Type 3] Inceptive, Inchoative
-	\item[Type 4] Causative
-	\item[Type 5] Undefined Subject, Capability
-	\item[Type 6] Perfection, Uncertainty
-	\item[Type 7] Aspect
-	\item[Type 8] Honorific
-	\item[Type 9] Syntactic markers
-\end{description}
+	\textbf{Type 2} Volition, Necessity
+
+	\textbf{Type 3} Inceptive, Inchoative
+
+	\textbf{Type 4} Causative
+
+	\textbf{Type 5} Undefined Subject, Capability
+
+	\textbf{Type 6} Perfection, Uncertainty
+
+	\textbf{Type 7} Aspect
+
+	\textbf{Type 8} Honorific
+
+	\textbf{Type 9} Syntactic markers
 
 In addition, a ``rover'' suffix type can be appended immediately after the verb stem or between the nine suffix types, however rover suffixes cannot be appended after a Type-9 suffix. There are no restrictions on the number of rover suffixes that may be used. A rover suffix's meaning applies to the suffix immediately proceeding it. For example the \textbf{negating} rover suffix \textit{be'} can be appended immediately after the verb stem and/or after any other suffix type.
 
@@ -229,38 +245,11 @@ Klingon completely lacks morphophonology with one exception. The endearment noun
 	\caption{Endearment Suffix}
 	\end{table}
 
-\section{FST Implementation}
-
-The morphological analyzer FST consists of two files; a lexc file and a foma file. References to The Klingon Dictionary and other sources are captured in comments throughout the FST files for reference and as an explanation of implementation decisions.
-
-\subsection{\textit{lexc} file}
-
-The lexc file describes Klingon morphology and contains the basic set of Klingon lexical entries. I use the KLCP1, which are the 502 basic words of first level of KLI's ``Klingon Language Certification Program''~\cite{Zrajm:12}. Each lexical entry contains the stem and the english meaning on the upper-side (analysis) of the FST.
-
-Beesley and Karttunen~\shortcite{BeesleyKarttunen:02} flag diacritics are used to restrict the stem and affix combinations according to the grammar description.
-
-The Noun LEXICON uses Unification flags to mark the noun category:
-\begin{itemize}
-	\item \texttt{@U.NOUNTYPE.BODYPART@}
-	\item \texttt{@U.NOUNTYPE.CAPABLELANGUAGE@}
-	\item \texttt{@U.NOUNTYPE.OTHER@}.
-\end{itemize}
-
-If a noun is inherently singular or inherently plural, it is marked using the Positive flag diacritic \textit{@P.SINGULAR.IRREGULAR@} or \textit{@P.PLURAL.IRREGULAR@}.
-
-\subsection{\textit{foma} file}
-
-The foma file creates an FST from the lexc and adds morphophonogical rewrite rules. The single Klingon morphophonological rule is implemented in the \textit{foma} file as a rewrite rule.
-
 \section{Evaluation}
 
 More than 150 test cases are contained in a separate \textit{foma} file. These test cases follow Okrand's examples in The Klingon Dictionary. The morphology \textit{lexc} was modified until all test cases passed and recall reached 100\%.
 
 In order to obtain a quantitative analysis of the morphological analyzer, I compiled a list of words from The Klingon Dictionary and The Klingon Hamlet~\cite{0964434512}. Of the 267 words on the list, the morphological analyzer accounted for 264. The remaining 3 words were \texttt{DatDaq}, \texttt{tIpuq} and \texttt{naDevDaq}. Both \texttt{DatDaq} and \texttt{naDevDaq} are explicitly forbidden by Marc Okrand in The Klingon Dictionary as there are location nouns with the locative suffix, therefore these words are technically not grammatically. The last word \texttt{tIpuq} comes from the Sonnet-18 translation in Hamlet and appears to translate to "bud" (as in rose bud), however this word does not appear in any canonical sources of Klingon. Therefore I consider the morphological analyzer to have achieved 100\% recall for the target word list.
-
-% include your own bib file like this:
-%\bibliographystyle{acl}
-%\bibliography{acl2014}
 
 \bibliographystyle{apalike}
 \bibliography{mybibfile}
