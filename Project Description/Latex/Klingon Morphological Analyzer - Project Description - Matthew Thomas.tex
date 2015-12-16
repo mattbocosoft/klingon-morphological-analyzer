@@ -68,7 +68,7 @@ The foma file creates an FST from the lexc and adds morphophonogical rewrite rul
 
 Klingon is an agglutinative language that uses Object-Verb-Subject word order. Okrand categorizes all Klingon words into Nouns, Verbs, and Other. The morphological analyzer is designed and tested to work with Nouns and Verbs, however some additional work was done to account for the words in the 'Other' category.
 
-The Noun LEXICON uses the "NOUNTYPE" feature flag to track the noun category; \texttt{@U.NOUNTYPE.BODYPART@}, \texttt{@U.NOUNTYPE.CAPABLELANGUAGE@} and \texttt{@U.NOUNTYPE.OTHER@}.
+The Noun LEXICON uses the "NOUNTYPE" feature flag to track the noun category; \texttt{@U.NOUNTYPE.BODYPART@}, \texttt{@U.NOUNTYPE.CAPABLELANGUAGE@}, \texttt{@U.NOUNTYPE.OTHER@} and \texttt{@U.NOUNTYPE.LOCATION@}.
 
 \subsection {Nouns}
 
@@ -77,6 +77,8 @@ Nouns can take five types of suffixes. Each suffix type, if present, must be app
 Below are the noun suffix types and the relevant rules for each type.
 
 \textbf{Type 1} Augmentative/diminutive
+
+The endearment suffix \textit{-oy} adds a dash '-' which is replaced with either null or with a glottal stop in the \textit{foma} file depending on whether the last letter of the noun stem is a consonant or vowel, respectively.
 
 \textbf{Type 2} Number
 
@@ -158,6 +160,22 @@ Possession suffixes are selected depending on whether the \textit{object} being 
 Language-capable nouns can still take the generic suffix but the meaning becomes derogatory~\cite{Okrand:92}. The noun type is tracked using the NOUNTYPE flag and in this case the tag [DEROGATORY] is appended to the analysis.
 
 \textbf{Type 5} Syntactic markers
+
+\cite{Okrand:92} notes that the locative suffix \textit{-Daq} cannot be appended to three adverb-like Klingon nouns.
+
+\begin{quote}
+"It is worth noting at this point that the concepts expressed by the English adverbs (here, there), and (everywhere) are expressed by nouns in Klingon: \textit{naDev} (hereabouts), \textit{pa'} (there-abouts), \textit{Dat} (everywhere). These words may perhaps be translated more literally as ``area around here,'' ``area over there,'' and ``all places,'' respectively. Unlike other nouns, these three words are never followed by the locative suffix."
+\end{quote}
+
+These three nouns are tracked by setting the NOUNTYPE flag (\texttt{@U.NOUNTYPE.LOCATION"@"}). I can then prevent them from taking the locative suffix using the Disallow flag test (\texttt{@D.NOUNTYPE.LOCATION@}).
+
+\textbf{Noun Tag}
+After all suffixes are appended, one of three options are chosen for the noun tag.
+\begin{itemize}
+	\item If the VERBTYPE.STATIVE flag has been set, it means that a stative verb was using the Type-5 Noun suffix as explained in the Verbs section. Therefore no Noun tag needs to be added to the word analysis.
+	\item Otherwise if the MOOD flag has \textit{not} been set, then we can be sure that a noun is being tagged and can thus append the [N] tag to the analysis.
+	\item Lastly, if the MOOD flag \textit{has} been set then we know that the word stem is a verb and we tag the current word with [DVN].
+\end{itemize}
 
 \subsection {Verbs}
 
