@@ -256,7 +256,21 @@ regex "[3P]""[PL]""[OBJ-1P]""[OBJ-PL]"{Qaw'[to-destroy]}"[EMPHASIS]""[NEG]""[V]"
 regex "[1P]""[PL]""[OBJ-2P]""[OBJ-SG]"{HoH[to-kill]}"[AFRAID]""[NEG]""[EMPHASIS]""[V]""[INDICATIVE]" .o. Grammar .o. {pIHoHvIpbe'qu'};
 regex "[1P]""[PL]""[OBJ-2P]""[OBJ-SG]"{HoH[to-kill]}"[AFRAID]""[EMPHASIS]""[NEG]""[V]""[INDICATIVE]" .o. Grammar .o. {pIHoHvIpqu'be'};
 regex "[1P]""[PL]""[OBJ-2P]""[OBJ-SG]"{HoH[to-kill]}"[EMPHASIS]""[AFRAID]""[NEG]""[V]""[INDICATIVE]" .o. Grammar .o. {pIHoHqu'vIpbe'};
+echo
+echo ~# Verbs Functioning Adjectivally #~
+echo ~~~~~~~~~~~~~~
+regex {tIn[to-be-big]}"[EMPHASIS]""[V]""[STATIVE]" .o. Grammar .o. {tInqu'};
+regex {ram[to-be-trivial,unimportant]}"[EMPHASIS]""[V]""[STATIVE]" .o. Grammar .o. {ramqu'};
+regex {tIn[to-be-big]}"[V]""[STATIVE]""[LOCATIVE]" .o. Grammar .o. {tInDaq};
+regex {tIn[to-be-big]}"[EMPHASIS]""[V]""[STATIVE]""[LOCATIVE]" .o. Grammar .o. {tInqu'Daq};
 
+# PROBLEM: chIm[to-be-empty][CERTAIN][V][STATIVE] ... without mood and without subject/object marker!
+# Have not tested "bogh" or "meH" suffixes
+# "[Rovers] can come just about anywhere except following a Type 9 suffix"
+# "Unlike {-be',} the position of {-Qo'} does not change: it occur last, unless followed by a Type 9 suffix."
+# {-Ha'} always occurs right after the verb.
+# PROBLEM: tIn[to-be-big][EMPHASIS][V][STATIVE] ... without mood and without subject/object marker!
+# If a Type 5 noun suffix is used (section 3.3.5), it follows the verb, which, when used to modify the noun in this way, can have no other suffix except the rover {-qu'} <emphatic.> The Type 5 noun suffix follows {-qu'.}
 
 echo
 echo ###################
