@@ -891,8 +891,8 @@ LEXICON ConjunctionTag
 ! ########## ADVERBIAL ##########
 
 LEXICON Adverbial
-BasicAdverbs;
-TimeStampAdverbs;
+						BasicAdverbs;
+						TimeStampAdverbs;
 @P.POS.ADVERB@					Number;
 
 LEXICON BasicAdverbs
