@@ -66,13 +66,13 @@ The foma file creates an FST from the lexc and adds morphophonogical rewrite rul
 
 \section{Klingon Morphology}
 
-Klingon is an agglutinative language that uses Object-Verb-Subject word order. Okrand categorizes all Klingon words into Nouns, Verbs, and Other. The morphological analyzer is designed and tested to work with Nouns and Verbs, however some additional work was done to account for the words in the 'Other' category.
-
-The Noun LEXICON uses the "NOUNTYPE" feature flag to track the noun category; \texttt{@U.NOUNTYPE.BODYPART@}, \texttt{@U.NOUNTYPE.CAPABLELANGUAGE@}, \texttt{@U.NOUNTYPE.OTHER@} and \texttt{@U.NOUNTYPE.LOCATION@}.
+Klingon is an agglutinative language that uses Object-Verb-Subject word order. Okrand categorizes all Klingon words into Nouns, Verbs, and Other. The morphological analyzer is specifically designed and tested to work with Nouns and Verbs, however some additional work was done to account for the words in the 'Other' category.
 
 \subsection {Nouns}
 
 Nouns can take five types of suffixes. Each suffix type, if present, must be appended to the noun stem in a specific order and there can be no more than one suffix per type. Nouns are divided into three categories; body-parts, beings capable of language, and general nouns. Some suffixes can only be appended to certain noun categories or their meaning changes when they are appended appended.
+
+Nouns use the "NOUNTYPE" feature flag to track the noun category; \texttt{@U.NOUNTYPE.BODYPART@}, \texttt{@U.NOUNTYPE.CAPABLELANGUAGE@}, \texttt{@U.NOUNTYPE.OTHER@} and \texttt{@U.NOUNTYPE.LOCATION@}.
 
 Below are the noun suffix types and the relevant rules for each type.
 
@@ -131,7 +131,7 @@ If a noun is inherently singular or inherently plural, it is marked using the Po
 	\caption{Generic Plural Suffix Usage with Language-Capable Nouns}
 	\end{table}
 
-Lastly, nouns in Klingon are not required to take any plural suffix in order to be plural. The singular form of a noun may be used where the plural form would normally be used, and this is perfectly grammatically correct. The meaning is disambiguated using the context of the word in the sentence. Therefore \textit{jup} means both ``friend'' and ``friends'' depending on the context. There are no articles in Klingon.
+Lastly, nouns in Klingon are not required to take any plural suffix in order to be plural. The singular form of a noun may be used where the plural form would normally be used, and this is perfectly grammatical. The meaning is disambiguated using the context of the word in the sentence. Therefore \textit{jup} means both ``friend'' and ``friends'' depending on the context. There are no articles in Klingon.
 	
 The Type-2 suffix group uses the NOUNTYPE, SINGULAR and PLURAL flag diacritics to control which suffixes can be applied and what their meaning is.
 
@@ -167,10 +167,12 @@ Language-capable nouns can still take the generic suffix but the meaning becomes
 "It is worth noting at this point that the concepts expressed by the English adverbs (here, there), and (everywhere) are expressed by nouns in Klingon: \textit{naDev} (hereabouts), \textit{pa'} (there-abouts), \textit{Dat} (everywhere). These words may perhaps be translated more literally as ``area around here,'' ``area over there,'' and ``all places,'' respectively. Unlike other nouns, these three words are never followed by the locative suffix."
 \end{quote}
 
-These three nouns are tracked by setting the NOUNTYPE flag (\texttt{@U.NOUNTYPE.LOCATION"@"}). I can then prevent them from taking the locative suffix using the Disallow flag test (\texttt{@D.NOUNTYPE.LOCATION@}).
+These three nouns are tracked by setting the NOUNTYPE flag (\texttt{@U.NOUNTYPE.LOCATION"@"}). These can be prevented from taking the locative suffix using the Disallow flag test (\texttt{@D.NOUNTYPE.LOCATION@}).
 
 \textbf{Noun Tag}
+
 After all suffixes are appended, one of three options are chosen for the noun tag.
+
 \begin{itemize}
 	\item If the VERBTYPE.STATIVE flag has been set, it means that a stative verb was using the Type-5 Noun suffix as explained in the Verbs section. Therefore no Noun tag needs to be added to the word analysis.
 	\item Otherwise if the MOOD flag has \textit{not} been set, then we can be sure that a noun is being tagged and can thus append the [N] tag to the analysis.
@@ -218,6 +220,10 @@ In addition, a ``rover'' suffix type can be appended immediately after the verb 
 	\end{table}
 
 Rover suffixes can even be appended after other rover suffixes, e.g. \textit{Dubbe'be'} meaning \textit{to not not improve}.
+
+The [REFUSE] tag/suffix \textit{Qo'} can only be appended if the MOOD is Indicative (\texttt{@U.MOOD.INDICATIVE@}).
+
+The suffix \textit{be'} meaning "negation" can only be appended if the MOOD is Indicative (\texttt{@U.MOOD.INDICATIVE@}). Otherwise if the MOOD is Imperative, a different suffix \textit{Qo'} must be used to negate the verb. The Indicative negation suffix \textit{Qo'} can only occur at the end of the nine suffix types, so I turn the verb suffix gate type switches on to apply this restriction. If the MOOD is Imperative but the suffix \textit{Qo'} is used, then the suffix takes on a meaning of refusal.
 
 \textbf{Suffix Type Gates}
 

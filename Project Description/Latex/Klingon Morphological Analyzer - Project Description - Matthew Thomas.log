@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 DEC 2015 21:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 DEC 2015 21:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -166,37 +166,36 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 57.
-
-Underfull \hbox (badness 6284) in paragraph at lines 71--72
-[]\OT1/ptm/m/n/10.95 The Noun LEX-I-CON uses the "NOUN-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-\OT1/ptm/m/n/10.95 TYPE" fea-ture flag to track the noun
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-\OT1/ptm/m/n/10.95 cat-e-gory; \OT1/pcr/m/n/10.95 @U.NOUNTYPE.BODYPART@\OT1/ptm
-/m/n/10.95 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-\OT1/pcr/m/n/10.95 @U.NOUNTYPE.CAPABLELANGUAGE@\OT1/ptm/m/n/10.95 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-\OT1/pcr/m/n/10.95 @U.NOUNTYPE.OTHER@ \OT1/ptm/m/n/10.95 and
- []
-
 [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+[]\OT1/ptm/m/n/10.95 Nouns use the "NOUN-TYPE" fea-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+\OT1/ptm/m/n/10.95 ture flag to track the noun cat-e-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+\OT1/ptm/m/n/10.95 gory; \OT1/pcr/m/n/10.95 @U.NOUNTYPE.BODYPART@\OT1/ptm/m/n/1
+0.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+\OT1/pcr/m/n/10.95 @U.NOUNTYPE.CAPABLELANGUAGE@\OT1/ptm/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+\OT1/pcr/m/n/10.95 @U.NOUNTYPE.OTHER@ \OT1/ptm/m/n/10.95 and
+ []
+
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 86.
 
@@ -240,12 +239,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
 Underfull \hbox (badness 10000) in paragraph at lines 170--171
 \OT1/ptm/m/n/10.95 (\OT1/pcr/m/n/10.95 @U.NOUNTYPE.LOCATION"@"\OT1/ptm/m/n/10.9
-5 ). I can
+5 ). These
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 170--171
-\OT1/ptm/m/n/10.95 then pre-vent them from tak-ing the loca-
+\OT1/ptm/m/n/10.95 can be pre-vented from tak-ing the loca-
  []
 
 
@@ -253,221 +252,247 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--171
 \OT1/ptm/m/n/10.95 tive suf-fix us-ing the Dis-al-low flag test
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 175.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 177.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 175.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 177.
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
 []\OT1/ptm/m/n/10.95 The verb mood is tracked us-ing a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
 \OT1/ptm/m/n/10.95 MOOD flag \OT1/pcr/m/n/10.95 @U.MOOD.INDICATIVE@\OT1/ptm/m/n
 /10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
 \OT1/pcr/m/n/10.95 @U.MOOD.IMPERATIVE@ \OT1/ptm/m/n/10.95 or
  []
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 192--193
+Underfull \hbox (badness 2035) in paragraph at lines 194--195
 \OT1/pcr/m/n/10.95 @U.MOOD.INFINITIVE@\OT1/ptm/m/n/10.95 . In re-al-ity Klin-
  []
 
 
-Underfull \hbox (badness 5939) in paragraph at lines 194--195
+Underfull \hbox (badness 5939) in paragraph at lines 196--197
 []\OT1/ptm/m/n/10.95 The In-dica-tive pre-fixes in-di-cate both the
  []
 
 
-Underfull \hbox (badness 3219) in paragraph at lines 194--195
+Underfull \hbox (badness 3219) in paragraph at lines 196--197
 \OT1/ptm/m/n/10.95 sub-ject (if any) and ob-ject (if any) of the
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 194--195
+Underfull \hbox (badness 1527) in paragraph at lines 196--197
 \OT1/ptm/m/n/10.95 verb. Verbs with no ob-ject are tracked us-
  []
 
 
-Underfull \hbox (badness 5475) in paragraph at lines 194--195
+Underfull \hbox (badness 5475) in paragraph at lines 196--197
 \OT1/ptm/m/n/10.95 ing the flag \OT1/pcr/m/n/10.95 @P.OBJECT.NONE@\OT1/ptm/m/n/
 10.95 . Verbs
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 \OT1/ptm/m/n/10.95 with no sub-ject are tracked us-ing the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 \OT1/ptm/m/n/10.95 flag \OT1/pcr/m/n/10.95 @P.INDICATIVE.UNSPECIFIED@\OT1/ptm/m
 /n/10.95 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 \OT1/ptm/m/n/10.95 Verb sub-jects are tracked with the SUB-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 \OT1/ptm/m/n/10.95 JECT flag (\OT1/pcr/m/n/10.95 @U.SUBJECT.PLURAL@ \OT1/ptm/m/
 n/10.95 or
  []
 
 
-Underfull \hbox (badness 4621) in paragraph at lines 194--195
+Underfull \hbox (badness 4621) in paragraph at lines 196--197
 \OT1/pcr/m/n/10.95 @U.SUBJECT.PLURAL@\OT1/ptm/m/n/10.95 ). If there is no
  []
 
 
-Underfull \hbox (badness 2884) in paragraph at lines 217--217
+Underfull \hbox (badness 2884) in paragraph at lines 219--219
 []\OT1/ptm/m/n/10.95 Table 3: Generic Plu-ral Suf-fix Us-age with
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 224--225
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+[]\OT1/ptm/m/n/10.95 The [REFUSE] tag/suffix \OT1/ptm/m/it/10.95 Qo' \OT1/ptm/m
+/n/10.95 can only
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
+\OT1/ptm/m/n/10.95 be ap-pended if the MOOD is In-dica-tive
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
+[]\OT1/ptm/m/n/10.95 The suf-fix \OT1/ptm/m/it/10.95 be' \OT1/ptm/m/n/10.95 mea
+n-ing "nega-tion" can
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 226--227
+\OT1/ptm/m/n/10.95 MOOD is Im-per-a-tive, a dif-fer-ent suf-fix \OT1/ptm/m/it/1
+0.95 Qo'
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 230--231
 []\OT1/ptm/m/n/10.95 Just like nouns, verb suf-fix types need to
  []
 
 
-Underfull \hbox (badness 1331) in paragraph at lines 224--225
+Underfull \hbox (badness 1331) in paragraph at lines 230--231
 \OT1/ptm/m/n/10.95 this, I em-ployed ``suf-fix type gates''. When
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 224--225
+Underfull \hbox (badness 1565) in paragraph at lines 230--231
 \OT1/ptm/m/n/10.95 has not been turned on, then the gate turns
  []
 
 
-Underfull \hbox (badness 1924) in paragraph at lines 224--225
+Underfull \hbox (badness 1924) in paragraph at lines 230--231
 \OT1/ptm/m/n/10.95 it on (\OT1/ptm/m/it/10.95 @P.VERBTYPE5.ON@\OT1/ptm/m/n/10.9
 5 ) as well as all
  []
 
 
-Underfull \hbox (badness 2809) in paragraph at lines 224--225
+Underfull \hbox (badness 2809) in paragraph at lines 230--231
 \OT1/ptm/m/n/10.95 pre-vi-ous suf-fix types; \OT1/pcr/m/n/10.95 @P.VERBTYPE1.ON
 @
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 \OT1/pcr/m/n/10.95 @P.VERBTYPE2.ON@ @P.VERBTYPE3.ON@
  []
 
-[3]
-Underfull \hbox (badness 2680) in paragraph at lines 230--231
+
+Underfull \hbox (badness 2680) in paragraph at lines 236--237
 []\OT1/ptm/m/n/10.95 The \OT1/ptm/m/it/10.95 -chuq \OT1/ptm/m/n/10.95 re-cip-ro
 -cal suf-fix is ad-di-tion-ally
  []
 
 
-Underfull \hbox (badness 2837) in paragraph at lines 230--231
+Underfull \hbox (badness 2837) in paragraph at lines 236--237
 \OT1/ptm/m/n/10.95 re-stricted to use when the sub-ject is plu-ral
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 []\OT1/ptm/m/n/10.95 The un-de-fined sub-ject suf-fix \OT1/ptm/m/it/10.95 lu' \
 OT1/ptm/m/n/10.95 can
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 \OT1/ptm/m/n/10.95 only be and is re-quired to be used if
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 \OT1/ptm/m/n/10.95 the sub-ject of the verb is not spec-i-fied
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 \OT1/ptm/m/n/10.95 (\OT1/pcr/m/n/10.95 @R.INDICATIVE.UNSPECIFIED@\OT1/ptm/m/n/1
 0.95 ). To
  []
 
 
-Underfull \hbox (badness 1028) in paragraph at lines 240--241
+Underfull \hbox (badness 1028) in paragraph at lines 246--247
 \OT1/ptm/m/n/10.95 we clear the IN-DICA-TIVE flag af-ter ap-pend-
  []
 
 
-Underfull \hbox (badness 4726) in paragraph at lines 240--241
+Underfull \hbox (badness 4726) in paragraph at lines 246--247
 \OT1/ptm/m/n/10.95 ing the undefined-subject suf-fix and at the
  []
 
 
-Underfull \hbox (badness 1152) in paragraph at lines 240--241
+Underfull \hbox (badness 1152) in paragraph at lines 246--247
 \OT1/ptm/m/n/10.95 end of the word anal-y-sis use a dis-al-low test
  []
 
 
-Underfull \hbox (badness 1681) in paragraph at lines 240--241
+Underfull \hbox (badness 1681) in paragraph at lines 246--247
 \OT1/ptm/m/n/10.95 to make sure that the flag has been cleared
  []
 
 
-Underfull \hbox (badness 2680) in paragraph at lines 254--255
+Underfull \hbox (badness 2680) in paragraph at lines 260--261
 []\OT1/ptm/m/n/10.95 The si-mul-ta-ne-ous suf-fix \OT1/ptm/m/it/10.95 -vIS \OT1
 /ptm/m/n/10.95 can only be
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 254--255
+Underfull \hbox (badness 1102) in paragraph at lines 260--261
 \OT1/ptm/m/n/10.95 used when the type 7 con-tin-u-ous suf-fix \OT1/ptm/m/it/10.
 95 -taH
  []
 
 
-Underfull \hbox (badness 2359) in paragraph at lines 254--255
+Underfull \hbox (badness 2359) in paragraph at lines 260--261
 \OT1/ptm/m/n/10.95 has been ap-pended, so the re-quire flag test
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
 []\OT1/ptm/m/n/10.95 If the mood is in-fini-tive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
 \OT1/pcr/m/n/10.95 @U.MOOD.INFINITIVE@\OT1/ptm/m/n/10.95 , sta-tive nouns
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 260--261
+Underfull \hbox (badness 1259) in paragraph at lines 266--267
 \OT1/ptm/m/n/10.95 can at-tach a noun suf-fix type 5. Oth-er-wise
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 260--261
+Underfull \hbox (badness 2418) in paragraph at lines 266--267
 \OT1/ptm/m/n/10.95 ei-ther the [IN-DICA-TIVE] or [IM-PER-A-TIVE]
  []
 
 
-Underfull \hbox (badness 1509) in paragraph at lines 260--261
+Underfull \hbox (badness 1509) in paragraph at lines 266--267
 \OT1/ptm/m/n/10.95 tag is ap-pended to the verb us-ing the uni-fi-
  []
 
 
-Underfull \hbox (badness 7030) in paragraph at lines 260--261
+Underfull \hbox (badness 7030) in paragraph at lines 266--267
 \OT1/ptm/m/n/10.95 ca-tion tests (\OT1/pcr/m/n/10.95 @U.MOOD.INDICATIVE@ \OT1/p
 tm/m/n/10.95 and
  []
 
 [4]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 (./Klingon Morphological Analyzer - Project Description - Matthew Thomas.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 15.
@@ -499,7 +524,7 @@ Underfull \hbox (badness 1577) in paragraph at lines 31--35
 \OT1/pcr/m/n/10 2013 / 05 / 18 / klingon-[]star-[]trek/$\OT1/ptm/m/n/10 .  Ac-
  []
 
-
+[5]
 Underfull \hbox (badness 1616) in paragraph at lines 42--47
 \OT1/ptm/m/it/10 guages: Es-peranto Rock Stars, Klin-gon Po-ets,
  []
@@ -514,7 +539,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--52
 \OT1/pcr/m/n/10 http : / / mashable . com / 2013 / 05 / 18 /
  []
 
-) [5]
+) [6
+
+]
 (./Klingon Morphological Analyzer - Project Description - Matthew Thomas.aux) )
  
 Here is how much of TeX's memory you used:
@@ -533,10 +560,10 @@ t/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
 Output written on "Klingon Morphological Analyzer - Project Description - Matth
-ew Thomas.pdf" (5 pages, 99550 bytes).
+ew Thomas.pdf" (6 pages, 100562 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 48 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
