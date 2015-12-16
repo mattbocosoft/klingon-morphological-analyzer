@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 DEC 2015 21:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 DEC 2015 22:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -495,48 +495,54 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 (./Klingon Morphological Analyzer - Project Description - Matthew Thomas.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 15.
+(Font)              <7> on input line 5.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 15.
+(Font)              <5> on input line 5.
 
-Underfull \hbox (badness 4479) in paragraph at lines 25--29
-[]\OT1/ptm/m/n/10 Institute, T. K. L.  The Sounds of Klin-gon.
+Underfull \hbox (badness 5711) in paragraph at lines 4--7
+[]\OT1/ptm/m/n/10 Canonical Sources.  $\OT1/pcr/m/n/10 http : / / www . kli . o
+rg /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--29
-\OT1/pcr/m/n/10 http : / / www . speakklingon . info /
+Underfull \hbox (badness 2229) in paragraph at lines 9--12
+[]\OT1/ptm/m/n/10 Development and Use of the Klin-gon Lan-guage.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--29
-\OT1/pcr/m/n/10 about-[]klingon / sounds-[]of-[]klingon/$\OT1/ptm/m/n/10 .
+Underfull \hbox (badness 10000) in paragraph at lines 9--12
+\OT1/pcr/m/n/10 http : / / www . kli . org / about-[]klingon /
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 31--35
+Underfull \hbox (badness 10000) in paragraph at lines 18--21
+[]\OT1/ptm/m/n/10 The Sounds of Klin-gon.  $\OT1/pcr/m/n/10 http : / / www .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--21
+\OT1/pcr/m/n/10 speakklingon . info / about-[]klingon /
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 28--32
 \OT1/ptm/m/n/10 ver-sal Lan-guage.  $\OT1/pcr/m/n/10 http : / / mashable . com 
 /
  []
 
 
-Underfull \hbox (badness 1577) in paragraph at lines 31--35
+Underfull \hbox (badness 1577) in paragraph at lines 28--32
 \OT1/pcr/m/n/10 2013 / 05 / 18 / klingon-[]star-[]trek/$\OT1/ptm/m/n/10 .  Ac-
  []
 
 [5]
-Underfull \hbox (badness 1616) in paragraph at lines 42--47
+Underfull \hbox (badness 1616) in paragraph at lines 39--44
 \OT1/ptm/m/it/10 guages: Es-peranto Rock Stars, Klin-gon Po-ets,
  []
 
 
-Underfull \hbox (badness 7308) in paragraph at lines 49--52
-[]\OT1/ptm/m/n/10 Zrajm.  Klin-gon Word Database 1st edi-tion.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--52
-\OT1/pcr/m/n/10 http : / / mashable . com / 2013 / 05 / 18 /
+Underfull \hbox (badness 1558) in paragraph at lines 46--50
+[]\OT1/ptm/m/n/10 Zrajm (2012).  Klin-gon Word Database 1st edi-
  []
 
 ) [6
@@ -547,7 +553,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--52
 Here is how much of TeX's memory you used:
  1790 strings out of 493089
  23925 string characters out of 6134842
- 91832 words of memory out of 5000000
+ 91818 words of memory out of 5000000
  5267 multiletter control sequences out of 15000+600000
  24716 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -560,7 +566,7 @@ t/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
 Output written on "Klingon Morphological Analyzer - Project Description - Matth
-ew Thomas.pdf" (6 pages, 100562 bytes).
+ew Thomas.pdf" (6 pages, 100549 bytes).
 PDF statistics:
  48 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream
