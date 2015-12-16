@@ -51,9 +51,3 @@ echo
 echo ##Loading Grammar…##
 clear stack
 regex Grammar;
-
-# TODO
-# 7. Test cases from The Klingon Dictionary
-# 10. Make sure flags are on both upper and lower.
-# 11. Can the ghach deverbal noun suffix take noun suffixes?
-# 12. Remaining KLCP1 words
