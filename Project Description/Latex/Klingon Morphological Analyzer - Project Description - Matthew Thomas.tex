@@ -259,23 +259,71 @@ The last LEXICON in the verb path is the verb tag. Using the MOOD unification fl
 
 \subsection {Other Words}
 
-Pronouns
+\textbf{Pronouns}
 
-Numbers
+There is a closed set of specific and independent words for pronouns. These pronouns are all accounted for within the \textit{lex} file.
 
-Conjunctions
+	\begin{table}[h]
+	\begin{center}
+	\begin{tabular}{lll}
+	\toprule
+	\bf Klingon & \bf English \\
+	\midrule
+	jIH & to I, me \\
+	soH & you \\
+	ghaH & he/she, him/her \\
+	'oH & it \\
+	'e' & that \\
+	net & that \\
+	maH & we, us \\
+	tlhIH & you (plural) \\
+	chaH & they, them (Language-Capable) \\
+	bIH & they, them (Generic) \\
+	\bottomrule
+	\end{tabular}
+	\end{center}
+	\caption{Klingon Pronouns}
+	\end{table}
+	
+Pronouns may be used as nouns however appending suffixes to pronouns is outside the scope of this project.
 
-Adverbials
+\textbf{Numbers}
 
-Exclamations
+The Klingon number system is base ten and numbers are combined just like in English with higher-order number coming first. For example 10,503 would be ten THOUSAND five HUNDRED and three. The thousands value needs to proceed the hundreds value. In order to enforce this ordering, I needed applied the same gating system that was used for the verb ordered suffix types.
 
-Names
+\textbf{Conjunctions}
 
-Questions
+In Klingon a different set of conjunctions is used when combining sentences than when combining words.
+
+	\begin{table}[h]
+	\begin{center}
+	\begin{tabular}{llll}
+	\toprule
+	\bf English & \bf Words & \bf Sentences \\
+	\midrule
+	\bf and & je & 'ej \\
+	\bf or & joq & qoj \\
+	\bf xor & ghap & pagh \\
+	\bf constrast & & 'ach / 'a \\
+	\bottomrule
+	\end{tabular}
+	\end{center}
+	\caption{Klingon Conjunctions}
+	\end{table}
+
+\textbf{Adverbials}
+
+
+
+\textbf{Exclamations}
+
+\textbf{Names}
+
+\textbf{Questions}
 
 \section{Klingon Morphophonology}
 
-Klingon completely lacks morphophonology with one exception. The endearment noun suffix \textit{-oy} is prepended with a glottal stop \textit{'} if the noun stem ends with a vowel.
+Klingon has only a single morphophonological rule. The endearment noun suffix \textit{-oy} is prepended with a glottal stop \textit{'} if the noun stem ends with a vowel. This rule is implemented in the \textit{foma} file.
 
 	\begin{table}[h]
 	\begin{center}
