@@ -1,16 +1,5 @@
 source klingon.foma
 
-# Read in words from file and create automaton
-define CorrectWords @txt"words-sonnet18.txt";
-
-# How many predictions are correct:
-def TestNumberCorrect CorrectWords & [Grammar .o. CorrectWords].l;
-
-# How many are incorrect:
-def TestNumberIncorrect CorrectWords - [Grammar .o. CorrectWords].l;
-
-# TESTS
-
 echo
 echo ###################
 echo RECALL TEST CASES (Success: >1 States)
@@ -274,30 +263,14 @@ regex {tIn[to-be-big]}"[EMPHASIS]""[V]""[STATIVE]""[LOCATIVE]" .o. Grammar .o. {
 
 echo
 echo ###################
-echo FALSE POSITIVE TEST CASES (Success: 1 State)
+echo RECALL WORD LIST
 echo ###################
-echo
-def NounType1 [{'a'} | {Hom} | {oy}];
-def NounType2 [{pu'} | {Du'} | {mey}];
-def NounType3 [{qoq} | {Hey} | {na'}];
-def NounType4 [{wIj} | {wI'} | {lIj} | {lI'} | {Daj} | {maj} | {ma'} | {raj} | {ra'} | {chaj} | {vam} | {vetlh}];
-def NounType5 [{Daq} | {vo'} | {mo'} | {vaD} | {'e'}];
-echo Nouns
-regex ~$["[GUESS]"] .o. Grammar .o. $[NounType5 NounType1]; ! Type 1 before Type 5
-regex ~$["[GUESS]"] .o. Grammar .o. $[NounType5 NounType2]; ! Type 2 before Type 5
-regex ~$["[GUESS]"] .o. Grammar .o. $[NounType5 NounType3]; ! Type 3 before Type 5
-regex ~$["[GUESS]"] .o. Grammar .o. $[NounType5 NounType4]; ! Type 4 before Type 5
-regex ~$["[GUESS]"] .o. Grammar .o. $[NounType5 NounType5]; ! Multiple Type 5
-regex ~$["[GUESS]"] .o. Grammar .o. $[NounType4 NounType1]; ! Type 1 before Type 4
-regex ~$["[GUESS]"] .o. Grammar .o. $[NounType4 NounType2]; ! Type 2 before Type 4
-regex ~$["[GUESS]"] .o. Grammar .o. $[NounType4 NounType3]; ! Type 3 before Type 4
-regex ~$["[GUESS]"] .o. Grammar .o. $[NounType4 NounType4]; ! Multiple Type 4
-regex ~$["[GUESS]"] .o. Grammar .o. $[NounType3 NounType1]; ! Type 1 before Type 3
-regex ~$["[GUESS]"] .o. Grammar .o. $[NounType3 NounType2]; ! Type 2 before Type 3
-regex ~$["[GUESS]"] .o. Grammar .o. $[NounType3 NounType3]; ! Multiple Type 3
-regex ~$["[GUESS]"] .o. Grammar .o. $[NounType2 NounType1]; ! Type 1 before Type 2
-regex ~$["[GUESS]"] .o. Grammar .o. $[NounType2 NounType2]; ! Multiple Type 2
-regex ~$["[GUESS]"] .o. Grammar .o. $[NounType1 NounType1]; ! Multiple Type 1
+# Read in words from file and create automaton
+define CorrectWords @txt"klingon-correct.txt";
+# How many words ARE accounted for by the morphological analyzer
+def TestNumberCorrect CorrectWords & [Grammar .o. CorrectWords].l;
+# How many are NOT accounted for by the morphological analyzer
+def TestNumberIncorrect CorrectWords - [Grammar .o. CorrectWords].l;
 
 echo
 echo -------------------
