@@ -495,9 +495,6 @@ LEXICON Noun
 @U.NOUNTYPE.OTHER@				NounOther;
 @U.NOUNTYPE.LOCATION@				NounOtherLocation;
 
-! LEXICON NounName
-! be'etor[B'Etor]:be'etor			NounSuffix;
-
 LEXICON NounBodyPart
 DeS[arm]:DeS					NounSuffix;
 porgh[body]:porgh				NounSuffix;
